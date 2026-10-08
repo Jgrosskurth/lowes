@@ -1,0 +1,64 @@
+{
+ "_provenance": {
+  "writtenBy": "stardust:extract",
+  "writtenAt": "2026-10-08T15:38:38.975Z",
+  "againstInput": "https://main--lowes--jgrosskurth.aem.live/ --single",
+  "stardustVersion": "0.14.0"
+ },
+ "discovery": {
+  "fetchTechnique": "headless",
+  "count": 1,
+  "concurrency": 4,
+  "source": "entry-url (--single, cap 1)",
+  "discovered": [
+   {
+    "url": "https://main--lowes--jgrosskurth.aem.live/",
+    "slug": "home",
+    "priority": 1
+   }
+  ],
+  "filteredAsJunk": [],
+  "cut": [],
+  "userChoice": "--single (invoked by stardust:uplift Phase 1)"
+ },
+ "consent": {
+  "method": "auto"
+ },
+ "favicon": {
+  "url": "https://main--lowes--jgrosskurth.aem.live/favicon.ico",
+  "file": "assets/favicon.ico"
+ },
+ "crawl": {
+  "failures": [],
+  "pages": [
+   {
+    "slug": "home",
+    "waitMode": "medium",
+    "waitMs": 2500,
+    "httpStatus": 200,
+    "imgs": 111,
+    "cssBackgrounds": 0
+   }
+  ],
+  "secondaryProbe": {
+   "script": "stardust/.work/extract/brand-probe.mjs",
+   "waitMs": 8718,
+   "purpose": "computed-style aggregation + section map + font capture"
+  }
+ },
+ "visionCheck": [
+  {
+   "slug": "home",
+   "verdict": "ok",
+   "notes": "Screenshot shows fully rendered Lowe's homepage (header, pills, DEWALT banner, hero split carousel, promo cards, weather + article rail, Gift Zone carousel, categories, departments, articles, deals, projects, items). cssBackgrounds: [] is believable — all imagery is <img>. Logo captured (navy house mark). Palette plausible (white ground, navy utility bar, blue links, green Add to Cart). Footer is AEM boilerplate (Adobe copyright) — real, not a capture failure."
+  }
+ ],
+ "siblingCandidates": [
+  {
+   "origin": "https://www.lowes.com",
+   "confidence": "high",
+   "evidence": "every CTA/href points to www.lowes.com (source of this migration)",
+   "decision": "excluded — bot-protected origin (Akamai); not crawlable; user instructed target is the aem.live site"
+  }
+ ]
+}
