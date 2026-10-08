@@ -1,0 +1,89 @@
+/*
+ * cards-promo: five-up promo tiles (source: RowWrapper grid of d-span-2.4 columns).
+ * Source spacing: 40px from the block above to the tile tops, 48px from the tile bottoms to the
+ * next section heading; the section gap supplies var(--section-gap) of each.
+ */
+.cards-promo {
+  padding-top: calc(var(--space-lg) - var(--section-gap));
+  padding-bottom: calc(48px - var(--section-gap));
+}
+
+/* mobile: tiles stack in one column (source: 16px grid gap + 20px tile top margin) */
+.cards-promo .cards-promo-list {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: calc(var(--space-sm) + 20px);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cards-promo .cards-promo-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.cards-promo .cards-promo-card-image {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  line-height: 0;
+}
+
+.cards-promo .cards-promo-card-image a {
+  display: block;
+}
+
+.cards-promo .cards-promo-card-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 400 / 420;
+  object-fit: cover;
+}
+
+/* mobile art direction: the wide "-mow" artwork (686 x 300-340) keeps its own aspect ratio */
+@media (width < 576px) {
+  .cards-promo .cards-promo-card.has-mobile-image .cards-promo-card-image img {
+    aspect-ratio: auto;
+  }
+}
+
+/* text-only tile: the whole tile is the link target */
+.cards-promo .cards-promo-card:not(.has-image) .cards-promo-card-link::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+}
+
+.cards-promo .cards-promo-card:not(.has-image) .cards-promo-card-body {
+  padding: var(--space-sm);
+}
+
+/* image carries the copy: keep CTA text for assistive tech only */
+.cards-promo .cards-promo-card.has-image .cards-promo-card-body {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.cards-promo .cards-promo-card.has-image .cards-promo-card-link:focus-visible {
+  outline: none;
+}
+
+.cards-promo .cards-promo-card.has-image:focus-within .cards-promo-card-image {
+  outline: 2px solid var(--link-color);
+  outline-offset: 2px;
+}
+
+/* source switches from stacked to the five-up row above 672px */
+@media (width > 672px) {
+  .cards-promo .cards-promo-list {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: var(--space-md);
+  }
+}

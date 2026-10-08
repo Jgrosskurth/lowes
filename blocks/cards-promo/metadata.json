@@ -1,0 +1,32 @@
+{
+  "variantName": "cards-promo",
+  "baseBlock": "cards",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "mixed",
+    "density": "moderate",
+    "purpose": "deal-tiles",
+    "imagePattern": "multiple",
+    "structure": "image + link",
+    "columns": 5,
+    "sourceColorScheme": "image",
+    "sourceDensity": "medium",
+    "sourceImagePattern": "tall-tile-baked-text"
+  },
+  "contentPattern": {
+    "structure": "One row per tile (5 rows): cell 1 = image; cell 2 = \"Shop Now\" link to the tile destination (copy is baked into image, alt text preserved)."
+  },
+  "options": [],
+  "memberVariantIds": [],
+  "usage": {
+    "pagesUsing": [
+      {
+        "url": "https://www.lowes.com/",
+        "instanceId": null,
+        "screenshot": "migration-work/screenshot.png"
+      }
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2026-10-08T00:27:22.092Z"
+  }
+}

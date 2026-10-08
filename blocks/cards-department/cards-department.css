@@ -1,0 +1,160 @@
+/*
+ * Shop by Department: tiles whose artwork already contains icon, label and tile border.
+ * Source grid (FeatureTiles):
+ *   below 673px: 2 columns, 16px column gap, only the first 4 tiles + "Show More" button
+ *   from 673px:  8 columns, 16px column gap, all tiles, no button
+ *   from 1057px: 8 columns, 32px column gap
+ * Rows are 24px apart (source tile link padding-bottom).
+ */
+.cards-department {
+  padding-bottom: 16px;
+}
+
+.cards-department .cards-department-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cards-department .cards-department-card {
+  position: relative;
+  border-radius: var(--radius-lg);
+}
+
+.cards-department .cards-department-card-image {
+  line-height: 0;
+}
+
+.cards-department .cards-department-card-image a {
+  display: block;
+  overflow: hidden;
+
+  /* source placeholder box: padding-top 40.35%; artwork (249 x 99) sits at the top */
+  aspect-ratio: 100 / 40.35;
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+}
+
+.cards-department .cards-department-card-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.cards-department .cards-department-card-body > * {
+  margin: 0;
+}
+
+/* label baked into the tile artwork: keep it for assistive tech only */
+.cards-department .cards-department-card.has-image .cards-department-card-body {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.cards-department .cards-department-card.has-image:focus-within {
+  outline: 2px solid var(--link-color);
+  outline-offset: 2px;
+}
+
+/* fallback text tile when no artwork is authored */
+.cards-department .cards-department-card:not(.has-image) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 56px;
+  padding: 8px;
+  border: 1px solid var(--border-subdued);
+  text-align: center;
+}
+
+.cards-department .cards-department-card:not(.has-image) .cards-department-card-link {
+  color: var(--link-color);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.cards-department .cards-department-card:not(.has-image) .cards-department-card-link::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+}
+
+/* Show More (source: BDS secondary button, size medium) */
+.cards-department .cards-department-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.cards-department .cards-department-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  margin: 0;
+  padding: 0 32px;
+  border: 1px solid var(--link-color);
+  border-radius: var(--radius-lg);
+  background-color: transparent;
+  color: var(--link-color);
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size-s);
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.015rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.cards-department .cards-department-toggle:hover {
+  background-color: #d4ebfe;
+}
+
+.cards-department .cards-department-toggle:active {
+  background-color: #a9d8fd;
+}
+
+.cards-department .cards-department-toggle:focus-visible {
+  outline: 2px solid var(--border-strong);
+  outline-offset: 2px;
+}
+
+/* collapsed on small screens: first 4 tiles only */
+@media (width < 673px) {
+  .cards-department:not(.is-expanded) .cards-department-card:nth-child(n + 5) {
+    display: none;
+  }
+
+  .cards-department:not(:has(.cards-department-card:nth-child(5))) .cards-department-actions {
+    display: none;
+  }
+}
+
+@media (width >= 673px) {
+  .cards-department {
+    /* source: 24px last-row padding + 16px wrapper padding + 20px next-module margin,
+       minus the 32px section gap */
+    padding-bottom: 28px;
+  }
+
+  .cards-department .cards-department-list {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+  }
+
+  .cards-department .cards-department-actions {
+    display: none;
+  }
+}
+
+@media (width >= 1057px) {
+  .cards-department .cards-department-list {
+    column-gap: 32px;
+  }
+}

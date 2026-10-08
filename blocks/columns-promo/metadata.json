@@ -1,0 +1,32 @@
+{
+  "variantName": "columns-promo",
+  "baseBlock": "columns",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "mixed",
+    "density": "moderate",
+    "purpose": "promo-banner-pair",
+    "imagePattern": "multiple",
+    "structure": "image + link | image + link",
+    "columns": "8/4",
+    "sourceColorScheme": "image",
+    "sourceDensity": "medium",
+    "sourceImagePattern": "wide-banner-baked-text"
+  },
+  "contentPattern": {
+    "structure": "Single row, 2 cells: cell 1 = linked HomeCare+ banner image + \"Get Details\" link; cell 2 = linked First Responders banner image."
+  },
+  "options": [],
+  "memberVariantIds": [],
+  "usage": {
+    "pagesUsing": [
+      {
+        "url": "https://www.lowes.com/",
+        "instanceId": null,
+        "screenshot": "migration-work/screenshot.png"
+      }
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2026-10-08T00:27:47.367Z"
+  }
+}

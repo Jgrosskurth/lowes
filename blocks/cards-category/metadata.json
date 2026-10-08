@@ -1,0 +1,32 @@
+{
+  "variantName": "cards-category",
+  "baseBlock": "cards",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "mixed",
+    "density": "dense",
+    "purpose": "popular-category-banners",
+    "imagePattern": "multiple",
+    "structure": "image + link",
+    "columns": 4,
+    "sourceColorScheme": "image-colored",
+    "sourceDensity": "compact",
+    "sourceImagePattern": "short-wide-banner-baked-label"
+  },
+  "contentPattern": {
+    "structure": "One row per banner (4 rows): cell 1 = image; cell 2 = link (category label as link text)."
+  },
+  "options": [],
+  "memberVariantIds": [],
+  "usage": {
+    "pagesUsing": [
+      {
+        "url": "https://www.lowes.com/",
+        "instanceId": null,
+        "screenshot": "migration-work/screenshot.png"
+      }
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2026-10-08T00:31:21.017Z"
+  }
+}

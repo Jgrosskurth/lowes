@@ -1,0 +1,31 @@
+{
+  "variantName": "carousel-thematic",
+  "baseBlock": "carousel",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "dense",
+    "purpose": "tabbed-thematic-product-carousel",
+    "imagePattern": "multiple",
+    "structure": "tabs + thematic image + product cards (image + brand + title + price + rating + add to cart)",
+    "sourceColorScheme": "light",
+    "sourceDensity": "dense",
+    "sourceImagePattern": "promo-panel + product-thumbs"
+  },
+  "contentPattern": {
+    "structure": "One block instance per tab. Row 1 = thematic panel: cell 1 = Gift Zone image, cell 2 = tab label as heading (\"Gift Zone\") + \"Shop All\" link. Rows 2..13 = products: cell 1 = product image, cell 2 = brand (bold) + title (linked to PDP), price, was-price (strikethrough) + savings, rating/review count, social-proof text, \"Add to Cart\" link. Consecutive instances in the section form the tab bar (\"Gift Zone\", \"Top Deals\")."
+  },
+  "options": [],
+  "memberVariantIds": [],
+  "usage": {
+    "pagesUsing": [
+      {
+        "url": "https://www.lowes.com/",
+        "instanceId": null,
+        "screenshot": "migration-work/screenshot.png"
+      }
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2026-10-08T00:30:55.018Z"
+  }
+}

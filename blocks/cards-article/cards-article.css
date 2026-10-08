@@ -1,0 +1,94 @@
+/* cards-article: values from the lowes.com "Explore More" grid (computed styles) */
+.cards-article .cards-article-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-sm);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cards-article .cards-article-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+}
+
+.cards-article .cards-article-card-image {
+  line-height: 0;
+}
+
+.cards-article .cards-article-card-image picture,
+.cards-article .cards-article-card-link {
+  display: block;
+}
+
+.cards-article .cards-article-card-link {
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+}
+
+.cards-article .cards-article-card-link:focus-visible {
+  outline-offset: 0;
+}
+
+/* the photo is shown at its natural aspect ratio (copy is baked into the art) */
+.cards-article .cards-article-card-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.cards-article .cards-article-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* text cards (title/description authored as text instead of baked into the photo) */
+.cards-article .cards-article-card-body {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  gap: var(--space-xs);
+  padding-top: var(--space-sm);
+}
+
+.cards-article .cards-article-card-body > * {
+  margin: 0;
+}
+
+.cards-article .cards-article-card-body ul {
+  padding-left: 20px;
+}
+
+.cards-article .cards-article-card-title {
+  font-size: var(--heading-font-size-m);
+  line-height: var(--heading-line-height-m);
+}
+
+/* CTA aligns to the bottom; its hit area stretches over the whole card */
+.cards-article .cards-article-card-cta {
+  margin-top: auto;
+}
+
+.cards-article .cards-article-card-cta a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+@media (width >= 673px) {
+  .cards-article .cards-article-list {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: var(--space-md);
+  }
+}

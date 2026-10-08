@@ -1,0 +1,31 @@
+{
+  "variantName": "carousel-product",
+  "baseBlock": "carousel",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "dense",
+    "purpose": "product-recommendation-carousel",
+    "imagePattern": "multiple",
+    "structure": "title + product cards (image + brand + title + price + rating + add to cart)",
+    "sourceColorScheme": "light",
+    "sourceDensity": "dense",
+    "sourceImagePattern": "product-thumbs"
+  },
+  "contentPattern": {
+    "structure": "Optional heading row (title), then one row per product: cell 1 = product image, cell 2 = brand + linked title, price, rating, \"Add to Cart\" link. Alternatively a single config row with recommendation slot id (lws_hp_recommendations_belowimage_0) for runtime population. Optional keyed rows: slot | <id>; pills | <list of filter pill labels> (rendered as a pill bar above the track, first selected)."
+  },
+  "options": [],
+  "memberVariantIds": [],
+  "usage": {
+    "pagesUsing": [
+      {
+        "url": "https://www.lowes.com/",
+        "instanceId": null,
+        "screenshot": "migration-work/screenshot.png"
+      }
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2026-10-08T00:33:12.651Z"
+  }
+}

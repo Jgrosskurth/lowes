@@ -1,0 +1,31 @@
+{
+  "variantName": "carousel-deals",
+  "baseBlock": "carousel",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "dense",
+    "purpose": "deal-cards-carousel",
+    "imagePattern": "multiple",
+    "structure": "horizontal carousel of deal cards (3 visible on desktop); each card = header (title + View All link) + 2x2 quadrant of mini product tiles (image, savings badge, price, was-price, rating/reviews); 1-2 tile cards use a pair layout (image beside name, price, rating, Add to Cart)",
+    "sourceColorScheme": "light",
+    "sourceDensity": "dense",
+    "sourceImagePattern": "product-thumbs"
+  },
+  "contentPattern": {
+    "structure": "One row per card. Cell 1 = card title (heading, bold or paragraph) + \"View All\" link. Cell 2 = product tiles: each tile starts at an image linked to the PDP (img alt and link title = product name) followed by optional lines: \"Save NN%\" badge, price \"$48.32\" with optional <del>$64.42</del> was-price, \"This item is currently unavailable\" note, rating/review count (\"392\", \"8.6K\", \"4.4 stars (392)\"), optional product name line and \"Add to Cart\" link. 3-4 tiles = 2x2 quadrant; 1-2 tiles = pair layout. Optional first row with only a heading = block title"
+  },
+  "options": [],
+  "memberVariantIds": [],
+  "usage": {
+    "pagesUsing": [
+      {
+        "url": "https://www.lowes.com/",
+        "instanceId": null,
+        "screenshot": null
+      }
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2026-10-08T00:00:00.000Z"
+  }
+}

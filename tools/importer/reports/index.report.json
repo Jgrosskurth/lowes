@@ -1,0 +1,22 @@
+{
+  "status": "success",
+  "url": "https://www.lowes.com/",
+  "path": "index",
+  "timestamp": "2026-10-08T12:12:19.202Z",
+  "title": "Lowe’s Home Improvement",
+  "template": "home",
+  "blocks": [
+    "carousel-pills",
+    "carousel-hero",
+    "cards-promo",
+    "columns-promo",
+    "widget-weather",
+    "carousel-thematic",
+    "cards-category",
+    "cards-department",
+    "cards-article",
+    "carousel-deals",
+    "carousel-product",
+    "carousel-product"
+  ]
+}

@@ -1,0 +1,88 @@
+/*
+ * Popular Categories: short, wide banners with the label baked into the artwork.
+ * Source grid: 2 columns below 673px, 4 columns from 673px; 30px between banners,
+ * 20px between rows; banners are inset 3px from the container (source column math).
+ */
+.cards-category {
+  /* source: 20px column margin + 16px grid margin below the row, minus the 32px section gap */
+  padding-bottom: 4px;
+}
+
+.cards-category .cards-category-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px 30px;
+  margin: 0;
+  padding: 0 1px;
+  list-style: none;
+}
+
+.cards-category .cards-category-card {
+  position: relative;
+  border-radius: var(--radius-lg);
+}
+
+.cards-category .cards-category-card-image {
+  line-height: 0;
+}
+
+.cards-category .cards-category-card-image a {
+  display: block;
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+}
+
+.cards-category .cards-category-card-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+
+  /* source placeholder box: padding-top 21.7287% (833 x 181 artwork) */
+  aspect-ratio: 833 / 181;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+}
+
+/* mobile art direction: the taller "-mow" artwork (~15:8) keeps its own aspect ratio */
+@media (width < 576px) {
+  .cards-category .cards-category-card.has-mobile-image .cards-category-card-image img {
+    aspect-ratio: auto;
+  }
+}
+
+.cards-category .cards-category-card-label > * {
+  margin: 0;
+}
+
+/* label baked into the banner image: keep it for assistive tech only */
+.cards-category .cards-category-card.has-image .cards-category-card-label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.cards-category .cards-category-card.has-image:focus-within {
+  outline: 2px solid var(--link-color);
+  outline-offset: 2px;
+}
+
+.cards-category .cards-category-card:not(.has-image) .cards-category-card-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 56px;
+  padding: 8px 16px;
+  border: 1px solid var(--border-subdued);
+  border-radius: var(--radius-lg);
+  text-align: center;
+}
+
+@media (width >= 673px) {
+  .cards-category .cards-category-list {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    padding: 0 3px;
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "variantName": "carousel-hero",
+  "baseBlock": "carousel",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "mixed",
+    "density": "minimal",
+    "purpose": "homepage-hero-rotator",
+    "imagePattern": "large",
+    "structure": "image + optional details link + pause + dots",
+    "sourceColorScheme": "image",
+    "sourceDensity": "spacious",
+    "sourceImagePattern": "full-bleed-banner"
+  },
+  "contentPattern": {
+    "structure": "One row per slide (5 rows): cell 1 = linked hero image; cell 2 (optional) = \"Get Details\" link/text for the offer-details disclosure."
+  },
+  "options": [],
+  "memberVariantIds": [],
+  "usage": {
+    "pagesUsing": [
+      {
+        "url": "https://www.lowes.com/",
+        "instanceId": null,
+        "screenshot": "migration-work/screenshot.png"
+      }
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2026-10-08T00:26:35.159Z"
+  }
+}

@@ -10,7 +10,10 @@ import {
   loadSections,
   loadCSS,
   buildBlock,
+  toCamelCase,
+  toClassName,
 } from './aem.js';
+import { addMobileSources, extractMobileImage } from './mobile-image.js';
 
 if (window.trustedTypes && window.trustedTypes.createPolicy) {
   const innerTT = window.trustedTypes.createPolicy('tt-inner', {
@@ -70,6 +73,31 @@ function buildWidgetAutoBlocks(main) {
     } else {
       link.replaceWith(widgetBlock);
     }
+  });
+}
+
+/**
+ * Applies unconverted section-metadata (e.g. raw local content) to its section.
+ * The delivery pipeline normally converts these server-side, so this is a no-op there.
+ * @param {Element} main The container element
+ */
+function applySectionMetadata(main) {
+  main.querySelectorAll(':scope > div > div.section-metadata').forEach((meta) => {
+    const section = meta.parentElement;
+    [...meta.children].forEach((row) => {
+      const [keyCell, valueCell] = row.children;
+      if (!keyCell || !valueCell) return;
+      const key = toClassName(keyCell.textContent);
+      const value = valueCell.textContent.trim();
+      if (!key || !value) return;
+      if (key === 'style') {
+        value.split(',').map((s) => toClassName(s)).filter(Boolean)
+          .forEach((cls) => section.classList.add(cls));
+      } else {
+        section.dataset[toCamelCase(key)] = value;
+      }
+    });
+    meta.remove();
   });
 }
 
@@ -143,6 +171,29 @@ function decorateButtons(main) {
 }
 
 /**
+ * Mobile art direction for default-content banners (sponsored banner, hero split tile):
+ * a paragraph made up of exactly two images is merged into one responsive picture,
+ * the second image being the mobile (< 576px) variant.
+ * @param {Element} main The main element
+ */
+function decorateDefaultContentMobileImages(main) {
+  const selector = ['sponsored-banner', 'hero-split']
+    .map((style) => `.section.${style} > .default-content-wrapper > p`).join(', ');
+  main.querySelectorAll(selector).forEach((p) => {
+    if (p.textContent.trim()) return;
+    const pair = extractMobileImage(p);
+    if (!pair) return;
+    let picture = pair.desktop.closest('picture');
+    if (!picture) {
+      picture = document.createElement('picture');
+      pair.desktop.replaceWith(picture);
+      picture.append(pair.desktop);
+    }
+    addMobileSources(picture, pair.mobile.src);
+  });
+}
+
+/**
  * Decorates the main element.
  * @param {Element} main The main element
  */
@@ -150,7 +201,9 @@ function decorateButtons(main) {
 export function decorateMain(main) {
   decorateIcons(main);
   buildAutoBlocks(main);
+  applySectionMetadata(main);
   decorateSections(main);
+  decorateDefaultContentMobileImages(main);
   decorateBlocks(main);
   decorateButtons(main);
 }

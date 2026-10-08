@@ -1,0 +1,302 @@
+/*
+ * widget-weather: "Plan your day and your next project!"
+ * Values from the source WeatherWidgetSlim computed styles
+ * (migration-work/widget-weather-extracted.css). Source breakpoint: 768px.
+ */
+
+.widget-weather {
+  --widget-weather-sky: #f0f8ff;
+  --widget-weather-sky-border: #d4ebfe;
+  --widget-weather-icon-cart: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M.5 2h2.3l1.9 7.5h8l1.8-5.7H3.7' fill='none' stroke='%23000' stroke-width='1.4' stroke-linejoin='round'/%3E%3Cpath d='M5 12.6h7.6' fill='none' stroke='%23000' stroke-width='1.6' stroke-linecap='round'/%3E%3C/svg%3E");
+  --widget-weather-icon-book: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M8 3.6C6.5 2.4 4 2 1 2.4v10.4c3-.4 5.5 0 7 1.2 1.5-1.2 4-1.6 7-1.2V2.4C12 2 9.5 2.4 8 3.6Zm0 0V14' fill='none' stroke='%23000' stroke-width='1.3' stroke-linejoin='round'/%3E%3C/svg%3E");
+  --widget-weather-icon-arrow: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M1 8h13.5M9.5 3l5 5-5 5' fill='none' stroke='%23000' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+
+  color: var(--text-color);
+}
+
+/* section heading ("Plan your day and your next project!"): source h3 is 24px/32px at all widths */
+.widget-weather-container .default-content-wrapper h3 {
+  margin-bottom: 12px;
+  color: var(--text-secondary-color);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+/* layout: forecast above project ideas (mobile), side by side from 768px */
+.widget-weather .widget-weather-panels {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.widget-weather .widget-weather-panel {
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+.widget-weather .widget-weather-panel p {
+  margin: 0;
+}
+
+/* forecast card */
+.widget-weather .widget-weather-forecast {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid var(--widget-weather-sky-border);
+  border-radius: var(--radius-lg);
+  background-color: var(--widget-weather-sky);
+  overflow: hidden;
+}
+
+.widget-weather .widget-weather-forecast-content {
+  margin-bottom: var(--space-xs);
+  padding-bottom: var(--space-xs);
+  border-bottom: 2px solid var(--widget-weather-sky-border);
+}
+
+.widget-weather .widget-weather-forecast-content > * {
+  margin: 0;
+}
+
+.widget-weather .widget-weather-forecast-content > * + * {
+  margin-top: var(--space-xs);
+}
+
+.widget-weather .widget-weather-title {
+  color: var(--brand-navy);
+  font-size: var(--body-font-size-m);
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.widget-weather .widget-weather-title strong {
+  font-weight: inherit;
+}
+
+/* stands in for the live 4-day forecast (same height as the source forecast body) */
+.widget-weather .widget-weather-placeholder {
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  justify-content: center;
+  min-height: 112px;
+  color: var(--text-secondary-color);
+  font-size: var(--body-font-size-m);
+  line-height: 24px;
+  text-align: center;
+}
+
+/* project ideas: horizontally scrolling cards */
+.widget-weather .widget-weather-projects {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.widget-weather .widget-weather-carousel {
+  position: relative;
+}
+
+.widget-weather .widget-weather-project-list {
+  display: flex;
+  gap: var(--space-sm);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.widget-weather .widget-weather-project-list::-webkit-scrollbar {
+  display: none;
+}
+
+.widget-weather .widget-weather-project {
+  display: flex;
+  flex: 0 0 190px;
+  flex-direction: column;
+  min-width: 0;
+  border-radius: var(--radius-lg);
+  scroll-snap-align: start;
+}
+
+.widget-weather .widget-weather-project-image {
+  line-height: 0;
+}
+
+.widget-weather .widget-weather-project-image a {
+  display: block;
+}
+
+.widget-weather .widget-weather-project-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 190 / 106;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  object-fit: cover;
+}
+
+.widget-weather .widget-weather-project-body {
+  display: flex;
+  flex: 1 1 100%;
+  flex-direction: column;
+}
+
+.widget-weather .widget-weather-project-body > * {
+  margin: 0;
+}
+
+.widget-weather .widget-weather-project-title {
+  display: -webkit-box;
+  min-height: 48px;
+  margin: var(--space-xs) 0 0;
+  overflow: hidden;
+  color: var(--text-color);
+  font-size: var(--body-font-size-m);
+  font-weight: 600;
+  line-height: 24px;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.widget-weather .widget-weather-project-body > .widget-weather-project-cta {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+  padding: var(--space-xs) 0 12px;
+}
+
+.widget-weather a.widget-weather-project-link:any-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  color: var(--link-color);
+  font-size: var(--body-font-size-m);
+  font-weight: 600;
+  line-height: 24px;
+  text-decoration: underline;
+}
+
+.widget-weather a.widget-weather-project-link:hover {
+  color: var(--link-hover-color);
+}
+
+.widget-weather .widget-weather-project-link-shop::before,
+.widget-weather .widget-weather-project-link-article::before {
+  content: '';
+  flex: 0 0 16px;
+  width: 16px;
+  height: 16px;
+  background-color: currentcolor;
+  mask: var(--widget-weather-icon-cart) center / contain no-repeat;
+}
+
+.widget-weather .widget-weather-project-link-article::before {
+  mask-image: var(--widget-weather-icon-book);
+}
+
+/* previous / next buttons, vertically centred on the card row */
+.widget-weather .widget-weather-nav {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  padding: 8px;
+  border: 1px solid #fff;
+  border-radius: 128px;
+  background-color: #fff;
+  box-shadow: rgb(0 0 0 / 20%) 0 2px 4px 0, rgb(0 0 0 / 14%) 0 4px 5px 0, rgb(0 0 0 / 12%) 0 1px 10px 0;
+  color: var(--link-color);
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.widget-weather .widget-weather-nav[hidden] {
+  display: none;
+}
+
+.widget-weather .widget-weather-nav::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  background-color: currentcolor;
+  mask: var(--widget-weather-icon-arrow) center / contain no-repeat;
+}
+
+.widget-weather .widget-weather-nav-prev {
+  left: 0;
+}
+
+.widget-weather .widget-weather-nav-prev::before {
+  transform: scaleX(-1);
+}
+
+.widget-weather .widget-weather-nav-next {
+  right: 0;
+}
+
+/* scroll position indicator */
+.widget-weather .widget-weather-scrollbar {
+  display: none;
+  position: relative;
+  height: 4px;
+  margin-top: 10px;
+  border-radius: 128px;
+  background-color: var(--surface-subdued);
+  overflow: hidden;
+}
+
+.widget-weather .is-scrollable > .widget-weather-scrollbar {
+  display: block;
+}
+
+.widget-weather .widget-weather-scrollbar-thumb {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: calc(var(--thumb-size, 1) * 100%);
+  border-radius: 128px;
+  background-color: var(--link-color);
+  transform: translateX(calc(var(--thumb-offset, 0) / var(--thumb-size, 1) * 100%));
+}
+
+@media (width >= 768px) {
+  .widget-weather-container .default-content-wrapper h3 {
+    margin-bottom: var(--space-sm);
+  }
+
+  /* forecast (fixed 390px) + project ideas (remaining width) */
+  .widget-weather .widget-weather-panels {
+    flex-direction: row;
+  }
+
+  .widget-weather .widget-weather-forecast {
+    flex: 0 0 390px;
+    padding: var(--space-md);
+  }
+
+  .widget-weather.widget-weather-single .widget-weather-forecast {
+    flex: 1 1 auto;
+  }
+
+  .widget-weather .widget-weather-projects {
+    flex: 1 1 auto;
+  }
+
+  .widget-weather .widget-weather-forecast-content {
+    margin-bottom: var(--space-sm);
+    padding-bottom: var(--space-sm);
+  }
+
+  .widget-weather .widget-weather-placeholder {
+    min-height: 144px;
+  }
+}

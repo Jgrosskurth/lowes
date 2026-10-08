@@ -1,0 +1,12 @@
+{
+  "type": "da",
+  "sites": {
+    "lowes": {
+      "previewOrg": "Jgrosskurth",
+      "previewSite": "lowes",
+      "contentHostUrl": "https://content.da.live/jgrosskurth/lowes/",
+      "botProtected": true,
+      "libraryUrl": "https://main--sta-boilerplate--aemdemos.aem.page/tools/sidekick/library.json"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "variantName": "cards-article",
+  "baseBlock": "cards",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "moderate",
+    "purpose": "editorial-how-to-cards",
+    "imagePattern": "multiple",
+    "structure": "image + heading + description + text link",
+    "columns": 4,
+    "sourceColorScheme": "light",
+    "sourceDensity": "medium",
+    "sourceImagePattern": "photo-top"
+  },
+  "contentPattern": {
+    "structure": "One row per article (4 rows): cell 1 = photo; cell 2 = H3 title, description paragraph (or bullet list), CTA link (\"Learn More\"/\"Get Started\")."
+  },
+  "options": [],
+  "memberVariantIds": [],
+  "usage": {
+    "pagesUsing": [
+      {
+        "url": "https://www.lowes.com/",
+        "instanceId": null,
+        "screenshot": "migration-work/screenshot.png"
+      }
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2026-10-08T00:32:28.861Z"
+  }
+}

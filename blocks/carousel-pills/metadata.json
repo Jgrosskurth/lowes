@@ -1,0 +1,31 @@
+{
+  "variantName": "carousel-pills",
+  "baseBlock": "carousel",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "dense",
+    "purpose": "search-suggestion-strip",
+    "imagePattern": "noimg",
+    "structure": "link pill + arrow scroll",
+    "sourceColorScheme": "light",
+    "sourceDensity": "compact",
+    "sourceImagePattern": "noimg"
+  },
+  "contentPattern": {
+    "structure": "One row per pill: single cell containing the search term as a link (no image column)."
+  },
+  "options": [],
+  "memberVariantIds": [],
+  "usage": {
+    "pagesUsing": [
+      {
+        "url": "https://www.lowes.com/",
+        "instanceId": null,
+        "screenshot": "migration-work/screenshot.png"
+      }
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2026-10-08T00:25:06.388Z"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "variantName": "cards-department",
+  "baseBlock": "cards",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "dense",
+    "purpose": "department-icon-tiles",
+    "imagePattern": "icon",
+    "structure": "icon image + label link + show more",
+    "columns": 8,
+    "sourceColorScheme": "light-bordered",
+    "sourceDensity": "dense",
+    "sourceImagePattern": "icon-tile"
+  },
+  "contentPattern": {
+    "structure": "One row per department (24 rows): cell 1 = icon tile image; cell 2 = department link with label. \"Show More\" is rendered by block JS (collapse after first N rows), not authored."
+  },
+  "options": [],
+  "memberVariantIds": [],
+  "usage": {
+    "pagesUsing": [
+      {
+        "url": "https://www.lowes.com/",
+        "instanceId": null,
+        "screenshot": "migration-work/screenshot.png"
+      }
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2026-10-08T00:32:03.522Z"
+  }
+}

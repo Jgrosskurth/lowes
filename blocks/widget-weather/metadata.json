@@ -1,0 +1,31 @@
+{
+  "variantName": "widget-weather",
+  "baseBlock": "widget",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "moderate",
+    "purpose": "local-weather-planner",
+    "imagePattern": "noimg",
+    "structure": "dynamic widget link",
+    "sourceColorScheme": "light-grey-panels",
+    "sourceDensity": "medium",
+    "sourceImagePattern": "noimg"
+  },
+  "contentPattern": {
+    "structure": "Optional config row (link to /widgets/weather/weather.html, config via query params, e.g. ?layout=slim); optional forecast row (title, e.g. 'Your Local Weather'; live forecast is runtime only); project idea rows: cell 1 = image, cell 2 = title (h4) + link ('Read Article' / 'Shop Now')."
+  },
+  "options": [],
+  "memberVariantIds": [],
+  "usage": {
+    "pagesUsing": [
+      {
+        "url": "https://www.lowes.com/",
+        "instanceId": null,
+        "screenshot": "migration-work/screenshot.png"
+      }
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2026-10-08T00:28:34.443Z"
+  }
+}

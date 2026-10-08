@@ -1,0 +1,83 @@
+/*
+ * Lowe's brand tokens, taken from the source site's BDS design-system custom properties
+ * (migration-work/design-source/lowes-tokens.json).
+ */
+:root {
+  /* fonts */
+  --heading-font-family: fellix, fellix-fallback, arial, sans-serif;
+  --body-font-family: fellix, fellix-fallback, arial, sans-serif;
+
+  /* core colors */
+  --background-color: #fff;
+  --text-color: #17191f;
+  --text-secondary-color: rgb(23 25 31 / 80%);
+  --link-color: #0072ce;
+  --link-hover-color: #005ba5;
+  --brand-navy: #012169;
+  --brand-blue: #004990;
+  --action-green: #007a33;
+  --action-green-hover: #004b1d;
+  --action-green-pressed: #003113;
+  --action-green-subdued: #d4f7e3;
+  --action-red: #971b2f;
+  --surface-subdued: #f4f6fa;
+  --border-subdued: #cbd1dd;
+  --border-strong: #616670;
+  --muted-text-color: rgb(0 0 0 / 54%);
+  --rating-color: #f3b51b;
+
+  /* radius */
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
+  --radius-pill: 20px;
+
+  /* spacing (BDS scale) */
+  --space-xxs: 4px;
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space-md: 24px;
+  --space-lg: 40px;
+  --space-xl: 56px;
+
+  /* layout: fluid container, gutters per breakpoint */
+  --gutter: 16px;
+  --section-gap: 32px;
+
+  /* heading sizes (BDS h1-h4 mobile; desktop overrides below) */
+  --heading-font-size-xxl: 28px;
+  --heading-line-height-xxl: 40px;
+  --heading-font-size-xl: 24px;
+  --heading-line-height-xl: 32px;
+  --heading-font-size-l: 20px;
+  --heading-line-height-l: 32px;
+  --heading-font-size-m: 16px;
+  --heading-line-height-m: 24px;
+  --heading-font-size-s: 16px;
+  --heading-font-size-xs: 14px;
+
+  /* body sizes */
+  --body-font-size-m: 16px;
+  --body-font-size-s: 14px;
+  --body-font-size-xs: 12px;
+}
+
+@media (width >= 1057px) {
+  :root {
+    --gutter: 56px;
+    --heading-font-size-xxl: 40px;
+    --heading-line-height-xxl: 56px;
+    --heading-font-size-xl: 28px;
+    --heading-line-height-xl: 40px;
+    --heading-font-size-l: 24px;
+    --heading-line-height-l: 32px;
+    --heading-font-size-m: 20px;
+    --heading-line-height-m: 32px;
+  }
+}
+
+@media (width >= 1680px) {
+  :root {
+    --gutter: 80px;
+  }
+}
