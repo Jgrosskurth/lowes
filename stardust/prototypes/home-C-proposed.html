@@ -3,25 +3,25 @@
 <head>
 <!-- stardust:provenance
   writtenBy:         stardust:prototype (render delegated to impeccable craft; built by stardust/.work/prototype/build.mjs from captured content)
-  writtenAt:         2026-10-08T17:00:10.162Z
+  writtenAt:         2026-10-08T17:11:17.697Z
   page:              home
-  variant:           B
+  variant:           C
   pageUrl:           https://main--lowes--jgrosskurth.aem.live/
   againstDirection:  stardust/direction.md (Active 2026-10-08T16:00:00Z)
-  shapeBrief:        stardust/prototypes/home-B-shape.md
+  shapeBrief:        stardust/prototypes/home-C-shape.md
   readArtifacts:
     - stardust/current/pages/home.json (landmarks, rasterCopy, iconMap)
     - stardust/.work/prototype/content.json (parsed from stardust/current/pages/home.html)
-    - DESIGN.md / DESIGN.json / DESIGN-B.md / DESIGN-B.json
+    - DESIGN.md / DESIGN.json / DESIGN-C.md / DESIGN-C.json
   divergenceVersion: v1.0 (stardust v2)
   fontDeck:          brand-inherited (Fellix 400/600, static woff from www.lowescdn.com)
   paletteSource:     inherited from _brand-extraction.json (Mode A)
   reflexRejectAudit: { bypassed: "Mode A — captured family Fellix pinned (Discipline 6)" }
-  variableAxes:      "Discipline 7 static-only-family exemption — Fellix ships static .woff (no fvar); documented in DESIGN-B.json extensions.divergence.font_deck.notes"
+  variableAxes:      "Discipline 7 static-only-family exemption — Fellix ships static .woff (no fvar); documented in DESIGN-C.json extensions.divergence.font_deck.notes"
   copyCadenceBypass: { rules: ["em-dash-overuse", "marketing-buzzword"], basis: "captured-verbatim copy per shape brief voiceClassification (Discipline 9)" }
   imagePolicy:       "captured images reused at semantic positions via their public aem.live URLs (width param raised for density); crops below baked raster copy per improvement 1"
   unsourcedContent:  [{"selector":"footer [data-placeholder]","type":"other","reason":"Lowe's legal line + legal links; captured footer is AEM boilerplate (Adobe copyright, adobe.com links)"}]
-  variantDeclaration: "amplifies the Fellix SemiBold display register (captured only in rasters) in service of Brand Personality 'Deal-forward'"
+  role:              "static reference for variant C — identical IA/composition to A by the uplift role contract; the motion layer ships in home-C-cinematic.html"
   canonFrom:         stardust/prototypes/home-A-proposed.html
   stardustVersion:   0.14.0
 -->
@@ -32,17 +32,17 @@
 <meta name="description" content="Shop tools, appliances, building supplies, carpet, bathroom, lighting and more. Pros can take advantage of Pro offers, credit and business resources.">
 <style>
 :root {
-  /* token contract — DESIGN.md (shared) / DESIGN-B.md */
+  /* token contract — DESIGN.md (shared) / DESIGN-C.md */
   --heading-font-family: fellix, fellix-fallback, arial, sans-serif;
   --body-font-family: fellix, fellix-fallback, arial, sans-serif;
-  --heading-xxl: clamp(88px, 10vw, 144px);
-  --display-numeral: clamp(88px, 10vw, 144px);
-  --heading-xl: 72px;
-  --heading-lg: 40px;
-  --heading-md: 24px;
+  --heading-xxl: 56px;
+  --display-numeral: 96px;
+  --heading-xl: 40px;
+  --heading-lg: 28px;
+  --heading-md: 20px;
   --body: 16px;
   --body-sm: 14px;
-  --line-height-heading: 1.05;
+  --line-height-heading: 1.2;
   --line-height-body: 1.5;
   /* ground */ --color-bg: #ffffff;
   /* ink */ --color-fg: #17191f;
@@ -396,120 +396,15 @@ main > section:first-child { padding-top: 24px; }
   .h-sec { font-size: 20px; line-height: 30px; margin-bottom: 16px; }
   .proj-t { font-size: 16px; line-height: 22px; }
 }
-/* ---------- variant B: display register ---------- */
-:root { --display-offer: 104px; }
-.po { display: inline-grid; grid-template-rows: auto auto; vertical-align: top; margin-left: .04em; line-height: .9; }
-.po .pct { font-size: .42em; vertical-align: 0; margin: .08em 0 0; }
-.po-off { font-size: .27em; letter-spacing: 0; }
-.bb-mid { font-size: var(--heading-xl); line-height: .9; letter-spacing: -.03em; font-weight: 600; }
-.h-sec { font-size: var(--heading-lg); line-height: 44px; letter-spacing: -.015em; }
-.pct { font-size: .62em; vertical-align: .32em; margin-left: .02em; letter-spacing: 0; }
-.bb-lead { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, .8fr) minmax(0, .9fr); grid-template-rows: auto auto; align-items: end; gap: 0 32px; padding: 40px 40px 0; background: var(--color-accent); color: var(--white); border-radius: var(--radius); overflow: hidden; }
-.bb-lead-main { display: grid; gap: 12px; align-self: start; justify-items: start; }
-.bb-h1 { display: grid; justify-items: start; margin: 0; }
-.bb-pre { grid-column: 1 / -1; font-size: 28px; line-height: 1; }
-.bb-num { font-size: var(--display-numeral); line-height: .82; letter-spacing: -.035em; font-weight: 600; }
-.bb-what { grid-column: 1 / -1; margin-top: 16px; font-size: var(--heading-lg); line-height: 44px; letter-spacing: -.015em; }
-.bb-lead-side { display: grid; gap: 16px; align-self: start; padding-top: 48px; }
-.bb-adds { display: grid; gap: 14px; }
-.bb-adds li { font-weight: 600; line-height: 26px; font-size: 20px; padding-left: 20px; position: relative; }
-.bb-adds li::before { content: "+"; position: absolute; left: 0; font-weight: 700; }
-.bb-adds strong { font-size: 28px; }
-.bb-adds small { font-weight: 400; font-size: var(--body-sm); }
-.bb-big sup, .bb-mid sup { font-size: .45em; vertical-align: .95em; }
-.bb-cut { align-self: center; }
-.bb-cut .crop { border-radius: var(--radius); background: var(--white); }
-.bb-members { margin: 32px -40px 0; padding-left: 40px; padding-right: 40px; grid-column: 1 / -1; }
-.bb-member-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 24px; padding-top: 24px; }
-.bb-money { border-radius: var(--radius); overflow: hidden; background: var(--mist); }
-.bb-money .money-band { margin: 0; }
-.bb-money-in { display: grid; grid-template-columns: auto 1fr; gap: 24px; align-items: center; padding: 20px 28px 28px; }
-.bb-num-m { color: var(--color-accent); }
-.bb-money-in div { display: grid; gap: 8px; }
-.bb-tile-h { font-size: var(--heading-md); line-height: 30px; color: var(--navy); margin: 0; }
-.bb-splash { display: grid; grid-template-columns: 180px 1fr; gap: 20px; align-items: center; padding: 16px; border: 1px solid var(--rule); border-radius: var(--radius); }
-.bb-splash .crop { border-radius: var(--radius); }
-.bb-splash > div:last-child { display: grid; gap: 10px; }
-.bb-board { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
-.bb-tile { display: grid; gap: 8px; align-content: start; height: 100%; padding: 28px 28px 24px; border: 1px solid var(--rule); border-radius: var(--radius); }
-.bb-tile-top { display: grid; grid-template-columns: 1fr 168px; gap: 20px; align-items: end; }
-.bb-tile-num { display: grid; justify-items: start; row-gap: 10px; margin: 0; color: var(--navy); }
-.bb-tile-num .tag { margin-bottom: 0; }
-.bb-tile-num .bb-pre { font-size: var(--heading-md); line-height: 1.2; }
-.bb-big { font-size: var(--display-offer); line-height: .86; letter-spacing: -.04em; font-weight: 600; }
-.bb-sq .crop { border-radius: var(--radius); background: var(--well); }
-.bb-line { font-size: var(--heading-md); line-height: 30px; font-weight: 600; margin-top: 12px; }
-.bb-tile .link { margin-top: 8px; justify-self: start; }
-.bb-season { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; margin-top: 24px; }
-.bb-s { display: grid; grid-template-rows: auto 1fr; gap: 14px; height: 100%; padding: 0 0 18px; overflow: hidden; border: 1px solid var(--rule); border-radius: var(--radius); }
-.bb-s-ph .crop { border-radius: var(--radius); }
-.bb-s-copy { display: flex; flex-direction: column; gap: 6px; padding: 0 18px; }
-.bb-s-copy .link { margin-top: auto; padding-top: 6px; }
-.bb-s-copy h3 { font-size: 20px; line-height: 26px; color: var(--navy); margin: 0; }
-.bb-s-copy p:not(.tag) { font-size: var(--body-sm); }
-.bb-s-copy .tag { align-self: flex-start; }
-.bb-spon-head { display: flex; align-items: flex-end; gap: 12px; }
-.bb-spon-pre { font-size: 28px; line-height: 1.1; font-weight: 600; padding-bottom: 8px; }
-.bb-spon-n { color: var(--white); }
-.bb-spon { min-height: 190px; }
-.bb-hc { display: grid; grid-template-columns: 240px 1fr; }
-.bb-hc-n { display: grid; align-content: start; gap: 8px; padding: 28px 0 28px 32px; }
-.bb-hc-price { display: grid; gap: 14px; line-height: 1; margin-top: 8px; }
-.bb-hc-just { font-size: var(--body); }
-.bb-hc-line { display: flex; align-items: baseline; gap: 8px; }
-.bb-hc-yr { font-size: 28px; font-weight: 600; }
-.bb-resp { grid-template-columns: auto 1fr; align-items: start; }
-.bb-resp-n { padding: 28px 0 0 28px; color: var(--navy); }
-.bb-resp .svc-copy { padding-left: 20px; }
-.h-panel { font-size: var(--heading-md); line-height: 30px; }
-.bb-save { margin: 0; color: var(--cart); font-weight: 600; line-height: 1; }
-.bb-save-l { font-size: var(--body-sm); margin-right: 4px; }
-.bb-save-n { font-size: 40px; letter-spacing: -.02em; }
-.bb-save-n .pct { font-size: .55em; vertical-align: .55em; }
-.price { font-size: 40px; line-height: 40px; letter-spacing: -.02em; }
-.price sup { font-size: 16px; vertical-align: 18px; }
-@media (max-width: 1024px) {
-  .bb-lead { grid-template-columns: 1fr 1fr; }
-  .bb-lead-main { grid-column: 1 / -1; }
-  .bb-lead-side { padding-top: 24px; }
-  .bb-member-grid, .bb-board { grid-template-columns: 1fr; }
-  .bb-season { grid-template-columns: 1fr 1fr; }
-  .bb-hc { grid-template-columns: 1fr; }
-  .bb-hc-n { padding: 28px 32px 0; }
-}
-@media (max-width: 640px) {
-  .bb-lead { grid-template-columns: 1fr; padding: 24px 20px 0; }
-  .bb-pre { font-size: 20px; }
-  .bb-what { font-size: 28px; line-height: 34px; }
-  .bb-members { margin: 24px -20px 0; padding-left: 20px; padding-right: 20px; }
-  .bb-cut { margin-top: 20px; }
-  .bb-money-in { grid-template-columns: 1fr; gap: 12px; }
-  .bb-splash { grid-template-columns: 96px 1fr; }
-  .bb-tile { padding: 20px; }
-  .bb-tile-top { grid-template-columns: 1fr 104px; gap: 12px; }
-  .bb-big { font-size: var(--display-numeral); }
-  :root { --display-offer: 88px; }
-  .bb-hc-price .bb-big { font-size: 96px; }
-  .bb-resp-n { padding: 20px 0 0 20px; }
-  .bb-resp .svc-copy { padding: 20px; }
-  .bb-resp { grid-template-columns: 1fr; }
-  .bb-line { font-size: var(--body); line-height: 24px; }
-  .bb-season { grid-template-columns: 1fr 1fr; gap: 12px; }
-  .bb-s-copy { padding: 0 12px; }
-  .bb-s-copy h3 { font-size: 16px; line-height: 22px; }
-  .h-sec { font-size: 28px; line-height: 34px; }
-  .bb-save { font-size: 28px; }
-  .price { font-size: 28px; line-height: 32px; }
-}
 </style>
 </head>
 <body>
 <!-- DIRECTION CONTRACT (impeccable new-work § 5)
-THESIS: What if Lowe's deal numerals — locked inside banner art today — came out as live Fellix type and became the page's structural voice? Refuses the photo-banner hero and the badge-sized discount.
-OWN-WORLD: Same Lowe’s world as A (white ground, navy chrome, Lowe’s Blue, Cart Green only on cart/savings, Fellix 400/600, 8px / 20px), with a drenched display scale: offer numerals 88–144px, section titles 40px, prices 40px.
-STORY: Visitor reads the deal as a number first — 35%, $20, 65%, $120, $99, Save 25% — then the qualifier, then one action; browsing sections stay canon from A.
-FIRST VIEWPORT: Header router, then a full-width Lowe’s Blue billboard: "Up to 35% off" at display-numeral left, the $600 / $100 add-ons and "Shop All Deals" middle, product cutout right; member strip beneath; MyLowe’s Money "$20" tile + backsplash tile peeking at the fold.
-FORM: Split billboard tiles — position 3 of the grounded list (weekly-ad numeral wall / numeral ledger / split billboard tiles / department index / price-tag shelf / countdown); surface seed key 4e3589f7 assigned index 3; challengers fused poorly with Mode A pins. Staging: static.
+THESIS: What if Lowe's tile grid — departments, categories, deal panels — became the moving part of the page instead of rails that slide content out of sight? Refuses scroll-cinema parallax, tickers and letter reveals.
+OWN-WORLD: A’s Lowe’s world unchanged (white ground, navy chrome, Lowe’s Blue, Cart Green, Fellix, 8px / 20px) plus the kinetic-grid motion vocabulary: cascade, lift, sliding indicator, drawn focus ring, cart sheen.
+STORY: The page assembles like a well-stocked aisle as you scroll — tiles settle row by row, cards lift under the pointer, the category indicator slides to the aisle you point at; the offer itself never moves.
+FIRST VIEWPORT: Identical to A: header router and the Lowe’s Blue lead offer; the hero stays still (LCP + "operational hierarchy stays still"); the search field’s focus ring draws in on focus.
+FORM: Brief-pinned (C = A’s IA by uplift contract; motion register kinetic-grid from direct). Staging: scroll-progress cascade via the canonical stardust runtime + Lenis.
 FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
 -->
 
@@ -545,51 +440,43 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     </nav>
   </header>
   <main id="main" data-template="landing">
-    <section class="bb-hero" id="hero" data-section="hero" data-intent="lead offer" data-layout="type-led" data-items="1" data-media="image" aria-labelledby="hero-h">
-      <div class="wrap">
-        <article class="bb-lead">
-          <div class="bb-lead-main">
+    <section class="hero" id="hero" data-section="hero" data-intent="lead offer" data-layout="split-media" data-items="3" data-media="image" aria-labelledby="hero-h">
+      <div class="wrap hero-grid">
+        <article class="lead">
+          <div class="lead-copy">
             <p class="flag">Final Day</p>
-            <h1 id="hero-h" class="bb-h1"><span class="bb-pre">Up to</span> <span class="bb-num">35<span class="po"><span class="pct">%</span> <span class="po-off">off</span></span></span> <span class="bb-what">Select Major Appliances</span></h1>
-          </div>
-          <div class="bb-lead-side">
+            <h1 id="hero-h" class="lead-h"><span class="pre">Up to</span> <span class="lead-num">35%<span class="off">off</span></span> <span class="lead-what">Select Major Appliances</span></h1>
             <p class="lead-date">Offer ends 10/7/26.</p>
-            <ul class="bb-adds">
-              <li><span>Save up to an Additional <strong>$600</strong><br><small>Select LG Major Appliance Bundles</small></span></li>
-              <li><span>Save up to an Additional <strong>$100</strong><br><small>Select Laundry Pairs</small></span></li>
+            <ul class="lead-adds">
+              <li><strong>Save up to an Additional $600</strong> Select LG Major Appliance Bundles</li>
+              <li><strong>Save up to an Additional $100</strong> Select Laundry Pairs</li>
             </ul>
             <p class="lead-actions"><a class="btn-solid" href="https://www.lowes.com/pl/Major-appliance-special-values/2920130986014?int_cmp=Home%3A%3A%3A%3AFW33_26_Appliances_National">Shop All Deals</a> <a class="link-inv" href="https://www.lowes.com/pl/Major-appliance-special-values/2920130986014?int_cmp=Home%3A%3A%3A%3AFW33_26_Appliances_National">Offer details</a></p>
           </div>
-          <figure class="bb-cut"><div class="crop" style="aspect-ratio:1.500"><img src="https://main--lowes--jgrosskurth.aem.live/media_1ee99115c696cfac6f1473d4262972def9f3b96ec.png?width=2000&format=png&optimize=medium" alt="LG stainless range and French-door refrigerator" loading="eager" fetchpriority="high" decoding="async" style="width:404.86%;left:-163.97%;top:-76.93%"></div></figure>
-          <div class="members bb-members">
+          <figure class="lead-media"><div class="crop" style="aspect-ratio:1.500"><img src="https://main--lowes--jgrosskurth.aem.live/media_1ee99115c696cfac6f1473d4262972def9f3b96ec.png?width=2000&format=png&optimize=medium" alt="LG stainless range and French-door refrigerator" loading="eager" fetchpriority="high" decoding="async" style="width:404.86%;left:-163.97%;top:-76.93%"></div></figure>
+          <div class="members">
             <p class="members-h"><strong>All-In Appliance Offer</strong> · Members Get More</p>
             <p class="members-p">When you spend $2,500 or more on select LG major appliances.</p>
             <ul class="members-perks"><li>FREE Delivery</li><li>FREE Basic Installation and Parts</li><li>FREE Haul Away</li><li>2-Year Lowe’s Protection Plan</li></ul>
             <p class="fine">Excludes Florida and MyLowe’s Pro Rewards™ members.</p>
           </div>
         </article>
-      </div>
-    </section>
-
-    <section class="bb-member" data-section="member-offers" data-intent="loyalty offer" data-layout="grid" data-items="2" aria-labelledby="mo-h">
-      <h2 class="sr" id="mo-h">Member offers</h2>
-      <div class="wrap bb-member-grid">
-        <article class="bb-money">
-          <p class="money-band">MyLowe’s Money</p>
-          <div class="bb-money-in">
-            <p class="bb-num-m bb-mid" aria-hidden="true"><sup>$</sup>20</p>
-            <div>
-              <h3 class="bb-tile-h">MyLowe’s Money™ Days are back.</h3>
-              <p>Get up to $20 in MyLowe’s Money on an eligible purchase of $200 or more.</p>
-              <p class="offer-date">Offer ends 10/14/26.</p>
-              <a class="link" href="https://www.lowes.com/l/shop/mylowes-money-days">Offer details<span class="sr">, MyLowe’s Money Days</span></a>
+        <div class="hero-side">
+          <article class="side-tile money">
+            <p class="money-band">MyLowe’s Money</p>
+            <h2 class="side-h">MyLowe’s Money™ Days are back.</h2>
+            <p>Get up to $20 in MyLowe’s Money on an eligible purchase of $200 or more.</p>
+            <p class="offer-date">Offer ends 10/14/26.</p>
+            <a class="link" href="https://www.lowes.com/l/shop/mylowes-money-days">Offer details<span class="sr">, MyLowe’s Money Days</span></a>
+          </article>
+          <article class="side-tile photo">
+            <div class="crop" style="aspect-ratio:1.200"><img src="https://main--lowes--jgrosskurth.aem.live/media_1d666204a2d0b838ddf7c200926fc0f840f6420e5.png?width=1600&format=png&optimize=medium" alt="Herringbone tile backsplash above a stainless cooktop" loading="eager" decoding="async" style="width:270.27%;left:-162.16%;top:0.00%"></div>
+            <div class="side-photo-copy">
+              <h2 class="side-h">Refresh your backsplash before the holiday rush.</h2>
+              <a class="link" href="https://www.lowes.com/pl/Backsplash-refresh/2210857298664?int_cmp=Home%3A%3A%3A%3AFW35_26_Kitchen_Backsplash">Shop backsplash</a>
             </div>
-          </div>
-        </article>
-        <article class="bb-splash">
-          <div class="crop" style="aspect-ratio:1.200"><img src="https://main--lowes--jgrosskurth.aem.live/media_1d666204a2d0b838ddf7c200926fc0f840f6420e5.png?width=1600&format=png&optimize=medium" alt="Herringbone tile backsplash above a stainless cooktop" loading="eager" decoding="async" style="width:270.27%;left:-162.16%;top:0.00%"></div>
-          <div><h3 class="bb-tile-h">Refresh your backsplash before the holiday rush.</h3><a class="link" href="https://www.lowes.com/pl/Backsplash-refresh/2210857298664?int_cmp=Home%3A%3A%3A%3AFW35_26_Kitchen_Backsplash">Shop backsplash</a></div>
-        </article>
+          </article>
+        </div>
       </div>
     </section>
 
@@ -600,63 +487,97 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       </div>
     </section>
 
-    <section class="bb-offers" id="offers" data-section="offers" data-intent="drive action" data-layout="grid" data-items="8" data-media="image" aria-labelledby="offers-h">
+    <section class="offers" id="offers" data-section="offers" data-intent="drive action" data-layout="grid" data-items="8" data-media="image" aria-labelledby="offers-h">
       <div class="wrap">
         <h2 class="sr" id="offers-h">Offers</h2>
-        <ul class="bb-board">
-          <li><article class="bb-tile">
-            <div class="bb-tile-top">
-              <h3 class="bb-tile-num"><span class="bb-pre">Up to</span> <span class="bb-big">65<span class="po"><span class="pct">%</span> <span class="po-off">off</span></span></span><span class="sr"> Select Alexa, Ring, Blink and Fire TV Products</span></h3>
-              <div class="bb-sq"><div class="crop" style="aspect-ratio:1.000"><img src="https://main--lowes--jgrosskurth.aem.live/media_13d26c37d2ddd5bcb2128eae46c16842b9542a1e2.png?width=900&format=png&optimize=medium" alt="Smart display alarm clock on a nightstand" loading="lazy" decoding="async" style="width:238.10%;left:-104.76%;top:-140.00%"></div></div>
+        <ul class="offer-grid">
+          <li><article class="offer">
+            <div class="offer-media"><div class="crop" style="aspect-ratio:1.500"><img src="https://main--lowes--jgrosskurth.aem.live/media_13d26c37d2ddd5bcb2128eae46c16842b9542a1e2.png?width=1000&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:158.73%;left:-47.62%;top:-150.00%"></div></div>
+            <div class="offer-copy">
+          
+          <h3 class="offer-num"><span class="pre">Up to</span> <strong>65%</strong> <span class="off">off</span><span class="sr"> Select Alexa, Ring, Blink and Fire TV Products</span></h3>
+          
+          <p class="offer-line">Select Alexa, Ring, Blink and Fire TV Products</p>
+          <p class="offer-date">Offer ends 10/7/26.</p>
+              <a class="link" href="https://www.lowes.com/pl/Save-on-select-alexa-ring-blink-fire-tv-products/2610979844656">Shop smart home deals</a>
             </div>
-            <p class="bb-line">Select Alexa, Ring, Blink and Fire TV Products</p>
-            <p class="offer-date">Offer ends 10/7/26.</p>
-            <a class="link" href="https://www.lowes.com/pl/Save-on-select-alexa-ring-blink-fire-tv-products/2610979844656">Shop smart home deals</a>
           </article></li>
-          <li><article class="bb-tile">
-            <div class="bb-tile-top">
-              <h3 class="bb-tile-num"><span class="bb-pre">Up to</span> <span class="bb-big">40<span class="po"><span class="pct">%</span> <span class="po-off">off</span></span></span><span class="sr"> Select Bathroom Products</span></h3>
-              <div class="bb-sq"><div class="crop" style="aspect-ratio:1.000"><img src="https://main--lowes--jgrosskurth.aem.live/media_1f20f87ed1fa3339b3a7b5db3a3ddacb4762406b6.png?width=900&format=png&optimize=medium" alt="Bathroom vanity with folded towels" loading="lazy" decoding="async" style="width:181.82%;left:-69.09%;top:-85.91%"></div></div>
+          <li><article class="offer">
+            <div class="offer-media"><div class="crop" style="aspect-ratio:1.500"><img src="https://main--lowes--jgrosskurth.aem.live/media_1f20f87ed1fa3339b3a7b5db3a3ddacb4762406b6.png?width=1000&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:126.58%;left:-12.66%;top:-99.68%"></div></div>
+            <div class="offer-copy">
+          
+          <h3 class="offer-num"><span class="pre">Up to</span> <strong>40%</strong> <span class="off">off</span><span class="sr"> Select Bathroom Products</span></h3>
+          
+          <p class="offer-line">Select Bathroom Products</p>
+          
+              <a class="link" href="https://www.lowes.com/pl/SHOP-BATHROOM-DEALS/2220627017920">Shop bathroom deals</a>
             </div>
-            <p class="bb-line">Select Bathroom Products</p>
-            
-            <a class="link" href="https://www.lowes.com/pl/SHOP-BATHROOM-DEALS/2220627017920">Shop bathroom deals</a>
           </article></li>
-          <li><article class="bb-tile">
-            <div class="bb-tile-top">
-              <h3 class="bb-tile-num"><span class="bb-pre">Up to</span> <span class="bb-big">30<span class="po"><span class="pct">%</span> <span class="po-off">off</span></span></span><span class="sr"> Select Grills and Accessories</span></h3>
-              <div class="bb-sq"><div class="crop" style="aspect-ratio:1.000"><img src="https://main--lowes--jgrosskurth.aem.live/media_10a536183da532813e5594dc8291e07eac83e6cb1.png?width=900&format=png&optimize=medium" alt="Charcoal grill on a patio" loading="lazy" decoding="async" style="width:178.57%;left:-60.71%;top:-82.50%"></div></div>
+          <li><article class="offer">
+            <div class="offer-media"><div class="crop" style="aspect-ratio:1.500"><img src="https://main--lowes--jgrosskurth.aem.live/media_10a536183da532813e5594dc8291e07eac83e6cb1.png?width=1000&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:114.94%;left:-8.05%;top:-81.47%"></div></div>
+            <div class="offer-copy">
+          
+          <h3 class="offer-num"><span class="pre">Up to</span> <strong>30%</strong> <span class="off">off</span><span class="sr"> Select Grills and Accessories</span></h3>
+          
+          <p class="offer-line">Select Grills and Accessories</p>
+          
+              <a class="link" href="https://www.lowes.com/pl/Deals-on-grills-and-accessories/4294393574">Shop grill deals</a>
             </div>
-            <p class="bb-line">Select Grills and Accessories</p>
-            
-            <a class="link" href="https://www.lowes.com/pl/Deals-on-grills-and-accessories/4294393574">Shop grill deals</a>
           </article></li>
-          <li><article class="bb-tile">
-            <div class="bb-tile-top">
-              <h3 class="bb-tile-num"><span class="tag">FREE Same-day DELIVERY</span> <span class="bb-pre">Save up to</span> <span class="bb-big"><sup>$</sup>120</span><span class="sr"> Select Power Tools, Equipment and Accessories</span></h3>
-              <div class="bb-sq"><div class="crop" style="aspect-ratio:1.000"><img src="https://main--lowes--jgrosskurth.aem.live/media_105cb20bf6fbe426e94ba8786f9b1e7c3202ab955.png?width=900&format=png&optimize=medium" alt="Miter saw on a workbench" loading="lazy" decoding="async" style="width:411.52%;left:-255.14%;top:-12.50%"></div></div>
+          <li><article class="offer">
+            <div class="offer-media"><div class="crop" style="aspect-ratio:1.500"><img src="https://main--lowes--jgrosskurth.aem.live/media_105cb20bf6fbe426e94ba8786f9b1e7c3202ab955.png?width=1000&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:222.22%;left:-102.22%;top:0.00%"></div></div>
+            <div class="offer-copy">
+          <p class="tag">FREE Same-day DELIVERY</p>
+          <h3 class="offer-num"><span class="pre">Save up to</span> <strong>$120</strong><span class="sr"> Select Power Tools, Equipment and Accessories</span></h3>
+          
+          <p class="offer-line">Select Power Tools, Equipment and Accessories</p>
+          
+              <a class="link" href="https://www.lowes.com/pl/Deals-on-tools-and-outdoor-power-equipment/3411464183736?int_cmp=Home%3A%3A%3A%3AFW35_26_Tools">Shop tool deals</a>
             </div>
-            <p class="bb-line">Select Power Tools, Equipment and Accessories</p>
-            
-            <a class="link" href="https://www.lowes.com/pl/Deals-on-tools-and-outdoor-power-equipment/3411464183736?int_cmp=Home%3A%3A%3A%3AFW35_26_Tools">Shop tool deals</a>
           </article></li>
-        </ul>
-        <ul class="bb-season">
-          <li><article class="bb-s">
-            <div class="bb-s-ph"><div class="crop" style="aspect-ratio:1.500"><img src="https://main--lowes--jgrosskurth.aem.live/media_1cd061a50cec206619d2437063444369230932422.png?width=900&format=png&optimize=medium" alt="Wicker chairs with fall pillows on a porch" loading="lazy" decoding="async" style="width:100.00%;left:0.00%;top:-58.28%"></div></div>
-            <div class="bb-s-copy"><h3>Bring home fall style under $50.</h3><a class="link" href="https://www.lowes.com/pl/Fall-refresh-under-50/2211000121484">Shop fall style</a></div>
+          <li><article class="offer">
+            <div class="offer-media"><div class="crop" style="aspect-ratio:1.500"><img src="https://main--lowes--jgrosskurth.aem.live/media_1cd061a50cec206619d2437063444369230932422.png?width=1000&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:100.00%;left:0.00%;top:-58.28%"></div></div>
+            <div class="offer-copy">
+          
+          
+          <h3 class="offer-head">Bring home fall style under $50.</h3>
+          
+          
+              <a class="link" href="https://www.lowes.com/pl/Fall-refresh-under-50/2211000121484">Shop fall style</a>
+            </div>
           </article></li>
-          <li><article class="bb-s">
-            <div class="bb-s-ph"><div class="crop" style="aspect-ratio:1.500"><img src="https://main--lowes--jgrosskurth.aem.live/media_18732229f47dd9df902590d37abe54154329d53f3.png?width=900&format=png&optimize=medium" alt="Cordless drill and reciprocating saws" loading="lazy" decoding="async" style="width:100.00%;left:0.00%;top:-58.28%"></div></div>
-            <div class="bb-s-copy"><h3>Explore what’s new in tools from trusted brands.</h3><a class="link" href="https://www.lowes.com/pl/New-power-tools/2220479030175">Shop new tools</a></div>
+          <li><article class="offer">
+            <div class="offer-media"><div class="crop" style="aspect-ratio:1.500"><img src="https://main--lowes--jgrosskurth.aem.live/media_18732229f47dd9df902590d37abe54154329d53f3.png?width=1000&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:100.00%;left:0.00%;top:-58.28%"></div></div>
+            <div class="offer-copy">
+          
+          
+          <h3 class="offer-head">Explore what’s new in tools from trusted brands.</h3>
+          
+          
+              <a class="link" href="https://www.lowes.com/pl/New-power-tools/2220479030175">Shop new tools</a>
+            </div>
           </article></li>
-          <li><article class="bb-s">
-            <div class="bb-s-ph"><div class="crop" style="aspect-ratio:1.500"><img src="https://main--lowes--jgrosskurth.aem.live/media_1329017e121ba5969398f14bb46a7f1566a068e18.png?width=900&format=png&optimize=medium" alt="Friends around a fire pit on a patio" loading="lazy" decoding="async" style="width:222.22%;left:-111.11%;top:0.00%"></div></div>
-            <div class="bb-s-copy"><p class="tag">3x Points</p><h3>Make the most of fall.</h3><p>MyLowe’s Rewards™ members earn 3x points on select purchases.</p><a class="link" href="https://www.lowes.com/pl/Fall-hosting/1811163654388?int_cmp=Home%3A%3A%3A%3AFW35_26_Fall_Hosting">Shop fall hosting</a></div>
+          <li><article class="offer">
+            <div class="offer-media"><div class="crop" style="aspect-ratio:1.500"><img src="https://main--lowes--jgrosskurth.aem.live/media_1329017e121ba5969398f14bb46a7f1566a068e18.png?width=1000&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:222.22%;left:-111.11%;top:0.00%"></div></div>
+            <div class="offer-copy">
+          <p class="tag">3x Points</p>
+          
+          <h3 class="offer-head">Make the most of fall.</h3>
+          <p class="offer-line">MyLowe’s Rewards™ members earn 3x points on select purchases.</p>
+          
+              <a class="link" href="https://www.lowes.com/pl/Fall-hosting/1811163654388?int_cmp=Home%3A%3A%3A%3AFW35_26_Fall_Hosting">Shop fall hosting</a>
+            </div>
           </article></li>
-          <li><article class="bb-s">
-            <div class="bb-s-ph"><div class="crop" style="aspect-ratio:1.500"><img src="https://main--lowes--jgrosskurth.aem.live/media_11b55181638a9298e495190636df06b7c5d2189ea.png?width=900&format=png&optimize=medium" alt="A gardener planting a raised bed" loading="lazy" decoding="async" style="width:222.22%;left:-111.11%;top:0.00%"></div></div>
-            <div class="bb-s-copy"><p class="tag">3x Points</p><h3>Set your fall garden up for success.</h3><p>MyLowe’s Rewards™ members earn 3x points on select purchases.</p><a class="link" href="https://www.lowes.com/pl/Fall-gardening/2120885942585?int_cmp=Home%3A%3A%3A%3AFW33_26_Fall_Planting">Shop fall gardening</a></div>
+          <li><article class="offer">
+            <div class="offer-media"><div class="crop" style="aspect-ratio:1.500"><img src="https://main--lowes--jgrosskurth.aem.live/media_11b55181638a9298e495190636df06b7c5d2189ea.png?width=1000&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:222.22%;left:-111.11%;top:0.00%"></div></div>
+            <div class="offer-copy">
+          <p class="tag">3x Points</p>
+          
+          <h3 class="offer-head">Set your fall garden up for success.</h3>
+          <p class="offer-line">MyLowe’s Rewards™ members earn 3x points on select purchases.</p>
+          
+              <a class="link" href="https://www.lowes.com/pl/Fall-gardening/2120885942585?int_cmp=Home%3A%3A%3A%3AFW33_26_Fall_Planting">Shop fall gardening</a>
+            </div>
           </article></li>
         </ul>
       </div>
@@ -664,10 +585,10 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 
     <section class="sponsored" data-section="sponsored" data-intent="paid placement" data-layout="split-media" data-media="image" aria-label="Sponsored: DEWALT Days">
       <div class="wrap">
-        <article class="spon bb-spon">
+        <article class="spon">
           <div class="spon-copy">
             <p class="spon-brand">DEWALT Days</p>
-            <p class="bb-spon-head"><span class="bb-spon-pre">Save up to</span> <span class="bb-spon-n bb-mid"><sup>$</sup>100</span></p>
+            <p class="spon-head">Save up to <sup>$</sup>100</p>
             <p class="spon-line">Select DEWALT® Tools</p>
             <a class="link-inv" href="https://www.lowes.com/pl/Top-deals-on-dewalt-tools/2520898430100">Shop DEWALT deals</a>
           </div>
@@ -681,16 +602,18 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       <div class="wrap">
         <h2 id="pme-h" class="h-sec">Home Improvement Projects Made Easy</h2>
         <div class="svc-grid">
-          <article class="svc homecare bb-hc">
-            <div class="bb-hc-n"><p class="svc-mark">Lowe’s HomeCare+</p><p class="bb-hc-price"><span class="bb-hc-just">Subscribe for just</span> <span class="bb-hc-line"><span class="bb-mid"><sup>$</sup>99</span> <span class="bb-hc-yr">a year.</span></span></p><p class="fine">Auto-renews. Service restrictions apply. Service items required.</p></div>
+          <article class="svc homecare">
             <div class="svc-copy">
+              <p class="svc-mark">Lowe’s HomeCare+</p>
               <h3 class="svc-h">Essential tasks handled by a trained Lowe’s associate. Twice a year. Right to your door.</h3>
               <ul class="svc-list"><li>Electric dryer vent cleaning</li><li>HVAC air filter replacement</li><li>Refrigerator water filter replacement</li><li>Electric water heater flush</li><li>Garage door lubrication</li><li>Smoke and carbon monoxide detector battery replacement</li><li>Light bulb replacement</li></ul>
+              <p class="svc-price">Subscribe for just <strong><sup>$</sup>99</strong> a year.</p>
+              <p class="fine">Auto-renews. Service restrictions apply. Service items required.</p>
               <a class="link" href="https://www.lowes.com/l/about/mylowes-rewards-homecare">Offer details<span class="sr">, Lowe’s HomeCare+</span></a>
             </div>
           </article>
-          <article class="svc responders bb-resp">
-            <p class="bb-resp-n bb-mid" aria-hidden="true"><sup>$</sup>10</p>
+          <article class="svc responders">
+            <div class="svc-media"><div class="crop" style="aspect-ratio:2.500"><img src="https://main--lowes--jgrosskurth.aem.live/media_10f22bbf6fc8be3e96f6c47790353e28eb095c71e.png?width=1600&format=png&optimize=medium" alt="A first responder lifting a yellow storage tote in a Lowe’s aisle" loading="lazy" decoding="async" style="width:250.00%;left:-150.00%;top:-16.48%"></div></div>
             <div class="svc-copy">
               <h3 class="svc-h">Thank you, first responders.</h3>
               <p>To celebrate First Responders Appreciation Month, here’s $10 MyLowe’s Money™.</p>
@@ -929,15 +852,14 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       </div>
     </section>
 
-    <section class="deals bb-deals" id="deals" data-section="deals" data-intent="shop deals" data-layout="grid" data-items="3" aria-labelledby="deals-h">
+    <section class="deals" id="deals" data-section="deals" data-intent="shop deals" data-layout="grid" data-items="3" aria-labelledby="deals-h">
       <h2 class="sr" id="deals-h">Deals</h2>
       <div class="wrap deal-grid">
         <article class="deal-panel quad" aria-labelledby="dp-0">
           <div class="deal-head"><h3 id="dp-0" class="h-panel">Top Trending Deals</h3><a class="link" href="https://www.lowes.com/l/your-recommendations">See all<span class="sr">, Top Trending Deals</span></a></div>
           <ul class="deal-tiles">
             <li class="dtile">
-              <p class="bb-save"><span class="bb-save-l">Save</span> <span class="bb-save-n">25<span class="pct">%</span></span></p>
-              <div class="dtile-media"><img src="https://main--lowes--jgrosskurth.aem.live/media_150e2e4a0a8ef84c5706db48da13cf7d3b2b4b682.jpg?width=400&format=jpg&optimize=medium" alt="" width="276" height="276" loading="lazy" decoding="async"></div>
+              <div class="dtile-media"><span class="badge-save">Save 25%</span><img src="https://main--lowes--jgrosskurth.aem.live/media_150e2e4a0a8ef84c5706db48da13cf7d3b2b4b682.jpg?width=400&format=jpg&optimize=medium" alt="" width="276" height="276" loading="lazy" decoding="async"></div>
               <h4 class="dtile-name"><a href="https://www.lowes.com/configure/blinds/allen-roth-allen-roth-Cellular-Shades/5004860755"><strong>allen + roth,</strong> Custom Cellular Shade</a></h4>
               <p class="dtile-price"><span class="price-flat">$48.32</span><del class="was">$64.42</del></p>
               
@@ -945,8 +867,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
               
             </li>
             <li class="dtile">
-              <p class="bb-save"><span class="bb-save-l">Save</span> <span class="bb-save-n">24<span class="pct">%</span></span></p>
-              <div class="dtile-media"><img src="https://main--lowes--jgrosskurth.aem.live/media_104a8dca2c3b0820e87cdd8d014ea833343ac56dd.jpg?width=400&format=jpg&optimize=medium" alt="" width="276" height="276" loading="lazy" decoding="async"></div>
+              <div class="dtile-media"><span class="badge-save">Save 24%</span><img src="https://main--lowes--jgrosskurth.aem.live/media_104a8dca2c3b0820e87cdd8d014ea833343ac56dd.jpg?width=400&format=jpg&optimize=medium" alt="" width="276" height="276" loading="lazy" decoding="async"></div>
               <h4 class="dtile-name"><a href="https://www.lowes.com/pd/EGO-POWER-56-volt-21-in-Push-Cordless-Lawn-Mower-6-Ah-Battery-Charger-Included/5013743021"><strong>EGO,</strong> POWER+ 600 Series 56-volt, 21-in Push Battery Lawn Mower with (1) 6 Ah Battery Included</a></h4>
               <p class="dtile-price"><span class="price-flat">$379.00</span><del class="was">$499.00</del></p>
               
@@ -954,8 +875,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
               
             </li>
             <li class="dtile">
-              <p class="bb-save"><span class="bb-save-l">Save</span> <span class="bb-save-n">50<span class="pct">%</span></span></p>
-              <div class="dtile-media"><img src="https://main--lowes--jgrosskurth.aem.live/media_124af4bc853b69c723647f9085e298a99b862892a.png?width=400&format=png&optimize=medium" alt="" width="276" height="276" loading="lazy" decoding="async"></div>
+              <div class="dtile-media"><span class="badge-save">Save 50%</span><img src="https://main--lowes--jgrosskurth.aem.live/media_124af4bc853b69c723647f9085e298a99b862892a.png?width=400&format=png&optimize=medium" alt="" width="276" height="276" loading="lazy" decoding="async"></div>
               <h4 class="dtile-name"><a href="https://www.lowes.com/pd/Whirlpool-30-in-4-Burners-5-1-cu-ft-Freestanding-Natural-Gas-Range-Stainless-Steel/5013800201"><strong>Whirlpool,</strong> Flexible Cooktop 30-in 4 burners 5.1-cu ft Single oven gas range Natural Gas Range ( Stainless Steel )</a></h4>
               
               <p class="note">This item is currently unavailable</p>
@@ -963,8 +883,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
               
             </li>
             <li class="dtile">
-              <p class="bb-save"><span class="bb-save-l">Save</span> <span class="bb-save-n">41<span class="pct">%</span></span></p>
-              <div class="dtile-media"><img src="https://main--lowes--jgrosskurth.aem.live/media_1a51566ab4563330154e3f254800b8a2eedf4d035.jpg?width=400&format=jpg&optimize=medium" alt="" width="276" height="276" loading="lazy" decoding="async"></div>
+              <div class="dtile-media"><span class="badge-save">Save 41%</span><img src="https://main--lowes--jgrosskurth.aem.live/media_1a51566ab4563330154e3f254800b8a2eedf4d035.jpg?width=400&format=jpg&optimize=medium" alt="" width="276" height="276" loading="lazy" decoding="async"></div>
               <h4 class="dtile-name"><a href="https://www.lowes.com/pd/DEWALT-2-Tool-20-Volt-Max-Power-Tool-Combo-Kit-with-Soft-Case-Charger-Included-and-2-Batteries-Included/50169133"><strong>DEWALT,</strong> 2-Tool 20-Volt Max Power Tool Combo Kit with Soft Case (2-Batteries and charger Included)</a></h4>
               
               <p class="note">This item is currently unavailable</p>
@@ -977,8 +896,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
           <div class="deal-head"><h3 id="dp-1" class="h-panel">4 Stars &amp; Above</h3><a class="link" href="https://www.lowes.com/l/your-recommendations">See all<span class="sr">, 4 Stars &amp; Above</span></a></div>
           <ul class="deal-tiles">
             <li class="dtile">
-              <p class="bb-save"><span class="bb-save-l">Save</span> <span class="bb-save-n">12<span class="pct">%</span></span></p>
-              <div class="dtile-media"><img src="https://main--lowes--jgrosskurth.aem.live/media_1c50d0b193d8be96776ba254ab9741820b9388759.jpg?width=400&format=jpg&optimize=medium" alt="" width="276" height="276" loading="lazy" decoding="async"></div>
+              <div class="dtile-media"><span class="badge-save">Save 12%</span><img src="https://main--lowes--jgrosskurth.aem.live/media_1c50d0b193d8be96776ba254ab9741820b9388759.jpg?width=400&format=jpg&optimize=medium" alt="" width="276" height="276" loading="lazy" decoding="async"></div>
               <h4 class="dtile-name"><a href="https://www.lowes.com/pd/Arm-Hammer-Fresh-Scent-Carpet-Cleaning-Solution-Kit-Powder-42-6-oz-Odor-Eliminator-Eco-Friendly-Safe-for-Upholstery-Sprinkle-Application/1001857970"><strong>Arm &amp; Hammer,</strong> Carpet cleaner Deodorizing Powder 42.6-oz</a></h4>
               <p class="dtile-price"><span class="price-flat">$3.48</span><del class="was">$3.98</del></p>
               
@@ -986,8 +904,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
               <a class="btn-cart" href="https://www.lowes.com/pd/Arm-Hammer-Fresh-Scent-Carpet-Cleaning-Solution-Kit-Powder-42-6-oz-Odor-Eliminator-Eco-Friendly-Safe-for-Upholstery-Sprinkle-Application/1001857970">Add to Cart<span class="sr">, Arm &amp; Hammer, Carpet cleaner Deodorizing Powder 42.6-oz</span></a>
             </li>
             <li class="dtile">
-              <p class="bb-save"><span class="bb-save-l">Save</span> <span class="bb-save-n">33<span class="pct">%</span></span></p>
-              <div class="dtile-media"><img src="https://main--lowes--jgrosskurth.aem.live/media_129fd0abd4815dc99f3caa90280d7d2d143132679.jpg?width=400&format=jpg&optimize=medium" alt="" width="276" height="276" loading="lazy" decoding="async"></div>
+              <div class="dtile-media"><span class="badge-save">Save 33%</span><img src="https://main--lowes--jgrosskurth.aem.live/media_129fd0abd4815dc99f3caa90280d7d2d143132679.jpg?width=400&format=jpg&optimize=medium" alt="" width="276" height="276" loading="lazy" decoding="async"></div>
               <h4 class="dtile-name"><a href="https://www.lowes.com/pd/CRAFTSMAN-V20-20-Volt-5-Ah-1-Pack-Lithium-Ion-Li-ion-Battery-Kit/5016858181"><strong>CRAFTSMAN,</strong> V20 20 -Volt, 5 Ah 1 -Pack Lithium Ion (Li-ion)</a></h4>
               <p class="dtile-price"><span class="price-flat">$99.00</span><del class="was">$149.00</del></p>
               
@@ -1000,7 +917,6 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
           <div class="deal-head"><h3 id="dp-2" class="h-panel">We Picked These Deals for You</h3><a class="link" href="https://www.lowes.com/pl/Deals/1611079983848">See all<span class="sr">, We Picked These Deals for You</span></a></div>
           <ul class="deal-tiles">
             <li class="dtile">
-              <p class="bb-save bb-save-none" aria-hidden="true">&nbsp;</p>
               <div class="dtile-media"><img src="https://main--lowes--jgrosskurth.aem.live/media_114d5b48b347e6b17e292b5d3dcc9e473660e29c7.jpg?width=400&format=jpg&optimize=medium" alt="" width="276" height="276" loading="lazy" decoding="async"></div>
               <h4 class="dtile-name"><a href="https://www.lowes.com/pd/Rudolph-the-Red-Nosed-Reindeer-9-75-ft-LED-Bumble-Animatronic-Yard-Decoration/5015088219"><strong>Rudolph the Red-Nosed Reindeer,</strong> 9.75-ft LED Bumble Animatronic Outdoor Christmas Decoration</a></h4>
               <p class="dtile-price"><span class="price-flat">$499.00</span></p>
@@ -1009,7 +925,6 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
               
             </li>
             <li class="dtile">
-              <p class="bb-save bb-save-none" aria-hidden="true">&nbsp;</p>
               <div class="dtile-media"><img src="https://main--lowes--jgrosskurth.aem.live/media_1c3e504410142d8b1d86dc87eb74b7263eb6f2415.jpg?width=400&format=jpg&optimize=medium" alt="" width="276" height="276" loading="lazy" decoding="async"></div>
               <h4 class="dtile-name"><a href="https://www.lowes.com/pd/Holiday-Living-7-5-ft-New-Kensington-Pine-Pre-lit-Artificial-Christmas-Tree-with-Twinkling-Color-Changing-LED-Lights/5016065631"><strong>Holiday Living,</strong> 7.5-ft New Kensington Pine Pre-lit Artificial Christmas Tree with Twinkling Color Changing LED Lights</a></h4>
               <p class="dtile-price"><span class="price-flat">$349.00</span></p>
@@ -1018,8 +933,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
               
             </li>
             <li class="dtile">
-              <p class="bb-save"><span class="bb-save-l">Save</span> <span class="bb-save-n">10<span class="pct">%</span></span></p>
-              <div class="dtile-media"><img src="https://main--lowes--jgrosskurth.aem.live/media_1c8616bdc052848050cac45bdd5d38ed6f76521c9.jpg?width=400&format=jpg&optimize=medium" alt="" width="276" height="276" loading="lazy" decoding="async"></div>
+              <div class="dtile-media"><span class="badge-save">Save 10%</span><img src="https://main--lowes--jgrosskurth.aem.live/media_1c8616bdc052848050cac45bdd5d38ed6f76521c9.jpg?width=400&format=jpg&optimize=medium" alt="" width="276" height="276" loading="lazy" decoding="async"></div>
               <h4 class="dtile-name"><a href="https://www.lowes.com/pd/Haunted-Living-HL-5FT-ULTRA-POSABLE-SKELETON/5017627123"><strong>Haunted Living,</strong> 5-ft Ultra Posable Skeleton Halloween Decoration</a></h4>
               <p class="dtile-price"><span class="price-flat">$44.98</span><del class="was">$49.98</del></p>
               
@@ -1027,7 +941,6 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
               
             </li>
             <li class="dtile">
-              <p class="bb-save bb-save-none" aria-hidden="true">&nbsp;</p>
               <div class="dtile-media"><img src="https://main--lowes--jgrosskurth.aem.live/media_1220ffa95b07d120ffac738df662f99964b359dbf.jpg?width=400&format=jpg&optimize=medium" alt="" width="276" height="276" loading="lazy" decoding="async"></div>
               <h4 class="dtile-name"><a href="https://www.lowes.com/pd/Rudolph-the-Red-Nosed-Reindeer-6-ft-Yukon-Cornelius-Animatronic-Yard-Decoration/5016071249"><strong>Rudolph the Red-Nosed Reindeer,</strong> 6-ft Yukon Cornelius Animatronic Outdoor Christmas Decoration</a></h4>
               <p class="dtile-price"><span class="price-flat">$399.00</span></p>

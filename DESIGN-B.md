@@ -26,6 +26,12 @@ typography:
     fontWeight: 600
     lineHeight: "0.86"
     letterSpacing: "-0.035em"
+  display-offer:
+    fontFamily: "fellix, fellix-fallback, arial, sans-serif"
+    fontSize: "104px"
+    fontWeight: 600
+    lineHeight: "0.86"
+    letterSpacing: "-0.04em"
   display:
     fontFamily: "fellix, fellix-fallback, arial, sans-serif"
     fontSize: "72px"
@@ -141,7 +147,7 @@ components:
 
 **Captured trait amplified.** Fellix SemiBold at display scale — today it exists only inside merchandising rasters (≈80px "35% off", "$99 a year", "Up to 65% off"); no live heading exceeds 28px (`_brand-extraction.json#type.displayInRaster`, `#type.scaleAudit`). In service of PRODUCT.md Brand Personality **Deal-forward**.
 
-**Type scale (drenched, typography only).** display-numeral clamp(88–144px)/0.86 → display 72/76 → heading-xl / heading-l 40/44 → heading-m 24/30 → body 16/24 (ratios 2.0, 1.8, 1.67, 1.5). Prices lead product cards at 40px with the captured superscript $/cents treatment.
+**Type scale (drenched, typography only).** display-numeral clamp(88–144px)/0.86 (hero H1 only) → display-offer 104px (offer billboards) → display 72/76 (member / service / sponsored figures) → heading-xl / heading-l 40/44 → heading-m 24/30 → body 16/24 (ratios 2.0, 1.8, 1.67, 1.5). Prices lead product cards at 40px with the captured superscript $/cents treatment.
 
 **Named rules.**
 - **The Number Leads.** Each offer is set numeral-first in live Fellix 600: the figure (35%, $99, 65%, 25%) at display-numeral, the qualifier beneath at heading-m, the end date in micro.

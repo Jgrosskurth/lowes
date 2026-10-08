@@ -3,26 +3,42 @@
 <head>
 <!-- stardust:provenance
   writtenBy:         stardust:prototype (render delegated to impeccable craft; built by stardust/.work/prototype/build.mjs from captured content)
-  writtenAt:         2026-10-08T17:00:10.162Z
+  writtenAt:         2026-10-08T17:11:17.697Z
   page:              home
-  variant:           B
+  variant:           C
   pageUrl:           https://main--lowes--jgrosskurth.aem.live/
   againstDirection:  stardust/direction.md (Active 2026-10-08T16:00:00Z)
-  shapeBrief:        stardust/prototypes/home-B-shape.md
+  shapeBrief:        stardust/prototypes/home-C-shape.md
   readArtifacts:
     - stardust/current/pages/home.json (landmarks, rasterCopy, iconMap)
     - stardust/.work/prototype/content.json (parsed from stardust/current/pages/home.html)
-    - DESIGN.md / DESIGN.json / DESIGN-B.md / DESIGN-B.json
+    - DESIGN.md / DESIGN.json / DESIGN-C.md / DESIGN-C.json
   divergenceVersion: v1.0 (stardust v2)
   fontDeck:          brand-inherited (Fellix 400/600, static woff from www.lowescdn.com)
   paletteSource:     inherited from _brand-extraction.json (Mode A)
   reflexRejectAudit: { bypassed: "Mode A — captured family Fellix pinned (Discipline 6)" }
-  variableAxes:      "Discipline 7 static-only-family exemption — Fellix ships static .woff (no fvar); documented in DESIGN-B.json extensions.divergence.font_deck.notes"
+  variableAxes:      "Discipline 7 static-only-family exemption — Fellix ships static .woff (no fvar); documented in DESIGN-C.json extensions.divergence.font_deck.notes"
   copyCadenceBypass: { rules: ["em-dash-overuse", "marketing-buzzword"], basis: "captured-verbatim copy per shape brief voiceClassification (Discipline 9)" }
   imagePolicy:       "captured images reused at semantic positions via their public aem.live URLs (width param raised for density); crops below baked raster copy per improvement 1"
   unsourcedContent:  [{"selector":"footer [data-placeholder]","type":"other","reason":"Lowe's legal line + legal links; captured footer is AEM boilerplate (Adobe copyright, adobe.com links)"}]
-  variantDeclaration: "amplifies the Fellix SemiBold display register (captured only in rasters) in service of Brand Personality 'Deal-forward'"
-  canonFrom:         stardust/prototypes/home-A-proposed.html
+  motion:
+    register:          kinetic-grid
+    registerSource:    direct
+    registerRationale: "PRODUCT.md Brand Personality 'Transactional / modular-catalogue' → motion-registers.md § Selection heuristic"
+    runtimeVersion:    v1 (canonical script, animConfig per kinetic-grid: parallax 0, slide 28, stagger 0.08)
+    lenisAssets:       { js: lenis.min.js, css: lenis.min.css }
+    attributesEmitted: ["data-anim", "data-tile-anim"]
+    attributeCounts:   {"sectionHeads":7,"offers":8,"categories":4,"departments":24,"plan":10,"articles":4,"dealPanels":3,"projects":10}  # total 70
+    choreographies:
+      - { name: tile-cascade, targets: "[data-tile-anim] (offers, categories, departments, plan cards, articles, deal panels, projects)", mechanism: "canonical runtime scroll-progress entrance (translateY 28px + rotateX 8deg under perspective 1200px) settled by a one-shot IntersectionObserver (15% visible → .is-in, 500ms cubic-bezier(0.42,0,0,1)); stagger = column index × 70ms (max 7 → 490ms), rows cascade as they enter; focusin forces reveal" }
+      - { name: section-head-entrance, targets: "h2.h-sec[data-anim]", mechanism: "slide 28px + fade" }
+      - { name: hover-lift, targets: "cards and tiles", mechanism: "CSS independent translate 0 -4px (composes with the entrance transform) + lifted shadow, 380ms cubic-bezier(0.42,0,0,1)" }
+      - { name: tab-indicator-slide, targets: ".tabs-wrap .tab-ind", mechanism: "transform translate + scaleX follows hover/focus across category pills at 40% opacity (preview), full strength on the active pill" }
+      - { name: focus-ring-draw, targets: ".search::after", mechanism: "clip-path inset(0 100% 0 0) → inset(0) on :focus-within, 500ms" }
+      - { name: cart-sheen, targets: ".btn-cart::after", mechanism: "gradient translateX(-110% → 110%) on hover, 700ms" }
+    stillByDesign:     ["hero (LCP + operational hierarchy stays still)", "header", "Gift Zone rail (scroll-snap rail)", "Items To Explore product cards (hover lift only, keeps cascade count < 80)"]
+  differentiationFromA: "IA identical by contract; delta = motion axis (6 choreographies)"
+  differentiationFromB: "B's five structural deltas (type-led hero, member-offers section, numeral billboards, figure-led deals, numeral services) are absent; C keeps A's composition and adds motion"
   stardustVersion:   0.14.0
 -->
 <meta charset="UTF-8">
@@ -32,17 +48,17 @@
 <meta name="description" content="Shop tools, appliances, building supplies, carpet, bathroom, lighting and more. Pros can take advantage of Pro offers, credit and business resources.">
 <style>
 :root {
-  /* token contract — DESIGN.md (shared) / DESIGN-B.md */
+  /* token contract — DESIGN.md (shared) / DESIGN-C.md */
   --heading-font-family: fellix, fellix-fallback, arial, sans-serif;
   --body-font-family: fellix, fellix-fallback, arial, sans-serif;
-  --heading-xxl: clamp(88px, 10vw, 144px);
-  --display-numeral: clamp(88px, 10vw, 144px);
-  --heading-xl: 72px;
-  --heading-lg: 40px;
-  --heading-md: 24px;
+  --heading-xxl: 56px;
+  --display-numeral: 96px;
+  --heading-xl: 40px;
+  --heading-lg: 28px;
+  --heading-md: 20px;
   --body: 16px;
   --body-sm: 14px;
-  --line-height-heading: 1.05;
+  --line-height-heading: 1.2;
   --line-height-body: 1.5;
   /* ground */ --color-bg: #ffffff;
   /* ink */ --color-fg: #17191f;
@@ -58,6 +74,17 @@
   --red: #971b2f; --rule: #cbd1dd; --rule-strong: #616670; --star: #f3b51b;
   --pill: 20px; --gutter: 56px; --white: #ffffff;
   --shadow-icon: rgba(0,0,0,.2) 0 2px 4px, rgba(0,0,0,.14) 0 4px 5px, rgba(0,0,0,.12) 0 1px 10px;
+  /* Motion (cinematic only) — DESIGN-C.json extensions.motion (kinetic-grid) */
+  --ease-out-cubic: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --ease-out-quart: cubic-bezier(0.42, 0, 0, 1);
+  --ease-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --enter-duration: 500ms;
+  --enter-stagger: 70ms;
+  --lift-translate: -4px;
+  --lift-duration: 380ms;
+  --parallax-translate: 0;
+  --parallax-fade: 0;
+  --parallax-progress: 0;
 }
 @font-face { font-family: fellix; src: url("https://www.lowescdn.com/sffonts/Fellix-Regular.woff") format("woff"); font-weight: 400; font-display: swap; }
 @font-face { font-family: fellix; src: url("https://www.lowescdn.com/sffonts/Fellix-SemiBold.woff") format("woff"); font-weight: 600 700; font-display: swap; }
@@ -396,120 +423,58 @@ main > section:first-child { padding-top: 24px; }
   .h-sec { font-size: 20px; line-height: 30px; margin-bottom: 16px; }
   .proj-t { font-size: 16px; line-height: 22px; }
 }
-/* ---------- variant B: display register ---------- */
-:root { --display-offer: 104px; }
-.po { display: inline-grid; grid-template-rows: auto auto; vertical-align: top; margin-left: .04em; line-height: .9; }
-.po .pct { font-size: .42em; vertical-align: 0; margin: .08em 0 0; }
-.po-off { font-size: .27em; letter-spacing: 0; }
-.bb-mid { font-size: var(--heading-xl); line-height: .9; letter-spacing: -.03em; font-weight: 600; }
-.h-sec { font-size: var(--heading-lg); line-height: 44px; letter-spacing: -.015em; }
-.pct { font-size: .62em; vertical-align: .32em; margin-left: .02em; letter-spacing: 0; }
-.bb-lead { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, .8fr) minmax(0, .9fr); grid-template-rows: auto auto; align-items: end; gap: 0 32px; padding: 40px 40px 0; background: var(--color-accent); color: var(--white); border-radius: var(--radius); overflow: hidden; }
-.bb-lead-main { display: grid; gap: 12px; align-self: start; justify-items: start; }
-.bb-h1 { display: grid; justify-items: start; margin: 0; }
-.bb-pre { grid-column: 1 / -1; font-size: 28px; line-height: 1; }
-.bb-num { font-size: var(--display-numeral); line-height: .82; letter-spacing: -.035em; font-weight: 600; }
-.bb-what { grid-column: 1 / -1; margin-top: 16px; font-size: var(--heading-lg); line-height: 44px; letter-spacing: -.015em; }
-.bb-lead-side { display: grid; gap: 16px; align-self: start; padding-top: 48px; }
-.bb-adds { display: grid; gap: 14px; }
-.bb-adds li { font-weight: 600; line-height: 26px; font-size: 20px; padding-left: 20px; position: relative; }
-.bb-adds li::before { content: "+"; position: absolute; left: 0; font-weight: 700; }
-.bb-adds strong { font-size: 28px; }
-.bb-adds small { font-weight: 400; font-size: var(--body-sm); }
-.bb-big sup, .bb-mid sup { font-size: .45em; vertical-align: .95em; }
-.bb-cut { align-self: center; }
-.bb-cut .crop { border-radius: var(--radius); background: var(--white); }
-.bb-members { margin: 32px -40px 0; padding-left: 40px; padding-right: 40px; grid-column: 1 / -1; }
-.bb-member-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 24px; padding-top: 24px; }
-.bb-money { border-radius: var(--radius); overflow: hidden; background: var(--mist); }
-.bb-money .money-band { margin: 0; }
-.bb-money-in { display: grid; grid-template-columns: auto 1fr; gap: 24px; align-items: center; padding: 20px 28px 28px; }
-.bb-num-m { color: var(--color-accent); }
-.bb-money-in div { display: grid; gap: 8px; }
-.bb-tile-h { font-size: var(--heading-md); line-height: 30px; color: var(--navy); margin: 0; }
-.bb-splash { display: grid; grid-template-columns: 180px 1fr; gap: 20px; align-items: center; padding: 16px; border: 1px solid var(--rule); border-radius: var(--radius); }
-.bb-splash .crop { border-radius: var(--radius); }
-.bb-splash > div:last-child { display: grid; gap: 10px; }
-.bb-board { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
-.bb-tile { display: grid; gap: 8px; align-content: start; height: 100%; padding: 28px 28px 24px; border: 1px solid var(--rule); border-radius: var(--radius); }
-.bb-tile-top { display: grid; grid-template-columns: 1fr 168px; gap: 20px; align-items: end; }
-.bb-tile-num { display: grid; justify-items: start; row-gap: 10px; margin: 0; color: var(--navy); }
-.bb-tile-num .tag { margin-bottom: 0; }
-.bb-tile-num .bb-pre { font-size: var(--heading-md); line-height: 1.2; }
-.bb-big { font-size: var(--display-offer); line-height: .86; letter-spacing: -.04em; font-weight: 600; }
-.bb-sq .crop { border-radius: var(--radius); background: var(--well); }
-.bb-line { font-size: var(--heading-md); line-height: 30px; font-weight: 600; margin-top: 12px; }
-.bb-tile .link { margin-top: 8px; justify-self: start; }
-.bb-season { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; margin-top: 24px; }
-.bb-s { display: grid; grid-template-rows: auto 1fr; gap: 14px; height: 100%; padding: 0 0 18px; overflow: hidden; border: 1px solid var(--rule); border-radius: var(--radius); }
-.bb-s-ph .crop { border-radius: var(--radius); }
-.bb-s-copy { display: flex; flex-direction: column; gap: 6px; padding: 0 18px; }
-.bb-s-copy .link { margin-top: auto; padding-top: 6px; }
-.bb-s-copy h3 { font-size: 20px; line-height: 26px; color: var(--navy); margin: 0; }
-.bb-s-copy p:not(.tag) { font-size: var(--body-sm); }
-.bb-s-copy .tag { align-self: flex-start; }
-.bb-spon-head { display: flex; align-items: flex-end; gap: 12px; }
-.bb-spon-pre { font-size: 28px; line-height: 1.1; font-weight: 600; padding-bottom: 8px; }
-.bb-spon-n { color: var(--white); }
-.bb-spon { min-height: 190px; }
-.bb-hc { display: grid; grid-template-columns: 240px 1fr; }
-.bb-hc-n { display: grid; align-content: start; gap: 8px; padding: 28px 0 28px 32px; }
-.bb-hc-price { display: grid; gap: 14px; line-height: 1; margin-top: 8px; }
-.bb-hc-just { font-size: var(--body); }
-.bb-hc-line { display: flex; align-items: baseline; gap: 8px; }
-.bb-hc-yr { font-size: 28px; font-weight: 600; }
-.bb-resp { grid-template-columns: auto 1fr; align-items: start; }
-.bb-resp-n { padding: 28px 0 0 28px; color: var(--navy); }
-.bb-resp .svc-copy { padding-left: 20px; }
-.h-panel { font-size: var(--heading-md); line-height: 30px; }
-.bb-save { margin: 0; color: var(--cart); font-weight: 600; line-height: 1; }
-.bb-save-l { font-size: var(--body-sm); margin-right: 4px; }
-.bb-save-n { font-size: 40px; letter-spacing: -.02em; }
-.bb-save-n .pct { font-size: .55em; vertical-align: .55em; }
-.price { font-size: 40px; line-height: 40px; letter-spacing: -.02em; }
-.price sup { font-size: 16px; vertical-align: 18px; }
-@media (max-width: 1024px) {
-  .bb-lead { grid-template-columns: 1fr 1fr; }
-  .bb-lead-main { grid-column: 1 / -1; }
-  .bb-lead-side { padding-top: 24px; }
-  .bb-member-grid, .bb-board { grid-template-columns: 1fr; }
-  .bb-season { grid-template-columns: 1fr 1fr; }
-  .bb-hc { grid-template-columns: 1fr; }
-  .bb-hc-n { padding: 28px 32px 0; }
-}
-@media (max-width: 640px) {
-  .bb-lead { grid-template-columns: 1fr; padding: 24px 20px 0; }
-  .bb-pre { font-size: 20px; }
-  .bb-what { font-size: 28px; line-height: 34px; }
-  .bb-members { margin: 24px -20px 0; padding-left: 20px; padding-right: 20px; }
-  .bb-cut { margin-top: 20px; }
-  .bb-money-in { grid-template-columns: 1fr; gap: 12px; }
-  .bb-splash { grid-template-columns: 96px 1fr; }
-  .bb-tile { padding: 20px; }
-  .bb-tile-top { grid-template-columns: 1fr 104px; gap: 12px; }
-  .bb-big { font-size: var(--display-numeral); }
-  :root { --display-offer: 88px; }
-  .bb-hc-price .bb-big { font-size: 96px; }
-  .bb-resp-n { padding: 20px 0 0 20px; }
-  .bb-resp .svc-copy { padding: 20px; }
-  .bb-resp { grid-template-columns: 1fr; }
-  .bb-line { font-size: var(--body); line-height: 24px; }
-  .bb-season { grid-template-columns: 1fr 1fr; gap: 12px; }
-  .bb-s-copy { padding: 0 12px; }
-  .bb-s-copy h3 { font-size: 16px; line-height: 22px; }
-  .h-sec { font-size: 28px; line-height: 34px; }
-  .bb-save { font-size: 28px; }
-  .price { font-size: 28px; line-height: 32px; }
+/* ---------- kinetic-grid register ---------- */
+.offer, .dept, .cat, .mini, .art, .deal-panel, .proj, .pcard, .dtile { transition: transform var(--lift-duration) var(--ease-out-quart), box-shadow var(--lift-duration) var(--ease-out-quart), border-color var(--lift-duration) var(--ease-out-quart); }
+.offer, .dept, .cat, .mini, .art, .deal-panel, .proj, .pcard, .dtile { transition-property: translate, box-shadow, border-color; }
+.offer:hover, .dept:hover, .cat:hover, .art:hover, .proj:hover, .pcard:hover, .dtile:hover, .mini:hover, .deal-panel:hover { translate: 0 var(--lift-translate); }
+.offer:hover, .dept:hover, .cat:hover, .deal-panel:hover { box-shadow: 0 10px 24px rgb(1 33 105 / 12%), 0 2px 6px rgb(1 33 105 / 8%); }
+.pcard:hover .pcard-media, .dtile:hover .dtile-media, .mini:hover img, .proj:hover img, .art:hover .art-media { box-shadow: 0 10px 24px rgb(1 33 105 / 12%), 0 2px 6px rgb(1 33 105 / 8%); }
+/* cascade: one-shot, time-based settle once a tile is 15% visible (kinetic-grid extension over the canonical runtime) */
+.offer-grid, .cat-grid, .dept-grid, .plan-cards, .art-grid, .deal-grid, .proj-grid { perspective: 1200px; }
+[data-tile-anim] { transform-origin: 50% 0; }
+[data-tile-anim].is-in, [data-anim].is-in { opacity: 1 !important; transform: none !important; transition: opacity var(--enter-duration) var(--ease-out-quart), transform var(--enter-duration) var(--ease-out-quart), translate var(--lift-duration) var(--ease-out-quart), box-shadow var(--lift-duration) var(--ease-out-quart) !important; transition-delay: calc(var(--i, 0) * var(--enter-stagger)), calc(var(--i, 0) * var(--enter-stagger)), 0ms, 0ms !important; }
+[data-tile-anim]:focus-within, [data-tile-anim]:focus { opacity: 1 !important; transform: none !important; }
+.tab-ind.preview { opacity: .4; }
+.pcard-media, .dtile-media, .mini img, .proj img, .art-media { transition: box-shadow var(--lift-duration) var(--ease-out-quart); }
+.btn-cart { position: relative; overflow: hidden; isolation: isolate; }
+.btn-cart::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(100deg, transparent 20%, rgb(255 255 255 / 35%) 50%, transparent 80%); transform: translateX(-110%); }
+.btn-cart:hover::after { transform: translateX(110%); transition: transform 700ms var(--ease-out-quart); }
+.search { position: relative; }
+.search:focus-within { outline: none; }
+.search::after { content: ""; position: absolute; inset: -4px; border: 2px solid var(--color-accent); border-radius: var(--radius); clip-path: inset(0 100% 0 0); transition: clip-path 500ms var(--ease-out-quart); pointer-events: none; }
+.search:focus-within::after { clip-path: inset(0 0 0 0); }
+.tabs-wrap { position: relative; margin-bottom: 24px; }
+.tabs-wrap .tabs { margin-bottom: 0; padding-bottom: 10px; }
+.tab-ind { position: absolute; left: 0; bottom: 0; height: 3px; width: 100px; border-radius: var(--pill); background: var(--color-accent); transform-origin: 0 50%; transition: transform 420ms var(--ease-out-quart); }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+  [data-anim], [data-tile-anim] { opacity: 1 !important; transform: none !important; filter: none !important; clip-path: none !important; }
+  .offer:hover, .dept:hover, .cat:hover, .art:hover, .proj:hover, .pcard:hover, .dtile:hover, .mini:hover, .deal-panel:hover { translate: none; }
+  [data-tile-anim].is-in, [data-anim].is-in { transition-delay: 0ms !important; }
+  .btn-cart::after { display: none; }
+  .search::after { clip-path: none; opacity: 0; }
+  .search:focus-within::after { opacity: 1; }
 }
 </style>
+<noscript>
+  <style>
+    [data-anim], [data-tile-anim], [data-split] span { opacity: 1 !important; transform: none !important; filter: none !important; clip-path: none !important; }
+    .word { clip-path: none !important; transform: none !important; }
+    [data-parallax] { transform: none !important; }
+    .hero-marquee { transform: none !important; }
+    .post-hero { transform: none !important; }
+    .tab-ind { display: none; }
+  </style>
+</noscript>
+<link rel="stylesheet" href="lenis.min.css">
 </head>
 <body>
 <!-- DIRECTION CONTRACT (impeccable new-work § 5)
-THESIS: What if Lowe's deal numerals — locked inside banner art today — came out as live Fellix type and became the page's structural voice? Refuses the photo-banner hero and the badge-sized discount.
-OWN-WORLD: Same Lowe’s world as A (white ground, navy chrome, Lowe’s Blue, Cart Green only on cart/savings, Fellix 400/600, 8px / 20px), with a drenched display scale: offer numerals 88–144px, section titles 40px, prices 40px.
-STORY: Visitor reads the deal as a number first — 35%, $20, 65%, $120, $99, Save 25% — then the qualifier, then one action; browsing sections stay canon from A.
-FIRST VIEWPORT: Header router, then a full-width Lowe’s Blue billboard: "Up to 35% off" at display-numeral left, the $600 / $100 add-ons and "Shop All Deals" middle, product cutout right; member strip beneath; MyLowe’s Money "$20" tile + backsplash tile peeking at the fold.
-FORM: Split billboard tiles — position 3 of the grounded list (weekly-ad numeral wall / numeral ledger / split billboard tiles / department index / price-tag shelf / countdown); surface seed key 4e3589f7 assigned index 3; challengers fused poorly with Mode A pins. Staging: static.
+THESIS: What if Lowe's tile grid — departments, categories, deal panels — became the moving part of the page instead of rails that slide content out of sight? Refuses scroll-cinema parallax, tickers and letter reveals.
+OWN-WORLD: A’s Lowe’s world unchanged (white ground, navy chrome, Lowe’s Blue, Cart Green, Fellix, 8px / 20px) plus the kinetic-grid motion vocabulary: cascade, lift, sliding indicator, drawn focus ring, cart sheen.
+STORY: The page assembles like a well-stocked aisle as you scroll — tiles settle row by row, cards lift under the pointer, the category indicator slides to the aisle you point at; the offer itself never moves.
+FIRST VIEWPORT: Identical to A: header router and the Lowe’s Blue lead offer; the hero stays still (LCP + "operational hierarchy stays still"); the search field’s focus ring draws in on focus.
+FORM: Brief-pinned (C = A’s IA by uplift contract; motion register kinetic-grid from direct). Staging: scroll-progress cascade via the canonical stardust runtime + Lenis.
 FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
 -->
 
@@ -545,51 +510,43 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     </nav>
   </header>
   <main id="main" data-template="landing">
-    <section class="bb-hero" id="hero" data-section="hero" data-intent="lead offer" data-layout="type-led" data-items="1" data-media="image" aria-labelledby="hero-h">
-      <div class="wrap">
-        <article class="bb-lead">
-          <div class="bb-lead-main">
+    <section class="hero" id="hero" data-section="hero" data-intent="lead offer" data-layout="split-media" data-items="3" data-media="image" aria-labelledby="hero-h">
+      <div class="wrap hero-grid">
+        <article class="lead">
+          <div class="lead-copy">
             <p class="flag">Final Day</p>
-            <h1 id="hero-h" class="bb-h1"><span class="bb-pre">Up to</span> <span class="bb-num">35<span class="po"><span class="pct">%</span> <span class="po-off">off</span></span></span> <span class="bb-what">Select Major Appliances</span></h1>
-          </div>
-          <div class="bb-lead-side">
+            <h1 id="hero-h" class="lead-h"><span class="pre">Up to</span> <span class="lead-num">35%<span class="off">off</span></span> <span class="lead-what">Select Major Appliances</span></h1>
             <p class="lead-date">Offer ends 10/7/26.</p>
-            <ul class="bb-adds">
-              <li><span>Save up to an Additional <strong>$600</strong><br><small>Select LG Major Appliance Bundles</small></span></li>
-              <li><span>Save up to an Additional <strong>$100</strong><br><small>Select Laundry Pairs</small></span></li>
+            <ul class="lead-adds">
+              <li><strong>Save up to an Additional $600</strong> Select LG Major Appliance Bundles</li>
+              <li><strong>Save up to an Additional $100</strong> Select Laundry Pairs</li>
             </ul>
             <p class="lead-actions"><a class="btn-solid" href="https://www.lowes.com/pl/Major-appliance-special-values/2920130986014?int_cmp=Home%3A%3A%3A%3AFW33_26_Appliances_National">Shop All Deals</a> <a class="link-inv" href="https://www.lowes.com/pl/Major-appliance-special-values/2920130986014?int_cmp=Home%3A%3A%3A%3AFW33_26_Appliances_National">Offer details</a></p>
           </div>
-          <figure class="bb-cut"><div class="crop" style="aspect-ratio:1.500"><img src="https://main--lowes--jgrosskurth.aem.live/media_1ee99115c696cfac6f1473d4262972def9f3b96ec.png?width=2000&format=png&optimize=medium" alt="LG stainless range and French-door refrigerator" loading="eager" fetchpriority="high" decoding="async" style="width:404.86%;left:-163.97%;top:-76.93%"></div></figure>
-          <div class="members bb-members">
+          <figure class="lead-media"><div class="crop" style="aspect-ratio:1.500"><img src="https://main--lowes--jgrosskurth.aem.live/media_1ee99115c696cfac6f1473d4262972def9f3b96ec.png?width=2000&format=png&optimize=medium" alt="LG stainless range and French-door refrigerator" loading="eager" fetchpriority="high" decoding="async" style="width:404.86%;left:-163.97%;top:-76.93%"></div></figure>
+          <div class="members">
             <p class="members-h"><strong>All-In Appliance Offer</strong> · Members Get More</p>
             <p class="members-p">When you spend $2,500 or more on select LG major appliances.</p>
             <ul class="members-perks"><li>FREE Delivery</li><li>FREE Basic Installation and Parts</li><li>FREE Haul Away</li><li>2-Year Lowe’s Protection Plan</li></ul>
             <p class="fine">Excludes Florida and MyLowe’s Pro Rewards™ members.</p>
           </div>
         </article>
-      </div>
-    </section>
-
-    <section class="bb-member" data-section="member-offers" data-intent="loyalty offer" data-layout="grid" data-items="2" aria-labelledby="mo-h">
-      <h2 class="sr" id="mo-h">Member offers</h2>
-      <div class="wrap bb-member-grid">
-        <article class="bb-money">
-          <p class="money-band">MyLowe’s Money</p>
-          <div class="bb-money-in">
-            <p class="bb-num-m bb-mid" aria-hidden="true"><sup>$</sup>20</p>
-            <div>
-              <h3 class="bb-tile-h">MyLowe’s Money™ Days are back.</h3>
-              <p>Get up to $20 in MyLowe’s Money on an eligible purchase of $200 or more.</p>
-              <p class="offer-date">Offer ends 10/14/26.</p>
-              <a class="link" href="https://www.lowes.com/l/shop/mylowes-money-days">Offer details<span class="sr">, MyLowe’s Money Days</span></a>
+        <div class="hero-side">
+          <article class="side-tile money">
+            <p class="money-band">MyLowe’s Money</p>
+            <h2 class="side-h">MyLowe’s Money™ Days are back.</h2>
+            <p>Get up to $20 in MyLowe’s Money on an eligible purchase of $200 or more.</p>
+            <p class="offer-date">Offer ends 10/14/26.</p>
+            <a class="link" href="https://www.lowes.com/l/shop/mylowes-money-days">Offer details<span class="sr">, MyLowe’s Money Days</span></a>
+          </article>
+          <article class="side-tile photo">
+            <div class="crop" style="aspect-ratio:1.200"><img src="https://main--lowes--jgrosskurth.aem.live/media_1d666204a2d0b838ddf7c200926fc0f840f6420e5.png?width=1600&format=png&optimize=medium" alt="Herringbone tile backsplash above a stainless cooktop" loading="eager" decoding="async" style="width:270.27%;left:-162.16%;top:0.00%"></div>
+            <div class="side-photo-copy">
+              <h2 class="side-h">Refresh your backsplash before the holiday rush.</h2>
+              <a class="link" href="https://www.lowes.com/pl/Backsplash-refresh/2210857298664?int_cmp=Home%3A%3A%3A%3AFW35_26_Kitchen_Backsplash">Shop backsplash</a>
             </div>
-          </div>
-        </article>
-        <article class="bb-splash">
-          <div class="crop" style="aspect-ratio:1.200"><img src="https://main--lowes--jgrosskurth.aem.live/media_1d666204a2d0b838ddf7c200926fc0f840f6420e5.png?width=1600&format=png&optimize=medium" alt="Herringbone tile backsplash above a stainless cooktop" loading="eager" decoding="async" style="width:270.27%;left:-162.16%;top:0.00%"></div>
-          <div><h3 class="bb-tile-h">Refresh your backsplash before the holiday rush.</h3><a class="link" href="https://www.lowes.com/pl/Backsplash-refresh/2210857298664?int_cmp=Home%3A%3A%3A%3AFW35_26_Kitchen_Backsplash">Shop backsplash</a></div>
-        </article>
+          </article>
+        </div>
       </div>
     </section>
 
@@ -600,63 +557,97 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       </div>
     </section>
 
-    <section class="bb-offers" id="offers" data-section="offers" data-intent="drive action" data-layout="grid" data-items="8" data-media="image" aria-labelledby="offers-h">
+    <section class="offers" id="offers" data-section="offers" data-intent="drive action" data-layout="grid" data-items="8" data-media="image" aria-labelledby="offers-h">
       <div class="wrap">
         <h2 class="sr" id="offers-h">Offers</h2>
-        <ul class="bb-board">
-          <li><article class="bb-tile">
-            <div class="bb-tile-top">
-              <h3 class="bb-tile-num"><span class="bb-pre">Up to</span> <span class="bb-big">65<span class="po"><span class="pct">%</span> <span class="po-off">off</span></span></span><span class="sr"> Select Alexa, Ring, Blink and Fire TV Products</span></h3>
-              <div class="bb-sq"><div class="crop" style="aspect-ratio:1.000"><img src="https://main--lowes--jgrosskurth.aem.live/media_13d26c37d2ddd5bcb2128eae46c16842b9542a1e2.png?width=900&format=png&optimize=medium" alt="Smart display alarm clock on a nightstand" loading="lazy" decoding="async" style="width:238.10%;left:-104.76%;top:-140.00%"></div></div>
+        <ul class="offer-grid">
+          <li><article data-tile-anim class="offer">
+            <div class="offer-media"><div class="crop" style="aspect-ratio:1.500"><img src="https://main--lowes--jgrosskurth.aem.live/media_13d26c37d2ddd5bcb2128eae46c16842b9542a1e2.png?width=1000&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:158.73%;left:-47.62%;top:-150.00%"></div></div>
+            <div class="offer-copy">
+          
+          <h3 class="offer-num"><span class="pre">Up to</span> <strong>65%</strong> <span class="off">off</span><span class="sr"> Select Alexa, Ring, Blink and Fire TV Products</span></h3>
+          
+          <p class="offer-line">Select Alexa, Ring, Blink and Fire TV Products</p>
+          <p class="offer-date">Offer ends 10/7/26.</p>
+              <a class="link" href="https://www.lowes.com/pl/Save-on-select-alexa-ring-blink-fire-tv-products/2610979844656">Shop smart home deals</a>
             </div>
-            <p class="bb-line">Select Alexa, Ring, Blink and Fire TV Products</p>
-            <p class="offer-date">Offer ends 10/7/26.</p>
-            <a class="link" href="https://www.lowes.com/pl/Save-on-select-alexa-ring-blink-fire-tv-products/2610979844656">Shop smart home deals</a>
           </article></li>
-          <li><article class="bb-tile">
-            <div class="bb-tile-top">
-              <h3 class="bb-tile-num"><span class="bb-pre">Up to</span> <span class="bb-big">40<span class="po"><span class="pct">%</span> <span class="po-off">off</span></span></span><span class="sr"> Select Bathroom Products</span></h3>
-              <div class="bb-sq"><div class="crop" style="aspect-ratio:1.000"><img src="https://main--lowes--jgrosskurth.aem.live/media_1f20f87ed1fa3339b3a7b5db3a3ddacb4762406b6.png?width=900&format=png&optimize=medium" alt="Bathroom vanity with folded towels" loading="lazy" decoding="async" style="width:181.82%;left:-69.09%;top:-85.91%"></div></div>
+          <li><article data-tile-anim class="offer">
+            <div class="offer-media"><div class="crop" style="aspect-ratio:1.500"><img src="https://main--lowes--jgrosskurth.aem.live/media_1f20f87ed1fa3339b3a7b5db3a3ddacb4762406b6.png?width=1000&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:126.58%;left:-12.66%;top:-99.68%"></div></div>
+            <div class="offer-copy">
+          
+          <h3 class="offer-num"><span class="pre">Up to</span> <strong>40%</strong> <span class="off">off</span><span class="sr"> Select Bathroom Products</span></h3>
+          
+          <p class="offer-line">Select Bathroom Products</p>
+          
+              <a class="link" href="https://www.lowes.com/pl/SHOP-BATHROOM-DEALS/2220627017920">Shop bathroom deals</a>
             </div>
-            <p class="bb-line">Select Bathroom Products</p>
-            
-            <a class="link" href="https://www.lowes.com/pl/SHOP-BATHROOM-DEALS/2220627017920">Shop bathroom deals</a>
           </article></li>
-          <li><article class="bb-tile">
-            <div class="bb-tile-top">
-              <h3 class="bb-tile-num"><span class="bb-pre">Up to</span> <span class="bb-big">30<span class="po"><span class="pct">%</span> <span class="po-off">off</span></span></span><span class="sr"> Select Grills and Accessories</span></h3>
-              <div class="bb-sq"><div class="crop" style="aspect-ratio:1.000"><img src="https://main--lowes--jgrosskurth.aem.live/media_10a536183da532813e5594dc8291e07eac83e6cb1.png?width=900&format=png&optimize=medium" alt="Charcoal grill on a patio" loading="lazy" decoding="async" style="width:178.57%;left:-60.71%;top:-82.50%"></div></div>
+          <li><article data-tile-anim class="offer">
+            <div class="offer-media"><div class="crop" style="aspect-ratio:1.500"><img src="https://main--lowes--jgrosskurth.aem.live/media_10a536183da532813e5594dc8291e07eac83e6cb1.png?width=1000&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:114.94%;left:-8.05%;top:-81.47%"></div></div>
+            <div class="offer-copy">
+          
+          <h3 class="offer-num"><span class="pre">Up to</span> <strong>30%</strong> <span class="off">off</span><span class="sr"> Select Grills and Accessories</span></h3>
+          
+          <p class="offer-line">Select Grills and Accessories</p>
+          
+              <a class="link" href="https://www.lowes.com/pl/Deals-on-grills-and-accessories/4294393574">Shop grill deals</a>
             </div>
-            <p class="bb-line">Select Grills and Accessories</p>
-            
-            <a class="link" href="https://www.lowes.com/pl/Deals-on-grills-and-accessories/4294393574">Shop grill deals</a>
           </article></li>
-          <li><article class="bb-tile">
-            <div class="bb-tile-top">
-              <h3 class="bb-tile-num"><span class="tag">FREE Same-day DELIVERY</span> <span class="bb-pre">Save up to</span> <span class="bb-big"><sup>$</sup>120</span><span class="sr"> Select Power Tools, Equipment and Accessories</span></h3>
-              <div class="bb-sq"><div class="crop" style="aspect-ratio:1.000"><img src="https://main--lowes--jgrosskurth.aem.live/media_105cb20bf6fbe426e94ba8786f9b1e7c3202ab955.png?width=900&format=png&optimize=medium" alt="Miter saw on a workbench" loading="lazy" decoding="async" style="width:411.52%;left:-255.14%;top:-12.50%"></div></div>
+          <li><article data-tile-anim class="offer">
+            <div class="offer-media"><div class="crop" style="aspect-ratio:1.500"><img src="https://main--lowes--jgrosskurth.aem.live/media_105cb20bf6fbe426e94ba8786f9b1e7c3202ab955.png?width=1000&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:222.22%;left:-102.22%;top:0.00%"></div></div>
+            <div class="offer-copy">
+          <p class="tag">FREE Same-day DELIVERY</p>
+          <h3 class="offer-num"><span class="pre">Save up to</span> <strong>$120</strong><span class="sr"> Select Power Tools, Equipment and Accessories</span></h3>
+          
+          <p class="offer-line">Select Power Tools, Equipment and Accessories</p>
+          
+              <a class="link" href="https://www.lowes.com/pl/Deals-on-tools-and-outdoor-power-equipment/3411464183736?int_cmp=Home%3A%3A%3A%3AFW35_26_Tools">Shop tool deals</a>
             </div>
-            <p class="bb-line">Select Power Tools, Equipment and Accessories</p>
-            
-            <a class="link" href="https://www.lowes.com/pl/Deals-on-tools-and-outdoor-power-equipment/3411464183736?int_cmp=Home%3A%3A%3A%3AFW35_26_Tools">Shop tool deals</a>
           </article></li>
-        </ul>
-        <ul class="bb-season">
-          <li><article class="bb-s">
-            <div class="bb-s-ph"><div class="crop" style="aspect-ratio:1.500"><img src="https://main--lowes--jgrosskurth.aem.live/media_1cd061a50cec206619d2437063444369230932422.png?width=900&format=png&optimize=medium" alt="Wicker chairs with fall pillows on a porch" loading="lazy" decoding="async" style="width:100.00%;left:0.00%;top:-58.28%"></div></div>
-            <div class="bb-s-copy"><h3>Bring home fall style under $50.</h3><a class="link" href="https://www.lowes.com/pl/Fall-refresh-under-50/2211000121484">Shop fall style</a></div>
+          <li><article data-tile-anim class="offer">
+            <div class="offer-media"><div class="crop" style="aspect-ratio:1.500"><img src="https://main--lowes--jgrosskurth.aem.live/media_1cd061a50cec206619d2437063444369230932422.png?width=1000&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:100.00%;left:0.00%;top:-58.28%"></div></div>
+            <div class="offer-copy">
+          
+          
+          <h3 class="offer-head">Bring home fall style under $50.</h3>
+          
+          
+              <a class="link" href="https://www.lowes.com/pl/Fall-refresh-under-50/2211000121484">Shop fall style</a>
+            </div>
           </article></li>
-          <li><article class="bb-s">
-            <div class="bb-s-ph"><div class="crop" style="aspect-ratio:1.500"><img src="https://main--lowes--jgrosskurth.aem.live/media_18732229f47dd9df902590d37abe54154329d53f3.png?width=900&format=png&optimize=medium" alt="Cordless drill and reciprocating saws" loading="lazy" decoding="async" style="width:100.00%;left:0.00%;top:-58.28%"></div></div>
-            <div class="bb-s-copy"><h3>Explore what’s new in tools from trusted brands.</h3><a class="link" href="https://www.lowes.com/pl/New-power-tools/2220479030175">Shop new tools</a></div>
+          <li><article data-tile-anim class="offer">
+            <div class="offer-media"><div class="crop" style="aspect-ratio:1.500"><img src="https://main--lowes--jgrosskurth.aem.live/media_18732229f47dd9df902590d37abe54154329d53f3.png?width=1000&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:100.00%;left:0.00%;top:-58.28%"></div></div>
+            <div class="offer-copy">
+          
+          
+          <h3 class="offer-head">Explore what’s new in tools from trusted brands.</h3>
+          
+          
+              <a class="link" href="https://www.lowes.com/pl/New-power-tools/2220479030175">Shop new tools</a>
+            </div>
           </article></li>
-          <li><article class="bb-s">
-            <div class="bb-s-ph"><div class="crop" style="aspect-ratio:1.500"><img src="https://main--lowes--jgrosskurth.aem.live/media_1329017e121ba5969398f14bb46a7f1566a068e18.png?width=900&format=png&optimize=medium" alt="Friends around a fire pit on a patio" loading="lazy" decoding="async" style="width:222.22%;left:-111.11%;top:0.00%"></div></div>
-            <div class="bb-s-copy"><p class="tag">3x Points</p><h3>Make the most of fall.</h3><p>MyLowe’s Rewards™ members earn 3x points on select purchases.</p><a class="link" href="https://www.lowes.com/pl/Fall-hosting/1811163654388?int_cmp=Home%3A%3A%3A%3AFW35_26_Fall_Hosting">Shop fall hosting</a></div>
+          <li><article data-tile-anim class="offer">
+            <div class="offer-media"><div class="crop" style="aspect-ratio:1.500"><img src="https://main--lowes--jgrosskurth.aem.live/media_1329017e121ba5969398f14bb46a7f1566a068e18.png?width=1000&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:222.22%;left:-111.11%;top:0.00%"></div></div>
+            <div class="offer-copy">
+          <p class="tag">3x Points</p>
+          
+          <h3 class="offer-head">Make the most of fall.</h3>
+          <p class="offer-line">MyLowe’s Rewards™ members earn 3x points on select purchases.</p>
+          
+              <a class="link" href="https://www.lowes.com/pl/Fall-hosting/1811163654388?int_cmp=Home%3A%3A%3A%3AFW35_26_Fall_Hosting">Shop fall hosting</a>
+            </div>
           </article></li>
-          <li><article class="bb-s">
-            <div class="bb-s-ph"><div class="crop" style="aspect-ratio:1.500"><img src="https://main--lowes--jgrosskurth.aem.live/media_11b55181638a9298e495190636df06b7c5d2189ea.png?width=900&format=png&optimize=medium" alt="A gardener planting a raised bed" loading="lazy" decoding="async" style="width:222.22%;left:-111.11%;top:0.00%"></div></div>
-            <div class="bb-s-copy"><p class="tag">3x Points</p><h3>Set your fall garden up for success.</h3><p>MyLowe’s Rewards™ members earn 3x points on select purchases.</p><a class="link" href="https://www.lowes.com/pl/Fall-gardening/2120885942585?int_cmp=Home%3A%3A%3A%3AFW33_26_Fall_Planting">Shop fall gardening</a></div>
+          <li><article data-tile-anim class="offer">
+            <div class="offer-media"><div class="crop" style="aspect-ratio:1.500"><img src="https://main--lowes--jgrosskurth.aem.live/media_11b55181638a9298e495190636df06b7c5d2189ea.png?width=1000&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:222.22%;left:-111.11%;top:0.00%"></div></div>
+            <div class="offer-copy">
+          <p class="tag">3x Points</p>
+          
+          <h3 class="offer-head">Set your fall garden up for success.</h3>
+          <p class="offer-line">MyLowe’s Rewards™ members earn 3x points on select purchases.</p>
+          
+              <a class="link" href="https://www.lowes.com/pl/Fall-gardening/2120885942585?int_cmp=Home%3A%3A%3A%3AFW33_26_Fall_Planting">Shop fall gardening</a>
+            </div>
           </article></li>
         </ul>
       </div>
@@ -664,10 +655,10 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 
     <section class="sponsored" data-section="sponsored" data-intent="paid placement" data-layout="split-media" data-media="image" aria-label="Sponsored: DEWALT Days">
       <div class="wrap">
-        <article class="spon bb-spon">
+        <article class="spon">
           <div class="spon-copy">
             <p class="spon-brand">DEWALT Days</p>
-            <p class="bb-spon-head"><span class="bb-spon-pre">Save up to</span> <span class="bb-spon-n bb-mid"><sup>$</sup>100</span></p>
+            <p class="spon-head">Save up to <sup>$</sup>100</p>
             <p class="spon-line">Select DEWALT® Tools</p>
             <a class="link-inv" href="https://www.lowes.com/pl/Top-deals-on-dewalt-tools/2520898430100">Shop DEWALT deals</a>
           </div>
@@ -679,18 +670,20 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 
     <section class="services" id="projects-made-easy" data-section="projects-made-easy" data-intent="services offer" data-layout="grid" data-items="2" aria-labelledby="pme-h">
       <div class="wrap">
-        <h2 id="pme-h" class="h-sec">Home Improvement Projects Made Easy</h2>
+        <h2 data-anim id="pme-h" class="h-sec">Home Improvement Projects Made Easy</h2>
         <div class="svc-grid">
-          <article class="svc homecare bb-hc">
-            <div class="bb-hc-n"><p class="svc-mark">Lowe’s HomeCare+</p><p class="bb-hc-price"><span class="bb-hc-just">Subscribe for just</span> <span class="bb-hc-line"><span class="bb-mid"><sup>$</sup>99</span> <span class="bb-hc-yr">a year.</span></span></p><p class="fine">Auto-renews. Service restrictions apply. Service items required.</p></div>
+          <article class="svc homecare">
             <div class="svc-copy">
+              <p class="svc-mark">Lowe’s HomeCare+</p>
               <h3 class="svc-h">Essential tasks handled by a trained Lowe’s associate. Twice a year. Right to your door.</h3>
               <ul class="svc-list"><li>Electric dryer vent cleaning</li><li>HVAC air filter replacement</li><li>Refrigerator water filter replacement</li><li>Electric water heater flush</li><li>Garage door lubrication</li><li>Smoke and carbon monoxide detector battery replacement</li><li>Light bulb replacement</li></ul>
+              <p class="svc-price">Subscribe for just <strong><sup>$</sup>99</strong> a year.</p>
+              <p class="fine">Auto-renews. Service restrictions apply. Service items required.</p>
               <a class="link" href="https://www.lowes.com/l/about/mylowes-rewards-homecare">Offer details<span class="sr">, Lowe’s HomeCare+</span></a>
             </div>
           </article>
-          <article class="svc responders bb-resp">
-            <p class="bb-resp-n bb-mid" aria-hidden="true"><sup>$</sup>10</p>
+          <article class="svc responders">
+            <div class="svc-media"><div class="crop" style="aspect-ratio:2.500"><img src="https://main--lowes--jgrosskurth.aem.live/media_10f22bbf6fc8be3e96f6c47790353e28eb095c71e.png?width=1600&format=png&optimize=medium" alt="A first responder lifting a yellow storage tote in a Lowe’s aisle" loading="lazy" decoding="async" style="width:250.00%;left:-150.00%;top:-16.48%"></div></div>
             <div class="svc-copy">
               <h3 class="svc-h">Thank you, first responders.</h3>
               <p>To celebrate First Responders Appreciation Month, here’s $10 MyLowe’s Money™.</p>
@@ -704,7 +697,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 
     <section class="plan" id="plan-your-day" data-section="plan-your-day" data-intent="plan a project" data-layout="side-rail" data-items="10" aria-labelledby="pyd-h">
       <div class="wrap">
-        <h2 id="pyd-h" class="h-sec">Plan your day and your next project!</h2>
+        <h2 data-anim id="pyd-h" class="h-sec">Plan your day and your next project!</h2>
         <div class="plan-grid">
           <aside class="weather" aria-labelledby="wx-h">
             <h3 id="wx-h">Your Local Weather</h3>
@@ -712,52 +705,52 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
             <button class="btn-outline" type="button"><img class="ico" src="https://main--lowes--jgrosskurth.aem.live/media_1c758a25886575cf1aee2c0a6e6123f04a713d4b0.svg?width=750&format=svg&optimize=medium" alt="" width="20" height="20" loading="lazy" decoding="async">Find a Store Near Me</button>
           </aside>
           <ul class="plan-cards">
-            <li><article class="mini">
+            <li><article data-tile-anim class="mini">
               <img src="https://main--lowes--jgrosskurth.aem.live/media_18e2d91f5544f0fd0b8f392ac10890ae6af9ae44e.png?width=600&format=png&optimize=medium" alt="" width="400" height="225" loading="lazy" decoding="async">
               <h3><a href="https://www.lowes.com/pl/Private-brands-patio/2311469772209">New Private Brand Patio</a></h3>
               <p class="mini-kind shop" aria-hidden="true">Shop Now</p>
             </article></li>
-            <li><article class="mini">
+            <li><article data-tile-anim class="mini">
               <img src="https://main--lowes--jgrosskurth.aem.live/media_1089c900176a208ab50b78af1e67aa6c3706b4708.jpg?width=600&format=jpg&optimize=medium" alt="" width="400" height="225" loading="lazy" decoding="async">
               <h3><a href="https://www.lowes.com/l/seasonal-inspiration">Seasonal Projects and Inspiration</a></h3>
               <p class="mini-kind shop" aria-hidden="true">Shop Now</p>
             </article></li>
-            <li><article class="mini">
+            <li><article data-tile-anim class="mini">
               <img src="https://main--lowes--jgrosskurth.aem.live/media_1fc31292fa9b3e48f5ec397966506af0cc8a45de1.png?width=600&format=png&optimize=medium" alt="" width="400" height="225" loading="lazy" decoding="async">
               <h3><a href="https://www.lowes.com/n/how-to/diy-scarecrow">How to Make a Scarecrow</a></h3>
               <p class="mini-kind article" aria-hidden="true">Read Article</p>
             </article></li>
-            <li><article class="mini">
+            <li><article data-tile-anim class="mini">
               <img src="https://main--lowes--jgrosskurth.aem.live/media_1321397975e8d819d990db78cf3f9ab2f111f7c4a.png?width=600&format=png&optimize=medium" alt="" width="400" height="225" loading="lazy" decoding="async">
               <h3><a href="https://www.lowes.com/pl/Movie-night/1920008322135">Outdoor Movie Night</a></h3>
               <p class="mini-kind shop" aria-hidden="true">Shop Now</p>
             </article></li>
-            <li><article class="mini">
+            <li><article data-tile-anim class="mini">
               <img src="https://main--lowes--jgrosskurth.aem.live/media_160d88dcbc7b49725eb5675d9c980b1c96043a23e.png?width=600&format=png&optimize=medium" alt="" width="400" height="225" loading="lazy" decoding="async">
               <h3><a href="https://www.lowes.com/n/how-to/diy-floating-ghoul">DIY Floating Ghoul</a></h3>
               <p class="mini-kind article" aria-hidden="true">Read Article</p>
             </article></li>
-            <li><article class="mini">
+            <li><article data-tile-anim class="mini">
               <img src="https://main--lowes--jgrosskurth.aem.live/media_1484c8b86256c79d8cc28e268bb2872585d9a6c93.png?width=600&format=png&optimize=medium" alt="" width="400" height="225" loading="lazy" decoding="async">
               <h3><a href="https://www.lowes.com/pl/Refresh-your-outdoors/1459845140">Update your Backyard on a Budget</a></h3>
               <p class="mini-kind shop" aria-hidden="true">Shop Now</p>
             </article></li>
-            <li><article class="mini">
+            <li><article data-tile-anim class="mini">
               <img src="https://main--lowes--jgrosskurth.aem.live/media_1da20afbe33dac35ccabcbb53611cc17afa681ac6.png?width=600&format=png&optimize=medium" alt="" width="400" height="225" loading="lazy" decoding="async">
               <h3><a href="https://www.lowes.com/n/how-to/tomato-cage-halloween-ideas">How to Create Ghosts and Witches Using Tomato Cages</a></h3>
               <p class="mini-kind article" aria-hidden="true">Read Article</p>
             </article></li>
-            <li><article class="mini">
+            <li><article data-tile-anim class="mini">
               <img src="https://main--lowes--jgrosskurth.aem.live/media_1f48b84c0e8532e0df9f5ae45de0139c555422ce1.png?width=600&format=png&optimize=medium" alt="" width="400" height="225" loading="lazy" decoding="async">
               <h3><a href="https://www.lowes.com/pl/Enjoy-outdoors/4115382573">Get Outdoors</a></h3>
               <p class="mini-kind shop" aria-hidden="true">Shop Now</p>
             </article></li>
-            <li><article class="mini">
+            <li><article data-tile-anim class="mini">
               <img src="https://main--lowes--jgrosskurth.aem.live/media_1c7c61124256bd7d55f851afda1ac5b24fbd6cb62.png?width=600&format=png&optimize=medium" alt="" width="400" height="225" loading="lazy" decoding="async">
               <h3><a href="https://www.lowes.com/n/how-to/diy-cement-skulls">DIY Mortar Skulls</a></h3>
               <p class="mini-kind article" aria-hidden="true">Read Article</p>
             </article></li>
-            <li><article class="mini">
+            <li><article data-tile-anim class="mini">
               <img src="https://main--lowes--jgrosskurth.aem.live/media_1c6662b5dcf2861a868b1702e019607fa43c8be72.png?width=600&format=png&optimize=medium" alt="" width="400" height="225" loading="lazy" decoding="async">
               <h3><a href="https://www.lowes.com/pl/Refresh-your-patio/2211058895232">Refresh Your Patio</a></h3>
               <p class="mini-kind shop" aria-hidden="true">Shop Now</p>
@@ -769,7 +762,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 
     <section class="gifts" id="gift-zone" data-section="gift-zone" data-intent="shop products" data-layout="side-rail" data-items="13" data-interactive="carousel" aria-labelledby="gz-h">
       <div class="wrap">
-        <h2 id="gz-h" class="h-sec">Gift Zone</h2>
+        <h2 data-anim id="gz-h" class="h-sec">Gift Zone</h2>
         <div class="gift-grid">
           <article class="gift-feature">
             <div class="crop" style="aspect-ratio:1.391"><img src="https://main--lowes--jgrosskurth.aem.live/media_1e1b33a00a8199709ebd8c70436ee93038224ed92.png?width=1000&format=png&optimize=medium" alt="Gifts under a Christmas tree: coffee maker, tool chest, mini fridge and a wrapped saw" loading="lazy" decoding="async" style="width:138.89%;left:-19.44%;top:-90.46%"></div>
@@ -891,35 +884,35 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 
     <section class="cats" id="categories" data-section="categories" data-intent="browse departments" data-layout="grid" data-items="28" aria-labelledby="pc-h">
       <div class="wrap">
-        <h2 id="pc-h" class="h-sec">Popular Categories</h2>
-        <ul class="cat-grid"><li><a class="cat" href="https://www.lowes.com/l/savings/daily-deals"><img src="https://main--lowes--jgrosskurth.aem.live/media_10c05dc0a14448a2cd0ca4da18b02a430379e932c.png?width=800&format=png&optimize=medium" alt="Deals of the Day" width="600" height="130" loading="lazy" decoding="async"></a></li><li><a class="cat" href="https://www.lowes.com/pl/LOWES-essentials/2211386766018"><img src="https://main--lowes--jgrosskurth.aem.live/media_1cd03b13b3ddea0344638ff182575a1c5d60fc7c3.png?width=800&format=png&optimize=medium" alt="Lowe’s Essentials" width="600" height="130" loading="lazy" decoding="async"></a></li><li><a class="cat" href="https://www.lowes.com/l/shop/seasonal-maintenance"><img src="https://main--lowes--jgrosskurth.aem.live/media_1853f5494f28af034ed752c1969f42e1bbdb38fd6.png?width=800&format=png&optimize=medium" alt="Fall Maintenance" width="600" height="130" loading="lazy" decoding="async"></a></li><li><a class="cat" href="https://www.lowes.com/c/Holiday-decorations"><img src="https://main--lowes--jgrosskurth.aem.live/media_14484ec62af279345166d24bc0910d900c94649dd.png?width=800&format=png&optimize=medium" alt="Holiday Decor" width="600" height="130" loading="lazy" decoding="async"></a></li></ul>
-        <ul class="dept-grid"><li><a class="dept" href="https://www.lowes.com/c/Animal-pet-care?int_cmp=Home%3AA2%3AAnimalPetCare%3AOther%3APC_Animal_Pet_Care"><span class="dept-ico"><div class="crop" style="aspect-ratio:1.000"><img src="https://main--lowes--jgrosskurth.aem.live/media_132d884ac2b000ea729ac9013a5c0fdcab4cc4e37.png?width=400&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:333.33%;left:-16.67%;top:-15.90%"></div></span><span class="dept-l">Animal and Pet Care</span></a></li><li><a class="dept" href="https://www.lowes.com/c/Appliances?int_cmp=Home%3AA2%3AAppliances%3AOther%3APC_Appliances"><span class="dept-ico"><div class="crop" style="aspect-ratio:1.000"><img src="https://main--lowes--jgrosskurth.aem.live/media_1ab6f36d1afb61f77c43abc96fc92b118a1ea6882.png?width=400&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:333.33%;left:-16.67%;top:-15.90%"></div></span><span class="dept-l">Appliances</span></a></li><li><a class="dept" href="https://www.lowes.com/c/Automotive?int_cmp=Home%3AA2%3ANoDivision%3AOther%3APC_Automotive"><span class="dept-ico"><div class="crop" style="aspect-ratio:1.000"><img src="https://main--lowes--jgrosskurth.aem.live/media_12253dd5cb41f6fe0014ffae24f6de1aa80015c95.png?width=400&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:333.33%;left:-16.67%;top:-15.90%"></div></span><span class="dept-l">Automotive</span></a></li><li><a class="dept" href="https://www.lowes.com/c/Bathroom?int_cmp=Home%3AA2%3ABath%3AOther%3APC_Bathroom"><span class="dept-ico"><div class="crop" style="aspect-ratio:1.000"><img src="https://main--lowes--jgrosskurth.aem.live/media_12216092a81baef0d7a2c1a833999f7748778c2f3.png?width=400&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:333.33%;left:-16.67%;top:-15.90%"></div></span><span class="dept-l">Bathroom</span></a></li><li><a class="dept" href="https://www.lowes.com/c/Window-treatments-Home-decor?int_cmp=Home%3AA2%3ANoDivision%3AOther%3APC_Blinds_Window"><span class="dept-ico"><div class="crop" style="aspect-ratio:1.000"><img src="https://main--lowes--jgrosskurth.aem.live/media_1d29c5a842074452c59641ae8c9f152580dbdbaf3.png?width=400&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:333.33%;left:-16.67%;top:-15.90%"></div></span><span class="dept-l">Blinds and Window Treatments</span></a></li><li><a class="dept" href="https://www.lowes.com/c/Building-supplies?int_cmp=Home%3AA2%3ABuildingMaterials%3AOther%3APC_Building_Supplies"><span class="dept-ico"><div class="crop" style="aspect-ratio:1.000"><img src="https://main--lowes--jgrosskurth.aem.live/media_1e88ff874e7643e4ace6cc81411adea705279d451.png?width=400&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:333.33%;left:-16.67%;top:-15.90%"></div></span><span class="dept-l">Building Supplies</span></a></li><li><a class="dept" href="https://www.lowes.com/c/Cleaning-supplies?int_cmp=Home%3AA2%3AHoliday%3AOther%3APC_Cleaning_Supplies"><span class="dept-ico"><div class="crop" style="aspect-ratio:1.000"><img src="https://main--lowes--jgrosskurth.aem.live/media_1bcb2081acb8e6a92b79004b7197780b5b0f9dd26.png?width=400&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:333.33%;left:-16.67%;top:-15.90%"></div></span><span class="dept-l">Cleaning Supplies</span></a></li><li><a class="dept" href="https://www.lowes.com/c/Windows-doors?int_cmp=Home%3AA2%3AWindowsDoors%3AOther%3APC_Doors_Windows"><span class="dept-ico"><div class="crop" style="aspect-ratio:1.000"><img src="https://main--lowes--jgrosskurth.aem.live/media_1607b356e65fc47beba97b592230d6b14a5090986.png?width=400&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:333.33%;left:-16.67%;top:-15.90%"></div></span><span class="dept-l">Doors and Windows</span></a></li><li><a class="dept" href="https://www.lowes.com/c/Electrical?int_cmp=Home%3AA2%3AElectrical%3AOther%3APC_Electrical"><span class="dept-ico"><div class="crop" style="aspect-ratio:1.000"><img src="https://main--lowes--jgrosskurth.aem.live/media_175e5ae55aaa3d31c0dc05e01812416afdfd1be73.png?width=400&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:333.33%;left:-16.67%;top:-15.90%"></div></span><span class="dept-l">Electrical</span></a></li><li><a class="dept" href="https://www.lowes.com/c/Flooring?int_cmp=Home%3AA2%3AFlooring%3AOther%3APC_Flooring_Rugs"><span class="dept-ico"><div class="crop" style="aspect-ratio:1.000"><img src="https://main--lowes--jgrosskurth.aem.live/media_1d7d597e3946e627a4e5fb47b9cef03bd340ae841.png?width=400&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:333.33%;left:-16.67%;top:-15.90%"></div></span><span class="dept-l">Flooring and Rugs</span></a></li><li><a class="dept" href="https://www.lowes.com/c/Hardware?int_cmp=Home%3AA2%3AHardware%3AOther%3APC_Hardware"><span class="dept-ico"><div class="crop" style="aspect-ratio:1.000"><img src="https://main--lowes--jgrosskurth.aem.live/media_17ce5534d5858b58a8b0adce8af23a0823e4308ee.png?width=400&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:333.33%;left:-16.67%;top:-15.90%"></div></span><span class="dept-l">Hardware</span></a></li><li><a class="dept" href="https://www.lowes.com/c/Heating-cooling?int_cmp=Home%3AA2%3AHeatingCooling%3AOther%3APC_Heating_Cooling"><span class="dept-ico"><div class="crop" style="aspect-ratio:1.000"><img src="https://main--lowes--jgrosskurth.aem.live/media_1fe7da555552e9a6d4d17a290eec2343804379636.png?width=400&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:333.33%;left:-16.67%;top:-15.90%"></div></span><span class="dept-l">Heating and Cooling</span></a></li><li><a class="dept" href="https://www.lowes.com/c/Home-decor?int_cmp=Home%3AA2%3AD%C3%A9cor%3AOther%3APC_Home_Decor"><span class="dept-ico"><div class="crop" style="aspect-ratio:1.000"><img src="https://main--lowes--jgrosskurth.aem.live/media_126d76e72c38722b29ef964fc798908f80e97be7d.png?width=400&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:333.33%;left:-16.67%;top:-15.90%"></div></span><span class="dept-l">Home Decor and Furniture</span></a></li><li><a class="dept" href="https://www.lowes.com/c/Kitchen?int_cmp=Home%3AA2%3AKitchen%3AOther%3APC_Kitchen"><span class="dept-ico"><div class="crop" style="aspect-ratio:1.000"><img src="https://main--lowes--jgrosskurth.aem.live/media_17a3f3d9cc38579f36aadc7178a9020c4ef40ab55.png?width=400&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:333.33%;left:-16.67%;top:-15.90%"></div></span><span class="dept-l">Kitchen</span></a></li><li><a class="dept" href="https://www.lowes.com/c/Lawn-garden?int_cmp=Home%3AA2%3AKitchen%3AOther%3APC_Lawn_Garden"><span class="dept-ico"><div class="crop" style="aspect-ratio:1.000"><img src="https://main--lowes--jgrosskurth.aem.live/media_1c1cf914381251877f5269d07039c10dcca896893.png?width=400&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:333.33%;left:-16.67%;top:-15.90%"></div></span><span class="dept-l">Lawn and Garden</span></a></li><li><a class="dept" href="https://www.lowes.com/c/Lighting-ceiling-fans?int_cmp=Home%3AA2%3ALighting%3AOther%3APC_Lighting_Ceiling"><span class="dept-ico"><div class="crop" style="aspect-ratio:1.000"><img src="https://main--lowes--jgrosskurth.aem.live/media_1fabaf08d94c8568c5733dae8c298aeb20c5f46c1.png?width=400&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:333.33%;left:-16.67%;top:-15.90%"></div></span><span class="dept-l">Lighting and Ceiling Fans</span></a></li><li><a class="dept" href="https://www.lowes.com/c/Moulding-millwork?int_cmp=Home%3AA2%3AMillwork%3AOther%3APC_Moulding_Millwork"><span class="dept-ico"><div class="crop" style="aspect-ratio:1.000"><img src="https://main--lowes--jgrosskurth.aem.live/media_15100f1bd03723dbcc15fc4ba9a54d823d15fb8ed.png?width=400&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:333.33%;left:-16.67%;top:-15.90%"></div></span><span class="dept-l">Moulding and Millwork</span></a></li><li><a class="dept" href="https://www.lowes.com/c/Outdoors?int_cmp=Home%3AA2%3APatio%3AOther%3APC_Moulding_Millwork"><span class="dept-ico"><div class="crop" style="aspect-ratio:1.000"><img src="https://main--lowes--jgrosskurth.aem.live/media_1473519639db037996b57be6e73818412a78b30b3.png?width=400&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:333.33%;left:-16.67%;top:-15.90%"></div></span><span class="dept-l">Outdoor living and patio</span></a></li><li><a class="dept" href="https://www.lowes.com/c/Paint?int_cmp=Home%3AA2%3APaint%3AOther%3APC_Paint"><span class="dept-ico"><div class="crop" style="aspect-ratio:1.000"><img src="https://main--lowes--jgrosskurth.aem.live/media_1b094586ac5e13406d5238e44711c78d901bf061f.png?width=400&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:333.33%;left:-16.67%;top:-15.90%"></div></span><span class="dept-l">Paint</span></a></li><li><a class="dept" href="https://www.lowes.com/c/Plumbing?int_cmp=Home%3AA2%3ARoughPlumbing%3AOther%3APC_Plumbing"><span class="dept-ico"><div class="crop" style="aspect-ratio:1.000"><img src="https://main--lowes--jgrosskurth.aem.live/media_1d3b4df1cef897e96d8c17923fbd1e942ef372025.png?width=400&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:333.33%;left:-16.67%;top:-15.90%"></div></span><span class="dept-l">Plumbing</span></a></li><li><a class="dept" href="https://www.lowes.com/c/Smart-home-security-wi-fi?int_cmp=Home%3AA2%3ASmartHome%3AOther%3APC_Smart_Home_Wifi"><span class="dept-ico"><div class="crop" style="aspect-ratio:1.000"><img src="https://main--lowes--jgrosskurth.aem.live/media_1c2e1fdc24b3a5a41f735b251bc9d818ad2232730.png?width=400&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:333.33%;left:-16.67%;top:-15.90%"></div></span><span class="dept-l">Smart Home, Security and Wi-Fi</span></a></li><li><a class="dept" href="https://www.lowes.com/c/Sports-fitness?int_cmp=Home%3AA2%3ASportsFitness%3AOther%3APC_Sports_Fitness"><span class="dept-ico"><div class="crop" style="aspect-ratio:1.000"><img src="https://main--lowes--jgrosskurth.aem.live/media_106d0e7c41333dcab6ed732123425fd2175d1f8f5.png?width=400&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:333.33%;left:-16.67%;top:-15.90%"></div></span><span class="dept-l">Sports and Fitness</span></a></li><li><a class="dept" href="https://www.lowes.com/c/Storage-organization?int_cmp=Home%3AA2%3AStorageOrganization%3AOther%3APC_Storage_Organization"><span class="dept-ico"><div class="crop" style="aspect-ratio:1.000"><img src="https://main--lowes--jgrosskurth.aem.live/media_11f0abf548a69ccc5af5bd8237877571386a1c3bb.png?width=400&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:333.33%;left:-16.67%;top:-15.90%"></div></span><span class="dept-l">Storage and Organization</span></a></li><li><a class="dept" href="https://www.lowes.com/c/Tools?int_cmp=Home%3AA2%3ATools%3AOther%3APC_Tools"><span class="dept-ico"><div class="crop" style="aspect-ratio:1.000"><img src="https://main--lowes--jgrosskurth.aem.live/media_19a219e92362089c1c2d791801bd7caebf735388a.png?width=400&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:333.33%;left:-16.67%;top:-15.90%"></div></span><span class="dept-l">Tools</span></a></li></ul>
+        <h2 data-anim id="pc-h" class="h-sec">Popular Categories</h2>
+        <ul class="cat-grid"><li><a data-tile-anim class="cat" href="https://www.lowes.com/l/savings/daily-deals"><img src="https://main--lowes--jgrosskurth.aem.live/media_10c05dc0a14448a2cd0ca4da18b02a430379e932c.png?width=800&format=png&optimize=medium" alt="Deals of the Day" width="600" height="130" loading="lazy" decoding="async"></a></li><li><a data-tile-anim class="cat" href="https://www.lowes.com/pl/LOWES-essentials/2211386766018"><img src="https://main--lowes--jgrosskurth.aem.live/media_1cd03b13b3ddea0344638ff182575a1c5d60fc7c3.png?width=800&format=png&optimize=medium" alt="Lowe’s Essentials" width="600" height="130" loading="lazy" decoding="async"></a></li><li><a data-tile-anim class="cat" href="https://www.lowes.com/l/shop/seasonal-maintenance"><img src="https://main--lowes--jgrosskurth.aem.live/media_1853f5494f28af034ed752c1969f42e1bbdb38fd6.png?width=800&format=png&optimize=medium" alt="Fall Maintenance" width="600" height="130" loading="lazy" decoding="async"></a></li><li><a data-tile-anim class="cat" href="https://www.lowes.com/c/Holiday-decorations"><img src="https://main--lowes--jgrosskurth.aem.live/media_14484ec62af279345166d24bc0910d900c94649dd.png?width=800&format=png&optimize=medium" alt="Holiday Decor" width="600" height="130" loading="lazy" decoding="async"></a></li></ul>
+        <ul class="dept-grid"><li><a data-tile-anim class="dept" href="https://www.lowes.com/c/Animal-pet-care?int_cmp=Home%3AA2%3AAnimalPetCare%3AOther%3APC_Animal_Pet_Care"><span class="dept-ico"><div class="crop" style="aspect-ratio:1.000"><img src="https://main--lowes--jgrosskurth.aem.live/media_132d884ac2b000ea729ac9013a5c0fdcab4cc4e37.png?width=400&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:333.33%;left:-16.67%;top:-15.90%"></div></span><span class="dept-l">Animal and Pet Care</span></a></li><li><a data-tile-anim class="dept" href="https://www.lowes.com/c/Appliances?int_cmp=Home%3AA2%3AAppliances%3AOther%3APC_Appliances"><span class="dept-ico"><div class="crop" style="aspect-ratio:1.000"><img src="https://main--lowes--jgrosskurth.aem.live/media_1ab6f36d1afb61f77c43abc96fc92b118a1ea6882.png?width=400&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:333.33%;left:-16.67%;top:-15.90%"></div></span><span class="dept-l">Appliances</span></a></li><li><a data-tile-anim class="dept" href="https://www.lowes.com/c/Automotive?int_cmp=Home%3AA2%3ANoDivision%3AOther%3APC_Automotive"><span class="dept-ico"><div class="crop" style="aspect-ratio:1.000"><img src="https://main--lowes--jgrosskurth.aem.live/media_12253dd5cb41f6fe0014ffae24f6de1aa80015c95.png?width=400&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:333.33%;left:-16.67%;top:-15.90%"></div></span><span class="dept-l">Automotive</span></a></li><li><a data-tile-anim class="dept" href="https://www.lowes.com/c/Bathroom?int_cmp=Home%3AA2%3ABath%3AOther%3APC_Bathroom"><span class="dept-ico"><div class="crop" style="aspect-ratio:1.000"><img src="https://main--lowes--jgrosskurth.aem.live/media_12216092a81baef0d7a2c1a833999f7748778c2f3.png?width=400&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:333.33%;left:-16.67%;top:-15.90%"></div></span><span class="dept-l">Bathroom</span></a></li><li><a data-tile-anim class="dept" href="https://www.lowes.com/c/Window-treatments-Home-decor?int_cmp=Home%3AA2%3ANoDivision%3AOther%3APC_Blinds_Window"><span class="dept-ico"><div class="crop" style="aspect-ratio:1.000"><img src="https://main--lowes--jgrosskurth.aem.live/media_1d29c5a842074452c59641ae8c9f152580dbdbaf3.png?width=400&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:333.33%;left:-16.67%;top:-15.90%"></div></span><span class="dept-l">Blinds and Window Treatments</span></a></li><li><a data-tile-anim class="dept" href="https://www.lowes.com/c/Building-supplies?int_cmp=Home%3AA2%3ABuildingMaterials%3AOther%3APC_Building_Supplies"><span class="dept-ico"><div class="crop" style="aspect-ratio:1.000"><img src="https://main--lowes--jgrosskurth.aem.live/media_1e88ff874e7643e4ace6cc81411adea705279d451.png?width=400&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:333.33%;left:-16.67%;top:-15.90%"></div></span><span class="dept-l">Building Supplies</span></a></li><li><a data-tile-anim class="dept" href="https://www.lowes.com/c/Cleaning-supplies?int_cmp=Home%3AA2%3AHoliday%3AOther%3APC_Cleaning_Supplies"><span class="dept-ico"><div class="crop" style="aspect-ratio:1.000"><img src="https://main--lowes--jgrosskurth.aem.live/media_1bcb2081acb8e6a92b79004b7197780b5b0f9dd26.png?width=400&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:333.33%;left:-16.67%;top:-15.90%"></div></span><span class="dept-l">Cleaning Supplies</span></a></li><li><a data-tile-anim class="dept" href="https://www.lowes.com/c/Windows-doors?int_cmp=Home%3AA2%3AWindowsDoors%3AOther%3APC_Doors_Windows"><span class="dept-ico"><div class="crop" style="aspect-ratio:1.000"><img src="https://main--lowes--jgrosskurth.aem.live/media_1607b356e65fc47beba97b592230d6b14a5090986.png?width=400&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:333.33%;left:-16.67%;top:-15.90%"></div></span><span class="dept-l">Doors and Windows</span></a></li><li><a data-tile-anim class="dept" href="https://www.lowes.com/c/Electrical?int_cmp=Home%3AA2%3AElectrical%3AOther%3APC_Electrical"><span class="dept-ico"><div class="crop" style="aspect-ratio:1.000"><img src="https://main--lowes--jgrosskurth.aem.live/media_175e5ae55aaa3d31c0dc05e01812416afdfd1be73.png?width=400&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:333.33%;left:-16.67%;top:-15.90%"></div></span><span class="dept-l">Electrical</span></a></li><li><a data-tile-anim class="dept" href="https://www.lowes.com/c/Flooring?int_cmp=Home%3AA2%3AFlooring%3AOther%3APC_Flooring_Rugs"><span class="dept-ico"><div class="crop" style="aspect-ratio:1.000"><img src="https://main--lowes--jgrosskurth.aem.live/media_1d7d597e3946e627a4e5fb47b9cef03bd340ae841.png?width=400&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:333.33%;left:-16.67%;top:-15.90%"></div></span><span class="dept-l">Flooring and Rugs</span></a></li><li><a data-tile-anim class="dept" href="https://www.lowes.com/c/Hardware?int_cmp=Home%3AA2%3AHardware%3AOther%3APC_Hardware"><span class="dept-ico"><div class="crop" style="aspect-ratio:1.000"><img src="https://main--lowes--jgrosskurth.aem.live/media_17ce5534d5858b58a8b0adce8af23a0823e4308ee.png?width=400&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:333.33%;left:-16.67%;top:-15.90%"></div></span><span class="dept-l">Hardware</span></a></li><li><a data-tile-anim class="dept" href="https://www.lowes.com/c/Heating-cooling?int_cmp=Home%3AA2%3AHeatingCooling%3AOther%3APC_Heating_Cooling"><span class="dept-ico"><div class="crop" style="aspect-ratio:1.000"><img src="https://main--lowes--jgrosskurth.aem.live/media_1fe7da555552e9a6d4d17a290eec2343804379636.png?width=400&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:333.33%;left:-16.67%;top:-15.90%"></div></span><span class="dept-l">Heating and Cooling</span></a></li><li><a data-tile-anim class="dept" href="https://www.lowes.com/c/Home-decor?int_cmp=Home%3AA2%3AD%C3%A9cor%3AOther%3APC_Home_Decor"><span class="dept-ico"><div class="crop" style="aspect-ratio:1.000"><img src="https://main--lowes--jgrosskurth.aem.live/media_126d76e72c38722b29ef964fc798908f80e97be7d.png?width=400&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:333.33%;left:-16.67%;top:-15.90%"></div></span><span class="dept-l">Home Decor and Furniture</span></a></li><li><a data-tile-anim class="dept" href="https://www.lowes.com/c/Kitchen?int_cmp=Home%3AA2%3AKitchen%3AOther%3APC_Kitchen"><span class="dept-ico"><div class="crop" style="aspect-ratio:1.000"><img src="https://main--lowes--jgrosskurth.aem.live/media_17a3f3d9cc38579f36aadc7178a9020c4ef40ab55.png?width=400&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:333.33%;left:-16.67%;top:-15.90%"></div></span><span class="dept-l">Kitchen</span></a></li><li><a data-tile-anim class="dept" href="https://www.lowes.com/c/Lawn-garden?int_cmp=Home%3AA2%3AKitchen%3AOther%3APC_Lawn_Garden"><span class="dept-ico"><div class="crop" style="aspect-ratio:1.000"><img src="https://main--lowes--jgrosskurth.aem.live/media_1c1cf914381251877f5269d07039c10dcca896893.png?width=400&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:333.33%;left:-16.67%;top:-15.90%"></div></span><span class="dept-l">Lawn and Garden</span></a></li><li><a data-tile-anim class="dept" href="https://www.lowes.com/c/Lighting-ceiling-fans?int_cmp=Home%3AA2%3ALighting%3AOther%3APC_Lighting_Ceiling"><span class="dept-ico"><div class="crop" style="aspect-ratio:1.000"><img src="https://main--lowes--jgrosskurth.aem.live/media_1fabaf08d94c8568c5733dae8c298aeb20c5f46c1.png?width=400&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:333.33%;left:-16.67%;top:-15.90%"></div></span><span class="dept-l">Lighting and Ceiling Fans</span></a></li><li><a data-tile-anim class="dept" href="https://www.lowes.com/c/Moulding-millwork?int_cmp=Home%3AA2%3AMillwork%3AOther%3APC_Moulding_Millwork"><span class="dept-ico"><div class="crop" style="aspect-ratio:1.000"><img src="https://main--lowes--jgrosskurth.aem.live/media_15100f1bd03723dbcc15fc4ba9a54d823d15fb8ed.png?width=400&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:333.33%;left:-16.67%;top:-15.90%"></div></span><span class="dept-l">Moulding and Millwork</span></a></li><li><a data-tile-anim class="dept" href="https://www.lowes.com/c/Outdoors?int_cmp=Home%3AA2%3APatio%3AOther%3APC_Moulding_Millwork"><span class="dept-ico"><div class="crop" style="aspect-ratio:1.000"><img src="https://main--lowes--jgrosskurth.aem.live/media_1473519639db037996b57be6e73818412a78b30b3.png?width=400&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:333.33%;left:-16.67%;top:-15.90%"></div></span><span class="dept-l">Outdoor living and patio</span></a></li><li><a data-tile-anim class="dept" href="https://www.lowes.com/c/Paint?int_cmp=Home%3AA2%3APaint%3AOther%3APC_Paint"><span class="dept-ico"><div class="crop" style="aspect-ratio:1.000"><img src="https://main--lowes--jgrosskurth.aem.live/media_1b094586ac5e13406d5238e44711c78d901bf061f.png?width=400&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:333.33%;left:-16.67%;top:-15.90%"></div></span><span class="dept-l">Paint</span></a></li><li><a data-tile-anim class="dept" href="https://www.lowes.com/c/Plumbing?int_cmp=Home%3AA2%3ARoughPlumbing%3AOther%3APC_Plumbing"><span class="dept-ico"><div class="crop" style="aspect-ratio:1.000"><img src="https://main--lowes--jgrosskurth.aem.live/media_1d3b4df1cef897e96d8c17923fbd1e942ef372025.png?width=400&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:333.33%;left:-16.67%;top:-15.90%"></div></span><span class="dept-l">Plumbing</span></a></li><li><a data-tile-anim class="dept" href="https://www.lowes.com/c/Smart-home-security-wi-fi?int_cmp=Home%3AA2%3ASmartHome%3AOther%3APC_Smart_Home_Wifi"><span class="dept-ico"><div class="crop" style="aspect-ratio:1.000"><img src="https://main--lowes--jgrosskurth.aem.live/media_1c2e1fdc24b3a5a41f735b251bc9d818ad2232730.png?width=400&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:333.33%;left:-16.67%;top:-15.90%"></div></span><span class="dept-l">Smart Home, Security and Wi-Fi</span></a></li><li><a data-tile-anim class="dept" href="https://www.lowes.com/c/Sports-fitness?int_cmp=Home%3AA2%3ASportsFitness%3AOther%3APC_Sports_Fitness"><span class="dept-ico"><div class="crop" style="aspect-ratio:1.000"><img src="https://main--lowes--jgrosskurth.aem.live/media_106d0e7c41333dcab6ed732123425fd2175d1f8f5.png?width=400&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:333.33%;left:-16.67%;top:-15.90%"></div></span><span class="dept-l">Sports and Fitness</span></a></li><li><a data-tile-anim class="dept" href="https://www.lowes.com/c/Storage-organization?int_cmp=Home%3AA2%3AStorageOrganization%3AOther%3APC_Storage_Organization"><span class="dept-ico"><div class="crop" style="aspect-ratio:1.000"><img src="https://main--lowes--jgrosskurth.aem.live/media_11f0abf548a69ccc5af5bd8237877571386a1c3bb.png?width=400&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:333.33%;left:-16.67%;top:-15.90%"></div></span><span class="dept-l">Storage and Organization</span></a></li><li><a data-tile-anim class="dept" href="https://www.lowes.com/c/Tools?int_cmp=Home%3AA2%3ATools%3AOther%3APC_Tools"><span class="dept-ico"><div class="crop" style="aspect-ratio:1.000"><img src="https://main--lowes--jgrosskurth.aem.live/media_19a219e92362089c1c2d791801bd7caebf735388a.png?width=400&format=png&optimize=medium" alt="" loading="lazy" decoding="async" style="width:333.33%;left:-16.67%;top:-15.90%"></div></span><span class="dept-l">Tools</span></a></li></ul>
       </div>
     </section>
 
     <section class="explore" id="explore-more" data-section="explore-more" data-intent="inspire + services" data-layout="grid" data-items="4" aria-labelledby="em-h">
       <div class="wrap">
-        <h2 id="em-h" class="h-sec">Explore More for Your Home &amp; Community</h2>
+        <h2 data-anim id="em-h" class="h-sec">Explore More for Your Home &amp; Community</h2>
         <ul class="art-grid">
-          <li><article class="art">
+          <li><article data-tile-anim class="art">
             <div class="art-media"><img src="https://main--lowes--jgrosskurth.aem.live/media_1c41e49762b6105f730665c8379094a22dea46586.png?width=900&format=png&optimize=medium" alt="" width="500" height="515" loading="lazy" decoding="async"></div>
             <h3>Start a New DIY Project</h3>
             <p>Find inspiration, buying guides and how-to advice to make it happen.</p>
             <a class="link" href="https://www.lowes.com/diy-projects-and-ideas">Read article<span class="sr">, Start a New DIY Project</span></a>
           </article></li>
-          <li><article class="art">
+          <li><article data-tile-anim class="art">
             <div class="art-media"><img src="https://main--lowes--jgrosskurth.aem.live/media_112e919b7c4a81b278ede44dee96495299f934207.png?width=900&format=png&optimize=medium" alt="" width="500" height="515" loading="lazy" decoding="async"></div>
             <h3>Carve Out Some Halloween Fun</h3>
             <p>Whether you’re a first-time carver or a pro, get inspired with unique ideas and helpful tips.</p>
             <a class="link" href="https://www.lowes.com/n/ideas-inspiration/fall-pumpkins-to-carve">Read article<span class="sr">, Carve Out Some Halloween Fun</span></a>
           </article></li>
-          <li><article class="art">
+          <li><article data-tile-anim class="art">
             <div class="art-media"><img src="https://main--lowes--jgrosskurth.aem.live/media_16b0af98ab68e1355a10f0dc93e0c18f2dc5d6108.png?width=900&format=png&optimize=medium" alt="" width="500" height="515" loading="lazy" decoding="async"></div>
             <h3>Get Blinds and Shades Installed by Thanksgiving</h3>
             <ul class="dates"><li>Schedule measurement by <strong>10/14/26</strong>.</li><li>Buy product and installation by <strong>10/30/26</strong>.</li></ul>
             <a class="link" href="https://www.lowes.com/l/install/window-treatment-installation">Schedule measurement<span class="sr">, Get Blinds and Shades Installed by Thanksgiving</span></a>
           </article></li>
-          <li><article class="art">
+          <li><article data-tile-anim class="art">
             <div class="art-media"><img src="https://main--lowes--jgrosskurth.aem.live/media_1ca5c8050a5cea04a8ba0c7695e06cad6ac644d0a.png?width=900&format=png&optimize=medium" alt="" width="500" height="515" loading="lazy" decoding="async"></div>
             <h3>Discover Lowe’s Community Impact</h3>
             <p>Learn about our commitment to revitalize the communities we serve across the country.</p>
@@ -929,15 +922,14 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       </div>
     </section>
 
-    <section class="deals bb-deals" id="deals" data-section="deals" data-intent="shop deals" data-layout="grid" data-items="3" aria-labelledby="deals-h">
+    <section class="deals" id="deals" data-section="deals" data-intent="shop deals" data-layout="grid" data-items="3" aria-labelledby="deals-h">
       <h2 class="sr" id="deals-h">Deals</h2>
       <div class="wrap deal-grid">
-        <article class="deal-panel quad" aria-labelledby="dp-0">
+        <article data-tile-anim class="deal-panel quad" aria-labelledby="dp-0">
           <div class="deal-head"><h3 id="dp-0" class="h-panel">Top Trending Deals</h3><a class="link" href="https://www.lowes.com/l/your-recommendations">See all<span class="sr">, Top Trending Deals</span></a></div>
           <ul class="deal-tiles">
             <li class="dtile">
-              <p class="bb-save"><span class="bb-save-l">Save</span> <span class="bb-save-n">25<span class="pct">%</span></span></p>
-              <div class="dtile-media"><img src="https://main--lowes--jgrosskurth.aem.live/media_150e2e4a0a8ef84c5706db48da13cf7d3b2b4b682.jpg?width=400&format=jpg&optimize=medium" alt="" width="276" height="276" loading="lazy" decoding="async"></div>
+              <div class="dtile-media"><span class="badge-save">Save 25%</span><img src="https://main--lowes--jgrosskurth.aem.live/media_150e2e4a0a8ef84c5706db48da13cf7d3b2b4b682.jpg?width=400&format=jpg&optimize=medium" alt="" width="276" height="276" loading="lazy" decoding="async"></div>
               <h4 class="dtile-name"><a href="https://www.lowes.com/configure/blinds/allen-roth-allen-roth-Cellular-Shades/5004860755"><strong>allen + roth,</strong> Custom Cellular Shade</a></h4>
               <p class="dtile-price"><span class="price-flat">$48.32</span><del class="was">$64.42</del></p>
               
@@ -945,8 +937,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
               
             </li>
             <li class="dtile">
-              <p class="bb-save"><span class="bb-save-l">Save</span> <span class="bb-save-n">24<span class="pct">%</span></span></p>
-              <div class="dtile-media"><img src="https://main--lowes--jgrosskurth.aem.live/media_104a8dca2c3b0820e87cdd8d014ea833343ac56dd.jpg?width=400&format=jpg&optimize=medium" alt="" width="276" height="276" loading="lazy" decoding="async"></div>
+              <div class="dtile-media"><span class="badge-save">Save 24%</span><img src="https://main--lowes--jgrosskurth.aem.live/media_104a8dca2c3b0820e87cdd8d014ea833343ac56dd.jpg?width=400&format=jpg&optimize=medium" alt="" width="276" height="276" loading="lazy" decoding="async"></div>
               <h4 class="dtile-name"><a href="https://www.lowes.com/pd/EGO-POWER-56-volt-21-in-Push-Cordless-Lawn-Mower-6-Ah-Battery-Charger-Included/5013743021"><strong>EGO,</strong> POWER+ 600 Series 56-volt, 21-in Push Battery Lawn Mower with (1) 6 Ah Battery Included</a></h4>
               <p class="dtile-price"><span class="price-flat">$379.00</span><del class="was">$499.00</del></p>
               
@@ -954,8 +945,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
               
             </li>
             <li class="dtile">
-              <p class="bb-save"><span class="bb-save-l">Save</span> <span class="bb-save-n">50<span class="pct">%</span></span></p>
-              <div class="dtile-media"><img src="https://main--lowes--jgrosskurth.aem.live/media_124af4bc853b69c723647f9085e298a99b862892a.png?width=400&format=png&optimize=medium" alt="" width="276" height="276" loading="lazy" decoding="async"></div>
+              <div class="dtile-media"><span class="badge-save">Save 50%</span><img src="https://main--lowes--jgrosskurth.aem.live/media_124af4bc853b69c723647f9085e298a99b862892a.png?width=400&format=png&optimize=medium" alt="" width="276" height="276" loading="lazy" decoding="async"></div>
               <h4 class="dtile-name"><a href="https://www.lowes.com/pd/Whirlpool-30-in-4-Burners-5-1-cu-ft-Freestanding-Natural-Gas-Range-Stainless-Steel/5013800201"><strong>Whirlpool,</strong> Flexible Cooktop 30-in 4 burners 5.1-cu ft Single oven gas range Natural Gas Range ( Stainless Steel )</a></h4>
               
               <p class="note">This item is currently unavailable</p>
@@ -963,8 +953,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
               
             </li>
             <li class="dtile">
-              <p class="bb-save"><span class="bb-save-l">Save</span> <span class="bb-save-n">41<span class="pct">%</span></span></p>
-              <div class="dtile-media"><img src="https://main--lowes--jgrosskurth.aem.live/media_1a51566ab4563330154e3f254800b8a2eedf4d035.jpg?width=400&format=jpg&optimize=medium" alt="" width="276" height="276" loading="lazy" decoding="async"></div>
+              <div class="dtile-media"><span class="badge-save">Save 41%</span><img src="https://main--lowes--jgrosskurth.aem.live/media_1a51566ab4563330154e3f254800b8a2eedf4d035.jpg?width=400&format=jpg&optimize=medium" alt="" width="276" height="276" loading="lazy" decoding="async"></div>
               <h4 class="dtile-name"><a href="https://www.lowes.com/pd/DEWALT-2-Tool-20-Volt-Max-Power-Tool-Combo-Kit-with-Soft-Case-Charger-Included-and-2-Batteries-Included/50169133"><strong>DEWALT,</strong> 2-Tool 20-Volt Max Power Tool Combo Kit with Soft Case (2-Batteries and charger Included)</a></h4>
               
               <p class="note">This item is currently unavailable</p>
@@ -973,12 +962,11 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
             </li>
           </ul>
         </article>
-        <article class="deal-panel pair" aria-labelledby="dp-1">
+        <article data-tile-anim class="deal-panel pair" aria-labelledby="dp-1">
           <div class="deal-head"><h3 id="dp-1" class="h-panel">4 Stars &amp; Above</h3><a class="link" href="https://www.lowes.com/l/your-recommendations">See all<span class="sr">, 4 Stars &amp; Above</span></a></div>
           <ul class="deal-tiles">
             <li class="dtile">
-              <p class="bb-save"><span class="bb-save-l">Save</span> <span class="bb-save-n">12<span class="pct">%</span></span></p>
-              <div class="dtile-media"><img src="https://main--lowes--jgrosskurth.aem.live/media_1c50d0b193d8be96776ba254ab9741820b9388759.jpg?width=400&format=jpg&optimize=medium" alt="" width="276" height="276" loading="lazy" decoding="async"></div>
+              <div class="dtile-media"><span class="badge-save">Save 12%</span><img src="https://main--lowes--jgrosskurth.aem.live/media_1c50d0b193d8be96776ba254ab9741820b9388759.jpg?width=400&format=jpg&optimize=medium" alt="" width="276" height="276" loading="lazy" decoding="async"></div>
               <h4 class="dtile-name"><a href="https://www.lowes.com/pd/Arm-Hammer-Fresh-Scent-Carpet-Cleaning-Solution-Kit-Powder-42-6-oz-Odor-Eliminator-Eco-Friendly-Safe-for-Upholstery-Sprinkle-Application/1001857970"><strong>Arm &amp; Hammer,</strong> Carpet cleaner Deodorizing Powder 42.6-oz</a></h4>
               <p class="dtile-price"><span class="price-flat">$3.48</span><del class="was">$3.98</del></p>
               
@@ -986,8 +974,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
               <a class="btn-cart" href="https://www.lowes.com/pd/Arm-Hammer-Fresh-Scent-Carpet-Cleaning-Solution-Kit-Powder-42-6-oz-Odor-Eliminator-Eco-Friendly-Safe-for-Upholstery-Sprinkle-Application/1001857970">Add to Cart<span class="sr">, Arm &amp; Hammer, Carpet cleaner Deodorizing Powder 42.6-oz</span></a>
             </li>
             <li class="dtile">
-              <p class="bb-save"><span class="bb-save-l">Save</span> <span class="bb-save-n">33<span class="pct">%</span></span></p>
-              <div class="dtile-media"><img src="https://main--lowes--jgrosskurth.aem.live/media_129fd0abd4815dc99f3caa90280d7d2d143132679.jpg?width=400&format=jpg&optimize=medium" alt="" width="276" height="276" loading="lazy" decoding="async"></div>
+              <div class="dtile-media"><span class="badge-save">Save 33%</span><img src="https://main--lowes--jgrosskurth.aem.live/media_129fd0abd4815dc99f3caa90280d7d2d143132679.jpg?width=400&format=jpg&optimize=medium" alt="" width="276" height="276" loading="lazy" decoding="async"></div>
               <h4 class="dtile-name"><a href="https://www.lowes.com/pd/CRAFTSMAN-V20-20-Volt-5-Ah-1-Pack-Lithium-Ion-Li-ion-Battery-Kit/5016858181"><strong>CRAFTSMAN,</strong> V20 20 -Volt, 5 Ah 1 -Pack Lithium Ion (Li-ion)</a></h4>
               <p class="dtile-price"><span class="price-flat">$99.00</span><del class="was">$149.00</del></p>
               
@@ -996,11 +983,10 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
             </li>
           </ul>
         </article>
-        <article class="deal-panel quad" aria-labelledby="dp-2">
+        <article data-tile-anim class="deal-panel quad" aria-labelledby="dp-2">
           <div class="deal-head"><h3 id="dp-2" class="h-panel">We Picked These Deals for You</h3><a class="link" href="https://www.lowes.com/pl/Deals/1611079983848">See all<span class="sr">, We Picked These Deals for You</span></a></div>
           <ul class="deal-tiles">
             <li class="dtile">
-              <p class="bb-save bb-save-none" aria-hidden="true">&nbsp;</p>
               <div class="dtile-media"><img src="https://main--lowes--jgrosskurth.aem.live/media_114d5b48b347e6b17e292b5d3dcc9e473660e29c7.jpg?width=400&format=jpg&optimize=medium" alt="" width="276" height="276" loading="lazy" decoding="async"></div>
               <h4 class="dtile-name"><a href="https://www.lowes.com/pd/Rudolph-the-Red-Nosed-Reindeer-9-75-ft-LED-Bumble-Animatronic-Yard-Decoration/5015088219"><strong>Rudolph the Red-Nosed Reindeer,</strong> 9.75-ft LED Bumble Animatronic Outdoor Christmas Decoration</a></h4>
               <p class="dtile-price"><span class="price-flat">$499.00</span></p>
@@ -1009,7 +995,6 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
               
             </li>
             <li class="dtile">
-              <p class="bb-save bb-save-none" aria-hidden="true">&nbsp;</p>
               <div class="dtile-media"><img src="https://main--lowes--jgrosskurth.aem.live/media_1c3e504410142d8b1d86dc87eb74b7263eb6f2415.jpg?width=400&format=jpg&optimize=medium" alt="" width="276" height="276" loading="lazy" decoding="async"></div>
               <h4 class="dtile-name"><a href="https://www.lowes.com/pd/Holiday-Living-7-5-ft-New-Kensington-Pine-Pre-lit-Artificial-Christmas-Tree-with-Twinkling-Color-Changing-LED-Lights/5016065631"><strong>Holiday Living,</strong> 7.5-ft New Kensington Pine Pre-lit Artificial Christmas Tree with Twinkling Color Changing LED Lights</a></h4>
               <p class="dtile-price"><span class="price-flat">$349.00</span></p>
@@ -1018,8 +1003,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
               
             </li>
             <li class="dtile">
-              <p class="bb-save"><span class="bb-save-l">Save</span> <span class="bb-save-n">10<span class="pct">%</span></span></p>
-              <div class="dtile-media"><img src="https://main--lowes--jgrosskurth.aem.live/media_1c8616bdc052848050cac45bdd5d38ed6f76521c9.jpg?width=400&format=jpg&optimize=medium" alt="" width="276" height="276" loading="lazy" decoding="async"></div>
+              <div class="dtile-media"><span class="badge-save">Save 10%</span><img src="https://main--lowes--jgrosskurth.aem.live/media_1c8616bdc052848050cac45bdd5d38ed6f76521c9.jpg?width=400&format=jpg&optimize=medium" alt="" width="276" height="276" loading="lazy" decoding="async"></div>
               <h4 class="dtile-name"><a href="https://www.lowes.com/pd/Haunted-Living-HL-5FT-ULTRA-POSABLE-SKELETON/5017627123"><strong>Haunted Living,</strong> 5-ft Ultra Posable Skeleton Halloween Decoration</a></h4>
               <p class="dtile-price"><span class="price-flat">$44.98</span><del class="was">$49.98</del></p>
               
@@ -1027,7 +1011,6 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
               
             </li>
             <li class="dtile">
-              <p class="bb-save bb-save-none" aria-hidden="true">&nbsp;</p>
               <div class="dtile-media"><img src="https://main--lowes--jgrosskurth.aem.live/media_1220ffa95b07d120ffac738df662f99964b359dbf.jpg?width=400&format=jpg&optimize=medium" alt="" width="276" height="276" loading="lazy" decoding="async"></div>
               <h4 class="dtile-name"><a href="https://www.lowes.com/pd/Rudolph-the-Red-Nosed-Reindeer-6-ft-Yukon-Cornelius-Animatronic-Yard-Decoration/5016071249"><strong>Rudolph the Red-Nosed Reindeer,</strong> 6-ft Yukon Cornelius Animatronic Outdoor Christmas Decoration</a></h4>
               <p class="dtile-price"><span class="price-flat">$399.00</span></p>
@@ -1042,26 +1025,26 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 
     <section class="projects" id="next-project" data-section="next-project" data-intent="how-to discovery" data-layout="grid" data-items="10" aria-labelledby="np-h">
       <div class="wrap">
-        <h2 id="np-h" class="h-sec">Find Your Next Project</h2>
+        <h2 data-anim id="np-h" class="h-sec">Find Your Next Project</h2>
         <ul class="proj-grid">
-          <li><a class="proj" href="https://www.lowes.com/n/how-to/get-rid-of-mosquitoes"><img src="https://main--lowes--jgrosskurth.aem.live/media_1eb974100415ce705bdbd4ca38fc89d9fb69372e6.png?width=600&format=png&optimize=medium" alt="" width="300" height="169" loading="lazy" decoding="async"><span class="proj-t">How to Get Rid of Mosquitoes</span></a></li>
-          <li><a class="proj" href="https://www.lowes.com/n/how-to/clean-an-air-conditioner"><img src="https://main--lowes--jgrosskurth.aem.live/media_1015547b3de620e40a1e5bb9fa28279db266b9460.jpg?width=600&format=jpg&optimize=medium" alt="" width="300" height="169" loading="lazy" decoding="async"><span class="proj-t">How to Clean an Air Conditioner</span></a></li>
-          <li><a class="proj" href="https://www.lowes.com/n/how-to/simple-concrete-repairs"><img src="https://main--lowes--jgrosskurth.aem.live/media_17bbe8e93f7c3ed0ff0e90a696ab4a7abf2ee92c3.jpg?width=600&format=jpg&optimize=medium" alt="" width="300" height="169" loading="lazy" decoding="async"><span class="proj-t">How to Repair Cracked Concrete</span></a></li>
-          <li><a class="proj" href="https://www.lowes.com/n/how-to/create-a-border-using-edging-stones"><img src="https://main--lowes--jgrosskurth.aem.live/media_117a17f72b1fd5c19fae80490c5c96c769711d84b.png?width=600&format=png&optimize=medium" alt="" width="300" height="169" loading="lazy" decoding="async"><span class="proj-t">Create a Border Using Edging Stones</span></a></li>
-          <li><a class="proj" href="https://www.lowes.com/n/how-to/tote-shelves"><img src="https://main--lowes--jgrosskurth.aem.live/media_12dd30cef969f27a88c72ae77026045d7cd474e07.png?width=600&format=png&optimize=medium" alt="" width="300" height="169" loading="lazy" decoding="async"><span class="proj-t">How to Build DIY Tote Shelves</span></a></li>
-          <li><a class="proj" href="https://www.lowes.com/n/how-to/replace-a-toilet"><img src="https://main--lowes--jgrosskurth.aem.live/media_1a10ef0226657a355df7a1eb86c27ee45f2567a67.jpg?width=600&format=jpg&optimize=medium" alt="" width="300" height="169" loading="lazy" decoding="async"><span class="proj-t">How to Install a Toilet</span></a></li>
-          <li><a class="proj" href="https://www.lowes.com/n/how-to/build-a-block-retaining-wall"><img src="https://main--lowes--jgrosskurth.aem.live/media_1705274288e8019db587eeec7b77052bc51095cb6.png?width=600&format=png&optimize=medium" alt="" width="300" height="169" loading="lazy" decoding="async"><span class="proj-t">How to Build a Retaining Wall</span></a></li>
-          <li><a class="proj" href="https://www.lowes.com/n/how-to/how-to-build-a-raised-garden-bed"><img src="https://main--lowes--jgrosskurth.aem.live/media_12fef52fa7a23afa9a7ced96f0c42fd43183a5432.png?width=600&format=png&optimize=medium" alt="" width="300" height="169" loading="lazy" decoding="async"><span class="proj-t">DIY Raised Garden Bed Instructions and Ideas</span></a></li>
-          <li><a class="proj" href="https://www.lowes.com/n/how-to/install-vanity-sink"><img src="https://main--lowes--jgrosskurth.aem.live/media_1e9250d8e04189f6d280b2e810fa2c1b83290d814.png?width=600&format=png&optimize=medium" alt="" width="300" height="169" loading="lazy" decoding="async"><span class="proj-t">How to Install a Bathroom Vanity and Sink</span></a></li>
-          <li><a class="proj" href="https://www.lowes.com/n/how-to/create-spare-key-fob"><img src="https://main--lowes--jgrosskurth.aem.live/media_189b87d20e57a279c35a8e761c26520730a01a47f.png?width=600&format=png&optimize=medium" alt="" width="300" height="169" loading="lazy" decoding="async"><span class="proj-t">How to Copy Your Car Key at Lowe's</span></a></li>
+          <li><a data-tile-anim class="proj" href="https://www.lowes.com/n/how-to/get-rid-of-mosquitoes"><img src="https://main--lowes--jgrosskurth.aem.live/media_1eb974100415ce705bdbd4ca38fc89d9fb69372e6.png?width=600&format=png&optimize=medium" alt="" width="300" height="169" loading="lazy" decoding="async"><span class="proj-t">How to Get Rid of Mosquitoes</span></a></li>
+          <li><a data-tile-anim class="proj" href="https://www.lowes.com/n/how-to/clean-an-air-conditioner"><img src="https://main--lowes--jgrosskurth.aem.live/media_1015547b3de620e40a1e5bb9fa28279db266b9460.jpg?width=600&format=jpg&optimize=medium" alt="" width="300" height="169" loading="lazy" decoding="async"><span class="proj-t">How to Clean an Air Conditioner</span></a></li>
+          <li><a data-tile-anim class="proj" href="https://www.lowes.com/n/how-to/simple-concrete-repairs"><img src="https://main--lowes--jgrosskurth.aem.live/media_17bbe8e93f7c3ed0ff0e90a696ab4a7abf2ee92c3.jpg?width=600&format=jpg&optimize=medium" alt="" width="300" height="169" loading="lazy" decoding="async"><span class="proj-t">How to Repair Cracked Concrete</span></a></li>
+          <li><a data-tile-anim class="proj" href="https://www.lowes.com/n/how-to/create-a-border-using-edging-stones"><img src="https://main--lowes--jgrosskurth.aem.live/media_117a17f72b1fd5c19fae80490c5c96c769711d84b.png?width=600&format=png&optimize=medium" alt="" width="300" height="169" loading="lazy" decoding="async"><span class="proj-t">Create a Border Using Edging Stones</span></a></li>
+          <li><a data-tile-anim class="proj" href="https://www.lowes.com/n/how-to/tote-shelves"><img src="https://main--lowes--jgrosskurth.aem.live/media_12dd30cef969f27a88c72ae77026045d7cd474e07.png?width=600&format=png&optimize=medium" alt="" width="300" height="169" loading="lazy" decoding="async"><span class="proj-t">How to Build DIY Tote Shelves</span></a></li>
+          <li><a data-tile-anim class="proj" href="https://www.lowes.com/n/how-to/replace-a-toilet"><img src="https://main--lowes--jgrosskurth.aem.live/media_1a10ef0226657a355df7a1eb86c27ee45f2567a67.jpg?width=600&format=jpg&optimize=medium" alt="" width="300" height="169" loading="lazy" decoding="async"><span class="proj-t">How to Install a Toilet</span></a></li>
+          <li><a data-tile-anim class="proj" href="https://www.lowes.com/n/how-to/build-a-block-retaining-wall"><img src="https://main--lowes--jgrosskurth.aem.live/media_1705274288e8019db587eeec7b77052bc51095cb6.png?width=600&format=png&optimize=medium" alt="" width="300" height="169" loading="lazy" decoding="async"><span class="proj-t">How to Build a Retaining Wall</span></a></li>
+          <li><a data-tile-anim class="proj" href="https://www.lowes.com/n/how-to/how-to-build-a-raised-garden-bed"><img src="https://main--lowes--jgrosskurth.aem.live/media_12fef52fa7a23afa9a7ced96f0c42fd43183a5432.png?width=600&format=png&optimize=medium" alt="" width="300" height="169" loading="lazy" decoding="async"><span class="proj-t">DIY Raised Garden Bed Instructions and Ideas</span></a></li>
+          <li><a data-tile-anim class="proj" href="https://www.lowes.com/n/how-to/install-vanity-sink"><img src="https://main--lowes--jgrosskurth.aem.live/media_1e9250d8e04189f6d280b2e810fa2c1b83290d814.png?width=600&format=png&optimize=medium" alt="" width="300" height="169" loading="lazy" decoding="async"><span class="proj-t">How to Install a Bathroom Vanity and Sink</span></a></li>
+          <li><a data-tile-anim class="proj" href="https://www.lowes.com/n/how-to/create-spare-key-fob"><img src="https://main--lowes--jgrosskurth.aem.live/media_189b87d20e57a279c35a8e761c26520730a01a47f.png?width=600&format=png&optimize=medium" alt="" width="300" height="169" loading="lazy" decoding="async"><span class="proj-t">How to Copy Your Car Key at Lowe's</span></a></li>
         </ul>
       </div>
     </section>
 
     <section class="items" id="items-to-explore" data-section="items-to-explore" data-intent="shop products" data-layout="grid" data-items="16" data-interactive="tabs" aria-labelledby="ie-h">
       <div class="wrap">
-        <div class="row-head"><h2 id="ie-h" class="h-sec">Items To Explore</h2><p class="spon-tag">Sponsored</p></div>
-        <ul class="pills tabs" aria-label="Item categories"><li><a class="pill on" href="https://www.lowes.com/search?searchTerm=Appliances" aria-current="true">Appliances</a></li><li><a class="pill" href="https://www.lowes.com/search?searchTerm=Smart%20Home%2C%20Security%2C%20Wi-Fi">Smart Home, Security, Wi-Fi</a></li><li><a class="pill" href="https://www.lowes.com/search?searchTerm=Kitchen">Kitchen</a></li><li><a class="pill" href="https://www.lowes.com/search?searchTerm=Bathroom">Bathroom</a></li><li><a class="pill" href="https://www.lowes.com/search?searchTerm=Outdoors">Outdoors</a></li><li><a class="pill" href="https://www.lowes.com/search?searchTerm=Tools">Tools</a></li><li><a class="pill" href="https://www.lowes.com/search?searchTerm=Heating%20%26%20Cooling">Heating &amp; Cooling</a></li><li><a class="pill" href="https://www.lowes.com/search?searchTerm=Flooring">Flooring</a></li><li><a class="pill" href="https://www.lowes.com/search?searchTerm=Lighting%20%26%20Ceiling%20Fans">Lighting &amp; Ceiling Fans</a></li><li><a class="pill" href="https://www.lowes.com/search?searchTerm=Hardware">Hardware</a></li><li><a class="pill" href="https://www.lowes.com/search?searchTerm=Building%20Supplies">Building Supplies</a></li><li><a class="pill" href="https://www.lowes.com/search?searchTerm=Home%20Decor">Home Decor</a></li></ul>
+        <div class="row-head"><h2 data-anim id="ie-h" class="h-sec">Items To Explore</h2><p class="spon-tag">Sponsored</p></div>
+        <div class="tabs-wrap"><ul class="pills tabs" aria-label="Item categories"><li><a class="pill on" href="https://www.lowes.com/search?searchTerm=Appliances" aria-current="true">Appliances</a></li><li><a class="pill" href="https://www.lowes.com/search?searchTerm=Smart%20Home%2C%20Security%2C%20Wi-Fi">Smart Home, Security, Wi-Fi</a></li><li><a class="pill" href="https://www.lowes.com/search?searchTerm=Kitchen">Kitchen</a></li><li><a class="pill" href="https://www.lowes.com/search?searchTerm=Bathroom">Bathroom</a></li><li><a class="pill" href="https://www.lowes.com/search?searchTerm=Outdoors">Outdoors</a></li><li><a class="pill" href="https://www.lowes.com/search?searchTerm=Tools">Tools</a></li><li><a class="pill" href="https://www.lowes.com/search?searchTerm=Heating%20%26%20Cooling">Heating &amp; Cooling</a></li><li><a class="pill" href="https://www.lowes.com/search?searchTerm=Flooring">Flooring</a></li><li><a class="pill" href="https://www.lowes.com/search?searchTerm=Lighting%20%26%20Ceiling%20Fans">Lighting &amp; Ceiling Fans</a></li><li><a class="pill" href="https://www.lowes.com/search?searchTerm=Hardware">Hardware</a></li><li><a class="pill" href="https://www.lowes.com/search?searchTerm=Building%20Supplies">Building Supplies</a></li><li><a class="pill" href="https://www.lowes.com/search?searchTerm=Home%20Decor">Home Decor</a></li></ul><span class="tab-ind" aria-hidden="true"></span></div>
         <div class="item-grid">
       <article class="pcard">
         <a class="pcard-media" href="https://www.lowes.com/pd/Elkay-Bottle-Filling-Station-Stainless-Steel-2-Basin-Push-Button-Wall-Mount-Bottle-Filler-Drinking-Fountain/1000704580" tabindex="-1" aria-hidden="true"><img src="https://main--lowes--jgrosskurth.aem.live/media_1952f83cb30db7af48d8892466b80cdae4d6d03df.jpg?width=400&format=jpg&optimize=medium" alt="" width="276" height="276" loading="lazy" decoding="async"></a>
@@ -1210,5 +1193,301 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     </div>
   </footer>
 <script>(()=>{const b=document.querySelector('.ds-nav-burger'),n=document.getElementById('dept-nav');if(!b||!n)return;const t=o=>{b.setAttribute('aria-expanded',o);n.classList.toggle('open',o)};b.addEventListener('click',()=>t(b.getAttribute('aria-expanded')!=='true'));document.addEventListener('keydown',e=>{if(e.key==='Escape')t(false)});})();</script>
+<script src="lenis.min.js"></script>
+<script>
+(function () {
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // ── Lenis bootstrap ────────────────────────────────────────────
+  const lenis = new Lenis({ lerp: 0.1, smoothWheel: !prefersReducedMotion });
+  window.__lenis = lenis;
+  (function raf(t) { lenis.raf(t); requestAnimationFrame(raf); })(performance.now());
+
+  // ── Nav scrolled state ─────────────────────────────────────────
+  const nav = document.getElementById('nav');
+  if (nav) lenis.on('scroll', ({ scroll }) => {
+    nav.classList.toggle('scrolled', scroll > 40);
+  });
+
+  // ── Helpers ────────────────────────────────────────────────────
+  const clamp = (v, lo, hi) => v < lo ? lo : v > hi ? hi : v;
+  const easeOut3 = t => 1 - Math.pow(1 - t, 3);
+  const getDocTop = el => el.getBoundingClientRect().top + (window.__lenis ? window.__lenis.scroll : window.scrollY);
+
+  // ── Register-specific configuration ────────────────────────────
+  // `prototype --cinematic` rewrites this block per the active register.
+  const animConfig = {
+    parallax:      { translate: 0, fade: 0, rangeStart: 0, range: 80 },
+    plansParallax: { translate: 0, rangeStart: 0, range: 80 },
+    cards:         { trigger: 0.92, range: 0.22, slide: 28, stagger: 0.08 },
+    wordmark:      { range: 0.6, clip: 80 },
+  };
+
+  // ── data-split: pre-process letter spans ───────────────────────
+  document.querySelectorAll('[data-split]').forEach((el) => {
+    const text = el.textContent;
+    el.textContent = '';
+    text.split('').forEach((ch) => {
+      const s = document.createElement('span');
+      s.textContent = ch === ' ' ? ' ' : ch;
+      s.style.opacity = '0';
+      s.style.transform = 'translateY(60%)';
+      s.style.filter = 'blur(8px)';
+      el.appendChild(s);
+    });
+  });
+
+  // ── Register lists ─────────────────────────────────────────────
+  const animList = [];     // [data-anim] / [data-tile-anim]
+  const headWords = [];    // .display-head .word — clip-path reveals
+  const splitLetters = []; // [data-split] letters
+  let wordmarkEl = null, wordmarkTop = 0;
+
+  function measure() {
+    const postHeroEl = document.querySelector('.post-hero');
+    const savedTransform = postHeroEl ? postHeroEl.style.transform : '';
+    if (postHeroEl) postHeroEl.style.transform = '';
+
+    animList.forEach(({ el }) => { el.style.opacity = el.style.transform = el.style.willChange = ''; });
+    animList.length = 0;
+    headWords.length = 0;
+    splitLetters.length = 0;
+
+    document.querySelectorAll('[data-anim], [data-tile-anim]').forEach((el) => {
+      const parent = el.closest('.band, .ops-band, .alerts, .access, .news, .ops-section > div, .ops-tiles, .ops-alerts, .ops-mini, section');
+      let stagger = 0;
+      if (parent) {
+        const peers = parent.querySelectorAll('[data-anim], [data-tile-anim]');
+        const idx = Array.prototype.indexOf.call(peers, el);
+        stagger = (idx % 8) * animConfig.cards.stagger;
+      }
+      el.style.opacity = '0';
+      el.style.transform = el.hasAttribute('data-tile-anim')
+        ? `translateY(28px) rotateX(8deg)`
+        : `translateY(${animConfig.cards.slide}px)`;
+      el.style.willChange = 'opacity, transform';
+      animList.push({ el, triggerTop: getDocTop(el), staggerDelay: stagger });
+    });
+
+    // Display-head word clip-path reveals (kinetic-display register)
+    document.querySelectorAll('.display-head, .terminals-band__head h2').forEach((head) => {
+      const words = head.querySelectorAll('.word');
+      const top = getDocTop(head);
+      words.forEach((w, i) => {
+        w.style.clipPath = 'inset(0 100% 0 0)';
+        w.style.transform = 'translateY(110%)';
+        w.style.willChange = 'clip-path, transform';
+        headWords.push({ el: w, triggerTop: top, staggerDelay: i * 0.15 });
+      });
+    });
+
+    // [data-split] letter list
+    document.querySelectorAll('[data-split]').forEach((el) => {
+      const top = getDocTop(el);
+      el.querySelectorAll('span').forEach((s, i) => {
+        splitLetters.push({ el: s, triggerTop: top, staggerDelay: i * 0.05 });
+      });
+    });
+
+    // Footer wordmark wipe-up
+    wordmarkEl = document.querySelector('.site-footer__wordmark');
+    if (wordmarkEl) {
+      wordmarkTop = getDocTop(wordmarkEl);
+      wordmarkEl.style.clipPath = `inset(${animConfig.wordmark.clip}% 0 0 0)`;
+      wordmarkEl.style.willChange = 'clip-path';
+    }
+
+    if (postHeroEl) postHeroEl.style.transform = savedTransform;
+  }
+
+  // ── [data-countup]: IO-triggered numeric tween ─────────────────
+  const countSeen = new WeakSet();
+  const countObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting || countSeen.has(entry.target)) return;
+      countSeen.add(entry.target);
+      const target = +entry.target.getAttribute('data-countup');
+      const duration = target > 20 ? 1400 : target > 5 ? 900 : 600;
+      const start = performance.now();
+      (function step(now) {
+        const t = clamp((now - start) / duration, 0, 1);
+        entry.target.textContent = String(Math.round(easeOut3(t) * target));
+        if (t < 1) requestAnimationFrame(step);
+      })(performance.now());
+    });
+  }, { threshold: 0.4 });
+  document.querySelectorAll('[data-countup]').forEach((el) => countObserver.observe(el));
+
+  // ── [data-flip]: IO-triggered split-flap digit randomization ───
+  const flipObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting || entry.target.dataset.flipped === '1') return;
+      entry.target.dataset.flipped = '1';
+      const target = +entry.target.getAttribute('data-flip');
+      const total = 8 + Math.floor(Math.random() * 4);
+      let i = 0;
+      (function flap() {
+        if (i >= total) { entry.target.textContent = String(target); return; }
+        entry.target.textContent = String(Math.floor(Math.random() * 10));
+        i++;
+        setTimeout(flap, 60);
+      })();
+    });
+  }, { threshold: 0.5 });
+  document.querySelectorAll('[data-flip]').forEach((el) => flipObserver.observe(el));
+
+  // ── [data-fill]: IO-triggered bar fill ─────────────────────────
+  const fillObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting || entry.target.dataset.filled === '1') return;
+      entry.target.dataset.filled = '1';
+      const pct = +entry.target.getAttribute('data-fill');
+      setTimeout(() => { entry.target.style.width = pct + '%'; }, 120);
+    });
+  }, { threshold: 0.4 });
+  document.querySelectorAll('[data-fill]').forEach((el) => fillObserver.observe(el));
+
+  // ── Live refresh sweep (live-systems register) ─────────────────
+  const sweepEl = document.querySelector('.live-sweep');
+  if (sweepEl && !prefersReducedMotion) {
+    setInterval(() => {
+      sweepEl.classList.add('sweep');
+      setTimeout(() => sweepEl.classList.remove('sweep'), 1700);
+    }, 5400);
+  }
+
+  // ── rAF loop: scroll-progress reveals + parallax ───────────────
+  const heroMarqueeEl = document.querySelector('.hero-marquee');
+  const postHeroEl = document.querySelector('.post-hero');
+  let _lastMB = null;
+
+  (function tick() {
+    if (prefersReducedMotion) { requestAnimationFrame(tick); return; }
+    const sY = window.__lenis ? window.__lenis.scroll : window.scrollY;
+    const vh = window.innerHeight;
+    const isDesktop = window.innerWidth > 767;
+
+    // Hero parallax
+    if (heroMarqueeEl) {
+      const pp = animConfig.parallax;
+      if (isDesktop) {
+        const rs = pp.rangeStart / 100 * vh;
+        const re = pp.range / 100 * vh;
+        const p = easeOut3(clamp((sY - rs) / (re - rs), 0, 1));
+        heroMarqueeEl.style.transform = `translateY(${p * -pp.translate}vh)`;
+        document.documentElement.style.setProperty('--parallax-progress', p);
+      } else {
+        heroMarqueeEl.style.transform = '';
+        document.documentElement.style.setProperty('--parallax-progress', 0);
+      }
+    }
+
+    // Post-hero rises faster
+    let postHeroOffsetPx = 0;
+    if (postHeroEl) {
+      const pp2 = animConfig.plansParallax;
+      if (isDesktop) {
+        const rs = pp2.rangeStart / 100 * vh;
+        const re = pp2.range / 100 * vh;
+        const p = easeOut3(clamp((sY - rs) / (re - rs), 0, 1));
+        postHeroOffsetPx = p * -pp2.translate / 100 * vh;
+        postHeroEl.style.transform = `translateY(${p * -pp2.translate}vh)`;
+        const newMB = `${p * -pp2.translate}vh`;
+        if (newMB !== _lastMB) { postHeroEl.style.marginBottom = newMB; _lastMB = newMB; }
+      } else {
+        postHeroEl.style.transform = '';
+        if (_lastMB !== '') { postHeroEl.style.marginBottom = ''; _lastMB = ''; }
+      }
+    }
+
+    // Scroll-progress entrances
+    for (let i = 0; i < animList.length; i++) {
+      const item = animList[i];
+      const { trigger, range, slide } = animConfig.cards;
+      const raw = (sY + vh * trigger - (item.triggerTop + postHeroOffsetPx)) / (vh * range);
+      const p = easeOut3(clamp(raw - item.staggerDelay, 0, 1));
+      item.el.style.opacity = String(p);
+      if (item.el.hasAttribute('data-tile-anim')) {
+        item.el.style.transform = `translateY(${(1 - p) * 28}px) rotateX(${(1 - p) * 8}deg)`;
+      } else {
+        item.el.style.transform = `translateY(${(1 - p) * slide}px)`;
+      }
+    }
+
+    // Display-head clip-path word reveals
+    for (let i = 0; i < headWords.length; i++) {
+      const item = headWords[i];
+      const raw = (sY + vh * 0.85 - (item.triggerTop + postHeroOffsetPx)) / (vh * 0.30);
+      const p = easeOut3(clamp(raw - item.staggerDelay, 0, 1));
+      item.el.style.clipPath = `inset(0 ${(1 - p) * 100}% 0 0)`;
+      item.el.style.transform = `translateY(${(1 - p) * 110}%)`;
+    }
+
+    // [data-split] letter reveals
+    for (let i = 0; i < splitLetters.length; i++) {
+      const item = splitLetters[i];
+      const raw = (sY + vh * 0.85 - (item.triggerTop + postHeroOffsetPx)) / (vh * 0.35);
+      const p = easeOut3(clamp(raw - item.staggerDelay, 0, 1));
+      item.el.style.opacity = String(p);
+      item.el.style.transform = `translateY(${(1 - p) * 60}%)`;
+      item.el.style.filter = `blur(${(1 - p) * 8}px)`;
+    }
+
+    // Footer wordmark wipe-up
+    if (wordmarkEl) {
+      const adjustedTop = wordmarkTop + postHeroOffsetPx;
+      const wP = easeOut3(clamp((sY + vh - adjustedTop) / (vh * animConfig.wordmark.range), 0, 1));
+      wordmarkEl.style.clipPath = `inset(${(1 - wP) * animConfig.wordmark.clip}% 0 0 0)`;
+    }
+
+    requestAnimationFrame(tick);
+  })();
+
+  measure();
+  window.addEventListener('load',   () => requestAnimationFrame(measure), { once: true });
+  window.addEventListener('resize', measure, { passive: true });
+
+  // ── Reduced-motion: force final states ─────────────────────────
+  if (prefersReducedMotion) {
+    document.querySelectorAll('[data-anim], [data-tile-anim], [data-split] span').forEach((el) => {
+      el.style.opacity = '1';
+      el.style.transform = 'none';
+      el.style.filter = 'none';
+      el.style.clipPath = 'none';
+    });
+    document.querySelectorAll('.word').forEach((el) => {
+      el.style.clipPath = 'none';
+      el.style.transform = 'none';
+    });
+    document.querySelectorAll('[data-countup]').forEach((el) => { el.textContent = el.getAttribute('data-countup'); });
+    document.querySelectorAll('[data-flip]').forEach((el) => { el.textContent = el.getAttribute('data-flip'); });
+    document.querySelectorAll('[data-fill]').forEach((el) => { el.style.width = el.getAttribute('data-fill') + '%'; });
+  }
+})();
+
+(function () {
+  const wrap = document.querySelector('.tabs-wrap'); if (!wrap) return;
+  const ind = wrap.querySelector('.tab-ind'); const active = wrap.querySelector('.pill.on');
+  const go = (el) => { const r = el.getBoundingClientRect(), w = wrap.getBoundingClientRect(); ind.style.transform = 'translate(' + (r.left - w.left) + 'px,' + (r.top - w.top + r.height + 4 - wrap.clientHeight) + 'px) scaleX(' + (r.width / 100) + ')'; };
+  if (active) { go(active); window.addEventListener('resize', () => go(active), { passive: true }); window.addEventListener('load', () => go(active)); }
+  wrap.querySelectorAll('.pill').forEach((p) => { const on = () => { go(p); ind.classList.toggle('preview', p !== active); }; p.addEventListener('mouseenter', on); p.addEventListener('focus', on); });
+  const home = () => { if (active) { go(active); ind.classList.remove('preview'); } };
+  wrap.addEventListener('mouseleave', home);
+  wrap.addEventListener('focusout', (e) => { if (!wrap.contains(e.relatedTarget)) home(); });
+})();
+(function () {
+  const els = [...document.querySelectorAll('[data-tile-anim], [data-anim]')];
+  const grids = ['.offer-grid', '.cat-grid', '.dept-grid', '.plan-cards', '.art-grid', '.deal-grid', '.proj-grid'];
+  const index = () => grids.forEach((g) => document.querySelectorAll(g).forEach((grid) => {
+    const items = [...grid.querySelectorAll('[data-tile-anim]')];
+    const rows = [...new Set(items.map((el) => Math.round(el.getBoundingClientRect().top + scrollY)))].sort((a, b) => a - b);
+    rows.forEach((top) => items.filter((el) => Math.round(el.getBoundingClientRect().top + scrollY) === top).forEach((el, col) => el.style.setProperty('--i', String(col))));
+  }));
+  index(); window.addEventListener('resize', index, { passive: true }); window.addEventListener('load', index, { once: true });
+  const io = new IntersectionObserver((entries) => entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); } }), { threshold: 0.15 });
+  els.forEach((el) => io.observe(el));
+  document.addEventListener('focusin', (e) => { const t = e.target.closest('[data-tile-anim], [data-anim]'); if (t) t.classList.add('is-in'); });
+})();
+</script>
 </body>
 </html>

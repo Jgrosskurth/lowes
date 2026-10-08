@@ -3,7 +3,7 @@
 <head>
 <!-- stardust:provenance
   writtenBy:         stardust:prototype (render delegated to impeccable craft; built by stardust/.work/prototype/build.mjs from captured content)
-  writtenAt:         2026-10-08T16:38:28.024Z
+  writtenAt:         2026-10-08T17:00:09.995Z
   page:              home
   variant:           A
   pageUrl:           https://main--lowes--jgrosskurth.aem.live/
@@ -194,7 +194,9 @@ main > section:first-child { padding-top: 24px; }
 .spon-brand { font-weight: 600; color: var(--star); font-size: 14px; }
 .spon-head { font-size: 28px; line-height: 38px; font-weight: 600; }
 .spon-line { font-size: var(--body-sm); }
-.spon-media { align-self: stretch; }
+.spon-media { align-self: stretch; position: relative; min-height: 150px; }
+.spon-media .crop { position: absolute; inset: 0; height: 100%; aspect-ratio: auto !important; }
+.spon-media .crop img { height: 100%; width: auto !important; left: auto !important; right: -9%; top: 0 !important; }
 .spon-label, .spon-tag { font-size: 12px; color: var(--ink-soft); }
 .spon-label { position: absolute; right: 12px; bottom: 8px; color: var(--color-fg); background: rgb(255 255 255 / 85%); padding: 0 6px; border-radius: 4px; }
 

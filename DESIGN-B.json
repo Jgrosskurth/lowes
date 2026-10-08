@@ -2,7 +2,7 @@
   "_provenance": {
     "writtenBy": "stardust:direct (via stardust:uplift)",
     "writtenAt": "2026-10-08T15:50:12.573Z",
-    "againstInput": "uplift presales redesign — three variants per stardust/direction.md",
+    "againstInput": "uplift presales redesign \u2014 three variants per stardust/direction.md",
     "variant": "B",
     "mode": "Mode A (brand-faithful)",
     "readArtifacts": [
@@ -16,7 +16,7 @@
     "stardustVersion": "0.14.0"
   },
   "schemaVersion": 2,
-  "name": "Lowe's Home Improvement — target system · variant B",
+  "name": "Lowe's Home Improvement \u2014 target system \u00b7 variant B",
   "colors": {
     "ground": "#ffffff",
     "ink": "#17191f",
@@ -95,6 +95,13 @@
       "fontWeight": 600,
       "lineHeight": "40px",
       "letterSpacing": "-0.02em"
+    },
+    "display-offer": {
+      "fontFamily": "fellix, fellix-fallback, arial, sans-serif",
+      "fontSize": "104px",
+      "fontWeight": 600,
+      "lineHeight": "0.86",
+      "letterSpacing": "-0.04em"
     }
   },
   "rounded": {
@@ -199,7 +206,7 @@
       "cart-green": {
         "capturedRole": "secondary (action)",
         "contrastOnGround": 5.48,
-        "use": "Add to Cart, Save %, deal badges — commerce actions only"
+        "use": "Add to Cart, Save %, deal badges \u2014 commerce actions only"
       },
       "lowes-navy": {
         "capturedRole": "accent-1 (brand navy)",
@@ -216,7 +223,7 @@
         "use": "\"New\" badge, unavailable notes, final-day flags"
       },
       "star": {
-        "use": "rating glyph fill only — never text (1.84:1 on white)"
+        "use": "rating glyph fill only \u2014 never text (1.84:1 on white)"
       }
     },
     "typographyMeta": {
@@ -225,7 +232,7 @@
         "https://www.lowescdn.com/sffonts/Fellix-Regular.woff",
         "https://www.lowescdn.com/sffonts/Fellix-SemiBold.woff"
       ],
-      "scale": "drenched — 144/72/40/24/16 (ratios 2.0, 1.8, 1.67, 1.5)"
+      "scale": "drenched \u2014 144/72/40/24/16 (ratios 2.0, 1.8, 1.67, 1.5)"
     },
     "shadows": {
       "icon-button": "rgba(0,0,0,.2) 0 2px 4px, rgba(0,0,0,.14) 0 4px 5px, rgba(0,0,0,.12) 0 1px 10px",
@@ -236,7 +243,7 @@
       "tablet": 1024,
       "desktop": 1280,
       "containerMaxWidth": "1328px",
-      "containerNote": "captured: 1440 viewport − 2×56px --gutter = 1328px; inherited unchanged",
+      "containerNote": "captured: 1440 viewport \u2212 2\u00d756px --gutter = 1328px; inherited unchanged",
       "gutters": {
         "mobile": "16px",
         "desktop": "56px"
@@ -272,7 +279,7 @@
         },
         "ground_family_override": {
           "reason": "brand-faithful",
-          "note": "captured ground #ffffff wins; saturated roll informs the alt-section surface → lowes-navy footer band"
+          "note": "captured ground #ffffff wins; saturated roll informs the alt-section surface \u2192 lowes-navy footer band"
         },
         "overrides": [
           "decade",
@@ -286,12 +293,12 @@
           "Fellix 400",
           "Fellix 600"
         ],
-        "notes": "Fellix ships as static .woff (Regular, SemiBold) — no fvar axes; Discipline 7 static-only-family exemption applies to display AND body (same family)."
+        "notes": "Fellix ships as static .woff (Regular, SemiBold) \u2014 no fvar axes; Discipline 7 static-only-family exemption applies to display AND body (same family)."
       },
       "palette_source": {
         "source": "inherited from _brand-extraction.json",
         "picked_by": "user-constraint",
-        "roleRenaming": "background→ground, text-primary→ink, primary→lowes-blue, secondary→cart-green, accent-1→lowes-navy, surface→mist, accent-2→signal-red, border→rule-strong"
+        "roleRenaming": "background\u2192ground, text-primary\u2192ink, primary\u2192lowes-blue, secondary\u2192cart-green, accent-1\u2192lowes-navy, surface\u2192mist, accent-2\u2192signal-red, border\u2192rule-strong"
       },
       "anti_toolbox_count": 1,
       "anti_toolbox_hits": [
@@ -303,9 +310,9 @@
       "off_toolbox_moves": [],
       "audit_adjustments": [],
       "brand_faithful_inversions": [
-        "pure-white retention — `#ffffff` retained as page ground (existing Lowe's decision; captured --background-color #fff). The 'no pure black/white' rule is inverted per brand-faithful direction.",
-        "hex format retention — color tokens retained in hex (matches captured brand surface and DESIGN.md Stitch frontmatter). OKLCH applies to new authoring; this is inheritance.",
-        "saturated color retention — saturated `#0072ce` and `#007a33` retained as Lowe's interactive and action voices. The tinted-neutral reflex is inverted per brand-faithful direction."
+        "pure-white retention \u2014 `#ffffff` retained as page ground (existing Lowe's decision; captured --background-color #fff). The 'no pure black/white' rule is inverted per brand-faithful direction.",
+        "hex format retention \u2014 color tokens retained in hex (matches captured brand surface and DESIGN.md Stitch frontmatter). OKLCH applies to new authoring; this is inheritance.",
+        "saturated color retention \u2014 saturated `#0072ce` and `#007a33` retained as Lowe's interactive and action voices. The tinted-neutral reflex is inverted per brand-faithful direction."
       ],
       "references_used": [
         {
@@ -330,7 +337,7 @@
           "tag": "off-toolbox"
         }
       ],
-      "referenceTier": "webfetch-only (WebSearch / refero unavailable); homedepot.com and bunnings.com.au 403 — not cited",
+      "referenceTier": "webfetch-only (WebSearch / refero unavailable); homedepot.com and bunnings.com.au 403 \u2014 not cited",
       "notes": [
         "Pure-white ground is a documented brand decision (inversion above), not a default."
       ]
@@ -466,7 +473,7 @@
         "tablet": "40px",
         "mobile": "32px"
       },
-      "floor": "multi-audience hard floor fired (13 sections, >2 audience tracks) → 40–64px"
+      "floor": "multi-audience hard floor fired (13 sections, >2 audience tracks) \u2192 40\u201364px"
     },
     "variant": {
       "role": "One captured trait amplified",
@@ -488,13 +495,13 @@
         8,
         9
       ],
-      "improvementsNote": "item 5 (stepped scale) is superseded by the drenched display scale — the variant goes further, not against it",
+      "improvementsNote": "item 5 (stepped scale) is superseded by the drenched display scale \u2014 the variant goes further, not against it",
       "surprise": "medium",
       "dominantDimension": "typography/display-numeral-voice",
       "antiToolboxConditional": {
         "move": "Oversized display numerals as section markers",
         "status": "not a hit as used",
-        "justification": "numerals are the captured offer values (35%, $99, 65%, 25% …) set as live type at the scale the brand already uses in its own promo art; never used as section ordinals (§ 01) or decorative markers"
+        "justification": "numerals are the captured offer values (35%, $99, 65%, 25% \u2026) set as live type at the scale the brand already uses in its own promo art; never used as section ordinals (\u00a7 01) or decorative markers"
       }
     }
   },
@@ -510,7 +517,7 @@
     ],
     "rules": [
       "Promotional copy is never baked into images.",
-      "Green means cart — never decoration.",
+      "Green means cart \u2014 never decoration.",
       "A rail must justify itself; default is a visible grid.",
       "Sponsored inventory is always labelled and never leads the page.",
       "Numbers on the page come from the capture or render as placeholders."
