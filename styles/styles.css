@@ -17,8 +17,15 @@
   --light-color: var(--surface-subdued);
   --dark-color: #505050;
 
-  /* nav height */
-  --nav-height: 64px;
+  /* nav height (Lowe's masthead: mobile stacked rows / desktop 32 + 70 + 46) */
+  --nav-height: 232px;
+}
+
+/* breakpoint-exception: Lowe's masthead switches to its desktop layout at 1057px */
+@media (width >= 1057px) {
+  :root {
+    --nav-height: 148px;
+  }
 }
 
 /* fallback font: Arial metrics adjusted toward Fellix to limit layout shift */
