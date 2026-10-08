@@ -1,20 +1,179 @@
-footer {
-  background-color: var(--light-color);
-  font-size: var(--body-font-size-xs);
+/* Lowe's footer. Values measured on lowes.com (1440px desktop). */
+
+footer .footer {
+  --footer-navy: #012169;
+  --footer-accent: #9bcbeb;
+  --footer-gutter: 16px;
+
+  position: relative;
+  margin-top: 64px;
+  background: var(--footer-navy);
+  color: #fff;
+  font-family: var(--body-font-family);
 }
 
-footer .footer > div {
-  margin: auto;
-  max-width: 1200px;
-  padding: 40px 24px 24px;
+/* gable roofline above the band */
+footer .footer::before {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  width: 198px;
+  height: 43px;
+  transform: translateX(-50%);
+  background: var(--footer-navy);
+  clip-path: polygon(0 100%, 0 74%, 8% 74%, 8% 49%, 25% 49%, 50% 0, 76% 49%, 91% 49%, 91% 74%, 100% 74%, 100% 100%);
 }
 
-footer .footer p {
+footer .footer-inner {
+  box-sizing: border-box;
+  max-width: 1760px;
+  margin: 0 auto;
+  padding: 21px var(--footer-gutter) 32px;
+}
+
+footer .footer :where(ul) {
   margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+footer .footer :where(a:any-link) {
+  color: inherit;
+  text-decoration: none;
+}
+
+footer .footer :where(a:hover) {
+  text-decoration: underline;
+}
+
+/* icon row */
+footer .footer-icons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px 8px;
+  padding-bottom: 22px;
+  border-bottom: 2px solid rgb(155 203 235 / 50%);
+}
+
+footer .footer-icon-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  color: var(--footer-accent);
+  text-align: center;
+}
+
+footer .footer .footer-icon-link:any-link {
+  color: var(--footer-accent);
+}
+
+footer .footer-icon-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border: 1px solid var(--footer-accent);
+  border-radius: 50%;
+}
+
+footer .footer-icon-circle img {
+  display: block;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+footer .footer-icon-label {
+  max-width: 100px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+/* link columns */
+footer .footer-columns {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  padding-top: 33px;
+}
+
+footer .footer-heading {
+  margin: 0 0 14px;
+  color: var(--footer-accent);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 32px;
+  text-transform: uppercase;
+}
+
+footer .footer-links li + li {
+  margin-top: 16px;
+}
+
+footer .footer-links a {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+footer .footer-social {
+  display: flex;
+  gap: 20px;
+}
+
+footer .footer-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 27px;
+}
+
+footer .footer-social img {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+footer .footer-social + .footer-heading {
+  margin-top: 35px;
+}
+
+footer .footer-legal {
+  margin: 40px 0 0;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
 }
 
 @media (width >= 900px) {
-  footer .footer > div {
-    padding: 40px 32px 24px;
+  footer .footer-icons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer .footer-icon-item {
+    width: 100px;
+  }
+
+  footer .footer-icon-label {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  footer .footer-columns {
+    grid-template-columns: 21.25% 27.6% 24.9% 1fr;
+    gap: 0;
+  }
+}
+
+/* breakpoint-exception: Lowe's masthead/footer gutters switch at 1057px (measured on source) */
+@media (width >= 1057px) {
+  footer .footer {
+    --footer-gutter: 40px;
   }
 }
