@@ -47,12 +47,12 @@
   font-weight: 700;
 }
 
-.carousel-thematic .carousel-thematic-panel[hidden] {
+.carousel-thematic .carousel-thematic-pane[hidden] {
   display: none;
 }
 
 /* panel: thematic feature stacked over products on mobile, side by side from 600px */
-.carousel-thematic .carousel-thematic-panel {
+.carousel-thematic .carousel-thematic-pane {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -392,33 +392,33 @@
 }
 
 @media (width >= 600px) {
-  .carousel-thematic .carousel-thematic-panel.has-feature {
+  .carousel-thematic .carousel-thematic-pane.has-feature {
     flex-direction: row;
     gap: 0;
   }
 
   /* the artwork keeps its own aspect (copy is baked in) until the row is wide enough to fill */
-  .carousel-thematic .carousel-thematic-panel.has-feature .carousel-thematic-feature {
+  .carousel-thematic .carousel-thematic-pane.has-feature .carousel-thematic-feature {
     flex: 0 0 clamp(340px, 30%, 400px);
     align-self: flex-start;
   }
 
-  .carousel-thematic .carousel-thematic-panel.has-feature .carousel-thematic-feature img {
+  .carousel-thematic .carousel-thematic-pane.has-feature .carousel-thematic-feature img {
     height: auto;
   }
 
-  .carousel-thematic .carousel-thematic-panel.has-feature .carousel-thematic-scroller {
+  .carousel-thematic .carousel-thematic-pane.has-feature .carousel-thematic-scroller {
     flex: 1 1 0%;
     padding: 0 4px 0 20px;
   }
 }
 
 @media (width >= 1280px) {
-  .carousel-thematic .carousel-thematic-panel.has-feature .carousel-thematic-feature {
+  .carousel-thematic .carousel-thematic-pane.has-feature .carousel-thematic-feature {
     align-self: stretch;
   }
 
-  .carousel-thematic .carousel-thematic-panel.has-feature .carousel-thematic-feature img {
+  .carousel-thematic .carousel-thematic-pane.has-feature .carousel-thematic-feature img {
     height: 100%;
   }
 }

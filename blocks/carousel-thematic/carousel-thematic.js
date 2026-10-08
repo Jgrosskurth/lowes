@@ -126,7 +126,7 @@ export default function decorate(block) {
   const rows = [...block.children];
 
   const panel = document.createElement('div');
-  panel.className = 'carousel-thematic-panel';
+  panel.className = 'carousel-thematic-pane';
   panel.id = `carousel-thematic-${instanceCount}-panel`;
 
   let label = '';

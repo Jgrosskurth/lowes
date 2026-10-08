@@ -53,7 +53,7 @@ async function loadRuntimeWidget(block, url) {
 
 function buildForecastPanel(row) {
   const panel = document.createElement('div');
-  panel.className = 'widget-weather-panel widget-weather-forecast';
+  panel.className = 'widget-weather-pane widget-weather-forecast';
 
   const content = document.createElement('div');
   content.className = 'widget-weather-forecast-content';
@@ -193,7 +193,7 @@ function decorateCarousel(panel, carousel, list) {
 
 function buildProjectsPanel(rows) {
   const panel = document.createElement('div');
-  panel.className = 'widget-weather-panel widget-weather-projects';
+  panel.className = 'widget-weather-pane widget-weather-projects';
   const list = document.createElement('ul');
   list.className = 'widget-weather-project-list';
   rows.forEach((row) => {
@@ -236,7 +236,7 @@ export default async function decorate(block) {
   }
 
   const panels = document.createElement('div');
-  panels.className = 'widget-weather-panels';
+  panels.className = 'widget-weather-panes';
   panels.append(buildForecastPanel(forecastRow));
   const projects = buildProjectsPanel(projectRows);
   if (projects) panels.append(projects);
