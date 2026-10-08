@@ -1,0 +1,537 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:direct (via stardust:uplift)",
+    "writtenAt": "2026-10-08T15:50:12.573Z",
+    "againstInput": "uplift presales redesign \u2014 three variants per stardust/direction.md",
+    "variant": "B",
+    "mode": "Mode A (brand-faithful)",
+    "readArtifacts": [
+      "stardust/current/_brand-extraction.json",
+      "stardust/current/DESIGN.json",
+      "stardust/current/PRODUCT.md",
+      "stardust/direction.md",
+      "stardust/uplift-improvements.md",
+      "stardust/uplift-questions.md"
+    ],
+    "stardustVersion": "0.14.0"
+  },
+  "schemaVersion": 2,
+  "name": "Lowe's Home Improvement \u2014 target system \u00b7 variant B",
+  "colors": {
+    "ground": "#ffffff",
+    "ink": "#17191f",
+    "ink-soft": "rgb(23 25 31 / 80%)",
+    "lowes-blue": "#0072ce",
+    "lowes-blue-deep": "#005ba5",
+    "cart-green": "#007a33",
+    "cart-green-deep": "#004b1d",
+    "cart-green-pressed": "#003113",
+    "cart-green-tint": "#d4f7e3",
+    "lowes-navy": "#012169",
+    "mist": "#f4f6fa",
+    "well": "#fafafa",
+    "store-chip": "#e5e9f1",
+    "signal-red": "#971b2f",
+    "rule": "#cbd1dd",
+    "rule-strong": "#616670",
+    "star": "#f3b51b"
+  },
+  "typography": {
+    "display": {
+      "fontFamily": "fellix, fellix-fallback, arial, sans-serif",
+      "fontSize": "72px",
+      "fontWeight": 600,
+      "lineHeight": "76px",
+      "letterSpacing": "-0.02em"
+    },
+    "heading-xl": {
+      "fontFamily": "fellix, fellix-fallback, arial, sans-serif",
+      "fontSize": "40px",
+      "fontWeight": 600,
+      "lineHeight": "44px",
+      "letterSpacing": "-0.015em"
+    },
+    "heading-l": {
+      "fontFamily": "fellix, fellix-fallback, arial, sans-serif",
+      "fontSize": "40px",
+      "fontWeight": 600,
+      "lineHeight": "44px",
+      "letterSpacing": "-0.015em"
+    },
+    "heading-m": {
+      "fontFamily": "fellix, fellix-fallback, arial, sans-serif",
+      "fontSize": "24px",
+      "fontWeight": 600,
+      "lineHeight": "30px"
+    },
+    "body": {
+      "fontFamily": "fellix, fellix-fallback, arial, sans-serif",
+      "fontSize": "16px",
+      "fontWeight": 400,
+      "lineHeight": "24px"
+    },
+    "body-sm": {
+      "fontFamily": "fellix, fellix-fallback, arial, sans-serif",
+      "fontSize": "14px",
+      "fontWeight": 400,
+      "lineHeight": "20px"
+    },
+    "micro": {
+      "fontFamily": "fellix, fellix-fallback, arial, sans-serif",
+      "fontSize": "12px",
+      "fontWeight": 600,
+      "lineHeight": "16px"
+    },
+    "display-numeral": {
+      "fontFamily": "fellix, fellix-fallback, arial, sans-serif",
+      "fontSize": "clamp(88px, 10vw, 144px)",
+      "fontWeight": 600,
+      "lineHeight": "0.86",
+      "letterSpacing": "-0.035em"
+    },
+    "price-lead": {
+      "fontFamily": "fellix, fellix-fallback, arial, sans-serif",
+      "fontSize": "40px",
+      "fontWeight": 600,
+      "lineHeight": "40px",
+      "letterSpacing": "-0.02em"
+    },
+    "display-offer": {
+      "fontFamily": "fellix, fellix-fallback, arial, sans-serif",
+      "fontSize": "104px",
+      "fontWeight": 600,
+      "lineHeight": "0.86",
+      "letterSpacing": "-0.04em"
+    }
+  },
+  "rounded": {
+    "primary": "8px",
+    "sm": "4px",
+    "md": "8px",
+    "pill": "20px",
+    "circle": "9999px"
+  },
+  "spacing": {
+    "xs": "4px",
+    "sm": "8px",
+    "md": "16px",
+    "lg": "24px",
+    "xl": "40px",
+    "2xl": "56px",
+    "section": "48px",
+    "gutter": "56px"
+  },
+  "components": {
+    "button-cart": {
+      "backgroundColor": "{colors.ground}",
+      "textColor": "{colors.cart-green}",
+      "rounded": "{rounded.md}",
+      "height": "48px",
+      "padding": "0 16px",
+      "typography": "{typography.body}"
+    },
+    "button-cart-hover": {
+      "backgroundColor": "{colors.cart-green}",
+      "textColor": "{colors.ground}",
+      "rounded": "{rounded.md}",
+      "height": "48px"
+    },
+    "button-outline": {
+      "backgroundColor": "{colors.ground}",
+      "textColor": "{colors.lowes-blue}",
+      "rounded": "{rounded.md}",
+      "height": "44px",
+      "padding": "0 20px"
+    },
+    "link": {
+      "textColor": "{colors.lowes-blue}",
+      "typography": "{typography.body}"
+    },
+    "pill": {
+      "backgroundColor": "{colors.ground}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.pill}",
+      "height": "40px",
+      "padding": "0 16px",
+      "typography": "{typography.body-sm}"
+    },
+    "pill-active": {
+      "backgroundColor": "{colors.lowes-blue}",
+      "textColor": "{colors.ground}",
+      "rounded": "{rounded.pill}",
+      "height": "40px"
+    },
+    "input": {
+      "backgroundColor": "{colors.ground}",
+      "textColor": "{colors.ink}",
+      "rounded": "{rounded.md}",
+      "height": "48px",
+      "padding": "0 16px"
+    },
+    "badge": {
+      "backgroundColor": "{colors.cart-green}",
+      "textColor": "{colors.ground}",
+      "rounded": "{rounded.sm}",
+      "typography": "{typography.micro}",
+      "padding": "2px 8px"
+    },
+    "card": {
+      "backgroundColor": "{colors.ground}",
+      "rounded": "{rounded.md}",
+      "padding": "16px"
+    },
+    "utility-bar": {
+      "backgroundColor": "{colors.lowes-navy}",
+      "textColor": "{colors.ground}",
+      "height": "32px"
+    }
+  },
+  "extensions": {
+    "colorMeta": {
+      "ground": {
+        "capturedRole": "background",
+        "token": "--background-color",
+        "note": "pure-white retention (brand-faithful inversion)"
+      },
+      "ink": {
+        "capturedRole": "text-primary",
+        "contrastOnGround": 17.57
+      },
+      "lowes-blue": {
+        "capturedRole": "primary (interactive)",
+        "contrastOnGround": 4.89,
+        "contrastOnMist": 4.52,
+        "use": "links, active pill, tab indicator, focus ring, scroll/arrow glyphs"
+      },
+      "cart-green": {
+        "capturedRole": "secondary (action)",
+        "contrastOnGround": 5.48,
+        "use": "Add to Cart, Save %, deal badges \u2014 commerce actions only"
+      },
+      "lowes-navy": {
+        "capturedRole": "accent-1 (brand navy)",
+        "contrastWithGround": 14.76,
+        "use": "logo, utility bar, footer band (alt-section surface from seed ground roll)"
+      },
+      "mist": {
+        "capturedRole": "surface",
+        "use": "nav row, weather / store panel, velocity chips"
+      },
+      "signal-red": {
+        "capturedRole": "accent-2",
+        "contrastOnGround": 8.35,
+        "use": "\"New\" badge, unavailable notes, final-day flags"
+      },
+      "star": {
+        "use": "rating glyph fill only \u2014 never text (1.84:1 on white)"
+      }
+    },
+    "typographyMeta": {
+      "family": "Fellix (static woff, lowescdn, CORS *)",
+      "files": [
+        "https://www.lowescdn.com/sffonts/Fellix-Regular.woff",
+        "https://www.lowescdn.com/sffonts/Fellix-SemiBold.woff"
+      ],
+      "scale": "drenched \u2014 144/72/40/24/16 (ratios 2.0, 1.8, 1.67, 1.5)"
+    },
+    "shadows": {
+      "icon-button": "rgba(0,0,0,.2) 0 2px 4px, rgba(0,0,0,.14) 0 4px 5px, rgba(0,0,0,.12) 0 1px 10px",
+      "tab-indicator": "inset 0 -2px 0 #0072ce"
+    },
+    "breakpoints": {
+      "mobile": 640,
+      "tablet": 1024,
+      "desktop": 1280,
+      "containerMaxWidth": "1328px",
+      "containerNote": "captured: 1440 viewport \u2212 2\u00d756px --gutter = 1328px; inherited unchanged",
+      "gutters": {
+        "mobile": "16px",
+        "desktop": "56px"
+      }
+    },
+    "divergence": {
+      "toolkit_version": "v1.0 (stardust v2)",
+      "mode": "brand-faithful (Mode A)",
+      "signal": "signal-strong",
+      "seed": {
+        "input": "Lowe's Home Improvement|2026-10-08",
+        "md5Bytes": [
+          62,
+          141,
+          53,
+          75
+        ],
+        "decade": "2025-now",
+        "craft": "Photogram",
+        "register": "Supermarket flyer",
+        "ground_family": "saturated",
+        "picked_by": {
+          "decade": "reasoned: Target / Best Buy / IKEA live-text retail (2025-now)",
+          "craft": "deterministic (inert under Mode A)",
+          "register": "reasoned: deal-numeral-led big-box retail; rolled \"Field guide\" rejected as editorial vocabulary on a commerce brand",
+          "ground_family": "deterministic"
+        },
+        "rolled": {
+          "decade": "1950s",
+          "craft": "Photogram",
+          "register": "Field guide",
+          "ground_family": "saturated"
+        },
+        "ground_family_override": {
+          "reason": "brand-faithful",
+          "note": "captured ground #ffffff wins; saturated roll informs the alt-section surface \u2192 lowes-navy footer band"
+        },
+        "overrides": [
+          "decade",
+          "register"
+        ]
+      },
+      "font_deck": {
+        "name": "brand-inherited",
+        "picked_by": "user-constraint",
+        "families": [
+          "Fellix 400",
+          "Fellix 600"
+        ],
+        "notes": "Fellix ships as static .woff (Regular, SemiBold) \u2014 no fvar axes; Discipline 7 static-only-family exemption applies to display AND body (same family)."
+      },
+      "palette_source": {
+        "source": "inherited from _brand-extraction.json",
+        "picked_by": "user-constraint",
+        "roleRenaming": "background\u2192ground, text-primary\u2192ink, primary\u2192lowes-blue, secondary\u2192cart-green, accent-1\u2192lowes-navy, surface\u2192mist, accent-2\u2192signal-red, border\u2192rule-strong"
+      },
+      "anti_toolbox_count": 1,
+      "anti_toolbox_hits": [
+        {
+          "move": "Sticky top navigation",
+          "justification": "Lowe's header is the search + store-selector router (IA priorities search-led-ia and audience-routing); keeping the main bar reachable while browsing 13 sections of inventory is the brand's IA, not a decorative reflex. Only the main bar sticks; utility bar and department row scroll away."
+        }
+      ],
+      "off_toolbox_moves": [],
+      "audit_adjustments": [],
+      "brand_faithful_inversions": [
+        "pure-white retention \u2014 `#ffffff` retained as page ground (existing Lowe's decision; captured --background-color #fff). The 'no pure black/white' rule is inverted per brand-faithful direction.",
+        "hex format retention \u2014 color tokens retained in hex (matches captured brand surface and DESIGN.md Stitch frontmatter). OKLCH applies to new authoring; this is inheritance.",
+        "saturated color retention \u2014 saturated `#0072ce` and `#007a33` retained as Lowe's interactive and action voices. The tinted-neutral reflex is inverted per brand-faithful direction."
+      ],
+      "references_used": [
+        {
+          "source": "webfetch",
+          "title": "Target homepage",
+          "url": "https://www.target.com/",
+          "grounds": "live oversized deal numerals in deal cards (B anchor)",
+          "tag": "off-toolbox"
+        },
+        {
+          "source": "webfetch",
+          "title": "Best Buy homepage",
+          "url": "https://www.bestbuy.com/",
+          "grounds": "fixed 24-tile category grid; numbered rows instead of carousels (A improvement 3; C grid-as-protagonist)",
+          "tag": "off-toolbox"
+        },
+        {
+          "source": "webfetch",
+          "title": "IKEA US homepage",
+          "url": "https://www.ikea.com/us/en/",
+          "grounds": "live-text offers over product photography; motion as interface behaviour (A improvement 1; C register check)",
+          "tag": "off-toolbox"
+        }
+      ],
+      "referenceTier": "webfetch-only (WebSearch / refero unavailable); homedepot.com and bunnings.com.au 403 \u2014 not cited",
+      "notes": [
+        "Pure-white ground is a documented brand decision (inversion above), not a default."
+      ]
+    },
+    "componentStyle": {
+      "buttons": {
+        "cart": {
+          "background": "#ffffff",
+          "color": "#007a33",
+          "border": "1px solid #007a33",
+          "borderRadius": "8px",
+          "height": "48px",
+          "fontWeight": 600,
+          "hover": "fill cart-green, text ground"
+        },
+        "outline": {
+          "background": "#ffffff",
+          "color": "#0072ce",
+          "border": "1px solid #0072ce",
+          "borderRadius": "8px",
+          "height": "44px",
+          "fontWeight": 600
+        },
+        "link": {
+          "color": "#0072ce",
+          "textDecoration": "underline 1px, offset 3px",
+          "hover": "#005ba5"
+        }
+      },
+      "dualCTAPattern": null,
+      "cards": {
+        "product": {
+          "imageWell": "#fafafa",
+          "radius": "8px",
+          "price": "superscript $ + dollars + superscript cents",
+          "badge": "Save-% cart-green"
+        },
+        "panel": {
+          "border": "1px solid #cbd1dd",
+          "radius": "8px",
+          "padding": "24px"
+        },
+        "promo": {
+          "radius": "8px",
+          "copy": "live text over captured photo / cutout; never baked"
+        }
+      },
+      "inputs": {
+        "search": {
+          "border": "1px solid #616670",
+          "radius": "8px",
+          "height": "48px",
+          "focus": "2px #0072ce ring, 2px offset"
+        }
+      },
+      "focus": {
+        "outline": "2px solid #0072ce",
+        "offset": "2px"
+      }
+    },
+    "systemComponentRoles": {
+      "header": {
+        "purpose": "search + store + audience router + department nav",
+        "positionClass": "top, sticky on scroll (main bar only)",
+        "constraint": "search field and store selector visible in the first viewport at every breakpoint"
+      },
+      "footer": {
+        "purpose": "Lowe's site navigation + legal",
+        "positionClass": "page end, lowes-navy band",
+        "constraint": "built only from captured nav labels; legal copy is placeholder until supplied"
+      },
+      "sponsored-slot": {
+        "purpose": "paid brand placement",
+        "positionClass": "below the house hero and promo row",
+        "constraint": "always labelled \"Sponsored\""
+      },
+      "promo-tile": {
+        "purpose": "offer card",
+        "positionClass": "grid",
+        "constraint": "offer numeral / headline / qualifier / end date as live text"
+      }
+    },
+    "iaPriorities": [
+      {
+        "signal": "search-led-ia",
+        "evidence": "pages/home.json#forms[0] form.nav-search ('What can we help you find?') rendered in the 148px header above the fold",
+        "preserveAs": "first-viewport",
+        "scope": "site-wide",
+        "mutability": "movable"
+      },
+      {
+        "signal": "audience-routing",
+        "evidence": "header utility + tools: Lowe's Credit Center, Order Status, Weekly Ad, Lowe's PRO, Find a Store Near Me, AI Assist, Sign In, Cart",
+        "preserveAs": "first-viewport header router",
+        "scope": "site-wide",
+        "mutability": "movable"
+      },
+      {
+        "signal": "commercial-conversion",
+        "evidence": "primary CTA verbs \"Shop Now\" (11) and \"Add to Cart\" (13); > 3 promo cards above the fold (hero + promo row)",
+        "preserveAs": "offers above the fold; Add to Cart on every product card",
+        "scope": "page",
+        "mutability": "movable"
+      }
+    ],
+    "voice": {
+      "tone": "professional-warm, practical-helpful, deal-forward",
+      "do": [
+        "Shop appliance deals",
+        "Plan your day and your next project!",
+        "Find great gifts for everyone on your list.",
+        "Add to Cart",
+        "Read the how-to"
+      ],
+      "dont": [
+        "Learn More >",
+        "Get Details",
+        "Click here",
+        "editorial vocabulary (the journal, field guide, atelier)",
+        "invented stats or urgency"
+      ],
+      "ctaVocabulary": {
+        "commerce": "Shop <object>",
+        "content": "Read <object> / See all <object>",
+        "fineprint": "Offer details",
+        "cart": "Add to Cart"
+      }
+    },
+    "density": {
+      "tier": "balanced (commercial-tightened)",
+      "sectionPadding": {
+        "desktop": "48px",
+        "tablet": "40px",
+        "mobile": "32px"
+      },
+      "floor": "multi-audience hard floor fired (13 sections, >2 audience tracks) \u2192 40\u201364px"
+    },
+    "variant": {
+      "role": "One captured trait amplified",
+      "pitch": "What if we amplified the Fellix display register?",
+      "capturedTrait": "Fellix SemiBold display register (exercised only inside merchandising rasters)",
+      "evidence": [
+        "_brand-extraction.json#type.displayInRaster",
+        "_brand-extraction.json#type.scaleAudit",
+        "brand-review T-scale, T-tokens-unrendered, T-raster-copy"
+      ],
+      "inServiceOf": "PRODUCT.md Brand Personality: Deal-forward",
+      "improvementsFloor": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        9
+      ],
+      "improvementsNote": "item 5 (stepped scale) is superseded by the drenched display scale \u2014 the variant goes further, not against it",
+      "surprise": "medium",
+      "dominantDimension": "typography/display-numeral-voice",
+      "antiToolboxConditional": {
+        "move": "Oversized display numerals as section markers",
+        "status": "not a hit as used",
+        "justification": "numerals are the captured offer values (35%, $99, 65%, 25% \u2026) set as live type at the scale the brand already uses in its own promo art; never used as section ordinals (\u00a7 01) or decorative markers"
+      }
+    }
+  },
+  "narrative": {
+    "northStar": "Lowe's homepage as a well-run aisle: every offer in live Fellix type, every department visible at a glance, the search and the store always one reach away.",
+    "overview": "White ground, navy chrome, blue for wayfinding, green only for the cart. Fellix 400/600 only. 8px corners, 20px pills. Grids over rails.",
+    "keyCharacteristics": [
+      "Live-type offers over captured photography",
+      "Header router: search + store + Pro/credit + cart",
+      "Visible grids; one product rail",
+      "Single section-title style; one H1",
+      "Navy footer band built from captured nav"
+    ],
+    "rules": [
+      "Promotional copy is never baked into images.",
+      "Green means cart \u2014 never decoration.",
+      "A rail must justify itself; default is a visible grid.",
+      "Sponsored inventory is always labelled and never leads the page.",
+      "Numbers on the page come from the capture or render as placeholders."
+    ],
+    "dos": [
+      "Reuse captured images at the same semantic position",
+      "Keep Add to Cart on every product card",
+      "Use the stepped type scale"
+    ],
+    "donts": [
+      "Bake copy into banners",
+      "Auto-rotate the hero",
+      "Invent stats, testimonials or store data",
+      "Introduce colors or fonts outside the captured surface"
+    ]
+  }
+}

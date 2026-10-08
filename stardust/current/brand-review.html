@@ -1,0 +1,202 @@
+<!doctype html>
+<!-- _provenance: writtenBy stardust:extract · writtenAt 2026-10-08T15:42:00Z · againstInput https://main--lowes--jgrosskurth.aem.live/ --single · readArtifacts: PRODUCT.md, DESIGN.md, DESIGN.json, _brand-extraction.json, pages/home.json, _crawl-log.json, assets/screenshots/home.png, assets/logo.svg -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lowe's Home Improvement · Current-state brand review</title>
+<style>
+@font-face { font-family: fellix; src: url("https://www.lowescdn.com/sffonts/Fellix-Regular.woff") format("woff"); font-weight: 400; font-display: swap; }
+@font-face { font-family: fellix; src: url("https://www.lowescdn.com/sffonts/Fellix-SemiBold.woff") format("woff"); font-weight: 600 700; font-display: swap; }
+:root {
+  --primary: #0072ce; --primary-dark: #012169; --accent: #007a33; --secondary: #971b2f;
+  --text: #17191f; --text-muted: rgb(23 25 31 / 72%); --surface: #ffffff; --surface-alt: #f4f6fa;
+  --border: #cbd1dd; --border-strong: #616670;
+  --display: fellix, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --body: fellix, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+* { box-sizing: border-box; }
+body { margin: 0; font: 400 16px/24px var(--body); color: var(--text); background: var(--surface); }
+nav.top { position: sticky; top: 0; z-index: 5; background: var(--primary-dark); color: #fff; display: flex; flex-wrap: wrap; gap: 4px 6px; align-items: center; padding: 8px 40px; font: 600 12px/20px var(--display); text-transform: uppercase; letter-spacing: 1.5px; }
+nav.top strong { margin-right: 18px; }
+nav.top a { color: #fff; text-decoration: none; padding: 4px 10px; border-radius: 150px; }
+nav.top a:hover { background: rgba(255,255,255,0.18); }
+main { max-width: 1328px; margin: 0 auto; padding: 0 24px 64px; }
+section { padding: 40px 0 8px; border-bottom: 1px solid var(--border); break-inside: avoid; }
+h1, h2, h3, h4 { font-family: var(--display); font-weight: 600; margin: 0 0 12px; }
+h1 { font-size: 40px; line-height: 48px; color: var(--primary-dark); }
+h2 { font-size: 28px; line-height: 40px; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+h3 { font-size: 20px; line-height: 28px; }
+h4 { font-size: 16px; line-height: 24px; }
+.badge { font: 600 11px/18px var(--display); letter-spacing: .5px; text-transform: uppercase; padding: 1px 8px; border-radius: 20px; background: var(--surface-alt); color: var(--primary-dark); border: 1px solid var(--border); }
+.badge.agent { background: #d4f7e3; color: #004b1d; border-color: #9fd9b6; }
+.hero-line { font: 600 24px/32px var(--display); color: var(--accent); margin: 4px 0; }
+.mono { font-family: var(--mono); font-size: 13px; }
+.muted { color: var(--text-muted); }
+.row { display: flex; gap: 16px; flex-wrap: wrap; }
+.stat { flex: 1; min-width: 220px; background: var(--surface-alt); border-radius: 8px; padding: 16px 20px; }
+.stat b { display: block; font: 600 28px/40px var(--display); color: var(--primary-dark); }
+.thumbs { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+.thumbs figure { margin: 0; } .thumbs img { width: 100%; aspect-ratio: 16/10; object-fit: cover; object-position: top; border: 1px solid var(--border); border-radius: 8px; }
+.swatches { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
+.sw { border: 1px solid var(--border); border-radius: 8px; padding: 16px; min-height: 200px; }
+.chip { width: 96px; height: 96px; border-radius: 8px; border: 1px solid var(--border); margin-bottom: 10px; }
+.role { font: 600 12px/18px var(--display); text-transform: uppercase; letter-spacing: 1px; }
+.tags span { display: inline-block; font: 400 12px/18px var(--body); background: var(--surface-alt); border-radius: 20px; padding: 0 8px; margin: 2px 2px 0 0; }
+.spec { border-bottom: 1px dashed var(--border); padding: 12px 0; }
+.voice { background: var(--surface-alt); border-radius: 8px; padding: 20px 24px; margin-bottom: 12px; }
+.pills a, .pills span.p { display: inline-flex; align-items: center; height: 40px; padding: 0 14px; border: 1px solid var(--border-strong); border-radius: 20px; margin: 0 8px 8px 0; font: 400 14px/1 var(--display); color: var(--text); }
+table { border-collapse: collapse; width: 100%; } th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--border); } th { font: 600 13px/20px var(--display); }
+.tensions { display: grid; grid-template-columns: 1fr; gap: 16px; }
+@media (min-width: 720px) { .tensions { grid-template-columns: 1fr 1fr; } }
+.tension { border: 1px solid var(--border); border-left: 4px solid var(--accent); border-radius: 4px; padding: 16px 20px; }
+.tension p { margin: 4px 0; } .tension .src { font-size: 12px; color: var(--text-muted); }
+.motifs { display: flex; gap: 20px; flex-wrap: wrap; align-items: flex-end; }
+.motif { text-align: center; font-size: 13px; } .motif div { width: 80px; height: 80px; background: var(--primary); margin: 0 auto 6px; }
+.comp { border-left: 3px solid var(--primary); padding: 4px 14px; margin: 8px 0; }
+dl { display: grid; grid-template-columns: max-content 1fr; gap: 6px 18px; margin: 0; } dt { font-weight: 600; }
+.bars { display: flex; align-items: flex-end; gap: 12px; height: 80px; } .bars div { width: 36px; background: var(--primary); border-radius: 4px 4px 0 0; position: relative; } .bars span { position: absolute; bottom: -22px; left: 0; right: 0; text-align: center; font-size: 12px; }
+footer { max-width: 1328px; margin: 0 auto; padding: 24px; font-size: 14px; color: var(--text-muted); }
+@media print { nav.top { position: static; } section { page-break-inside: avoid; } }
+</style>
+</head>
+<body>
+<nav class="top" aria-label="Review sections">
+  <strong>Lowe's Home Improvement · Current state</strong>
+  <a href="#coverage">Coverage</a><a href="#pages">Pages</a><a href="#palette">Palette</a><a href="#type">Typography</a><a href="#voice">Voice</a><a href="#tensions">Tensions</a><a href="#motifs">Motifs</a><a href="#components">Components</a><a href="#system">System</a><a href="#logo">Logo</a><a href="#spacing">Spacing</a>
+</nav>
+<main>
+<header style="padding:40px 0 24px">
+  <h1>Lowe's Home Improvement</h1>
+  <p class="hero-line">Shop tools, appliances, building supplies, carpet, bathroom, lighting and more.</p>
+  <p class="muted">Shop tools, appliances, building supplies, carpet, bathroom, lighting and more. Pros can take advantage of Pro offers, credit and business resources.</p>
+  <p class="mono">https://main--lowes--jgrosskurth.aem.live/</p>
+  <p class="muted" style="font-size:14px">Hero line is the meta-description fallback — the visible hero copy is baked into carousel artwork (<span class="mono">pages/home.json § _provenance.heroSource = meta-fallback</span>).</p>
+</header>
+
+<section id="coverage">
+  <h2>Coverage <span class="badge">synthesized</span></h2>
+  <div class="row">
+    <div class="stat"><b>1 / 1</b>page extracted (<span class="mono">--single</span>), 0 failures</div>
+    <div class="stat"><b>medium · 2 500 ms</b>crawl.mjs wait; brand probe networkidle + scroll 8 718 ms</div>
+    <div class="stat"><b>8 colors · 1 family</b>Fellix 400/600 · 13 sections · 111 images · 0 CSS backgrounds</div>
+  </div>
+  <p class="muted">Single-page crawl: every "cross-page" field is home-only. System-component detection (needs ≥ 3 pages) skipped; landmarks recorded instead. Vision check: <b>ok</b>.</p>
+</section>
+
+<section id="pages">
+  <h2>Pages <span class="badge">home-only</span></h2>
+  <div class="thumbs"><figure><img src="assets/screenshots/home.png" alt="Full-page capture of the Lowe's homepage"><figcaption>Lowe’s Home Improvement · <span class="mono">/</span></figcaption></figure></div>
+</section>
+
+<section id="palette">
+  <h2>Color palette <span class="badge">home-only</span></h2>
+  <div class="swatches">
+    <div class="sw"><div class="chip" style="background:#ffffff"></div><div class="role">background</div><div class="mono">#ffffff</div><div class="tags"><span>110×</span><span>background</span><span>text</span><span>border</span></div><div class="muted" style="font-size:12px">home</div></div>
+    <div class="sw"><div class="chip" style="background:#17191f"></div><div class="role">text-primary</div><div class="mono">#17191f</div><div class="tags"><span>236×</span><span>text</span></div><div class="muted" style="font-size:12px">home · --text-color</div></div>
+    <div class="sw"><div class="chip" style="background:#0072ce"></div><div class="role">primary · interactive blue</div><div class="mono">#0072ce</div><div class="tags"><span>99×</span><span>text</span><span>background</span><span>fill</span></div><div class="muted" style="font-size:12px">home · --link-color</div></div>
+    <div class="sw"><div class="chip" style="background:#007a33"></div><div class="role">secondary · action green</div><div class="mono">#007a33</div><div class="tags"><span>86×</span><span>text</span><span>border</span><span>background</span></div><div class="muted" style="font-size:12px">home · --action-green</div></div>
+    <div class="sw"><div class="chip" style="background:#012169"></div><div class="role">accent-1 · brand navy</div><div class="mono">#012169</div><div class="tags"><span>6×</span><span>background</span><span>text</span><span>fill</span></div><div class="muted" style="font-size:12px">home · --brand-navy · 0.7% of ground area</div></div>
+    <div class="sw"><div class="chip" style="background:#f4f6fa"></div><div class="role">surface</div><div class="mono">#f4f6fa</div><div class="tags"><span>26×</span><span>background</span></div><div class="muted" style="font-size:12px">home · --surface-subdued</div></div>
+    <div class="sw"><div class="chip" style="background:#971b2f"></div><div class="role">accent-2 · action red</div><div class="mono">#971b2f</div><div class="tags"><span>3×</span><span>background</span><span>text</span></div><div class="muted" style="font-size:12px">home · --action-red</div></div>
+    <div class="sw"><div class="chip" style="background:#616670"></div><div class="role">border</div><div class="mono">#616670</div><div class="tags"><span>27×</span><span>border</span></div><div class="muted" style="font-size:12px">home · --border-strong</div></div>
+  </div>
+  <p class="muted" style="font-size:13px">Source: <span class="mono">_brand-extraction.json § palette</span></p>
+</section>
+
+<section id="type">
+  <h2>Typography <span class="badge">home-only</span> <span class="badge">No modular scale</span></h2>
+  <div class="spec"><div class="mono">H2 · Fellix 600 / 28px / 40px / normal</div><div style="font:600 28px/40px var(--display)">Explore More for Your Home &amp; Community</div></div>
+  <div class="spec"><div class="mono">H3 · Fellix 600 / 24px / 32px / normal</div><div style="font:600 24px/32px var(--display)">Find Your Next Project</div></div>
+  <div class="spec"><div class="mono">H4 · Fellix 600 / 16px / 24px / normal</div><div style="font:600 16px/24px var(--display)">Seasonal Projects and Inspiration</div></div>
+  <div class="spec"><div class="mono">Body · Fellix 400 / 16px / 24px</div><div>Set your store to see the weather forecast for your area.</div></div>
+  <div class="spec"><div class="mono">Micro · Fellix 600 / 12px / 16px</div><div style="font:600 12px/16px var(--display)">1K+ bought last week · Save 25%</div></div>
+  <p class="muted" style="font-size:13px">Source: <span class="mono">_brand-extraction.json § type</span> — ratios 1.17, 1.50; declared <span class="mono">--heading-font-size-xxl: 40px</span> unused.</p>
+</section>
+
+<section id="voice">
+  <h2>Voice <span class="badge">home-only</span> <span class="badge">inferred · professional-warm</span></h2>
+  <div class="voice"><div class="role">Hero headline (meta fallback)</div>Shop tools, appliances, building supplies, carpet, bathroom, lighting and more.</div>
+  <div class="voice"><div class="role">Tagline</div>Pros can take advantage of Pro offers, credit and business resources.</div>
+  <div class="voice"><div class="role">First live paragraph</div>Set your store to see the weather forecast for your area.</div>
+  <h3>CTA frequency</h3>
+  <table><thead><tr><th>Label</th><th>Total</th><th>Pages</th></tr></thead><tbody>
+    <tr><td class="pills"><span class="p">Add to Cart</span></td><td>13</td><td>home</td></tr>
+    <tr><td class="pills"><span class="p">Shop Now</span></td><td>11</td><td>home</td></tr>
+    <tr><td class="pills"><span class="p">Read Article</span></td><td>4</td><td>home</td></tr>
+    <tr><td class="pills"><span class="p">View All</span></td><td>3</td><td>home</td></tr>
+    <tr><td class="pills"><span class="p">Learn More</span></td><td>3</td><td>home</td></tr>
+    <tr><td class="pills"><span class="p">Get Details</span></td><td>3</td><td>home</td></tr>
+    <tr><td class="pills"><span class="p">Shop All</span></td><td>2</td><td>home</td></tr>
+    <tr><td class="pills"><span class="p">Get Started</span></td><td>1</td><td>home</td></tr>
+  </tbody></table>
+  <p class="muted">Repeated-heading list omitted — requires ≥ 3 pages.</p>
+  <div class="row"><div class="stat"><b>0%</b>headings uppercase</div><div class="stat"><b>20</b>distinct headings</div><div class="stat"><b>128</b>distinct CTA labels (incl. product names)</div></div>
+</section>
+
+<section id="tensions">
+  <h2>Tensions <span class="badge">synthesized</span></h2>
+  <div class="tensions">
+    <div class="tension"><span class="badge">T-scale · observed</span><h4>Type scale is ad-hoc</h4><p>28 → 24 → 16 (ratios 1.17, 1.50), no consistent ratio; the 40px token is declared but never used. Direct will need to decide whether the target adopts a modular scale.</p><p class="src">Source: _brand-extraction.json § type.scaleAudit</p></div>
+    <div class="tension"><span class="badge">T-radius-vocab · observed</span><h4>Radius vocabulary is fragmented</h4><p>8px (123), 6px (31), 4px (13) — plus 20px pills and circles. Direct will need to pick a single small-radius value or accept the variance.</p><p class="src">Source: _brand-extraction.json § motifs.borderRadius.occurrences</p></div>
+    <div class="tension"><span class="badge">T-logo-variants · observed</span><h4>Only one logo variant captured</h4><p>Header SVG (navy house mark, img). The redesign will need a monochrome / inverted variant set; direct should plan that.</p><p class="src">Source: _brand-extraction.json § logo</p></div>
+    <div class="tension"><span class="badge">T-color-imbalance · observed</span><h4>Surface #f4f6fa appears as background only</h4><p>Never as text, border or fill — used on the nav row and the weather widget. Direct will need to decide: drop, expand, or keep as accent ground.</p><p class="src">Source: _brand-extraction.json § palette[surface].usedAs</p></div>
+    <div class="tension"><span class="badge agent">T-raster-copy · agent</span><h4>Merchandising copy lives in pixels</h4><p>Hero carousel, 5 promo cards, 2 columns-promo, 4 category tiles and 4 article cards carry headline / offer / body as raster text; live innerText of those sections is only "Shop Now / Learn More / Get Details". Direct decides whether copy moves to live type.</p><p class="src">Source: pages/home.json § landmarks[main].children[].textInImage</p></div>
+    <div class="tension"><span class="badge agent">T-first-viewport · agent</span><h4>Brand hero starts at y=483, after a search rail and a sponsored ad</h4><p>Recommended Searches (16 CTAs) and the DEWALT "Sponsored" banner precede the hero; MyLowe's Money appears twice (utility bar + hero tile).</p><p class="src">Source: pages/home.json § landmarks[main].children[0–2].rect</p></div>
+    <div class="tension"><span class="badge agent">T-carousel-share · agent</span><h4>7 of 13 sections scroll horizontally</h4><p>Pills, hero, article rail, Gift Zone, project and tabbed product carousels hide content past the right edge behind arrow buttons.</p><p class="src">Source: _brand-extraction.json § motifs.carouselShare</p></div>
+    <div class="tension"><span class="badge agent">T-heading-outline · agent</span><h4>No H1; equivalent section titles split across h2 28px and h3 24px</h4><p>"Popular Categories" (h2 28) vs "Find Your Next Project" (h3 24) vs "Plan your day…" (h3 24 at 80% opacity).</p><p class="src">Source: pages/home.json § headings</p></div>
+    <div class="tension"><span class="badge agent">T-footer-boilerplate · agent</span><h4>Footer is AEM boilerplate</h4><p>"Copyright © 2025 Adobe. All rights reserved." with adobe.com legal links; no Lowe's navigation.</p><p class="src">Source: pages/home.json § landmarks[footer]</p></div>
+    <div class="tension"><span class="badge agent">T-tokens-unrendered · agent</span><h4>Declared tokens without a rendered use</h4><p><span class="mono">--brand-blue #004990</span> (0 computed uses), <span class="mono">--heading-font-size-xxl 40px</span>. Navy <span class="mono">#012169</span> covers 0.7% of ground.</p><p class="src">Source: pages/home.json § cssCustomProperties × _brand-extraction.json § palette</p></div>
+  </div>
+</section>
+
+<section id="motifs">
+  <h2>Motifs <span class="badge">home-only</span></h2>
+  <div class="motifs">
+    <div class="motif"><div style="border-radius:8px"></div>8px · 123</div>
+    <div class="motif"><div style="border-radius:6px"></div>6px · 31</div>
+    <div class="motif"><div style="border-radius:20px;width:120px"></div>20px pill · 27</div>
+    <div class="motif"><div style="border-radius:128px;width:60px;height:60px"></div>circle · 14</div>
+    <div class="motif"><div style="border-radius:4px"></div>4px · 13</div>
+    <div class="motif"><div style="background:#fff;border-radius:128px;width:60px;height:60px;box-shadow:rgba(0,0,0,.2) 0 2px 4px,rgba(0,0,0,.14) 0 4px 5px,rgba(0,0,0,.12) 0 1px 10px"></div>arrow shadow</div>
+  </div>
+</section>
+
+<section id="components">
+  <h2>Components <span class="badge">home-only</span></h2>
+  <div class="comp"><b>Header</b> — utility bar + main bar + 13-item department nav (1)</div>
+  <div class="comp"><b>Pill rails</b> — search suggestions (15), product category tabs (12) · <span class="mono">pill-rail</span></div>
+  <div class="comp"><b>Hero split carousel</b> — static tile + 4-slide carousel · <span class="mono">hero-split-carousel</span></div>
+  <div class="comp"><b>Promo cards 5-up / columns promo</b> — raster artwork · <span class="mono">promo-card-5up</span></div>
+  <div class="comp"><b>Weather widget + article rail</b> · <span class="mono">weather-widget</span></div>
+  <div class="comp"><b>Product cards</b> — 28 across Gift Zone, deals and Items To Explore · <span class="mono">product-carousel-with-feature</span></div>
+  <div class="comp"><b>Category tiles 4-up, department grid 24, article cards 4-up, deal panels 3-up, project carousel 10</b></div>
+</section>
+
+<section id="system">
+  <h2>System components <span class="badge">home-only</span></h2>
+  <p>Cross-page detection skipped (1 page). Landmarks: <b>header</b> (148px, 23 links/actions) · <b>footer</b> (5 legal links, Adobe copyright).</p>
+</section>
+
+<section id="logo">
+  <h2>Logo &amp; favicons <span class="badge">home-only</span></h2>
+  <div class="row" style="align-items:center">
+    <img src="assets/logo.svg" alt="Lowe's logo" style="width:140px;height:auto">
+    <dl><dt>Source</dt><dd>img · header img.nav-brand-logo</dd><dt>File</dt><dd>SVG · 72×72 · fill #012169</dd><dt>Variants captured</dt><dd>navy on white; favicon.ico</dd><dt>Variants not captured</dt><dd>white / inverted, monochrome, wordmark-only</dd></dl>
+  </div>
+</section>
+
+<section id="spacing">
+  <h2>Spacing &amp; shape <span class="badge">home-only</span></h2>
+  <p>Base unit 8 · section gap 32px · gutter 56px · section padding 0.</p>
+  <div class="bars" style="margin-bottom:32px"><div style="height:4px"><span>4</span></div><div style="height:8px"><span>8</span></div><div style="height:16px"><span>16</span></div><div style="height:24px"><span>24</span></div><div style="height:40px"><span>40</span></div><div style="height:56px"><span>56</span></div></div>
+  <div class="pills"><span class="p" style="border-radius:2px">2px</span><span class="p" style="border-radius:4px">4px</span><span class="p" style="border-radius:6px">6px</span><span class="p" style="border-radius:8px">8px</span><span class="p">20px</span><span class="p" style="border-radius:128px">128px</span></div>
+</section>
+</main>
+<footer>
+  <p>Read: PRODUCT.md, DESIGN.md, DESIGN.json, _brand-extraction.json, pages/home.json, _crawl-log.json, assets/screenshots/home.png, assets/logo.svg.</p>
+  <p>What's next: <b>/stardust:direct</b> (here: driven by stardust:uplift). Badges — observed: frequency-counted · home-only: single page · inferred: judgment call · synthesized: derived claim · agent: tension added by the agent on top of the mechanical baseline.</p>
+</footer>
+</body>
+</html>

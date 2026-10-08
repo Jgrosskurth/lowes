@@ -24,18 +24,18 @@
 }
 
 /* layout: forecast above project ideas (mobile), side by side from 768px */
-.widget-weather .widget-weather-panels {
+.widget-weather .widget-weather-panes {
   display: flex;
   flex-direction: column;
   gap: var(--space-sm);
 }
 
-.widget-weather .widget-weather-panel {
+.widget-weather .widget-weather-pane {
   box-sizing: border-box;
   min-width: 0;
 }
 
-.widget-weather .widget-weather-panel p {
+.widget-weather .widget-weather-pane p {
   margin: 0;
 }
 
@@ -274,7 +274,7 @@
   }
 
   /* forecast (fixed 390px) + project ideas (remaining width) */
-  .widget-weather .widget-weather-panels {
+  .widget-weather .widget-weather-panes {
     flex-direction: row;
   }
 

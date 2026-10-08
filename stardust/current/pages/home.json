@@ -1,0 +1,4130 @@
+{
+ "_provenance": {
+  "writtenBy": "stardust:extract",
+  "writtenAt": "2026-10-08T15:38:38.975Z",
+  "readArtifacts": [
+   "https://main--lowes--jgrosskurth.aem.live/"
+  ],
+  "synthesizedInputs": [],
+  "stardustVersion": "0.14.0",
+  "renderedBy": "playwright",
+  "fetchedAt": "2026-10-08T15:28:39.161Z",
+  "waitMode": "medium",
+  "waitMs": 2500,
+  "httpStatus": 200,
+  "contentType": "text/html",
+  "heroSource": "meta-fallback",
+  "notes": [
+   "Base record from skills/extract/scripts/crawl.mjs (headless, medium wait); sections / per-section style / heading styles / palette evidence from a second live Playwright probe (networkidle + 2.5s + 12x900px scroll, waitMs 8718) — stardust/.work/extract/brand-probe.mjs.",
+   "heroHeadline falls back to metaDescription: the hero band (carousel-hero, y=483) carries its copy as raster pixels (alt text only); the largest live heading in the first 820px is \"Recommended Searches for You\" (16px), which is a utility label, not a tagline.",
+   "Slug renamed index -> home per ia-extraction.md § Slug derivation."
+  ]
+ },
+ "slug": "home",
+ "url": "https://main--lowes--jgrosskurth.aem.live/",
+ "finalUrl": "https://main--lowes--jgrosskurth.aem.live/",
+ "title": "Lowe’s Home Improvement",
+ "metaDescription": "Shop tools, appliances, building supplies, carpet, bathroom, lighting and more. Pros can take advantage of Pro offers, credit and business resources.",
+ "heroHeadline": "Shop tools, appliances, building supplies, carpet, bathroom, lighting and more.",
+ "heroLede": "Shop tools, appliances, building supplies, carpet, bathroom, lighting and more. Pros can take advantage of Pro offers, credit and business resources.",
+ "og": {
+  "title": "Lowe's Home Improvement",
+  "description": "Shop tools, appliances, building supplies, carpet, bathroom, lighting and more. Pros can take advantage of Pro offers, credit and business resources.",
+  "image": "https://main--lowes--jgrosskurth.aem.live/media_13a8208358bb74e2f674ef8599e2bf1d56f3817dd.png?width=1200&format=pjpg&optimize=medium",
+  "type": null,
+  "siteName": null
+ },
+ "themeColor": null,
+ "language": "en",
+ "headings": [
+  {
+   "level": 3,
+   "text": "Recommended Searches for You",
+   "style": {
+    "fontFamily": "fellix, fellix-fallback, arial, sans-serif",
+    "fontWeight": 600,
+    "fontSize": "16px",
+    "lineHeight": "32px",
+    "letterSpacing": "normal",
+    "color": "rgb(23, 25, 31)",
+    "textTransform": "none"
+   },
+   "rect": {
+    "x": 56,
+    "y": 180,
+    "width": 237,
+    "height": 32
+   }
+  },
+  {
+   "level": 2,
+   "text": "Home Improvement Projects Made Easy",
+   "style": {
+    "fontFamily": "fellix, fellix-fallback, arial, sans-serif",
+    "fontWeight": 600,
+    "fontSize": "28px",
+    "lineHeight": "40px",
+    "letterSpacing": "normal",
+    "color": "rgb(23, 25, 31)",
+    "textTransform": "none"
+   },
+   "rect": {
+    "x": 56,
+    "y": 1146,
+    "width": 1328,
+    "height": 40
+   }
+  },
+  {
+   "level": 3,
+   "text": "Plan your day and your next project!",
+   "style": {
+    "fontFamily": "fellix, fellix-fallback, arial, sans-serif",
+    "fontWeight": 600,
+    "fontSize": "24px",
+    "lineHeight": "32px",
+    "letterSpacing": "normal",
+    "color": "rgba(23, 25, 31, 0.8)",
+    "textTransform": "none"
+   },
+   "rect": {
+    "x": 56,
+    "y": 1440,
+    "width": 1328,
+    "height": 32
+   }
+  },
+  {
+   "level": 4,
+   "text": "New Private Brand Patio",
+   "style": {
+    "fontFamily": "fellix, fellix-fallback, arial, sans-serif",
+    "fontWeight": 600,
+    "fontSize": "16px",
+    "lineHeight": "24px",
+    "letterSpacing": "normal",
+    "color": "rgb(23, 25, 31)",
+    "textTransform": "none"
+   },
+   "rect": {
+    "x": 462,
+    "y": 1602,
+    "width": 190,
+    "height": 48
+   }
+  },
+  {
+   "level": 4,
+   "text": "Seasonal Projects and Inspiration",
+   "style": {
+    "fontFamily": "fellix, fellix-fallback, arial, sans-serif",
+    "fontWeight": 600,
+    "fontSize": "16px",
+    "lineHeight": "24px",
+    "letterSpacing": "normal",
+    "color": "rgb(23, 25, 31)",
+    "textTransform": "none"
+   },
+   "rect": {
+    "x": 668,
+    "y": 1602,
+    "width": 190,
+    "height": 48
+   }
+  },
+  {
+   "level": 4,
+   "text": "How to Make a Scarecrow",
+   "style": {
+    "fontFamily": "fellix, fellix-fallback, arial, sans-serif",
+    "fontWeight": 600,
+    "fontSize": "16px",
+    "lineHeight": "24px",
+    "letterSpacing": "normal",
+    "color": "rgb(23, 25, 31)",
+    "textTransform": "none"
+   },
+   "rect": {
+    "x": 874,
+    "y": 1602,
+    "width": 190,
+    "height": 48
+   }
+  },
+  {
+   "level": 4,
+   "text": "Outdoor Movie Night",
+   "style": {
+    "fontFamily": "fellix, fellix-fallback, arial, sans-serif",
+    "fontWeight": 600,
+    "fontSize": "16px",
+    "lineHeight": "24px",
+    "letterSpacing": "normal",
+    "color": "rgb(23, 25, 31)",
+    "textTransform": "none"
+   },
+   "rect": {
+    "x": 1080,
+    "y": 1602,
+    "width": 190,
+    "height": 48
+   }
+  },
+  {
+   "level": 4,
+   "text": "DIY Floating Ghoul",
+   "style": {
+    "fontFamily": "fellix, fellix-fallback, arial, sans-serif",
+    "fontWeight": 600,
+    "fontSize": "16px",
+    "lineHeight": "24px",
+    "letterSpacing": "normal",
+    "color": "rgb(23, 25, 31)",
+    "textTransform": "none"
+   },
+   "rect": {
+    "x": 1286,
+    "y": 1602,
+    "width": 190,
+    "height": 48
+   }
+  },
+  {
+   "level": 4,
+   "text": "Update your Backyard on a Budget",
+   "style": {
+    "fontFamily": "fellix, fellix-fallback, arial, sans-serif",
+    "fontWeight": 600,
+    "fontSize": "16px",
+    "lineHeight": "24px",
+    "letterSpacing": "normal",
+    "color": "rgb(23, 25, 31)",
+    "textTransform": "none"
+   },
+   "rect": {
+    "x": 1492,
+    "y": 1602,
+    "width": 190,
+    "height": 48
+   }
+  },
+  {
+   "level": 4,
+   "text": "How to Create Ghosts and Witches Using Tomato Cages",
+   "style": {
+    "fontFamily": "fellix, fellix-fallback, arial, sans-serif",
+    "fontWeight": 600,
+    "fontSize": "16px",
+    "lineHeight": "24px",
+    "letterSpacing": "normal",
+    "color": "rgb(23, 25, 31)",
+    "textTransform": "none"
+   },
+   "rect": {
+    "x": 1698,
+    "y": 1602,
+    "width": 190,
+    "height": 48
+   }
+  },
+  {
+   "level": 4,
+   "text": "Get Outdoors",
+   "style": {
+    "fontFamily": "fellix, fellix-fallback, arial, sans-serif",
+    "fontWeight": 600,
+    "fontSize": "16px",
+    "lineHeight": "24px",
+    "letterSpacing": "normal",
+    "color": "rgb(23, 25, 31)",
+    "textTransform": "none"
+   },
+   "rect": {
+    "x": 1904,
+    "y": 1602,
+    "width": 190,
+    "height": 48
+   }
+  },
+  {
+   "level": 4,
+   "text": "DIY Mortar Skulls",
+   "style": {
+    "fontFamily": "fellix, fellix-fallback, arial, sans-serif",
+    "fontWeight": 600,
+    "fontSize": "16px",
+    "lineHeight": "24px",
+    "letterSpacing": "normal",
+    "color": "rgb(23, 25, 31)",
+    "textTransform": "none"
+   },
+   "rect": {
+    "x": 2110,
+    "y": 1602,
+    "width": 190,
+    "height": 48
+   }
+  },
+  {
+   "level": 4,
+   "text": "Refresh Your Patio",
+   "style": {
+    "fontFamily": "fellix, fellix-fallback, arial, sans-serif",
+    "fontWeight": 600,
+    "fontSize": "16px",
+    "lineHeight": "24px",
+    "letterSpacing": "normal",
+    "color": "rgb(23, 25, 31)",
+    "textTransform": "none"
+   },
+   "rect": {
+    "x": 2316,
+    "y": 1602,
+    "width": 190,
+    "height": 48
+   }
+  },
+  {
+   "level": 2,
+   "text": "Gift Zone",
+   "style": {
+    "fontFamily": "fellix, fellix-fallback, arial, sans-serif",
+    "fontWeight": 600,
+    "fontSize": "28px",
+    "lineHeight": "40px",
+    "letterSpacing": "normal",
+    "color": "rgb(23, 25, 31)",
+    "textTransform": "none"
+   },
+   "rect": {
+    "x": 56,
+    "y": 1852,
+    "width": 1,
+    "height": 40
+   }
+  },
+  {
+   "level": 2,
+   "text": "Popular Categories",
+   "style": {
+    "fontFamily": "fellix, fellix-fallback, arial, sans-serif",
+    "fontWeight": 600,
+    "fontSize": "28px",
+    "lineHeight": "40px",
+    "letterSpacing": "normal",
+    "color": "rgb(23, 25, 31)",
+    "textTransform": "none"
+   },
+   "rect": {
+    "x": 56,
+    "y": 2349,
+    "width": 1328,
+    "height": 40
+   }
+  },
+  {
+   "level": 2,
+   "text": "Explore More for Your Home & Community",
+   "style": {
+    "fontFamily": "fellix, fellix-fallback, arial, sans-serif",
+    "fontWeight": 600,
+    "fontSize": "28px",
+    "lineHeight": "40px",
+    "letterSpacing": "normal",
+    "color": "rgb(23, 25, 31)",
+    "textTransform": "none"
+   },
+   "rect": {
+    "x": 56,
+    "y": 2779,
+    "width": 1328,
+    "height": 40
+   }
+  },
+  {
+   "level": 3,
+   "text": "Top Trending Deals",
+   "style": {
+    "fontFamily": "fellix, fellix-fallback, arial, sans-serif",
+    "fontWeight": 600,
+    "fontSize": "16px",
+    "lineHeight": "24px",
+    "letterSpacing": "normal",
+    "color": "rgb(1, 33, 105)",
+    "textTransform": "none"
+   },
+   "rect": {
+    "x": 81,
+    "y": 3244,
+    "width": 141,
+    "height": 24
+   }
+  },
+  {
+   "level": 3,
+   "text": "4 Stars & Above",
+   "style": {
+    "fontFamily": "fellix, fellix-fallback, arial, sans-serif",
+    "fontWeight": 600,
+    "fontSize": "16px",
+    "lineHeight": "24px",
+    "letterSpacing": "normal",
+    "color": "rgb(1, 33, 105)",
+    "textTransform": "none"
+   },
+   "rect": {
+    "x": 530,
+    "y": 3244,
+    "width": 117,
+    "height": 24
+   }
+  },
+  {
+   "level": 3,
+   "text": "We Picked These Deals for You",
+   "style": {
+    "fontFamily": "fellix, fellix-fallback, arial, sans-serif",
+    "fontWeight": 600,
+    "fontSize": "16px",
+    "lineHeight": "24px",
+    "letterSpacing": "normal",
+    "color": "rgb(1, 33, 105)",
+    "textTransform": "none"
+   },
+   "rect": {
+    "x": 980,
+    "y": 3244,
+    "width": 225,
+    "height": 24
+   }
+  },
+  {
+   "level": 3,
+   "text": "Find Your Next Project",
+   "style": {
+    "fontFamily": "fellix, fellix-fallback, arial, sans-serif",
+    "fontWeight": 600,
+    "fontSize": "24px",
+    "lineHeight": "32px",
+    "letterSpacing": "normal",
+    "color": "rgb(23, 25, 31)",
+    "textTransform": "none"
+   },
+   "rect": {
+    "x": 56,
+    "y": 3930,
+    "width": 1328,
+    "height": 48
+   }
+  },
+  {
+   "level": 3,
+   "text": "Items To Explore",
+   "style": {
+    "fontFamily": "fellix, fellix-fallback, arial, sans-serif",
+    "fontWeight": 600,
+    "fontSize": "24px",
+    "lineHeight": "32px",
+    "letterSpacing": "normal",
+    "color": "rgb(23, 25, 31)",
+    "textTransform": "none"
+   },
+   "rect": {
+    "x": 56,
+    "y": 4358,
+    "width": 1328,
+    "height": 40
+   }
+  }
+ ],
+ "landmarks": [
+  {
+   "tag": "header",
+   "role": "banner",
+   "rect": {
+    "x": 0,
+    "y": 0,
+    "width": 1440,
+    "height": 148
+   },
+   "items": [
+    "MyLowe’s Money Days are back! Get up to $20 in MyLowe’s Money. Learn More >",
+    "Lowe's Credit Center",
+    "Order Status",
+    "Weekly Ad",
+    "Lowe's PRO",
+    "Find a Store Near Me",
+    "AI Assist",
+    "Sign In",
+    "Cart",
+    "Shop All",
+    "Services",
+    "Deals",
+    "Design & Ideas",
+    "$99 MaintenanceNew",
+    "Appliances",
+    "Bathroom",
+    "Lighting",
+    "Flooring",
+    "Building Supplies",
+    "Tools",
+    "Holiday Decorations",
+    "Outdoor",
+    "Fall Inspo"
+   ],
+   "backgrounds": [
+    "rgb(1, 33, 105)",
+    "rgb(244, 246, 250)",
+    "rgb(229, 233, 241)",
+    "rgb(255, 255, 255)",
+    "rgb(255, 255, 255)",
+    "rgb(151, 27, 47)"
+   ]
+  },
+  {
+   "tag": "main",
+   "role": "main",
+   "children": [
+    {
+     "index": 0,
+     "classes": [
+      "recommended-searches",
+      "section",
+      "carousel-pills-container"
+     ],
+     "block": "carousel-pills",
+     "purpose": "search-suggestions",
+     "rect": {
+      "x": 0,
+      "y": 172,
+      "width": 1440,
+      "height": 96
+     },
+     "headings": [
+      "H3:Recommended Searches for You"
+     ],
+     "ctaCount": 16,
+     "ctaSample": [
+      "More Suggestions for You",
+      "refrigerator",
+      "lawn mower",
+      "weed wacker",
+      "vacuum",
+      "vinyl floor",
+      "vinyl siding",
+      "exterior car accessory",
+      "quikrete",
+      "plywood",
+      "ceiling fan",
+      "vinyl flooring",
+      "the tile doctor scrub white",
+      "klein tool"
+     ],
+     "imageCount": 0,
+     "images": [],
+     "innerText": "Recommended Searches for You\nMore Suggestions for You\nRefrigerator\nLawn Mower\nWeed Wacker\nVacuum\nVinyl Floor\nVinyl Siding\nExterior Car Accessory\nQuikrete\nPlywood\nCeiling Fan\nVinyl Flooring\nThe Tile Doctor Scrub White\nKlein Tool\nDrylok\nSnowblower",
+     "textInImage": false
+    },
+    {
+     "index": 1,
+     "classes": [
+      "sponsored-banner",
+      "section"
+     ],
+     "block": "sponsored-banner (default content)",
+     "purpose": "sponsored-banner",
+     "rect": {
+      "x": 0,
+      "y": 300,
+      "width": 1440,
+      "height": 151
+     },
+     "headings": [],
+     "ctaCount": 0,
+     "ctaSample": [],
+     "imageCount": 1,
+     "images": [
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_12242aa8aed79f2847d6345b6a0fe15472d4eb911.jpg?width=2000&format=webply&optimize=medium",
+       "alt": "Save up to $100 on Select DEWALT Tools. Shop now.",
+       "nw": 2000,
+       "nh": 227,
+       "rw": 1328,
+       "rh": 151,
+       "localPath": "stardust/current/assets/media/media_12242aa8aed79f2847d6345b6a0fe15472d4eb911-ca4020.jpg"
+      }
+     ],
+     "innerText": "",
+     "textInImage": true
+    },
+    {
+     "index": 2,
+     "classes": [
+      "hero-split",
+      "section",
+      "carousel-hero-container"
+     ],
+     "block": "carousel-hero",
+     "purpose": "hero",
+     "rect": {
+      "x": 0,
+      "y": 483,
+      "width": 1440,
+      "height": 317
+     },
+     "headings": [],
+     "ctaCount": 0,
+     "ctaSample": [],
+     "imageCount": 6,
+     "images": [
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_182233921d85373e5557b7661c4d67c37ebf99e96.png?width=2000&format=webply&optimize=medium",
+       "alt": "Get up to $20 MyLowe’s Money on an eligible purchase. Offer ends 10/14/26. Learn more now.",
+       "nw": 504,
+       "nh": 480,
+       "rw": 314,
+       "rh": 299,
+       "localPath": "stardust/current/assets/media/media_182233921d85373e5557b7661c4d67c37ebf99e96-729dc7.png"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_1ee99115c696cfac6f1473d4262972def9f3b96ec.png?width=2000&format=webply&optimize=medium",
+       "alt": "Up to 35% off Select Major Appliances. Offer ends 10/7/26. Shop all deals now.",
+       "nw": 1580,
+       "nh": 480,
+       "rw": 990,
+       "rh": 299,
+       "localPath": "stardust/current/assets/media/media_1ee99115c696cfac6f1473d4262972def9f3b96ec-98b9eb.png"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_1d666204a2d0b838ddf7c200926fc0f840f6420e5.png?width=2000&format=webply&optimize=medium",
+       "alt": "Refresh your kitchen backsplash before the holiday rush. Shop now.",
+       "nw": 1580,
+       "nh": 480,
+       "rw": 990,
+       "rh": 299,
+       "localPath": "stardust/current/assets/media/media_1d666204a2d0b838ddf7c200926fc0f840f6420e5-c3ec3e.png"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_1329017e121ba5969398f14bb46a7f1566a068e18.png?width=2000&format=webply&optimize=medium",
+       "alt": "Make the most of fall. My Lowe’s Rewards members earn 3 x points on select purchases. Shop now.",
+       "nw": 1580,
+       "nh": 480,
+       "rw": 990,
+       "rh": 299,
+       "localPath": "stardust/current/assets/media/media_1329017e121ba5969398f14bb46a7f1566a068e18-59f5ab.png"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_11b55181638a9298e495190636df06b7c5d2189ea.png?width=900&format=png&optimize=medium",
+       "alt": "Set fall gardens up for success. Rewards members earn 3x points on select purchases. Shop now.",
+       "nw": 0,
+       "nh": 0,
+       "rw": 990,
+       "rh": 299,
+       "localPath": null
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_105cb20bf6fbe426e94ba8786f9b1e7c3202ab955.png?width=900&format=png&optimize=medium",
+       "alt": "Save up to $120 on Select Power Tools, Equipment & Accessories + free same-day delivery. Shop now.",
+       "nw": 0,
+       "nh": 0,
+       "rw": 990,
+       "rh": 299,
+       "localPath": null
+      }
+     ],
+     "innerText": "Get Details\nGet Details",
+     "textInImage": true
+    },
+    {
+     "index": 3,
+     "classes": [
+      "section",
+      "cards-promo-container"
+     ],
+     "block": "cards-promo",
+     "purpose": "promo-grid",
+     "rect": {
+      "x": 0,
+      "y": 832,
+      "width": 1440,
+      "height": 283
+     },
+     "headings": [],
+     "ctaCount": 5,
+     "ctaSample": [
+      "Shop Now"
+     ],
+     "imageCount": 5,
+     "images": [
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_13d26c37d2ddd5bcb2128eae46c16842b9542a1e2.png?width=500&format=webply&optimize=medium",
+       "alt": "Up to 65% off Select Alexa, Ring, Blink and Fire TV Products. Offer Ends 10/7/26. Shop now.",
+       "nw": 400,
+       "nh": 420,
+       "rw": 246,
+       "rh": 259,
+       "localPath": "stardust/current/assets/media/media_13d26c37d2ddd5bcb2128eae46c16842b9542a1e2-84ce0e.png"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_1f20f87ed1fa3339b3a7b5db3a3ddacb4762406b6.png?width=500&format=webply&optimize=medium",
+       "alt": "Up to 40% off Select Bathroom Products. Shop now.",
+       "nw": 400,
+       "nh": 420,
+       "rw": 246,
+       "rh": 259,
+       "localPath": "stardust/current/assets/media/media_1f20f87ed1fa3339b3a7b5db3a3ddacb4762406b6-d04491.png"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_10a536183da532813e5594dc8291e07eac83e6cb1.png?width=500&format=webply&optimize=medium",
+       "alt": "Up to 30% off Select Grills and Accessories. Shop now.",
+       "nw": 400,
+       "nh": 420,
+       "rw": 246,
+       "rh": 259,
+       "localPath": "stardust/current/assets/media/media_10a536183da532813e5594dc8291e07eac83e6cb1-81211e.png"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_1cd061a50cec206619d2437063444369230932422.png?width=500&format=webply&optimize=medium",
+       "alt": "Bring home fall style under $50. Shop now.",
+       "nw": 400,
+       "nh": 420,
+       "rw": 246,
+       "rh": 259,
+       "localPath": "stardust/current/assets/media/media_1cd061a50cec206619d2437063444369230932422-88f101.png"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_18732229f47dd9df902590d37abe54154329d53f3.png?width=500&format=webply&optimize=medium",
+       "alt": "Explore what’s new in tools from trusted brands like Kobalt, DEWALT, CRAFTSMAN and Bosch. Shop now.",
+       "nw": 400,
+       "nh": 420,
+       "rw": 246,
+       "rh": 259,
+       "localPath": "stardust/current/assets/media/media_18732229f47dd9df902590d37abe54154329d53f3-3da8eb.png"
+      }
+     ],
+     "innerText": "Shop Now\nShop Now\nShop Now\nShop Now\nShop Now",
+     "textInImage": true
+    },
+    {
+     "index": 4,
+     "classes": [
+      "section",
+      "columns-promo-container"
+     ],
+     "block": "columns-promo",
+     "purpose": "promo-grid",
+     "rect": {
+      "x": 0,
+      "y": 1146,
+      "width": 1440,
+      "height": 262
+     },
+     "headings": [
+      "H2:Home Improvement Projects Made Easy"
+     ],
+     "ctaCount": 0,
+     "ctaSample": [],
+     "imageCount": 2,
+     "images": [
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_172221981ee2491462e958b5e57954c55d5039c07.jpg?width=1200&format=webply&optimize=medium",
+       "alt": "Home Care + Home maintenance subscription. 7 services 2 annual visits. $99 a year. Learn more now.",
+       "nw": 1200,
+       "nh": 257,
+       "rw": 877,
+       "rh": 188,
+       "localPath": "stardust/current/assets/media/media_172221981ee2491462e958b5e57954c55d5039c07-7fe163.jpg"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_10f22bbf6fc8be3e96f6c47790353e28eb095c71e.png?width=1200&format=webply&optimize=medium",
+       "alt": "First responders, for First Responders Appreciation Month, here’s $10 MyLowe’s Money. Verify now.",
+       "nw": 1138,
+       "nh": 500,
+       "rw": 427,
+       "rh": 187,
+       "localPath": "stardust/current/assets/media/media_10f22bbf6fc8be3e96f6c47790353e28eb095c71e-ec205c.png"
+      }
+     ],
+     "innerText": "Home Improvement Projects Made Easy\nGet Details",
+     "textInImage": true
+    },
+    {
+     "index": 5,
+     "classes": [
+      "section",
+      "widget-weather-container"
+     ],
+     "block": "widget-weather",
+     "purpose": "weather-widget+article-rail",
+     "rect": {
+      "x": 0,
+      "y": 1440,
+      "width": 1440,
+      "height": 300
+     },
+     "headings": [
+      "H3:Plan your day and your next project!",
+      "H4:New Private Brand Patio",
+      "H4:Seasonal Projects and Inspiration",
+      "H4:How to Make a Scarecrow",
+      "H4:Outdoor Movie Night",
+      "H4:DIY Floating Ghoul",
+      "H4:Update your Backyard on a Budget",
+      "H4:How to Create Ghosts and Witches Using Tomato Cages",
+      "H4:Get Outdoors",
+      "H4:DIY Mortar Skulls",
+      "H4:Refresh Your Patio"
+     ],
+     "ctaCount": 10,
+     "ctaSample": [
+      "Shop Now",
+      "Read Article"
+     ],
+     "imageCount": 10,
+     "images": [
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_18e2d91f5544f0fd0b8f392ac10890ae6af9ae44e.png?width=400&format=webply&optimize=medium",
+       "alt": "New Private Brand Patio",
+       "nw": 400,
+       "nh": 225,
+       "rw": 190,
+       "rh": 106,
+       "localPath": "stardust/current/assets/media/media_18e2d91f5544f0fd0b8f392ac10890ae6af9ae44e-efa4a0.png"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_1089c900176a208ab50b78af1e67aa6c3706b4708.jpg?width=400&format=webply&optimize=medium",
+       "alt": "Seasonal Projects and Inspiration",
+       "nw": 400,
+       "nh": 225,
+       "rw": 190,
+       "rh": 106,
+       "localPath": "stardust/current/assets/media/media_1089c900176a208ab50b78af1e67aa6c3706b4708-24841a.jpg"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_1fc31292fa9b3e48f5ec397966506af0cc8a45de1.png?width=400&format=webply&optimize=medium",
+       "alt": "How to Make a Scarecrow",
+       "nw": 400,
+       "nh": 225,
+       "rw": 190,
+       "rh": 106,
+       "localPath": "stardust/current/assets/media/media_1fc31292fa9b3e48f5ec397966506af0cc8a45de1-b2531c.png"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_1321397975e8d819d990db78cf3f9ab2f111f7c4a.png?width=400&format=webply&optimize=medium",
+       "alt": "Outdoor Movie Night",
+       "nw": 400,
+       "nh": 226,
+       "rw": 190,
+       "rh": 106,
+       "localPath": "stardust/current/assets/media/media_1321397975e8d819d990db78cf3f9ab2f111f7c4a-d77f80.png"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_160d88dcbc7b49725eb5675d9c980b1c96043a23e.png?width=400&format=webply&optimize=medium",
+       "alt": "DIY Floating Ghoul",
+       "nw": 400,
+       "nh": 224,
+       "rw": 190,
+       "rh": 106,
+       "localPath": "stardust/current/assets/media/media_160d88dcbc7b49725eb5675d9c980b1c96043a23e-2284bc.png"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_1484c8b86256c79d8cc28e268bb2872585d9a6c93.png?width=400&format=webply&optimize=medium",
+       "alt": "Update your Backyard on a Budget",
+       "nw": 400,
+       "nh": 225,
+       "rw": 190,
+       "rh": 106,
+       "localPath": "stardust/current/assets/media/media_1484c8b86256c79d8cc28e268bb2872585d9a6c93-5cd2ab.png"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_1da20afbe33dac35ccabcbb53611cc17afa681ac6.png?width=400&format=webply&optimize=medium",
+       "alt": "How to Create Ghosts and Witches Using Tomato Cages",
+       "nw": 400,
+       "nh": 225,
+       "rw": 190,
+       "rh": 106,
+       "localPath": "stardust/current/assets/media/media_1da20afbe33dac35ccabcbb53611cc17afa681ac6-d9d8ca.png"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_1f48b84c0e8532e0df9f5ae45de0139c555422ce1.png?width=400&format=webply&optimize=medium",
+       "alt": "Get Outdoors",
+       "nw": 400,
+       "nh": 225,
+       "rw": 190,
+       "rh": 106,
+       "localPath": "stardust/current/assets/media/media_1f48b84c0e8532e0df9f5ae45de0139c555422ce1-47aac9.png"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_1c7c61124256bd7d55f851afda1ac5b24fbd6cb62.png?width=400&format=webply&optimize=medium",
+       "alt": "DIY Mortar Skulls",
+       "nw": 400,
+       "nh": 224,
+       "rw": 190,
+       "rh": 106,
+       "localPath": "stardust/current/assets/media/media_1c7c61124256bd7d55f851afda1ac5b24fbd6cb62-d2a6c7.png"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_1c6662b5dcf2861a868b1702e019607fa43c8be72.png?width=400&format=webply&optimize=medium",
+       "alt": "Refresh Your Patio",
+       "nw": 400,
+       "nh": 225,
+       "rw": 190,
+       "rh": 106,
+       "localPath": "stardust/current/assets/media/media_1c6662b5dcf2861a868b1702e019607fa43c8be72-870d49.png"
+      }
+     ],
+     "innerText": "Plan your day and your next project!\nYour Local Weather\nSet your store to see the weather forecast for your area.\nNew Private Brand Patio\nShop Now\nSeasonal Projects and Inspiration\nShop Now\nHow to Make a Scarecrow\nRead Article\nOutdoor Movie Night\nShop Now\nDIY Floating Ghoul\nRead Article\nUpdate your Backyard on a Budget\nShop Now\nHow to Create Ghosts and Witches Using Tomato Cages\nRead Article\nGet Outdoors\nShop Now\nDIY Mortar Skulls\nRead Article\nRefresh Your Patio\nShop Now",
+     "textInImage": false
+    },
+    {
+     "index": 6,
+     "classes": [
+      "section",
+      "carousel-thematic-container"
+     ],
+     "block": "carousel-thematic",
+     "purpose": "product-carousel-with-feature",
+     "rect": {
+      "x": 0,
+      "y": 1772,
+      "width": 1440,
+      "height": 545
+     },
+     "headings": [
+      "H2:Gift Zone"
+     ],
+     "ctaCount": 27,
+     "ctaSample": [
+      "Gift Zone",
+      "36\" Original Omnivore Griddle with Hard Cover 4 -Burner Liqu",
+      "Add to Cart",
+      "POWER+ 56-volt Cordless Battery String Trimmer and Leaf Blow",
+      "Iceflow Flip Straw Tumbler 30 Insulated Azure",
+      "Rectangular Twill Gray Polyester Bolster Dog Bed L",
+      "V20 20-volt 1/2-in Keyless Cordless Drill 1 -Batteries Inclu",
+      "Car Care Kit 7 -Count Liquid Car Exterior Cleaner",
+      "Koda 12 Liquid propane Outdoor Pizza Oven",
+      "Modern Chess Set - Acrylic Chess Board (Game Set)",
+      "Indoor 49.2-ft LED Multicolor Strip Light",
+      "Highland Women's Dark Rose Tint Landscape Fleece Work jacket",
+      "Forerunner 265 Smart Watch with Step Counter, Heart Rate Mon",
+      "F28 Stratus 2K GPS Drone with Smart Flight Modes 12-MP Drone"
+     ],
+     "imageCount": 14,
+     "images": [
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_1e1b33a00a8199709ebd8c70436ee93038224ed92.png?width=750&format=webply&optimize=medium",
+       "alt": "Find great gifts for everyone on your list in the Gift Zone. Shop all now.",
+       "nw": 496,
+       "nh": 494,
+       "rw": 398,
+       "rh": 445,
+       "localPath": "stardust/current/assets/media/media_1e1b33a00a8199709ebd8c70436ee93038224ed92-bdde27.png"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_1f692aa2112b4cb04f8b8371966899183809d3bd1.jpg?width=300&format=webply&optimize=medium",
+       "alt": "Blackstone - 36\" Original Omnivore Griddle with Hard Cover 4 -Burner Liquid propane Flat Top Grill",
+       "nw": 276,
+       "nh": 276,
+       "rw": 162,
+       "rh": 159,
+       "localPath": "stardust/current/assets/media/media_1f692aa2112b4cb04f8b8371966899183809d3bd1-4aa6e4.jpg"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_13bddb794be44aa642a0fa88844012c6e7b67823f.jpg?width=300&format=webply&optimize=medium",
+       "alt": "EGO - POWER+ 56-volt Cordless Battery String Trimmer and Leaf Blower and Combo Kit 2.5 Ah (Batter...",
+       "nw": 276,
+       "nh": 276,
+       "rw": 162,
+       "rh": 159,
+       "localPath": "stardust/current/assets/media/media_13bddb794be44aa642a0fa88844012c6e7b67823f-d7c412.jpg"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_1add778137c0b647c187fdd24b5bb0064de83704e.png?width=300&format=webply&optimize=medium",
+       "alt": "Stanley - Iceflow Flip Straw Tumbler 30 Insulated Azure",
+       "nw": 276,
+       "nh": 276,
+       "rw": 162,
+       "rh": 159,
+       "localPath": "stardust/current/assets/media/media_1add778137c0b647c187fdd24b5bb0064de83704e-0b236c.png"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_1a7492a19bb2c1ec878892ff7fc89cfb24da1fe2c.jpg?width=300&format=webply&optimize=medium",
+       "alt": "Heart & Herd - Rectangular Twill Gray Polyester Bolster Dog Bed L",
+       "nw": 276,
+       "nh": 276,
+       "rw": 162,
+       "rh": 159,
+       "localPath": "stardust/current/assets/media/media_1a7492a19bb2c1ec878892ff7fc89cfb24da1fe2c-ac1e22.jpg"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_17b152b41ad9cc80d9d0f86efafac5c85cde8a848.jpg?width=300&format=webply&optimize=medium",
+       "alt": "CRAFTSMAN - V20 20-volt 1/2-in Keyless Cordless Drill 1 -Batteries Included, and Charger Included",
+       "nw": 276,
+       "nh": 276,
+       "rw": 162,
+       "rh": 159,
+       "localPath": "stardust/current/assets/media/media_17b152b41ad9cc80d9d0f86efafac5c85cde8a848-311398.jpg"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_1ec1b9d53e0c601691d78cfd333b84d7a3b06e4da.jpg?width=300&format=webply&optimize=medium",
+       "alt": "Armor All - Car Care Kit 7 -Count Liquid Car Exterior Cleaner",
+       "nw": 276,
+       "nh": 276,
+       "rw": 162,
+       "rh": 159,
+       "localPath": "stardust/current/assets/media/media_1ec1b9d53e0c601691d78cfd333b84d7a3b06e4da-4baac5.jpg"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_1dca0af23ea89d6402219a98f78cf1ec0b3f8b640.jpg?width=300&format=webply&optimize=medium",
+       "alt": "Ooni - Koda 12 Liquid propane Outdoor Pizza Oven",
+       "nw": 276,
+       "nh": 276,
+       "rw": 162,
+       "rh": 159,
+       "localPath": "stardust/current/assets/media/media_1dca0af23ea89d6402219a98f78cf1ec0b3f8b640-972dc3.jpg"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_1c845341552b7d71cdaaae3df75c6215932bd72b2.jpg?width=300&format=webply&optimize=medium",
+       "alt": "Toy Time - Modern Chess Set - Acrylic Chess Board (Game Set)",
+       "nw": 276,
+       "nh": 276,
+       "rw": 162,
+       "rh": 159,
+       "localPath": "stardust/current/assets/media/media_1c845341552b7d71cdaaae3df75c6215932bd72b2-c286ee.jpg"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_10a5c54b102ec5e0da4b4879a9cfbe7b9dcb7bd3c.png?width=300&format=webply&optimize=medium",
+       "alt": "Govee - Indoor 49.2-ft LED Multicolor Strip Light",
+       "nw": 276,
+       "nh": 276,
+       "rw": 162,
+       "rh": 159,
+       "localPath": "stardust/current/assets/media/media_10a5c54b102ec5e0da4b4879a9cfbe7b9dcb7bd3c-ec3fc3.png"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_1730b60e940d72e54024bd2e381af88c6b2584699.jpg?width=300&format=webply&optimize=medium",
+       "alt": "Carhartt - Highland Women's Dark Rose Tint Landscape Fleece Work jacket ( S )",
+       "nw": 276,
+       "nh": 276,
+       "rw": 162,
+       "rh": 159,
+       "localPath": "stardust/current/assets/media/media_1730b60e940d72e54024bd2e381af88c6b2584699-b5f427.jpg"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_1855b5c5f8982ad294cbf045947900eda0734db38.jpg?width=300&format=webply&optimize=medium",
+       "alt": "Garmin - Forerunner 265 Smart Watch with Step Counter, Heart Rate Monitor and GPS Enabled",
+       "nw": 276,
+       "nh": 276,
+       "rw": 162,
+       "rh": 159,
+       "localPath": "stardust/current/assets/media/media_1855b5c5f8982ad294cbf045947900eda0734db38-98e327.jpg"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_173a04cb72a97f80a8356b4ae2de131236e54fb9c.jpg?width=300&format=webply&optimize=medium",
+       "alt": "Contixo - F28 Stratus 2K GPS Drone with Smart Flight Modes 12-MP Drone",
+       "nw": 276,
+       "nh": 276,
+       "rw": 162,
+       "rh": 159,
+       "localPath": "stardust/current/assets/media/media_173a04cb72a97f80a8356b4ae2de131236e54fb9c-ec84c5.jpg"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_1b5fa190e608f2b935ee00b73eebcc58d6dde8ff6.jpg?width=300&format=jpg&optimize=medium",
+       "alt": "SteamSpa - 76.7-in H x 46.5-in W x 40.5-in D 2 -person Hemlock Fir Wood Infrared Sauna",
+       "nw": 0,
+       "nh": 0,
+       "rw": 162,
+       "rh": 159,
+       "localPath": null
+      }
+     ],
+     "innerText": "Gift Zone\nGift Zone\nBlackstone 36\" Original Omnivore Griddle with Hard Cover 4 -Burner Liquid propane Flat Top Grill\n$\n299\n.00\n$399.00\nSave 25%\n3459\n1K+ bought last week\nAdd to Cart\nEGO POWER+ 56-volt Cordless Battery String Trimmer and Leaf Blower and Combo Kit 2.5 Ah (Battery Included) (Charger Included)\n$\n299\n.00\n$359.00\nSave 16%\n2401\n1K+ bought last week\nAdd to Cart\nStanley Iceflow Flip Straw Tumbler 30 Insulated Azure\n$\n35\n.00\n136\nIn 100+ carts last week\nAdd to Cart\nHeart & Herd Rectangular Twill Gray Polyester Bolster Dog Bed L\n$\n59\n.98\n258\n1K+ bought last week\nAdd to Cart\nCRAFTSMAN V20 20-volt 1/2-in Keyless Cordless Drill 1 -Batteries Included, and Charger Included\n$\n99\n.00\n106\nIn 500+ carts last week\nAdd to Cart\nArmor All Car Care Kit 7 -Count Liquid Car Exterior Cleaner\n$\n10\n.04\n$20.08\nSave 50%\n87\n1K+ bought last week\nAdd to Cart\nOoni Koda 12 Liquid propane Outdoor Pizza Oven\n$\n299\n.00\n$399.00\nSave 25%\n415\nIn 100+ carts last week\nAdd to Cart\nToy Time Modern Chess Set - Acrylic Chess Board (Game Set)\n$\n69\n.98\n1\nIn 100 carts last week\nAdd to Cart\nGovee Indoor 49.2-ft LED Multicolor Strip Light\n$\n52\n.99\n$65.00\nSave 18%\n83\n100+ bought last week\nAdd to Cart\nCarhartt Highland Women's Dark Rose Tint Landscape Fleece Work jacket ( S )\n$\n89\n.99\nAdd to Cart\nGarmin Forerunner 265 Smart Watch with Step Counter, Heart Rate Monitor and GPS Enabled\n$\n449\n.99\n497\nAdd to Cart\nContixo F28 Stratus 2K GPS Drone with Smart Flight Modes 12-MP Drone\n$\n121\n.33\n1\nIn 70+ carts last week\nAdd to Cart\nSteamSpa 76.7-in H x 46.5-in W x 40.5-in D 2 -person Hemlock Fir Wood Infrared Sauna\n$\n1,499\n.99\n$2,828.51\nSave 47%\n104\n1K+ views last week\nAdd to Cart",
+     "textInImage": false
+    },
+    {
+     "index": 7,
+     "classes": [
+      "section",
+      "cards-category-container"
+     ],
+     "block": "cards-category",
+     "purpose": "category-tiles",
+     "rect": {
+      "x": 0,
+      "y": 2349,
+      "width": 1440,
+      "height": 123
+     },
+     "headings": [
+      "H2:Popular Categories"
+     ],
+     "ctaCount": 4,
+     "ctaSample": [
+      "Deals of the Day",
+      "LOWES Essentials",
+      "Fall Maintenance",
+      "Holiday Decor"
+     ],
+     "imageCount": 4,
+     "images": [
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_10c05dc0a14448a2cd0ca4da18b02a430379e932c.png?width=600&format=webply&optimize=medium",
+       "alt": "Shop Deals of the Day now.",
+       "nw": 600,
+       "nh": 130,
+       "rw": 308,
+       "rh": 67,
+       "localPath": "stardust/current/assets/media/media_10c05dc0a14448a2cd0ca4da18b02a430379e932c-757f9e.png"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_1cd03b13b3ddea0344638ff182575a1c5d60fc7c3.png?width=600&format=webply&optimize=medium",
+       "alt": "Discover new essentials under $10. Find the home basics you need at prices you’ll love. Shop now.",
+       "nw": 600,
+       "nh": 130,
+       "rw": 308,
+       "rh": 67,
+       "localPath": "stardust/current/assets/media/media_1cd03b13b3ddea0344638ff182575a1c5d60fc7c3-25758d.png"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_1853f5494f28af034ed752c1969f42e1bbdb38fd6.png?width=600&format=webply&optimize=medium",
+       "alt": "Shop Fall Maintenance now.",
+       "nw": 500,
+       "nh": 108,
+       "rw": 308,
+       "rh": 67,
+       "localPath": "stardust/current/assets/media/media_1853f5494f28af034ed752c1969f42e1bbdb38fd6-a1a22c.png"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_14484ec62af279345166d24bc0910d900c94649dd.png?width=600&format=webply&optimize=medium",
+       "alt": "Shop Holiday Decor now.",
+       "nw": 500,
+       "nh": 108,
+       "rw": 308,
+       "rh": 67,
+       "localPath": "stardust/current/assets/media/media_14484ec62af279345166d24bc0910d900c94649dd-b293af.png"
+      }
+     ],
+     "innerText": "Popular Categories\nDeals of the Day\nLOWES Essentials\nFall Maintenance\nHoliday Decor",
+     "textInImage": false
+    },
+    {
+     "index": 8,
+     "classes": [
+      "section",
+      "cards-department-container"
+     ],
+     "block": "cards-department",
+     "purpose": "department-grid",
+     "rect": {
+      "x": 0,
+      "y": 2504,
+      "width": 1440,
+      "height": 243
+     },
+     "headings": [],
+     "ctaCount": 24,
+     "ctaSample": [
+      "Animal and Pet Care",
+      "Appliances",
+      "Automotive",
+      "Bathroom",
+      "Blinds and Window Treatments",
+      "Building Supplies",
+      "Cleaning Supplies",
+      "Doors and Windows",
+      "Electrical",
+      "Flooring and Rugs",
+      "Hardware",
+      "Heating and Cooling",
+      "Home Decor and Furniture",
+      "Kitchen"
+     ],
+     "imageCount": 24,
+     "images": [
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_132d884ac2b000ea729ac9013a5c0fdcab4cc4e37.png?width=400&format=webply&optimize=medium",
+       "alt": "Shop Animal and Pet Care Products.",
+       "nw": 249,
+       "nh": 99,
+       "rw": 138,
+       "rh": 55,
+       "localPath": "stardust/current/assets/media/media_132d884ac2b000ea729ac9013a5c0fdcab4cc4e37-b75959.png"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_1ab6f36d1afb61f77c43abc96fc92b118a1ea6882.png?width=400&format=webply&optimize=medium",
+       "alt": "Shop Appliances.",
+       "nw": 249,
+       "nh": 99,
+       "rw": 138,
+       "rh": 55,
+       "localPath": "stardust/current/assets/media/media_1ab6f36d1afb61f77c43abc96fc92b118a1ea6882-599d06.png"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_12253dd5cb41f6fe0014ffae24f6de1aa80015c95.png?width=400&format=webply&optimize=medium",
+       "alt": "Shop Automotive Products.",
+       "nw": 249,
+       "nh": 99,
+       "rw": 138,
+       "rh": 55,
+       "localPath": "stardust/current/assets/media/media_12253dd5cb41f6fe0014ffae24f6de1aa80015c95-3f909d.png"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_12216092a81baef0d7a2c1a833999f7748778c2f3.png?width=400&format=webply&optimize=medium",
+       "alt": "Shop Bathroom Products.",
+       "nw": 249,
+       "nh": 99,
+       "rw": 138,
+       "rh": 55,
+       "localPath": "stardust/current/assets/media/media_12216092a81baef0d7a2c1a833999f7748778c2f3-52b5c4.png"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_1d29c5a842074452c59641ae8c9f152580dbdbaf3.png?width=400&format=webply&optimize=medium",
+       "alt": "Shop Blinds and Window Treatments.",
+       "nw": 249,
+       "nh": 99,
+       "rw": 138,
+       "rh": 55,
+       "localPath": "stardust/current/assets/media/media_1d29c5a842074452c59641ae8c9f152580dbdbaf3-03d2db.png"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_1e88ff874e7643e4ace6cc81411adea705279d451.png?width=400&format=webply&optimize=medium",
+       "alt": "Shop Building Supplies.",
+       "nw": 249,
+       "nh": 99,
+       "rw": 138,
+       "rh": 55,
+       "localPath": "stardust/current/assets/media/media_1e88ff874e7643e4ace6cc81411adea705279d451-92ec98.png"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_1bcb2081acb8e6a92b79004b7197780b5b0f9dd26.png?width=400&format=webply&optimize=medium",
+       "alt": "Shop Cleaning Supplies.",
+       "nw": 367,
+       "nh": 147,
+       "rw": 138,
+       "rh": 55,
+       "localPath": "stardust/current/assets/media/media_1bcb2081acb8e6a92b79004b7197780b5b0f9dd26-aa8256.png"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_1607b356e65fc47beba97b592230d6b14a5090986.png?width=400&format=webply&optimize=medium",
+       "alt": "Shop Doors and Windows.",
+       "nw": 367,
+       "nh": 147,
+       "rw": 138,
+       "rh": 55,
+       "localPath": "stardust/current/assets/media/media_1607b356e65fc47beba97b592230d6b14a5090986-b468e1.png"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_175e5ae55aaa3d31c0dc05e01812416afdfd1be73.png?width=400&format=webply&optimize=medium",
+       "alt": "Shop Electrical Products.",
+       "nw": 367,
+       "nh": 147,
+       "rw": 138,
+       "rh": 55,
+       "localPath": "stardust/current/assets/media/media_175e5ae55aaa3d31c0dc05e01812416afdfd1be73-1df4f0.png"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_1d7d597e3946e627a4e5fb47b9cef03bd340ae841.png?width=400&format=webply&optimize=medium",
+       "alt": "Shop Flooring and Rugs.",
+       "nw": 367,
+       "nh": 147,
+       "rw": 138,
+       "rh": 55,
+       "localPath": "stardust/current/assets/media/media_1d7d597e3946e627a4e5fb47b9cef03bd340ae841-500fcf.png"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_17ce5534d5858b58a8b0adce8af23a0823e4308ee.png?width=400&format=webply&optimize=medium",
+       "alt": "Shop Hardware.",
+       "nw": 367,
+       "nh": 147,
+       "rw": 138,
+       "rh": 55,
+       "localPath": "stardust/current/assets/media/media_17ce5534d5858b58a8b0adce8af23a0823e4308ee-c075c0.png"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_1fe7da555552e9a6d4d17a290eec2343804379636.png?width=400&format=webply&optimize=medium",
+       "alt": "Shop Heating and Cooling Products.",
+       "nw": 367,
+       "nh": 147,
+       "rw": 138,
+       "rh": 55,
+       "localPath": "stardust/current/assets/media/media_1fe7da555552e9a6d4d17a290eec2343804379636-6e7787.png"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_126d76e72c38722b29ef964fc798908f80e97be7d.png?width=400&format=webply&optimize=medium",
+       "alt": "Shop Home Decor and Furniture.",
+       "nw": 367,
+       "nh": 147,
+       "rw": 138,
+       "rh": 55,
+       "localPath": "stardust/current/assets/media/media_126d76e72c38722b29ef964fc798908f80e97be7d-ff889e.png"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_17a3f3d9cc38579f36aadc7178a9020c4ef40ab55.png?width=400&format=webply&optimize=medium",
+       "alt": "Shop Kitchen Products.",
+       "nw": 367,
+       "nh": 147,
+       "rw": 138,
+       "rh": 55,
+       "localPath": "stardust/current/assets/media/media_17a3f3d9cc38579f36aadc7178a9020c4ef40ab55-8b955f.png"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_1c1cf914381251877f5269d07039c10dcca896893.png?width=400&format=webply&optimize=medium",
+       "alt": "Shop Lawn and Garden Products.",
+       "nw": 367,
+       "nh": 147,
+       "rw": 138,
+       "rh": 55,
+       "localPath": "stardust/current/assets/media/media_1c1cf914381251877f5269d07039c10dcca896893-f50be8.png"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_1fabaf08d94c8568c5733dae8c298aeb20c5f46c1.png?width=400&format=webply&optimize=medium",
+       "alt": "Shop Lighting and Ceiling Fans.",
+       "nw": 367,
+       "nh": 147,
+       "rw": 138,
+       "rh": 55,
+       "localPath": "stardust/current/assets/media/media_1fabaf08d94c8568c5733dae8c298aeb20c5f46c1-dc4081.png"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_15100f1bd03723dbcc15fc4ba9a54d823d15fb8ed.png?width=400&format=webply&optimize=medium",
+       "alt": "Shop Moulding and Millwork Products.",
+       "nw": 367,
+       "nh": 147,
+       "rw": 138,
+       "rh": 55,
+       "localPath": "stardust/current/assets/media/media_15100f1bd03723dbcc15fc4ba9a54d823d15fb8ed-5cb770.png"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_1473519639db037996b57be6e73818412a78b30b3.png?width=400&format=webply&optimize=medium",
+       "alt": "Shop outdoor living and patio now.",
+       "nw": 331,
+       "nh": 132,
+       "rw": 138,
+       "rh": 55,
+       "localPath": "stardust/current/assets/media/media_1473519639db037996b57be6e73818412a78b30b3-13816e.png"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_1b094586ac5e13406d5238e44711c78d901bf061f.png?width=400&format=webply&optimize=medium",
+       "alt": "Shop Paint.",
+       "nw": 367,
+       "nh": 147,
+       "rw": 138,
+       "rh": 55,
+       "localPath": "stardust/current/assets/media/media_1b094586ac5e13406d5238e44711c78d901bf061f-677dd1.png"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_1d3b4df1cef897e96d8c17923fbd1e942ef372025.png?width=400&format=webply&optimize=medium",
+       "alt": "Shop Plumbing Products.",
+       "nw": 367,
+       "nh": 147,
+       "rw": 138,
+       "rh": 55,
+       "localPath": "stardust/current/assets/media/media_1d3b4df1cef897e96d8c17923fbd1e942ef372025-92facf.png"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_1c2e1fdc24b3a5a41f735b251bc9d818ad2232730.png?width=400&format=webply&optimize=medium",
+       "alt": "Shop Smart Home, Security and Wi-Fi Products.",
+       "nw": 367,
+       "nh": 147,
+       "rw": 138,
+       "rh": 55,
+       "localPath": "stardust/current/assets/media/media_1c2e1fdc24b3a5a41f735b251bc9d818ad2232730-bd2258.png"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_106d0e7c41333dcab6ed732123425fd2175d1f8f5.png?width=400&format=webply&optimize=medium",
+       "alt": "Shop Sports and Fitness Products.",
+       "nw": 367,
+       "nh": 147,
+       "rw": 138,
+       "rh": 55,
+       "localPath": "stardust/current/assets/media/media_106d0e7c41333dcab6ed732123425fd2175d1f8f5-ca1982.png"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_11f0abf548a69ccc5af5bd8237877571386a1c3bb.png?width=400&format=webply&optimize=medium",
+       "alt": "Shop Storage and Organization Products.",
+       "nw": 367,
+       "nh": 147,
+       "rw": 138,
+       "rh": 55,
+       "localPath": "stardust/current/assets/media/media_11f0abf548a69ccc5af5bd8237877571386a1c3bb-e94f42.png"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_19a219e92362089c1c2d791801bd7caebf735388a.png?width=400&format=webply&optimize=medium",
+       "alt": "Shop Tools Products.",
+       "nw": 367,
+       "nh": 147,
+       "rw": 138,
+       "rh": 55,
+       "localPath": "stardust/current/assets/media/media_19a219e92362089c1c2d791801bd7caebf735388a-bcac45.png"
+      }
+     ],
+     "innerText": "Animal and Pet Care\nAppliances\nAutomotive\nBathroom\nBlinds and Window Treatments\nBuilding Supplies\nCleaning Supplies\nDoors and Windows\nElectrical\nFlooring and Rugs\nHardware\nHeating and Cooling\nHome Decor and Furniture\nKitchen\nLawn and Garden\nLighting and Ceiling Fans\nMoulding and Millwork\nOutdoor living and patio\nPaint\nPlumbing\nSmart Home, Security and Wi-Fi\nSports and Fitness\nStorage and Organization\nTools",
+     "textInImage": false
+    },
+    {
+     "index": 9,
+     "classes": [
+      "section",
+      "cards-article-container"
+     ],
+     "block": "cards-article",
+     "purpose": "article-cards",
+     "rect": {
+      "x": 0,
+      "y": 2779,
+      "width": 1440,
+      "height": 408
+     },
+     "headings": [
+      "H2:Explore More for Your Home & Community"
+     ],
+     "ctaCount": 4,
+     "ctaSample": [
+      "Learn More",
+      "Get Started"
+     ],
+     "imageCount": 4,
+     "images": [
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_1c41e49762b6105f730665c8379094a22dea46586.png?width=750&format=webply&optimize=medium",
+       "alt": "Find inspiration, buying guides, how-to advice and ideas for new D I Y projects. Learn more now.",
+       "nw": 500,
+       "nh": 515,
+       "rw": 314,
+       "rh": 323,
+       "localPath": "stardust/current/assets/media/media_1c41e49762b6105f730665c8379094a22dea46586-12a2c7.png"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_112e919b7c4a81b278ede44dee96495299f934207.png?width=750&format=webply&optimize=medium",
+       "alt": "Discover ideas for beginners and experienced pumpkin carvers. Learn more now.",
+       "nw": 750,
+       "nh": 773,
+       "rw": 314,
+       "rh": 324,
+       "localPath": "stardust/current/assets/media/media_112e919b7c4a81b278ede44dee96495299f934207-a7f8dd.png"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_16b0af98ab68e1355a10f0dc93e0c18f2dc5d6108.png?width=750&format=webply&optimize=medium",
+       "alt": "We can install your blinds & window shades by Thanksgiving. Schedule by 10/14. Get started now.",
+       "nw": 500,
+       "nh": 515,
+       "rw": 314,
+       "rh": 323,
+       "localPath": "stardust/current/assets/media/media_16b0af98ab68e1355a10f0dc93e0c18f2dc5d6108-61f8dc.png"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_1ca5c8050a5cea04a8ba0c7695e06cad6ac644d0a.png?width=750&format=webply&optimize=medium",
+       "alt": "Learn about our commitment to revitalize the communities we serve across the country now.",
+       "nw": 750,
+       "nh": 773,
+       "rw": 314,
+       "rh": 324,
+       "localPath": "stardust/current/assets/media/media_1ca5c8050a5cea04a8ba0c7695e06cad6ac644d0a-977fcc.png"
+      }
+     ],
+     "innerText": "Explore More for Your Home & Community\nLearn More\nLearn More\nGet Started\nLearn More",
+     "textInImage": true
+    },
+    {
+     "index": 10,
+     "classes": [
+      "section",
+      "carousel-deals-container"
+     ],
+     "block": "carousel-deals",
+     "purpose": "deal-panels",
+     "rect": {
+      "x": 0,
+      "y": 3219,
+      "width": 1440,
+      "height": 655
+     },
+     "headings": [
+      "H3:Top Trending Deals",
+      "H3:4 Stars & Above",
+      "H3:We Picked These Deals for You"
+     ],
+     "ctaCount": 15,
+     "ctaSample": [
+      "View All",
+      "Save 25%allen + roth, Custom Cellular Shade$48.32 $64.42392",
+      "Save 24%EGO, POWER+ 600 Series 56-volt, 21-in Push Battery L",
+      "Save 50%Whirlpool, Flexible Cooktop 30-in 4 burners 5.1-cu f",
+      "Save 41%DEWALT, 2-Tool 20-Volt Max Power Tool Combo Kit with",
+      "Save 12%Arm & Hammer, Carpet cleaner Deodorizing Powder 42.6",
+      "Add to Cart",
+      "Save 33%CRAFTSMAN, V20 20 -Volt, 5 Ah 1 -Pack Lithium Ion (L",
+      "Rudolph the Red-Nosed Reindeer, 9.75-ft LED Bumble Animatron",
+      "Holiday Living, 7.5-ft New Kensington Pine Pre-lit Artificia",
+      "Save 10%Haunted Living, 5-ft Ultra Posable Skeleton Hallowee",
+      "Rudolph the Red-Nosed Reindeer, 6-ft Yukon Cornelius Animatr"
+     ],
+     "imageCount": 10,
+     "images": [
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_150e2e4a0a8ef84c5706db48da13cf7d3b2b4b682.jpg?width=300&format=webply&optimize=medium",
+       "alt": "allen + roth Custom Cellular Shade",
+       "nw": 276,
+       "nh": 276,
+       "rw": 172,
+       "rh": 172,
+       "localPath": "stardust/current/assets/media/media_150e2e4a0a8ef84c5706db48da13cf7d3b2b4b682-c8ce99.jpg"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_104a8dca2c3b0820e87cdd8d014ea833343ac56dd.jpg?width=300&format=webply&optimize=medium",
+       "alt": "EGO POWER+ 600 Series 56-volt, 21-in Push Battery Lawn Mower with (1) 6 Ah Battery Included",
+       "nw": 276,
+       "nh": 276,
+       "rw": 172,
+       "rh": 172,
+       "localPath": "stardust/current/assets/media/media_104a8dca2c3b0820e87cdd8d014ea833343ac56dd-8ace71.jpg"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_124af4bc853b69c723647f9085e298a99b862892a.png?width=300&format=webply&optimize=medium",
+       "alt": "Whirlpool Flexible Cooktop 30-in 4 burners 5.1-cu ft Single oven gas range Natural Gas Range ( Stainless Steel )",
+       "nw": 276,
+       "nh": 276,
+       "rw": 172,
+       "rh": 172,
+       "localPath": "stardust/current/assets/media/media_124af4bc853b69c723647f9085e298a99b862892a-5f48e0.png"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_1a51566ab4563330154e3f254800b8a2eedf4d035.jpg?width=300&format=webply&optimize=medium",
+       "alt": "DEWALT 2-Tool 20-Volt Max Power Tool Combo Kit with Soft Case (2-Batteries and charger Included)",
+       "nw": 276,
+       "nh": 276,
+       "rw": 172,
+       "rh": 172,
+       "localPath": "stardust/current/assets/media/media_1a51566ab4563330154e3f254800b8a2eedf4d035-19b5cf.jpg"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_1c50d0b193d8be96776ba254ab9741820b9388759.jpg?width=300&format=webply&optimize=medium",
+       "alt": "Arm & Hammer Carpet cleaner Deodorizing Powder 42.6-oz",
+       "nw": 276,
+       "nh": 276,
+       "rw": 152,
+       "rh": 243,
+       "localPath": "stardust/current/assets/media/media_1c50d0b193d8be96776ba254ab9741820b9388759-03fe57.jpg"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_129fd0abd4815dc99f3caa90280d7d2d143132679.jpg?width=300&format=webply&optimize=medium",
+       "alt": "CRAFTSMAN V20 20 -Volt, 5 Ah 1 -Pack Lithium Ion (Li-ion)",
+       "nw": 276,
+       "nh": 276,
+       "rw": 152,
+       "rh": 243,
+       "localPath": "stardust/current/assets/media/media_129fd0abd4815dc99f3caa90280d7d2d143132679-ec561d.jpg"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_114d5b48b347e6b17e292b5d3dcc9e473660e29c7.jpg?width=300&format=webply&optimize=medium",
+       "alt": "Rudolph the Red-Nosed Reindeer 9.75-ft LED Bumble Animatronic Outdoor Christmas Decoration",
+       "nw": 276,
+       "nh": 276,
+       "rw": 172,
+       "rh": 172,
+       "localPath": "stardust/current/assets/media/media_114d5b48b347e6b17e292b5d3dcc9e473660e29c7-1e1fe8.jpg"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_1c3e504410142d8b1d86dc87eb74b7263eb6f2415.jpg?width=300&format=webply&optimize=medium",
+       "alt": "Holiday Living 7.5-ft New Kensington Pine Pre-lit Artificial Christmas Tree with Twinkling Color Changing LED Lights",
+       "nw": 276,
+       "nh": 276,
+       "rw": 172,
+       "rh": 172,
+       "localPath": "stardust/current/assets/media/media_1c3e504410142d8b1d86dc87eb74b7263eb6f2415-b56f01.jpg"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_1c8616bdc052848050cac45bdd5d38ed6f76521c9.jpg?width=300&format=webply&optimize=medium",
+       "alt": "Haunted Living 5-ft Ultra Posable Skeleton Halloween Decoration",
+       "nw": 276,
+       "nh": 276,
+       "rw": 172,
+       "rh": 172,
+       "localPath": "stardust/current/assets/media/media_1c8616bdc052848050cac45bdd5d38ed6f76521c9-d4a715.jpg"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_1220ffa95b07d120ffac738df662f99964b359dbf.jpg?width=300&format=webply&optimize=medium",
+       "alt": "Rudolph the Red-Nosed Reindeer 6-ft Yukon Cornelius Animatronic Outdoor Christmas Decoration",
+       "nw": 276,
+       "nh": 276,
+       "rw": 172,
+       "rh": 172,
+       "localPath": "stardust/current/assets/media/media_1220ffa95b07d120ffac738df662f99964b359dbf-d0e587.jpg"
+      }
+     ],
+     "innerText": "Top Trending Deals\nView All\nSave 25%\nallen + roth, Custom Cellular Shade\n$48.32\n$64.42\n392\nSave 24%\nEGO, POWER+ 600 Series 56-volt, 21-in Push Battery Lawn Mower with (1) 6 Ah Battery Included\n$379.00\n$499.00\n8.6K\nSave 50%\nWhirlpool, Flexible Cooktop 30-in 4 burners 5.1-cu ft Single oven gas range Natural Gas Range ( Stainless Steel )\nThis item is currently unavailable\n2.3K\nSave 41%\nDEWALT, 2-Tool 20-Volt Max Power Tool Combo Kit with Soft Case (2-Batteries and charger Included)\nThis item is currently unavailable\n654\n4 Stars & Above\nView All\nSave 12%\nArm & Hammer, Carpet cleaner Deodorizing Powder 42.6-oz\n$3.48\n$3.98\n733\nAdd to Cart\nSave 33%\nCRAFTSMAN, V20 20 -Volt, 5 Ah 1 -Pack Lithium Ion (Li-ion)\n$99.00\n$149.00\n379\nAdd to Cart\nWe Picked These Deals for You\nView All\nRudolph the Red-Nosed Reindeer, 9.75-ft LED Bumble Animatronic Outdoor Christmas Decoration\n$499.00\n133\nHoliday Living, 7.5-ft New Kensington Pine Pre-lit Artificial Christmas Tree with Twinkling Color Changing LED Lights\n$349.00\n355\nSave 10%\nHaunted Living, 5-ft Ultra Posable Skeleton Halloween Decoration\n$44.98\n$49.98\n26\nRudolph the Red-Nosed Reindeer, 6-ft Yukon Cornelius Animatronic Outdoor Christmas Decoration\n$399.00\n45",
+     "textInImage": false
+    },
+    {
+     "index": 11,
+     "classes": [
+      "section",
+      "carousel-product-container"
+     ],
+     "block": "carousel-product",
+     "purpose": "product-or-project-carousel",
+     "rect": {
+      "x": 0,
+      "y": 3906,
+      "width": 1440,
+      "height": 396
+     },
+     "headings": [
+      "H3:Find Your Next Project"
+     ],
+     "ctaCount": 10,
+     "ctaSample": [
+      "How to Get Rid of Mosquitoes",
+      "How to Clean an Air Conditioner",
+      "How to Repair Cracked Concrete",
+      "Create a Border Using Edging Stones",
+      "How to Build DIY Tote Shelves",
+      "How to Install a Toilet",
+      "How to Build a Retaining Wall",
+      "DIY Raised Garden Bed Instructions and Ideas",
+      "How to Install a Bathroom Vanity and Sink",
+      "How to Copy Your Car Key at Lowe's"
+     ],
+     "imageCount": 10,
+     "images": [
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_1eb974100415ce705bdbd4ca38fc89d9fb69372e6.png?width=300&format=webply&optimize=medium",
+       "alt": "How to Get Rid of Mosquitoes",
+       "nw": 300,
+       "nh": 169,
+       "rw": 305,
+       "rh": 172,
+       "localPath": "stardust/current/assets/media/media_1eb974100415ce705bdbd4ca38fc89d9fb69372e6-9cd347.png"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_1015547b3de620e40a1e5bb9fa28279db266b9460.jpg?width=300&format=webply&optimize=medium",
+       "alt": "How to Clean an Air Conditioner",
+       "nw": 300,
+       "nh": 169,
+       "rw": 305,
+       "rh": 172,
+       "localPath": "stardust/current/assets/media/media_1015547b3de620e40a1e5bb9fa28279db266b9460-4da231.jpg"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_17bbe8e93f7c3ed0ff0e90a696ab4a7abf2ee92c3.jpg?width=300&format=webply&optimize=medium",
+       "alt": "How to Repair Cracked Concrete",
+       "nw": 300,
+       "nh": 171,
+       "rw": 305,
+       "rh": 172,
+       "localPath": "stardust/current/assets/media/media_17bbe8e93f7c3ed0ff0e90a696ab4a7abf2ee92c3-55b150.jpg"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_117a17f72b1fd5c19fae80490c5c96c769711d84b.png?width=300&format=webply&optimize=medium",
+       "alt": "Create a Border Using Edging Stones",
+       "nw": 300,
+       "nh": 169,
+       "rw": 305,
+       "rh": 172,
+       "localPath": "stardust/current/assets/media/media_117a17f72b1fd5c19fae80490c5c96c769711d84b-f7cbf0.png"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_12dd30cef969f27a88c72ae77026045d7cd474e07.png?width=300&format=webply&optimize=medium",
+       "alt": "How to Build DIY Tote Shelves",
+       "nw": 300,
+       "nh": 169,
+       "rw": 305,
+       "rh": 172,
+       "localPath": "stardust/current/assets/media/media_12dd30cef969f27a88c72ae77026045d7cd474e07-8e584e.png"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_1a10ef0226657a355df7a1eb86c27ee45f2567a67.jpg?width=300&format=webply&optimize=medium",
+       "alt": "How to Install a Toilet",
+       "nw": 300,
+       "nh": 171,
+       "rw": 305,
+       "rh": 172,
+       "localPath": "stardust/current/assets/media/media_1a10ef0226657a355df7a1eb86c27ee45f2567a67-3ad11f.jpg"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_1705274288e8019db587eeec7b77052bc51095cb6.png?width=300&format=webply&optimize=medium",
+       "alt": "How to Build a Retaining Wall",
+       "nw": 300,
+       "nh": 169,
+       "rw": 305,
+       "rh": 172,
+       "localPath": "stardust/current/assets/media/media_1705274288e8019db587eeec7b77052bc51095cb6-7f252d.png"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_12fef52fa7a23afa9a7ced96f0c42fd43183a5432.png?width=300&format=webply&optimize=medium",
+       "alt": "DIY Raised Garden Bed Instructions and Ideas",
+       "nw": 300,
+       "nh": 169,
+       "rw": 305,
+       "rh": 172,
+       "localPath": "stardust/current/assets/media/media_12fef52fa7a23afa9a7ced96f0c42fd43183a5432-f3e5d0.png"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_1e9250d8e04189f6d280b2e810fa2c1b83290d814.png?width=300&format=webply&optimize=medium",
+       "alt": "How to Install a Bathroom Vanity and Sink",
+       "nw": 300,
+       "nh": 169,
+       "rw": 305,
+       "rh": 172,
+       "localPath": "stardust/current/assets/media/media_1e9250d8e04189f6d280b2e810fa2c1b83290d814-a5ab9b.png"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_189b87d20e57a279c35a8e761c26520730a01a47f.png?width=300&format=png&optimize=medium",
+       "alt": "How to Copy Your Car Key at Lowe's",
+       "nw": 0,
+       "nh": 0,
+       "rw": 305,
+       "rh": 172,
+       "localPath": null
+      }
+     ],
+     "innerText": "Find Your Next Project\nHow to Get Rid of Mosquitoes\nHow to Clean an Air Conditioner\nHow to Repair Cracked Concrete\nCreate a Border Using Edging Stones\nHow to Build DIY Tote Shelves\nHow to Install a Toilet\nHow to Build a Retaining Wall\nDIY Raised Garden Bed Instructions and Ideas\nHow to Install a Bathroom Vanity and Sink\nHow to Copy Your Car Key at Lowe's",
+     "textInImage": false
+    },
+    {
+     "index": 12,
+     "classes": [
+      "section",
+      "carousel-product-container"
+     ],
+     "block": "carousel-product",
+     "purpose": "product-or-project-carousel",
+     "rect": {
+      "x": 0,
+      "y": 4334,
+      "width": 1440,
+      "height": 593
+     },
+     "headings": [
+      "H3:Items To Explore"
+     ],
+     "ctaCount": 44,
+     "ctaSample": [
+      "Appliances",
+      "Smart Home, Security, Wi-Fi",
+      "Kitchen",
+      "Bathroom",
+      "Outdoors",
+      "Tools",
+      "Heating & Cooling",
+      "Flooring",
+      "Lighting & Ceiling Fans",
+      "Hardware",
+      "Building Supplies",
+      "Home Decor",
+      "ezH2O Stainless steel 2 -Basin Push button Wall mount Filter",
+      "Add to Cart"
+     ],
+     "imageCount": 16,
+     "images": [
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_1952f83cb30db7af48d8892466b80cdae4d6d03df.jpg?width=300&format=webply&optimize=medium",
+       "alt": "Elkay - ezH2O Stainless steel 2 -Basin Push button Wall mount Filtered",
+       "nw": 276,
+       "nh": 276,
+       "rw": 179,
+       "rh": 159,
+       "localPath": "stardust/current/assets/media/media_1952f83cb30db7af48d8892466b80cdae4d6d03df-3788da.jpg"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_1d30da0bd2c3a329840fca11a0899b296770bc231.png?width=300&format=webply&optimize=medium",
+       "alt": "Glacier Fresh - Push-in FPPWFU01 Water Filter Replacement for Frigidaire PurePour FPPWFU01 2-Pack",
+       "nw": 276,
+       "nh": 276,
+       "rw": 179,
+       "rh": 159,
+       "localPath": "stardust/current/assets/media/media_1d30da0bd2c3a329840fca11a0899b296770bc231-c489d8.png"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_188d9e5418618d0536c1e2707b47a970b6eac29ab.png?width=300&format=webply&optimize=medium",
+       "alt": "LuceAlberi - Cordless Stick Vacuum 500W 45Kpa 45 Min Anti Tangle Lightweight Vac for Home Pet Hai...",
+       "nw": 276,
+       "nh": 276,
+       "rw": 179,
+       "rh": 159,
+       "localPath": "stardust/current/assets/media/media_188d9e5418618d0536c1e2707b47a970b6eac29ab-585563.png"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_1442ac3c442fadf8dafe8f11486442a3a764d0355.png?width=300&format=webply&optimize=medium",
+       "alt": "LuceAlberi - Cordless Stick Vacuum Cleaner 500W 45KPA 50 Min Anti Tangle Pet Hair Floors",
+       "nw": 276,
+       "nh": 276,
+       "rw": 179,
+       "rh": 159,
+       "localPath": "stardust/current/assets/media/media_1442ac3c442fadf8dafe8f11486442a3a764d0355-1405ba.png"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_11c07a71b528383ed30f9e46a95b7bda012d71b7a.jpg?width=300&format=webply&optimize=medium",
+       "alt": "Midea - 30-in 4 burners 6.1-cu ft Single oven gas range Natural Gas Range ( Black )",
+       "nw": 276,
+       "nh": 276,
+       "rw": 179,
+       "rh": 159,
+       "localPath": "stardust/current/assets/media/media_11c07a71b528383ed30f9e46a95b7bda012d71b7a-5b3580.jpg"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_1cade3fa4348cd4e75be7f38294aa81fdc6d45b91.jpg?width=300&format=webply&optimize=medium",
+       "alt": "Glacier Fresh - Push-in Refrigerator Water Filter Replacement for WF3CB PureSource 3 6-Pack",
+       "nw": 276,
+       "nh": 276,
+       "rw": 179,
+       "rh": 159,
+       "localPath": "stardust/current/assets/media/media_1cade3fa4348cd4e75be7f38294aa81fdc6d45b91-4f27db.jpg"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_12a4ceffbb72de01f84603f42ba2c229de0592487.jpg?width=300&format=webply&optimize=medium",
+       "alt": "COWSAR - 2 -Cup Programmable Commercial Drip coffee maker with Automatic Shut-Off ( Stainless Ste...",
+       "nw": 276,
+       "nh": 276,
+       "rw": 179,
+       "rh": 159,
+       "localPath": "stardust/current/assets/media/media_12a4ceffbb72de01f84603f42ba2c229de0592487-806eaa.jpg"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_1907fc5bf4771d1678a0d1ca81a678e8b9f641185.png?width=300&format=webply&optimize=medium",
+       "alt": "Glacier Fresh - Push-in FPPWFU01 Water Filter Replacement for Frigidaire PurePour FPPWFU01 1-Pack",
+       "nw": 276,
+       "nh": 276,
+       "rw": 179,
+       "rh": 159,
+       "localPath": "stardust/current/assets/media/media_1907fc5bf4771d1678a0d1ca81a678e8b9f641185-710685.png"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_15e8f9084c59fca17954c5b2b004e7881ac88c28a.jpg?width=300&format=webply&optimize=medium",
+       "alt": "Glacier Fresh - Twist-in Refrigerator Water Filter Replacement for LT800P 3-Pack",
+       "nw": 276,
+       "nh": 276,
+       "rw": 179,
+       "rh": 159,
+       "localPath": "stardust/current/assets/media/media_15e8f9084c59fca17954c5b2b004e7881ac88c28a-3681d4.jpg"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_15936ef03c6591b4541dc70fee650d5f030f990de.jpg?width=300&format=webply&optimize=medium",
+       "alt": "Dyson - V8 Cyclone Cordless Pet Stick Vacuum Cleaner (Convertible to Handheld)",
+       "nw": 276,
+       "nh": 276,
+       "rw": 179,
+       "rh": 159,
+       "localPath": "stardust/current/assets/media/media_15936ef03c6591b4541dc70fee650d5f030f990de-263739.jpg"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_1e0262c61d68ec526e0009f3ea7204dba9ce885b7.jpg?width=300&format=webply&optimize=medium",
+       "alt": "Hotpoint - 8.8-cu ft Chest Freezer Convertible to Refrigerator ( White )",
+       "nw": 276,
+       "nh": 276,
+       "rw": 179,
+       "rh": 159,
+       "localPath": "stardust/current/assets/media/media_1e0262c61d68ec526e0009f3ea7204dba9ce885b7-8876de.jpg"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_150201cb070aa6343c69cc0b0fa2e1989ee5c0a84.jpg?width=300&format=webply&optimize=medium",
+       "alt": "Whirlpool - Standard-Depth Family-Sized Capacity 29.58-cu ft 3 -Door 36-in Wide French Door Refri...",
+       "nw": 276,
+       "nh": 276,
+       "rw": 179,
+       "rh": 159,
+       "localPath": "stardust/current/assets/media/media_150201cb070aa6343c69cc0b0fa2e1989ee5c0a84-d0ac50.jpg"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_1b9c8cc210d9b31dc5745cc5abfd017c626c47bd6.jpg?width=300&format=webply&optimize=medium",
+       "alt": "KitchenAid - 30 inch Self-cleaning Air Fry Microwave Wall Oven Combo ( PrintShield Stainless )",
+       "nw": 276,
+       "nh": 276,
+       "rw": 179,
+       "rh": 159,
+       "localPath": "stardust/current/assets/media/media_1b9c8cc210d9b31dc5745cc5abfd017c626c47bd6-a621bf.jpg"
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_120de353bae5f82770a1083cc9013a8c71934422a.jpg?width=300&format=jpg&optimize=medium",
+       "alt": "KitchenAid - 30-in Glass Top 5 burners 5.3-cu ft Air Fry Convection Oven Single oven electric ran...",
+       "nw": 0,
+       "nh": 0,
+       "rw": 179,
+       "rh": 159,
+       "localPath": null
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_1cd8da38b9f2424fd68358d4e8b24e0d537872ba3.jpg?width=300&format=jpg&optimize=medium",
+       "alt": "Antarctic Star - 17.5-in W 130 -Can Capacity Purple Cyberpunk RGB LED Light Freestanding Indoor G...",
+       "nw": 0,
+       "nh": 0,
+       "rw": 179,
+       "rh": 159,
+       "localPath": null
+      },
+      {
+       "src": "https://main--lowes--jgrosskurth.aem.live/media_15772196605682c2f730525d0141792010ab1c51b.png?width=300&format=png&optimize=medium",
+       "alt": "Glacier Fresh - EDR1RXD1 Refrigerator Water Filter NSF/ANSI 53/372 Certified Compatible with W102...",
+       "nw": 0,
+       "nh": 0,
+       "rw": 179,
+       "rh": 159,
+       "localPath": null
+      }
+     ],
+     "innerText": "Items To Explore\nSponsored\nAppliances\nSmart Home, Security, Wi-Fi\nKitchen\nBathroom\nOutdoors\nTools\nHeating & Cooling\nFlooring\nLighting & Ceiling Fans\nHardware\nBuilding Supplies\nHome Decor\nElkay ezH2O Stainless steel 2 -Basin Push button Wall mount Filtered\n$\n2,553\n.99\n1\nAdd to Cart\nGlacier Fresh Push-in FPPWFU01 Water Filter Replacement for Frigidaire PurePour FPPWFU01 2-Pack\n$\n27\n.54\n2\nAdd to Cart\nLuceAlberi Cordless Stick Vacuum 500W 45Kpa 45 Min Anti Tangle Lightweight Vac for Home Pet Hair Carpet\n$\n109\n.99\n$299.99\nSave 63%\n1\nAdd to Cart\nLuceAlberi Cordless Stick Vacuum Cleaner 500W 45KPA 50 Min Anti Tangle Pet Hair Floors\n$\n89\n.99\n$259.99\nSave 65%\n3\nAdd to Cart\nMidea 30-in 4 burners 6.1-cu ft Single oven gas range Natural Gas Range ( Black )\n$\n699\n.00\n$799.00\nSave 12%\n5\nAdd to Cart\nGlacier Fresh Push-in Refrigerator Water Filter Replacement for WF3CB PureSource 3 6-Pack\n$\n58\n.99\n1\nAdd to Cart\nCOWSAR 2 -Cup Programmable Commercial Drip coffee maker with Automatic Shut-Off ( Stainless Steel )\n$\n289\n.99\n$588.69\nSave 50%\n1\nAdd to Cart\nGlacier Fresh Push-in FPPWFU01 Water Filter Replacement for Frigidaire PurePour FPPWFU01 1-Pack\n$\n15\n.19\n$19.99\nSave 24%\n2\nAdd to Cart\nGlacier Fresh Twist-in Refrigerator Water Filter Replacement for LT800P 3-Pack\n$\n29\n.99\n9\nAdd to Cart\nDyson V8 Cyclone Cordless Pet Stick Vacuum Cleaner (Convertible to Handheld)\n$\n399\n.99\n85\nAdd to Cart\nHotpoint 8.8-cu ft Chest Freezer Convertible to Refrigerator ( White )\n$\n299\n.00\n$349.00\nSave 14%\n4863\nAdd to Cart\nWhirlpool Standard-Depth Family-Sized Capacity 29.58-cu ft 3 -Door 36-in Wide French Door Refrigerator with Ice Maker ( Fingerprint Resistant Stainless Finish ) ENERGY STAR Certified\n$\n1,999\n.00\n$2,999.00\nSave 33%\n1069\nAdd to Cart\nKitchenAid 30 inch Self-cleaning Air Fry Microwave Wall Oven Combo ( PrintShield Stainless )\n$\n4,399\n.00\n$4,888.00\nSave 10%\n91\nAdd to Cart\nKitchenAid 30-in Glass Top 5 burners 5.3-cu ft Air Fry Convection Oven Single oven electric range Electric Range ( Juniper )\n$\n1,799\n.00\n$2,999.00\nSave 40%\n78\nAdd to Cart\nAntarctic Star 17.5-in W 130 -Can Capacity Purple Cyberpunk RGB LED Light Freestanding Indoor Gaming Beverage Refrigerator\n$\n289\n.99\n$483.32\nSave 40%\nAdd to Cart\nGlacier Fresh EDR1RXD1 Refrigerator Water Filter NSF/ANSI 53/372 Certified Compatible with W10295370A/ EDR1RXD1/ WHR1RXD1/ Filter 1/ P8RFWB2L/ 46-9930 6-Pack\n$\n109\n.99\n$179.99\nSave 38%\nAdd to Cart",
+     "textInImage": false
+    }
+   ]
+  },
+  {
+   "tag": "footer",
+   "role": "contentinfo",
+   "rect": {
+    "x": 0,
+    "y": 4958,
+    "width": 1440,
+    "height": 100
+   },
+   "innerText": "Copyright © 2025 Adobe. All rights reserved.\n\nPrivacy / Terms of Use / Cookie preferences / Do not sell my personal information / AdChoices",
+   "linkCount": 5
+  }
+ ],
+ "ctas": [
+  {
+   "label": "MyLowe’s Money Days are back! Get up to $20 in MyLowe’s Money. Learn More >",
+   "href": "https://www.lowes.com/l/shop/mylowes-money-days?int_cmp=FW35_26_MyLowesMoney_GLOBAL"
+  },
+  {
+   "label": "Lowe's Credit Center",
+   "href": "https://www.lowes.com/l/Credit"
+  },
+  {
+   "label": "Order Status",
+   "href": "https://www.lowes.com/mylowes/orders"
+  },
+  {
+   "label": "Weekly Ad",
+   "href": "https://www.lowes.com/weekly-ad"
+  },
+  {
+   "label": "Lowe's PRO",
+   "href": "https://www.lowes.com/l/Pro"
+  },
+  {
+   "label": "Find a Store Near Me",
+   "href": null
+  },
+  {
+   "label": "AI Assist",
+   "href": null
+  },
+  {
+   "label": "Sign In",
+   "href": null
+  },
+  {
+   "label": "Cart",
+   "href": "https://www.lowes.com/cart"
+  },
+  {
+   "label": "Shop All",
+   "href": null
+  },
+  {
+   "label": "Services",
+   "href": null
+  },
+  {
+   "label": "Deals",
+   "href": null
+  },
+  {
+   "label": "Design & Ideas",
+   "href": null
+  },
+  {
+   "label": "$99 MaintenanceNew",
+   "href": null
+  },
+  {
+   "label": "Appliances",
+   "href": null
+  },
+  {
+   "label": "Bathroom",
+   "href": null
+  },
+  {
+   "label": "Lighting",
+   "href": null
+  },
+  {
+   "label": "Flooring",
+   "href": null
+  },
+  {
+   "label": "Building Supplies",
+   "href": null
+  },
+  {
+   "label": "Tools",
+   "href": null
+  },
+  {
+   "label": "Holiday Decorations",
+   "href": null
+  },
+  {
+   "label": "Outdoor",
+   "href": null
+  },
+  {
+   "label": "Fall Inspo",
+   "href": "https://www.lowes.com/l/seasonal-inspiration"
+  },
+  {
+   "label": "More Suggestions for You",
+   "href": "https://www.lowes.com/l/your-recommendations"
+  },
+  {
+   "label": "refrigerator",
+   "href": "https://www.lowes.com/search?searchTerm=refrigerator"
+  },
+  {
+   "label": "lawn mower",
+   "href": "https://www.lowes.com/search?searchTerm=lawn%20mower"
+  },
+  {
+   "label": "weed wacker",
+   "href": "https://www.lowes.com/search?searchTerm=weed%20wacker"
+  },
+  {
+   "label": "vacuum",
+   "href": "https://www.lowes.com/search?searchTerm=vacuum"
+  },
+  {
+   "label": "vinyl floor",
+   "href": "https://www.lowes.com/search?searchTerm=vinyl%20floor"
+  },
+  {
+   "label": "vinyl siding",
+   "href": "https://www.lowes.com/search?searchTerm=vinyl%20siding"
+  },
+  {
+   "label": "exterior car accessory",
+   "href": "https://www.lowes.com/search?searchTerm=exterior%20car%20accessory"
+  },
+  {
+   "label": "quikrete",
+   "href": "https://www.lowes.com/search?searchTerm=quikrete"
+  },
+  {
+   "label": "plywood",
+   "href": "https://www.lowes.com/search?searchTerm=plywood"
+  },
+  {
+   "label": "ceiling fan",
+   "href": "https://www.lowes.com/search?searchTerm=ceiling%20fan"
+  },
+  {
+   "label": "vinyl flooring",
+   "href": "https://www.lowes.com/search?searchTerm=vinyl%20flooring"
+  },
+  {
+   "label": "the tile doctor scrub white",
+   "href": "https://www.lowes.com/search?searchTerm=the%20tile%20doctor%20scrub%20white"
+  },
+  {
+   "label": "klein tool",
+   "href": "https://www.lowes.com/search?searchTerm=klein%20tool"
+  },
+  {
+   "label": "drylok",
+   "href": "https://www.lowes.com/search?searchTerm=drylok"
+  },
+  {
+   "label": "snowblower",
+   "href": "https://www.lowes.com/search?searchTerm=snowblower"
+  },
+  {
+   "label": "Shop Now",
+   "href": "https://www.lowes.com/pl/Save-on-select-alexa-ring-blink-fire-tv-products/2610979844656"
+  },
+  {
+   "label": "Shop Now",
+   "href": "https://www.lowes.com/pl/SHOP-BATHROOM-DEALS/2220627017920"
+  },
+  {
+   "label": "Shop Now",
+   "href": "https://www.lowes.com/pl/Deals-on-grills-and-accessories/4294393574"
+  },
+  {
+   "label": "Shop Now",
+   "href": "https://www.lowes.com/pl/Fall-refresh-under-50/2211000121484"
+  },
+  {
+   "label": "Shop Now",
+   "href": "https://www.lowes.com/pl/New-power-tools/2220479030175"
+  },
+  {
+   "label": "Shop Now",
+   "href": "https://www.lowes.com/pl/Private-brands-patio/2311469772209"
+  },
+  {
+   "label": "Shop Now",
+   "href": "https://www.lowes.com/l/seasonal-inspiration"
+  },
+  {
+   "label": "Read Article",
+   "href": "https://www.lowes.com/n/how-to/diy-scarecrow"
+  },
+  {
+   "label": "Shop Now",
+   "href": "https://www.lowes.com/pl/Movie-night/1920008322135"
+  },
+  {
+   "label": "Read Article",
+   "href": "https://www.lowes.com/n/how-to/diy-floating-ghoul"
+  },
+  {
+   "label": "Shop Now",
+   "href": "https://www.lowes.com/pl/Refresh-your-outdoors/1459845140"
+  },
+  {
+   "label": "Read Article",
+   "href": "https://www.lowes.com/n/how-to/tomato-cage-halloween-ideas"
+  },
+  {
+   "label": "Shop Now",
+   "href": "https://www.lowes.com/pl/Enjoy-outdoors/4115382573"
+  },
+  {
+   "label": "Read Article",
+   "href": "https://www.lowes.com/n/how-to/diy-cement-skulls"
+  },
+  {
+   "label": "Shop Now",
+   "href": "https://www.lowes.com/pl/Refresh-your-patio/2211058895232"
+  },
+  {
+   "label": "Gift Zone",
+   "href": null
+  },
+  {
+   "label": "36\" Original Omnivore Griddle with Hard Cover 4 -Burner Liquid propane Flat Top Grill",
+   "href": "https://www.lowes.com/pd/Blackstone-Blackstone-36-in-Culinary-Griddle-with-Hard-Cover/5016187219"
+  },
+  {
+   "label": "Add to Cart",
+   "href": "https://www.lowes.com/pd/Blackstone-Blackstone-36-in-Culinary-Griddle-with-Hard-Cover/5016187219"
+  },
+  {
+   "label": "POWER+ 56-volt Cordless Battery String Trimmer and Leaf Blower and Combo Kit 2.5 Ah (Battery Included) (Charger Included)",
+   "href": "https://www.lowes.com/pd/EGO-56-volt-Cordless-Power-Equipment-Combo-Kit/5014702047"
+  },
+  {
+   "label": "Add to Cart",
+   "href": "https://www.lowes.com/pd/EGO-56-volt-Cordless-Power-Equipment-Combo-Kit/5014702047"
+  },
+  {
+   "label": "Iceflow Flip Straw Tumbler 30 Insulated Azure",
+   "href": "https://www.lowes.com/pd/Stanley-Stanley-IceFlow-Flip-Straw-Tumbler-30oz-Azule/5014850979"
+  },
+  {
+   "label": "Add to Cart",
+   "href": "https://www.lowes.com/pd/Stanley-Stanley-IceFlow-Flip-Straw-Tumbler-30oz-Azule/5014850979"
+  },
+  {
+   "label": "Rectangular Twill Gray Polyester Bolster Dog Bed L",
+   "href": "https://www.lowes.com/pd/Style-Selections-Rectangular-Twill-Gray-Polyester-Bolster-Dog-Bed-Large/5015428121"
+  },
+  {
+   "label": "Add to Cart",
+   "href": "https://www.lowes.com/pd/Style-Selections-Rectangular-Twill-Gray-Polyester-Bolster-Dog-Bed-Large/5015428121"
+  },
+  {
+   "label": "V20 20-volt 1/2-in Keyless Cordless Drill 1 -Batteries Included, and Charger Included",
+   "href": "https://www.lowes.com/pd/CRAFTSMAN-20-volt-Max-1-2-in-Keyless-Cordless-Drill-1-Batteries-Included-and-Charger-Included/5018700285"
+  },
+  {
+   "label": "Add to Cart",
+   "href": "https://www.lowes.com/pd/CRAFTSMAN-20-volt-Max-1-2-in-Keyless-Cordless-Drill-1-Batteries-Included-and-Charger-Included/5018700285"
+  },
+  {
+   "label": "Car Care Kit 7 -Count Liquid Car Exterior Cleaner",
+   "href": "https://www.lowes.com/pd/Armor-All-1-7-Count-Car-Exterior-Wash-Wax/5014642437"
+  },
+  {
+   "label": "Add to Cart",
+   "href": "https://www.lowes.com/pd/Armor-All-1-7-Count-Car-Exterior-Wash-Wax/5014642437"
+  },
+  {
+   "label": "Koda 12 Liquid propane Outdoor Pizza Oven",
+   "href": "https://www.lowes.com/pd/Ooni-Koda-12-Insulated-Steel-Hearth-Liquid-Propane-Outdoor-Pizza-Oven/5005414275"
+  },
+  {
+   "label": "Add to Cart",
+   "href": "https://www.lowes.com/pd/Ooni-Koda-12-Insulated-Steel-Hearth-Liquid-Propane-Outdoor-Pizza-Oven/5005414275"
+  },
+  {
+   "label": "Modern Chess Set - Acrylic Chess Board (Game Set)",
+   "href": "https://www.lowes.com/pd/Toy-Time-Modern-Chess-Set-Acrylic-Chess-Board-Game-Set/5014598363"
+  },
+  {
+   "label": "Add to Cart",
+   "href": "https://www.lowes.com/pd/Toy-Time-Modern-Chess-Set-Acrylic-Chess-Board-Game-Set/5014598363"
+  },
+  {
+   "label": "Indoor 49.2-ft LED Multicolor Strip Light",
+   "href": "https://www.lowes.com/pd/Govee-Adjustable-Lumen-Color-Changing-LED-Strip-Light/5015081905"
+  },
+  {
+   "label": "Add to Cart",
+   "href": "https://www.lowes.com/pd/Govee-Adjustable-Lumen-Color-Changing-LED-Strip-Light/5015081905"
+  },
+  {
+   "label": "Highland Women's Dark Rose Tint Landscape Fleece Work jacket ( S )",
+   "href": "https://www.lowes.com/pd/Carhartt-Highland-Women-s-Dark-Rose-Tint-Landscape-Fleece-Work-jacket-S/5018282917"
+  },
+  {
+   "label": "Add to Cart",
+   "href": "https://www.lowes.com/pd/Carhartt-Highland-Women-s-Dark-Rose-Tint-Landscape-Fleece-Work-jacket-S/5018282917"
+  },
+  {
+   "label": "Forerunner 265 Smart Watch with Step Counter, Heart Rate Monitor and GPS Enabled",
+   "href": "https://www.lowes.com/pd/Garmin-Forerunner-265-Smart-Watch-with-Step-Counter-Heart-Rate-Monitor-and-Gps-Enabled/5015174329"
+  },
+  {
+   "label": "Add to Cart",
+   "href": "https://www.lowes.com/pd/Garmin-Forerunner-265-Smart-Watch-with-Step-Counter-Heart-Rate-Monitor-and-Gps-Enabled/5015174329"
+  },
+  {
+   "label": "F28 Stratus 2K GPS Drone with Smart Flight Modes 12-MP Drone",
+   "href": "https://www.lowes.com/pd/Contixo-Drones-12-mp-Drone/5015288451"
+  },
+  {
+   "label": "Add to Cart",
+   "href": "https://www.lowes.com/pd/Contixo-Drones-12-mp-Drone/5015288451"
+  },
+  {
+   "label": "76.7-in H x 46.5-in W x 40.5-in D 2 -person Hemlock Fir Wood Infrared Sauna",
+   "href": "https://www.lowes.com/pd/SteamSpa-76-7-in-H-x-46-5-in-W-x-40-5-in-D-Wood/5015386651"
+  },
+  {
+   "label": "Add to Cart",
+   "href": "https://www.lowes.com/pd/SteamSpa-76-7-in-H-x-46-5-in-W-x-40-5-in-D-Wood/5015386651"
+  },
+  {
+   "label": "Deals of the Day",
+   "href": "https://www.lowes.com/l/savings/daily-deals"
+  },
+  {
+   "label": "LOWES Essentials",
+   "href": "https://www.lowes.com/pl/LOWES-essentials/2211386766018"
+  },
+  {
+   "label": "Fall Maintenance",
+   "href": "https://www.lowes.com/l/shop/seasonal-maintenance"
+  },
+  {
+   "label": "Holiday Decor",
+   "href": "https://www.lowes.com/c/Holiday-decorations"
+  },
+  {
+   "label": "Animal and Pet Care",
+   "href": "https://www.lowes.com/c/Animal-pet-care?int_cmp=Home%3AA2%3AAnimalPetCare%3AOther%3APC_Animal_Pet_Care"
+  },
+  {
+   "label": "Appliances",
+   "href": "https://www.lowes.com/c/Appliances?int_cmp=Home%3AA2%3AAppliances%3AOther%3APC_Appliances"
+  },
+  {
+   "label": "Automotive",
+   "href": "https://www.lowes.com/c/Automotive?int_cmp=Home%3AA2%3ANoDivision%3AOther%3APC_Automotive"
+  },
+  {
+   "label": "Bathroom",
+   "href": "https://www.lowes.com/c/Bathroom?int_cmp=Home%3AA2%3ABath%3AOther%3APC_Bathroom"
+  },
+  {
+   "label": "Blinds and Window Treatments",
+   "href": "https://www.lowes.com/c/Window-treatments-Home-decor?int_cmp=Home%3AA2%3ANoDivision%3AOther%3APC_Blinds_Window"
+  },
+  {
+   "label": "Building Supplies",
+   "href": "https://www.lowes.com/c/Building-supplies?int_cmp=Home%3AA2%3ABuildingMaterials%3AOther%3APC_Building_Supplies"
+  },
+  {
+   "label": "Cleaning Supplies",
+   "href": "https://www.lowes.com/c/Cleaning-supplies?int_cmp=Home%3AA2%3AHoliday%3AOther%3APC_Cleaning_Supplies"
+  },
+  {
+   "label": "Doors and Windows",
+   "href": "https://www.lowes.com/c/Windows-doors?int_cmp=Home%3AA2%3AWindowsDoors%3AOther%3APC_Doors_Windows"
+  },
+  {
+   "label": "Electrical",
+   "href": "https://www.lowes.com/c/Electrical?int_cmp=Home%3AA2%3AElectrical%3AOther%3APC_Electrical"
+  },
+  {
+   "label": "Flooring and Rugs",
+   "href": "https://www.lowes.com/c/Flooring?int_cmp=Home%3AA2%3AFlooring%3AOther%3APC_Flooring_Rugs"
+  },
+  {
+   "label": "Hardware",
+   "href": "https://www.lowes.com/c/Hardware?int_cmp=Home%3AA2%3AHardware%3AOther%3APC_Hardware"
+  },
+  {
+   "label": "Heating and Cooling",
+   "href": "https://www.lowes.com/c/Heating-cooling?int_cmp=Home%3AA2%3AHeatingCooling%3AOther%3APC_Heating_Cooling"
+  },
+  {
+   "label": "Home Decor and Furniture",
+   "href": "https://www.lowes.com/c/Home-decor?int_cmp=Home%3AA2%3AD%C3%A9cor%3AOther%3APC_Home_Decor"
+  },
+  {
+   "label": "Kitchen",
+   "href": "https://www.lowes.com/c/Kitchen?int_cmp=Home%3AA2%3AKitchen%3AOther%3APC_Kitchen"
+  },
+  {
+   "label": "Lawn and Garden",
+   "href": "https://www.lowes.com/c/Lawn-garden?int_cmp=Home%3AA2%3AKitchen%3AOther%3APC_Lawn_Garden"
+  }
+ ],
+ "body": [
+  "More Suggestions for You",
+  "refrigerator",
+  "lawn mower",
+  "weed wacker",
+  "vacuum",
+  "vinyl floor",
+  "vinyl siding",
+  "exterior car accessory",
+  "quikrete",
+  "plywood",
+  "ceiling fan",
+  "vinyl flooring",
+  "the tile doctor scrub white",
+  "klein tool",
+  "drylok",
+  "snowblower",
+  "Get Details",
+  "Shop Now",
+  "Shop Now",
+  "Shop Now",
+  "Shop Now",
+  "Shop Now",
+  "Get Details",
+  "Your Local Weather",
+  "Set your store to see the weather forecast for your area.",
+  "New Private Brand Patio Shop Now",
+  "Shop Now",
+  "Seasonal Projects and Inspiration Shop Now",
+  "Shop Now",
+  "How to Make a Scarecrow Read Article",
+  "Read Article",
+  "Outdoor Movie Night Shop Now",
+  "Shop Now",
+  "DIY Floating Ghoul Read Article",
+  "Read Article",
+  "Update your Backyard on a Budget Shop Now",
+  "Shop Now",
+  "How to Create Ghosts and Witches Using Tomato Cages Read Article",
+  "Read Article",
+  "Get Outdoors Shop Now",
+  "Shop Now",
+  "DIY Mortar Skulls Read Article",
+  "Read Article",
+  "Refresh Your Patio Shop Now",
+  "Shop Now",
+  "Blackstone 36\" Original Omnivore Griddle with Hard Cover 4 -Burner Liquid propane Flat Top Grill$299.00$399.00Save 25%34591K+ bought last weekAdd to Cart",
+  "Blackstone 36\" Original Omnivore Griddle with Hard Cover 4 -Burner Liquid propane Flat Top Grill",
+  "$299.00",
+  "$399.00Save 25%",
+  "3459",
+  "1K+ bought last week",
+  "Add to Cart",
+  "EGO POWER+ 56-volt Cordless Battery String Trimmer and Leaf Blower and Combo Kit 2.5 Ah (Battery Included) (Charger Included)$299.00$359.00Save 16%24011K+ bought last weekAdd to Cart",
+  "EGO POWER+ 56-volt Cordless Battery String Trimmer and Leaf Blower and Combo Kit 2.5 Ah (Battery Included) (Charger Included)",
+  "$299.00",
+  "$359.00Save 16%",
+  "2401",
+  "1K+ bought last week",
+  "Add to Cart",
+  "Stanley Iceflow Flip Straw Tumbler 30 Insulated Azure$35.00136In 100+ carts last weekAdd to Cart",
+  "Stanley Iceflow Flip Straw Tumbler 30 Insulated Azure",
+  "$35.00",
+  "136",
+  "In 100+ carts last week",
+  "Add to Cart",
+  "Heart & Herd Rectangular Twill Gray Polyester Bolster Dog Bed L$59.982581K+ bought last weekAdd to Cart",
+  "Heart & Herd Rectangular Twill Gray Polyester Bolster Dog Bed L",
+  "$59.98",
+  "258",
+  "1K+ bought last week",
+  "Add to Cart",
+  "CRAFTSMAN V20 20-volt 1/2-in Keyless Cordless Drill 1 -Batteries Included, and Charger Included$99.00106In 500+ carts last weekAdd to Cart",
+  "CRAFTSMAN V20 20-volt 1/2-in Keyless Cordless Drill 1 -Batteries Included, and Charger Included",
+  "$99.00",
+  "106",
+  "In 500+ carts last week",
+  "Add to Cart",
+  "Armor All Car Care Kit 7 -Count Liquid Car Exterior Cleaner$10.04$20.08Save 50%871K+ bought last weekAdd to Cart",
+  "Armor All Car Care Kit 7 -Count Liquid Car Exterior Cleaner",
+  "$10.04",
+  "$20.08Save 50%",
+  "87",
+  "1K+ bought last week",
+  "Add to Cart",
+  "Ooni Koda 12 Liquid propane Outdoor Pizza Oven$299.00$399.00Save 25%415In 100+ carts last weekAdd to Cart",
+  "Ooni Koda 12 Liquid propane Outdoor Pizza Oven",
+  "$299.00",
+  "$399.00Save 25%",
+  "415",
+  "In 100+ carts last week",
+  "Add to Cart",
+  "Toy Time Modern Chess Set - Acrylic Chess Board (Game Set)$69.981In 100 carts last weekAdd to Cart",
+  "Toy Time Modern Chess Set - Acrylic Chess Board (Game Set)",
+  "$69.98",
+  "In 100 carts last week",
+  "Add to Cart",
+  "Govee Indoor 49.2-ft LED Multicolor Strip Light$52.99$65.00Save 18%83100+ bought last weekAdd to Cart",
+  "Govee Indoor 49.2-ft LED Multicolor Strip Light",
+  "$52.99",
+  "$65.00Save 18%",
+  "83",
+  "100+ bought last week",
+  "Add to Cart",
+  "Carhartt Highland Women's Dark Rose Tint Landscape Fleece Work jacket ( S )$89.99Add to Cart",
+  "Carhartt Highland Women's Dark Rose Tint Landscape Fleece Work jacket ( S )",
+  "$89.99",
+  "Add to Cart",
+  "Garmin Forerunner 265 Smart Watch with Step Counter, Heart Rate Monitor and GPS Enabled$449.99497Add to Cart",
+  "Garmin Forerunner 265 Smart Watch with Step Counter, Heart Rate Monitor and GPS Enabled",
+  "$449.99",
+  "497",
+  "Add to Cart",
+  "Contixo F28 Stratus 2K GPS Drone with Smart Flight Modes 12-MP Drone$121.331In 70+ carts last weekAdd to Cart",
+  "Contixo F28 Stratus 2K GPS Drone with Smart Flight Modes 12-MP Drone",
+  "$121.33",
+  "In 70+ carts last week",
+  "Add to Cart",
+  "SteamSpa 76.7-in H x 46.5-in W x 40.5-in D 2 -person Hemlock Fir Wood Infrared Sauna$1,499.99$2,828.51Save 47%1041K+ views last weekAdd to Cart",
+  "SteamSpa 76.7-in H x 46.5-in W x 40.5-in D 2 -person Hemlock Fir Wood Infrared Sauna",
+  "$1,499.99",
+  "$2,828.51Save 47%",
+  "104",
+  "1K+ views last week",
+  "Add to Cart",
+  "Deals of the Day",
+  "LOWES Essentials",
+  "Fall Maintenance",
+  "Holiday Decor",
+  "Animal and Pet Care",
+  "Appliances",
+  "Automotive",
+  "Bathroom",
+  "Blinds and Window Treatments",
+  "Building Supplies",
+  "Cleaning Supplies",
+  "Doors and Windows",
+  "Electrical",
+  "Flooring and Rugs",
+  "Hardware",
+  "Heating and Cooling",
+  "Home Decor and Furniture",
+  "Kitchen",
+  "Lawn and Garden",
+  "Lighting and Ceiling Fans",
+  "Moulding and Millwork",
+  "Outdoor living and patio",
+  "Paint",
+  "Plumbing",
+  "Smart Home, Security and Wi-Fi",
+  "Sports and Fitness",
+  "Storage and Organization",
+  "Tools",
+  "Learn More",
+  "Learn More",
+  "Get Started",
+  "Learn More",
+  "Top Trending DealsView AllSave 25%allen + roth, Custom Cellular Shade$48.32 $64.42392Save 24%EGO, POWER+ 600 Series 56-volt, 21-in Push Battery Lawn Mower with (1) 6 Ah Battery Included$379.00 $499.008.6KSave 50%Whirlpool, Flexible Cooktop 30-in 4 burners 5.1-cu ft Single oven gas range Natural Gas Range ( Stainless Steel )This item is currently unavailable2.3KSave 41%DEWALT, 2-Tool 20-Volt Max Power Tool Combo Kit with Soft Case (2-Batteries and charger Included)This item is currently unavailable654",
+  "Save 25%allen + roth, Custom Cellular Shade$48.32 $64.42392",
+  "$48.32 $64.42",
+  "392",
+  "Save 24%EGO, POWER+ 600 Series 56-volt, 21-in Push Battery Lawn Mower with (1) 6 Ah Battery Included$379.00 $499.008.6K",
+  "$379.00 $499.00",
+  "8.6K",
+  "Save 50%Whirlpool, Flexible Cooktop 30-in 4 burners 5.1-cu ft Single oven gas range Natural Gas Range ( Stainless Steel )This item is currently unavailable2.3K",
+  "This item is currently unavailable",
+  "2.3K",
+  "Save 41%DEWALT, 2-Tool 20-Volt Max Power Tool Combo Kit with Soft Case (2-Batteries and charger Included)This item is currently unavailable654",
+  "This item is currently unavailable",
+  "654",
+  "4 Stars & AboveView AllSave 12%Arm & Hammer, Carpet cleaner Deodorizing Powder 42.6-oz$3.48 $3.98733Add to CartSave 33%CRAFTSMAN, V20 20 -Volt, 5 Ah 1 -Pack Lithium Ion (Li-ion)$99.00 $149.00379Add to Cart",
+  "Save 12%Arm & Hammer, Carpet cleaner Deodorizing Powder 42.6-oz$3.48 $3.98733Add to Cart",
+  "$3.48 $3.98",
+  "733",
+  "Add to Cart",
+  "Save 33%CRAFTSMAN, V20 20 -Volt, 5 Ah 1 -Pack Lithium Ion (Li-ion)$99.00 $149.00379Add to Cart",
+  "$99.00 $149.00",
+  "379",
+  "Add to Cart",
+  "We Picked These Deals for YouView AllRudolph the Red-Nosed Reindeer, 9.75-ft LED Bumble Animatronic Outdoor Christmas Decoration$499.00133Holiday Living, 7.5-ft New Kensington Pine Pre-lit Artificial Christmas Tree with Twinkling Color Changing LED Lights$349.00355Save 10%Haunted Living, 5-ft Ultra Posable Skeleton Halloween Decoration$44.98 $49.9826Rudolph the Red-Nosed Reindeer, 6-ft Yukon Cornelius Animatronic Outdoor Christmas Decoration$399.0045",
+  "Rudolph the Red-Nosed Reindeer, 9.75-ft LED Bumble Animatronic Outdoor Christmas Decoration$499.00133",
+  "$499.00",
+  "133",
+  "Holiday Living, 7.5-ft New Kensington Pine Pre-lit Artificial Christmas Tree with Twinkling Color Changing LED Lights$349.00355",
+  "$349.00",
+  "355",
+  "Save 10%Haunted Living, 5-ft Ultra Posable Skeleton Halloween Decoration$44.98 $49.9826",
+  "$44.98 $49.98",
+  "26",
+  "Rudolph the Red-Nosed Reindeer, 6-ft Yukon Cornelius Animatronic Outdoor Christmas Decoration$399.0045",
+  "$399.00",
+  "45",
+  "How to Get Rid of Mosquitoes",
+  "How to Get Rid of Mosquitoes",
+  "How to Clean an Air Conditioner",
+  "How to Clean an Air Conditioner",
+  "How to Repair Cracked Concrete",
+  "How to Repair Cracked Concrete",
+  "Create a Border Using Edging Stones",
+  "Create a Border Using Edging Stones",
+  "How to Build DIY Tote Shelves",
+  "How to Build DIY Tote Shelves",
+  "How to Install a Toilet",
+  "How to Install a Toilet",
+  "How to Build a Retaining Wall",
+  "How to Build a Retaining Wall",
+  "DIY Raised Garden Bed Instructions and Ideas",
+  "DIY Raised Garden Bed Instructions and Ideas",
+  "How to Install a Bathroom Vanity and Sink",
+  "How to Install a Bathroom Vanity and Sink",
+  "How to Copy Your Car Key at Lowe's",
+  "How to Copy Your Car Key at Lowe's",
+  "Sponsored",
+  "Elkay ezH2O Stainless steel 2 -Basin Push button Wall mount Filtered$2,553.991Add to Cart",
+  "Elkay ezH2O Stainless steel 2 -Basin Push button Wall mount Filtered",
+  "$2,553.99",
+  "Add to Cart",
+  "Glacier Fresh Push-in FPPWFU01 Water Filter Replacement for Frigidaire PurePour FPPWFU01 2-Pack$27.542Add to Cart",
+  "Glacier Fresh Push-in FPPWFU01 Water Filter Replacement for Frigidaire PurePour FPPWFU01 2-Pack",
+  "$27.54",
+  "Add to Cart",
+  "LuceAlberi Cordless Stick Vacuum 500W 45Kpa 45 Min Anti Tangle Lightweight Vac for Home Pet Hair Carpet$109.99$299.99Save 63%1Add to Cart",
+  "LuceAlberi Cordless Stick Vacuum 500W 45Kpa 45 Min Anti Tangle Lightweight Vac for Home Pet Hair Carpet",
+  "$109.99",
+  "$299.99Save 63%",
+  "Add to Cart",
+  "LuceAlberi Cordless Stick Vacuum Cleaner 500W 45KPA 50 Min Anti Tangle Pet Hair Floors$89.99$259.99Save 65%3Add to Cart",
+  "LuceAlberi Cordless Stick Vacuum Cleaner 500W 45KPA 50 Min Anti Tangle Pet Hair Floors",
+  "$89.99",
+  "$259.99Save 65%",
+  "Add to Cart",
+  "Midea 30-in 4 burners 6.1-cu ft Single oven gas range Natural Gas Range ( Black )$699.00$799.00Save 12%5Add to Cart",
+  "Midea 30-in 4 burners 6.1-cu ft Single oven gas range Natural Gas Range ( Black )",
+  "$699.00",
+  "$799.00Save 12%",
+  "Add to Cart",
+  "Glacier Fresh Push-in Refrigerator Water Filter Replacement for WF3CB PureSource 3 6-Pack$58.991Add to Cart",
+  "Glacier Fresh Push-in Refrigerator Water Filter Replacement for WF3CB PureSource 3 6-Pack",
+  "$58.99",
+  "Add to Cart",
+  "COWSAR 2 -Cup Programmable Commercial Drip coffee maker with Automatic Shut-Off ( Stainless Steel )$289.99$588.69Save 50%1Add to Cart",
+  "COWSAR 2 -Cup Programmable Commercial Drip coffee maker with Automatic Shut-Off ( Stainless Steel )",
+  "$289.99",
+  "$588.69Save 50%",
+  "Add to Cart",
+  "Glacier Fresh Push-in FPPWFU01 Water Filter Replacement for Frigidaire PurePour FPPWFU01 1-Pack$15.19$19.99Save 24%2Add to Cart",
+  "Glacier Fresh Push-in FPPWFU01 Water Filter Replacement for Frigidaire PurePour FPPWFU01 1-Pack",
+  "$15.19",
+  "$19.99Save 24%",
+  "Add to Cart",
+  "Glacier Fresh Twist-in Refrigerator Water Filter Replacement for LT800P 3-Pack$29.999Add to Cart",
+  "Glacier Fresh Twist-in Refrigerator Water Filter Replacement for LT800P 3-Pack",
+  "$29.99",
+  "Add to Cart",
+  "Dyson V8 Cyclone Cordless Pet Stick Vacuum Cleaner (Convertible to Handheld)$399.9985Add to Cart",
+  "Dyson V8 Cyclone Cordless Pet Stick Vacuum Cleaner (Convertible to Handheld)",
+  "$399.99",
+  "85",
+  "Add to Cart",
+  "Hotpoint 8.8-cu ft Chest Freezer Convertible to Refrigerator ( White )$299.00$349.00Save 14%4863Add to Cart",
+  "Hotpoint 8.8-cu ft Chest Freezer Convertible to Refrigerator ( White )",
+  "$299.00",
+  "$349.00Save 14%",
+  "4863",
+  "Add to Cart",
+  "Whirlpool Standard-Depth Family-Sized Capacity 29.58-cu ft 3 -Door 36-in Wide French Door Refrigerator with Ice Maker ( Fingerprint Resistant Stainless Finish ) ENERGY STAR Certified$1,999.00$2,999.00Save 33%1069Add to Cart",
+  "Whirlpool Standard-Depth Family-Sized Capacity 29.58-cu ft 3 -Door 36-in Wide French Door Refrigerator with Ice Maker ( Fingerprint Resistant Stainless Finish ) ENERGY STAR Certified",
+  "$1,999.00",
+  "$2,999.00Save 33%",
+  "1069",
+  "Add to Cart",
+  "KitchenAid 30 inch Self-cleaning Air Fry Microwave Wall Oven Combo ( PrintShield Stainless )$4,399.00$4,888.00Save 10%91Add to Cart",
+  "KitchenAid 30 inch Self-cleaning Air Fry Microwave Wall Oven Combo ( PrintShield Stainless )",
+  "$4,399.00",
+  "$4,888.00Save 10%",
+  "91",
+  "Add to Cart",
+  "KitchenAid 30-in Glass Top 5 burners 5.3-cu ft Air Fry Convection Oven Single oven electric range Electric Range ( Juniper )$1,799.00$2,999.00Save 40%78Add to Cart",
+  "KitchenAid 30-in Glass Top 5 burners 5.3-cu ft Air Fry Convection Oven Single oven electric range Electric Range ( Juniper )",
+  "$1,799.00",
+  "$2,999.00Save 40%",
+  "78",
+  "Add to Cart",
+  "Antarctic Star 17.5-in W 130 -Can Capacity Purple Cyberpunk RGB LED Light Freestanding Indoor Gaming Beverage Refrigerator$289.99$483.32Save 40%Add to Cart",
+  "Antarctic Star 17.5-in W 130 -Can Capacity Purple Cyberpunk RGB LED Light Freestanding Indoor Gaming Beverage Refrigerator",
+  "$289.99",
+  "$483.32Save 40%",
+  "Add to Cart",
+  "Glacier Fresh EDR1RXD1 Refrigerator Water Filter NSF/ANSI 53/372 Certified Compatible with W10295370A/ EDR1RXD1/ WHR1RXD1/ Filter 1/ P8RFWB2L/ 46-9930 6-Pack$109.99$179.99Save 38%Add to Cart",
+  "Glacier Fresh EDR1RXD1 Refrigerator Water Filter NSF/ANSI 53/372 Certified Compatible with W10295370A/ EDR1RXD1/ WHR1RXD1/ Filter 1/ P8RFWB2L/ 46-9930 6-Pack",
+  "$109.99",
+  "$179.99Save 38%",
+  "Add to Cart"
+ ],
+ "links": {
+  "internal": [
+   "https://main--lowes--jgrosskurth.aem.live/footer#consent"
+  ],
+  "external": [
+   "https://www.lowes.com/l/shop/mylowes-money-days?int_cmp=FW35_26_MyLowesMoney_GLOBAL",
+   "https://www.lowes.com/l/Credit",
+   "https://www.lowes.com/mylowes/orders",
+   "https://www.lowes.com/weekly-ad",
+   "https://www.lowes.com/l/Pro",
+   "https://www.lowes.com/",
+   "https://www.lowes.com/cart",
+   "https://www.lowes.com/l/seasonal-inspiration",
+   "https://www.lowes.com/c/Departments",
+   "https://www.lowes.com/l/shop/gift-cards",
+   "https://www.lowes.com/pl/Save-now/4294594589",
+   "https://www.lowes.com/pl/Fall-hosting/1811163654388",
+   "https://www.lowes.com/pl/Fall-clean-up/2558504917",
+   "https://www.lowes.com/pl/Time-to-tailgate/928980450",
+   "https://www.lowes.com/l/install",
+   "https://www.lowes.com/mylowes/projects",
+   "https://www.lowes.com/l/Pro/resources-for-pros",
+   "https://www.lowes.com/l/help/lowes-protection-plan",
+   "https://www.lowes.com/l/shop/rental",
+   "https://www.lowes.com/l/savings",
+   "https://www.lowes.com/pl/Deals/1611079983848?catalog=4294937007",
+   "https://www.lowes.com/pl/Deals/1611079983848?catalog=4294612886",
+   "https://www.lowes.com/pl/Deals/1611079983848?catalog=1011552124422",
+   "https://www.lowes.com/pl/Deals/1611079983848?catalog=4294936478",
+   "https://www.lowes.com/pl/Deals/1611079983848?catalog=4294737305",
+   "https://www.lowes.com/pl/Deals/1611079983848?catalog=4294935484",
+   "https://www.lowes.com/pl/Deals/1611079983848?catalog=4294935637",
+   "https://www.lowes.com/pl/Deals/1611079983848?catalog=4294934373",
+   "https://www.lowes.com/pl/Deals/1611079983848?catalog=4294934297",
+   "https://www.lowes.com/pl/Deals/1611079983848?catalog=4294729418",
+   "https://www.lowes.com/pl/Deals-on-halloween-decor/2510997357329",
+   "https://www.lowes.com/l/savings/daily-deals",
+   "https://www.lowes.com/mylowes/profile/wallet/promotions",
+   "https://www.lowes.com/pl/The-back-aisle/2021454685607?refinement=2",
+   "https://www.lowes.com/design/bathroom",
+   "https://www.lowes.com/l/shop/kitchen-ideas",
+   "https://www.lowes.com/shopbyroom/bestseller",
+   "https://www.lowes.com/room-visualizer",
+   "https://www.lowes.com/home-visualizers/blinds",
+   "https://www.lowes.com/c/paint",
+   "https://www.lowes.com/diy-projects-and-ideas",
+   "https://www.lowes.com/nl/diy-projects-and-ideas/t/appliances",
+   "https://www.lowes.com/nl/diy-projects-and-ideas/t/bathroom",
+   "https://www.lowes.com/nl/diy-projects-and-ideas/t/flooring",
+   "https://www.lowes.com/nl/diy-projects-and-ideas/t/kitchen",
+   "https://www.lowes.com/nl/diy-projects-and-ideas/t/lawn-garden",
+   "https://www.lowes.com/nl/diy-projects-and-ideas/t/outdoor-living",
+   "https://www.lowes.com/nl/diy-projects-and-ideas/t/paint",
+   "https://www.lowes.com/l/about/mylowes-rewards-homecare",
+   "https://www.lowes.com/c/Appliances",
+   "https://www.lowes.com/c/Bathroom",
+   "https://www.lowes.com/c/Lighting-ceiling-fans",
+   "https://www.lowes.com/c/Flooring",
+   "https://www.lowes.com/c/Building-supplies",
+   "https://www.lowes.com/c/Tools",
+   "https://www.lowes.com/c/Holiday-decorations",
+   "https://www.lowes.com/c/Outdoors",
+   "https://www.lowes.com/c/Lawn-garden",
+   "https://www.lowes.com/store/",
+   "https://www.lowes.com/l/about/terms-and-conditions-of-use",
+   "https://www.lowes.com/l/about/terms-and-conditions-of-use#AdditionalPersonalAccountTerms",
+   "https://www.lowes.com/l/about/privacy-and-security-statement",
+   "https://www.lowes.com/l/about/privacy-and-security-statement#NoticeofFinancialIncentivePrograms/LoyaltyPrograms",
+   "https://www.lowes.com/mylowes/lists",
+   "https://www.lowes.com/l/about/honor-our-military",
+   "https://www.lowes.com/l/about/firstresponders",
+   "https://www.lowes.com/l/your-recommendations",
+   "https://www.lowes.com/search?searchTerm=refrigerator",
+   "https://www.lowes.com/search?searchTerm=lawn%20mower",
+   "https://www.lowes.com/search?searchTerm=weed%20wacker",
+   "https://www.lowes.com/search?searchTerm=vacuum",
+   "https://www.lowes.com/search?searchTerm=vinyl%20floor",
+   "https://www.lowes.com/search?searchTerm=vinyl%20siding",
+   "https://www.lowes.com/search?searchTerm=exterior%20car%20accessory",
+   "https://www.lowes.com/search?searchTerm=quikrete",
+   "https://www.lowes.com/search?searchTerm=plywood",
+   "https://www.lowes.com/search?searchTerm=ceiling%20fan",
+   "https://www.lowes.com/search?searchTerm=vinyl%20flooring",
+   "https://www.lowes.com/search?searchTerm=the%20tile%20doctor%20scrub%20white",
+   "https://www.lowes.com/search?searchTerm=klein%20tool",
+   "https://www.lowes.com/search?searchTerm=drylok",
+   "https://www.lowes.com/search?searchTerm=snowblower",
+   "https://www.lowes.com/pl/Top-deals-on-dewalt-tools/2520898430100",
+   "https://www.lowes.com/l/shop/mylowes-money-days",
+   "https://www.lowes.com/pl/Major-appliance-special-values/2920130986014?int_cmp=Home%3A%3A%3A%3AFW33_26_Appliances_National",
+   "https://www.lowes.com/pl/Backsplash-refresh/2210857298664?int_cmp=Home%3A%3A%3A%3AFW35_26_Kitchen_Backsplash",
+   "https://www.lowes.com/pl/Fall-hosting/1811163654388?int_cmp=Home%3A%3A%3A%3AFW35_26_Fall_Hosting",
+   "https://www.lowes.com/pl/Fall-gardening/2120885942585?int_cmp=Home%3A%3A%3A%3AFW33_26_Fall_Planting",
+   "https://www.lowes.com/pl/Deals-on-tools-and-outdoor-power-equipment/3411464183736?int_cmp=Home%3A%3A%3A%3AFW35_26_Tools",
+   "https://www.lowes.com/pl/Save-on-select-alexa-ring-blink-fire-tv-products/2610979844656",
+   "https://www.lowes.com/pl/SHOP-BATHROOM-DEALS/2220627017920",
+   "https://www.lowes.com/pl/Deals-on-grills-and-accessories/4294393574",
+   "https://www.lowes.com/pl/Fall-refresh-under-50/2211000121484",
+   "https://www.lowes.com/pl/New-power-tools/2220479030175",
+   "https://www.lowes.com/firstresponders/validation",
+   "https://www.lowes.com/pl/Private-brands-patio/2311469772209",
+   "https://www.lowes.com/n/how-to/diy-scarecrow",
+   "https://www.lowes.com/pl/Movie-night/1920008322135",
+   "https://www.lowes.com/n/how-to/diy-floating-ghoul",
+   "https://www.lowes.com/pl/Refresh-your-outdoors/1459845140",
+   "https://www.lowes.com/n/how-to/tomato-cage-halloween-ideas",
+   "https://www.lowes.com/pl/Enjoy-outdoors/4115382573",
+   "https://www.lowes.com/n/how-to/diy-cement-skulls",
+   "https://www.lowes.com/pl/Refresh-your-patio/2211058895232",
+   "https://www.lowes.com/pl/Gifting/1711264269779",
+   "https://www.lowes.com/pd/Blackstone-Blackstone-36-in-Culinary-Griddle-with-Hard-Cover/5016187219",
+   "https://www.lowes.com/pd/EGO-56-volt-Cordless-Power-Equipment-Combo-Kit/5014702047",
+   "https://www.lowes.com/pd/Stanley-Stanley-IceFlow-Flip-Straw-Tumbler-30oz-Azule/5014850979",
+   "https://www.lowes.com/pd/Style-Selections-Rectangular-Twill-Gray-Polyester-Bolster-Dog-Bed-Large/5015428121",
+   "https://www.lowes.com/pd/CRAFTSMAN-20-volt-Max-1-2-in-Keyless-Cordless-Drill-1-Batteries-Included-and-Charger-Included/5018700285",
+   "https://www.lowes.com/pd/Armor-All-1-7-Count-Car-Exterior-Wash-Wax/5014642437",
+   "https://www.lowes.com/pd/Ooni-Koda-12-Insulated-Steel-Hearth-Liquid-Propane-Outdoor-Pizza-Oven/5005414275",
+   "https://www.lowes.com/pd/Toy-Time-Modern-Chess-Set-Acrylic-Chess-Board-Game-Set/5014598363",
+   "https://www.lowes.com/pd/Govee-Adjustable-Lumen-Color-Changing-LED-Strip-Light/5015081905",
+   "https://www.lowes.com/pd/Carhartt-Highland-Women-s-Dark-Rose-Tint-Landscape-Fleece-Work-jacket-S/5018282917",
+   "https://www.lowes.com/pd/Garmin-Forerunner-265-Smart-Watch-with-Step-Counter-Heart-Rate-Monitor-and-Gps-Enabled/5015174329",
+   "https://www.lowes.com/pd/Contixo-Drones-12-mp-Drone/5015288451",
+   "https://www.lowes.com/pd/SteamSpa-76-7-in-H-x-46-5-in-W-x-40-5-in-D-Wood/5015386651",
+   "https://www.lowes.com/pl/LOWES-essentials/2211386766018",
+   "https://www.lowes.com/l/shop/seasonal-maintenance",
+   "https://www.lowes.com/c/Animal-pet-care?int_cmp=Home%3AA2%3AAnimalPetCare%3AOther%3APC_Animal_Pet_Care",
+   "https://www.lowes.com/c/Appliances?int_cmp=Home%3AA2%3AAppliances%3AOther%3APC_Appliances",
+   "https://www.lowes.com/c/Automotive?int_cmp=Home%3AA2%3ANoDivision%3AOther%3APC_Automotive",
+   "https://www.lowes.com/c/Bathroom?int_cmp=Home%3AA2%3ABath%3AOther%3APC_Bathroom",
+   "https://www.lowes.com/c/Window-treatments-Home-decor?int_cmp=Home%3AA2%3ANoDivision%3AOther%3APC_Blinds_Window",
+   "https://www.lowes.com/c/Building-supplies?int_cmp=Home%3AA2%3ABuildingMaterials%3AOther%3APC_Building_Supplies",
+   "https://www.lowes.com/c/Cleaning-supplies?int_cmp=Home%3AA2%3AHoliday%3AOther%3APC_Cleaning_Supplies",
+   "https://www.lowes.com/c/Windows-doors?int_cmp=Home%3AA2%3AWindowsDoors%3AOther%3APC_Doors_Windows",
+   "https://www.lowes.com/c/Electrical?int_cmp=Home%3AA2%3AElectrical%3AOther%3APC_Electrical",
+   "https://www.lowes.com/c/Flooring?int_cmp=Home%3AA2%3AFlooring%3AOther%3APC_Flooring_Rugs",
+   "https://www.lowes.com/c/Hardware?int_cmp=Home%3AA2%3AHardware%3AOther%3APC_Hardware",
+   "https://www.lowes.com/c/Heating-cooling?int_cmp=Home%3AA2%3AHeatingCooling%3AOther%3APC_Heating_Cooling",
+   "https://www.lowes.com/c/Home-decor?int_cmp=Home%3AA2%3AD%C3%A9cor%3AOther%3APC_Home_Decor",
+   "https://www.lowes.com/c/Kitchen?int_cmp=Home%3AA2%3AKitchen%3AOther%3APC_Kitchen",
+   "https://www.lowes.com/c/Lawn-garden?int_cmp=Home%3AA2%3AKitchen%3AOther%3APC_Lawn_Garden",
+   "https://www.lowes.com/c/Lighting-ceiling-fans?int_cmp=Home%3AA2%3ALighting%3AOther%3APC_Lighting_Ceiling",
+   "https://www.lowes.com/c/Moulding-millwork?int_cmp=Home%3AA2%3AMillwork%3AOther%3APC_Moulding_Millwork",
+   "https://www.lowes.com/c/Outdoors?int_cmp=Home%3AA2%3APatio%3AOther%3APC_Moulding_Millwork",
+   "https://www.lowes.com/c/Paint?int_cmp=Home%3AA2%3APaint%3AOther%3APC_Paint",
+   "https://www.lowes.com/c/Plumbing?int_cmp=Home%3AA2%3ARoughPlumbing%3AOther%3APC_Plumbing",
+   "https://www.lowes.com/c/Smart-home-security-wi-fi?int_cmp=Home%3AA2%3ASmartHome%3AOther%3APC_Smart_Home_Wifi",
+   "https://www.lowes.com/c/Sports-fitness?int_cmp=Home%3AA2%3ASportsFitness%3AOther%3APC_Sports_Fitness",
+   "https://www.lowes.com/c/Storage-organization?int_cmp=Home%3AA2%3AStorageOrganization%3AOther%3APC_Storage_Organization",
+   "https://www.lowes.com/c/Tools?int_cmp=Home%3AA2%3ATools%3AOther%3APC_Tools",
+   "https://www.lowes.com/n/ideas-inspiration/fall-pumpkins-to-carve",
+   "https://www.lowes.com/l/install/window-treatment-installation",
+   "https://www.lowes.com/l/about/how-we-help",
+   "https://www.lowes.com/configure/blinds/allen-roth-allen-roth-Cellular-Shades/5004860755",
+   "https://www.lowes.com/pd/EGO-POWER-56-volt-21-in-Push-Cordless-Lawn-Mower-6-Ah-Battery-Charger-Included/5013743021",
+   "https://www.lowes.com/pd/Whirlpool-30-in-4-Burners-5-1-cu-ft-Freestanding-Natural-Gas-Range-Stainless-Steel/5013800201",
+   "https://www.lowes.com/pd/DEWALT-2-Tool-20-Volt-Max-Power-Tool-Combo-Kit-with-Soft-Case-Charger-Included-and-2-Batteries-Included/50169133",
+   "https://www.lowes.com/pd/Arm-Hammer-Fresh-Scent-Carpet-Cleaning-Solution-Kit-Powder-42-6-oz-Odor-Eliminator-Eco-Friendly-Safe-for-Upholstery-Sprinkle-Application/1001857970",
+   "https://www.lowes.com/pd/CRAFTSMAN-V20-20-Volt-5-Ah-1-Pack-Lithium-Ion-Li-ion-Battery-Kit/5016858181",
+   "https://www.lowes.com/pl/Deals/1611079983848",
+   "https://www.lowes.com/pd/Rudolph-the-Red-Nosed-Reindeer-9-75-ft-LED-Bumble-Animatronic-Yard-Decoration/5015088219",
+   "https://www.lowes.com/pd/Holiday-Living-7-5-ft-New-Kensington-Pine-Pre-lit-Artificial-Christmas-Tree-with-Twinkling-Color-Changing-LED-Lights/5016065631",
+   "https://www.lowes.com/pd/Haunted-Living-HL-5FT-ULTRA-POSABLE-SKELETON/5017627123",
+   "https://www.lowes.com/pd/Rudolph-the-Red-Nosed-Reindeer-6-ft-Yukon-Cornelius-Animatronic-Yard-Decoration/5016071249",
+   "https://www.lowes.com/n/how-to/get-rid-of-mosquitoes",
+   "https://www.lowes.com/n/how-to/clean-an-air-conditioner",
+   "https://www.lowes.com/n/how-to/simple-concrete-repairs",
+   "https://www.lowes.com/n/how-to/create-a-border-using-edging-stones",
+   "https://www.lowes.com/n/how-to/tote-shelves",
+   "https://www.lowes.com/n/how-to/replace-a-toilet",
+   "https://www.lowes.com/n/how-to/build-a-block-retaining-wall",
+   "https://www.lowes.com/n/how-to/how-to-build-a-raised-garden-bed",
+   "https://www.lowes.com/n/how-to/install-vanity-sink",
+   "https://www.lowes.com/n/how-to/create-spare-key-fob",
+   "https://www.lowes.com/pd/Elkay-Bottle-Filling-Station-Stainless-Steel-2-Basin-Push-Button-Wall-Mount-Bottle-Filler-Drinking-Fountain/1000704580",
+   "https://www.lowes.com/pd/Glacier-Fresh-Push-in-FPPWFU01-Water-Filter-Replacement-for-Frigidaire-PurePour-FPPWFU01-2-Pack/8033026?vid=509158",
+   "https://www.lowes.com/pd/LuceAlberi-Cordless-Stick-Vacuum-500W-45Kpa-45-Min-Anti-Tangle-Lightweight-Vac-for-Home-Pet-Hair-Carpet/105540763?vid=531428",
+   "https://www.lowes.com/pd/LuceAlberi-Cordless-Stick-Vacuum-Cleaner-500W-45KPA-50-Min-Anti-Tangle-Pet-Hair-Floors/105453536?vid=531428",
+   "https://www.lowes.com/pd/Midea-30-in-4-burners-6-1-cu-ft-Freestanding-Natural-Gas-Range-Black/5018377343",
+   "https://www.lowes.com/pd/Glacier-Fresh-Push-in-Refrigerator-Water-Filter-Replacement-for-WF3CB-PureSource-3-6-Pack/7901435?vid=509158",
+   "https://www.lowes.com/pd/COWSAR-2-Cup-Programmable-Commercial-Residential-Drip-coffee-maker-with-Automatic-Shut-Off-Stainless-Steel/7037806?vid=119419",
+   "https://www.lowes.com/pd/Glacier-Fresh-Push-in-FPPWFU01-Water-Filter-Replacement-for-Frigidaire-PurePour-FPPWFU01-1-Pack/8033012?vid=509158",
+   "https://www.lowes.com/pd/Glacier-Fresh-Twist-in-Refrigerator-Water-Filter-Replacement-for-LT800P-3-Pack/8000791?vid=509158",
+   "https://www.lowes.com/pd/Dyson-V8-Cyclone-Cordless-Pet-Stick-Vacuum-Cleaner-Cordless-Pet-Stick-Vacuum-Cleaner-Convertible-to-Handheld/5018938471",
+   "https://www.lowes.com/pd/Hotpoint-Hotpoint-8-8-Cu-Ft-Chest-Freezer/5014938527",
+   "https://www.lowes.com/pd/Whirlpool-Whirlpool-French-Door-Refrigerator/5015747937",
+   "https://www.lowes.com/pd/KitchenAid-30-inch-Self-cleaning-Air-Fry-Microwave-Wall-Oven-Combo-PrintShield-Stainless/5017280017",
+   "https://www.lowes.com/pd/KitchenAid-KitchenAid-5-3-cu-ft-Smart-Slide-in-Electric-Range-with-Two-Even-Heat-Hyper-Elements-and-Convection-Cooking-Modes/5016618113",
+   "https://www.lowes.com/pd/Antarctic-Star-17-5-in-W-130-Can-Capacity-Freestanding-Indoor-Beverage-Refrigerator/105448594?vid=507907",
+   "https://www.lowes.com/pd/Glacier-Fresh-Push-in-Replacement-for-Whirlpool-EDR1RXD1-Refrigerator-Water-Filter-NSF-53-6-Pack/8715564?vid=509158",
+   "https://www.adobe.com/privacy.html",
+   "https://www.adobe.com/legal/terms.html",
+   "https://www.adobe.com/privacy/ca-rights.html",
+   "https://www.adobe.com/privacy/opt-out.html#interest-based-ads"
+  ]
+ },
+ "media": {
+  "images": [
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1823e74ebe2fa46b512dfbf42ff0df4dce2fba8fa.svg?width=750&format=svg&optimize=medium",
+    "alt": "",
+    "w": 72,
+    "h": 72,
+    "localPath": "stardust/current/assets/media/media_1823e74ebe2fa46b512dfbf42ff0df4dce2fba8fa-059d0b.svg",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1c758a25886575cf1aee2c0a6e6123f04a713d4b0.svg?width=750&format=svg&optimize=medium",
+    "alt": "",
+    "w": 24,
+    "h": 24,
+    "localPath": "stardust/current/assets/media/media_1c758a25886575cf1aee2c0a6e6123f04a713d4b0-9e3712.svg",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_10d272fa9731f1d323e7cccba982cecab03c28985.svg?width=750&format=svg&optimize=medium",
+    "alt": "",
+    "w": 12,
+    "h": 8,
+    "localPath": "stardust/current/assets/media/media_10d272fa9731f1d323e7cccba982cecab03c28985-387829.svg",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_10df33eaae1a10a5140b28b347a4d62ec68ab82d8.svg?width=750&format=svg&optimize=medium",
+    "alt": "",
+    "w": 16,
+    "h": 16,
+    "localPath": "stardust/current/assets/media/media_10df33eaae1a10a5140b28b347a4d62ec68ab82d8-0da201.svg",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1e690f7313479a06d0af75540dc0a2e9ad1abc76c.svg?width=750&format=svg&optimize=medium",
+    "alt": "",
+    "w": 16,
+    "h": 16,
+    "localPath": "stardust/current/assets/media/media_1e690f7313479a06d0af75540dc0a2e9ad1abc76c-fca710.svg",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_130705d1df2200484a9795282958f0b019e251cbd.svg?width=750&format=svg&optimize=medium",
+    "alt": "",
+    "w": 24,
+    "h": 24,
+    "localPath": "stardust/current/assets/media/media_130705d1df2200484a9795282958f0b019e251cbd-a57fb1.svg",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1c12822e80ec76465a62ff59f9733c6c399019cea.svg?width=750&format=svg&optimize=medium",
+    "alt": "",
+    "w": 24,
+    "h": 24,
+    "localPath": "stardust/current/assets/media/media_1c12822e80ec76465a62ff59f9733c6c399019cea-331488.svg",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_102564b128cadf9d33d4cd0b9f968757d5e797714.svg?width=750&format=svg&optimize=medium",
+    "alt": "",
+    "w": 24,
+    "h": 24,
+    "localPath": "stardust/current/assets/media/media_102564b128cadf9d33d4cd0b9f968757d5e797714-c9ba9a.svg",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_15214a98397a2d7261159fc81864ee92a39920ce9.svg?width=750&format=svg&optimize=medium",
+    "alt": "",
+    "w": 16,
+    "h": 16,
+    "localPath": "stardust/current/assets/media/media_15214a98397a2d7261159fc81864ee92a39920ce9-dbe467.svg",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1a38ebafd10f112591a607e9ed37ad7171eee044b.svg?width=750&format=svg&optimize=medium",
+    "alt": "",
+    "w": 16,
+    "h": 16,
+    "localPath": "stardust/current/assets/media/media_1a38ebafd10f112591a607e9ed37ad7171eee044b-aec7b2.svg",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1771b13fd7d8c49c480cd81b67f0e036e5717d8c3.svg?width=750&format=svg&optimize=medium",
+    "alt": "",
+    "w": 16,
+    "h": 16,
+    "localPath": "stardust/current/assets/media/media_1771b13fd7d8c49c480cd81b67f0e036e5717d8c3-718d68.svg",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1aa5c68b653b1c259782bfdb64eb3360c9b9e6107.svg?width=750&format=svg&optimize=medium",
+    "alt": "",
+    "w": 16,
+    "h": 16,
+    "localPath": "stardust/current/assets/media/media_1aa5c68b653b1c259782bfdb64eb3360c9b9e6107-61be7b.svg",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_12242aa8aed79f2847d6345b6a0fe15472d4eb911.jpg?width=2000&format=webply&optimize=medium",
+    "alt": "Save up to $100 on Select DEWALT Tools. Shop now.",
+    "w": 2000,
+    "h": 227,
+    "localPath": "stardust/current/assets/media/media_12242aa8aed79f2847d6345b6a0fe15472d4eb911-ca4020.jpg",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_182233921d85373e5557b7661c4d67c37ebf99e96.png?width=2000&format=webply&optimize=medium",
+    "alt": "Get up to $20 MyLowe’s Money on an eligible purchase. Offer ends 10/14/26. Learn more now.",
+    "w": 504,
+    "h": 480,
+    "localPath": "stardust/current/assets/media/media_182233921d85373e5557b7661c4d67c37ebf99e96-729dc7.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1ee99115c696cfac6f1473d4262972def9f3b96ec.png?width=2000&format=webply&optimize=medium",
+    "alt": "Up to 35% off Select Major Appliances. Offer ends 10/7/26. Shop all deals now.",
+    "w": 1580,
+    "h": 480,
+    "localPath": "stardust/current/assets/media/media_1ee99115c696cfac6f1473d4262972def9f3b96ec-98b9eb.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1d666204a2d0b838ddf7c200926fc0f840f6420e5.png?width=2000&format=webply&optimize=medium",
+    "alt": "Refresh your kitchen backsplash before the holiday rush. Shop now.",
+    "w": 1580,
+    "h": 480,
+    "localPath": "stardust/current/assets/media/media_1d666204a2d0b838ddf7c200926fc0f840f6420e5-c3ec3e.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1329017e121ba5969398f14bb46a7f1566a068e18.png?width=2000&format=webply&optimize=medium",
+    "alt": "Make the most of fall. My Lowe’s Rewards members earn 3 x points on select purchases. Shop now.",
+    "w": 1580,
+    "h": 480,
+    "localPath": "stardust/current/assets/media/media_1329017e121ba5969398f14bb46a7f1566a068e18-59f5ab.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_13d26c37d2ddd5bcb2128eae46c16842b9542a1e2.png?width=500&format=webply&optimize=medium",
+    "alt": "Up to 65% off Select Alexa, Ring, Blink and Fire TV Products. Offer Ends 10/7/26. Shop now.",
+    "w": 400,
+    "h": 420,
+    "localPath": "stardust/current/assets/media/media_13d26c37d2ddd5bcb2128eae46c16842b9542a1e2-84ce0e.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1f20f87ed1fa3339b3a7b5db3a3ddacb4762406b6.png?width=500&format=webply&optimize=medium",
+    "alt": "Up to 40% off Select Bathroom Products. Shop now.",
+    "w": 400,
+    "h": 420,
+    "localPath": "stardust/current/assets/media/media_1f20f87ed1fa3339b3a7b5db3a3ddacb4762406b6-d04491.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_10a536183da532813e5594dc8291e07eac83e6cb1.png?width=500&format=webply&optimize=medium",
+    "alt": "Up to 30% off Select Grills and Accessories. Shop now.",
+    "w": 400,
+    "h": 420,
+    "localPath": "stardust/current/assets/media/media_10a536183da532813e5594dc8291e07eac83e6cb1-81211e.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1cd061a50cec206619d2437063444369230932422.png?width=500&format=webply&optimize=medium",
+    "alt": "Bring home fall style under $50. Shop now.",
+    "w": 400,
+    "h": 420,
+    "localPath": "stardust/current/assets/media/media_1cd061a50cec206619d2437063444369230932422-88f101.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_18732229f47dd9df902590d37abe54154329d53f3.png?width=500&format=webply&optimize=medium",
+    "alt": "Explore what’s new in tools from trusted brands like Kobalt, DEWALT, CRAFTSMAN and Bosch. Shop now.",
+    "w": 400,
+    "h": 420,
+    "localPath": "stardust/current/assets/media/media_18732229f47dd9df902590d37abe54154329d53f3-3da8eb.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_172221981ee2491462e958b5e57954c55d5039c07.jpg?width=1200&format=webply&optimize=medium",
+    "alt": "Home Care + Home maintenance subscription. 7 services 2 annual visits. $99 a year. Learn more now.",
+    "w": 1200,
+    "h": 257,
+    "localPath": "stardust/current/assets/media/media_172221981ee2491462e958b5e57954c55d5039c07-7fe163.jpg",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_10f22bbf6fc8be3e96f6c47790353e28eb095c71e.png?width=1200&format=webply&optimize=medium",
+    "alt": "First responders, for First Responders Appreciation Month, here’s $10 MyLowe’s Money. Verify now.",
+    "w": 1138,
+    "h": 500,
+    "localPath": "stardust/current/assets/media/media_10f22bbf6fc8be3e96f6c47790353e28eb095c71e-ec205c.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_18e2d91f5544f0fd0b8f392ac10890ae6af9ae44e.png?width=400&format=webply&optimize=medium",
+    "alt": "New Private Brand Patio",
+    "w": 400,
+    "h": 225,
+    "localPath": "stardust/current/assets/media/media_18e2d91f5544f0fd0b8f392ac10890ae6af9ae44e-efa4a0.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1089c900176a208ab50b78af1e67aa6c3706b4708.jpg?width=400&format=webply&optimize=medium",
+    "alt": "Seasonal Projects and Inspiration",
+    "w": 400,
+    "h": 225,
+    "localPath": "stardust/current/assets/media/media_1089c900176a208ab50b78af1e67aa6c3706b4708-24841a.jpg",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1fc31292fa9b3e48f5ec397966506af0cc8a45de1.png?width=400&format=webply&optimize=medium",
+    "alt": "How to Make a Scarecrow",
+    "w": 400,
+    "h": 225,
+    "localPath": "stardust/current/assets/media/media_1fc31292fa9b3e48f5ec397966506af0cc8a45de1-b2531c.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1321397975e8d819d990db78cf3f9ab2f111f7c4a.png?width=400&format=webply&optimize=medium",
+    "alt": "Outdoor Movie Night",
+    "w": 400,
+    "h": 226,
+    "localPath": "stardust/current/assets/media/media_1321397975e8d819d990db78cf3f9ab2f111f7c4a-d77f80.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_160d88dcbc7b49725eb5675d9c980b1c96043a23e.png?width=400&format=webply&optimize=medium",
+    "alt": "DIY Floating Ghoul",
+    "w": 400,
+    "h": 224,
+    "localPath": "stardust/current/assets/media/media_160d88dcbc7b49725eb5675d9c980b1c96043a23e-2284bc.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1484c8b86256c79d8cc28e268bb2872585d9a6c93.png?width=400&format=webply&optimize=medium",
+    "alt": "Update your Backyard on a Budget",
+    "w": 400,
+    "h": 225,
+    "localPath": "stardust/current/assets/media/media_1484c8b86256c79d8cc28e268bb2872585d9a6c93-5cd2ab.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1da20afbe33dac35ccabcbb53611cc17afa681ac6.png?width=400&format=webply&optimize=medium",
+    "alt": "How to Create Ghosts and Witches Using Tomato Cages",
+    "w": 400,
+    "h": 225,
+    "localPath": "stardust/current/assets/media/media_1da20afbe33dac35ccabcbb53611cc17afa681ac6-d9d8ca.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1f48b84c0e8532e0df9f5ae45de0139c555422ce1.png?width=400&format=webply&optimize=medium",
+    "alt": "Get Outdoors",
+    "w": 400,
+    "h": 225,
+    "localPath": "stardust/current/assets/media/media_1f48b84c0e8532e0df9f5ae45de0139c555422ce1-47aac9.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1c7c61124256bd7d55f851afda1ac5b24fbd6cb62.png?width=400&format=webply&optimize=medium",
+    "alt": "DIY Mortar Skulls",
+    "w": 400,
+    "h": 224,
+    "localPath": "stardust/current/assets/media/media_1c7c61124256bd7d55f851afda1ac5b24fbd6cb62-d2a6c7.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1c6662b5dcf2861a868b1702e019607fa43c8be72.png?width=400&format=webply&optimize=medium",
+    "alt": "Refresh Your Patio",
+    "w": 400,
+    "h": 225,
+    "localPath": "stardust/current/assets/media/media_1c6662b5dcf2861a868b1702e019607fa43c8be72-870d49.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1e1b33a00a8199709ebd8c70436ee93038224ed92.png?width=750&format=webply&optimize=medium",
+    "alt": "Find great gifts for everyone on your list in the Gift Zone. Shop all now.",
+    "w": 496,
+    "h": 494,
+    "localPath": "stardust/current/assets/media/media_1e1b33a00a8199709ebd8c70436ee93038224ed92-bdde27.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1f692aa2112b4cb04f8b8371966899183809d3bd1.jpg?width=300&format=webply&optimize=medium",
+    "alt": "Blackstone - 36\" Original Omnivore Griddle with Hard Cover 4 -Burner Liquid propane Flat Top Grill",
+    "w": 276,
+    "h": 276,
+    "localPath": "stardust/current/assets/media/media_1f692aa2112b4cb04f8b8371966899183809d3bd1-4aa6e4.jpg",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_13bddb794be44aa642a0fa88844012c6e7b67823f.jpg?width=300&format=webply&optimize=medium",
+    "alt": "EGO - POWER+ 56-volt Cordless Battery String Trimmer and Leaf Blower and Combo Kit 2.5 Ah (Batter...",
+    "w": 276,
+    "h": 276,
+    "localPath": "stardust/current/assets/media/media_13bddb794be44aa642a0fa88844012c6e7b67823f-d7c412.jpg",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1add778137c0b647c187fdd24b5bb0064de83704e.png?width=300&format=webply&optimize=medium",
+    "alt": "Stanley - Iceflow Flip Straw Tumbler 30 Insulated Azure",
+    "w": 276,
+    "h": 276,
+    "localPath": "stardust/current/assets/media/media_1add778137c0b647c187fdd24b5bb0064de83704e-0b236c.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1a7492a19bb2c1ec878892ff7fc89cfb24da1fe2c.jpg?width=300&format=webply&optimize=medium",
+    "alt": "Heart & Herd - Rectangular Twill Gray Polyester Bolster Dog Bed L",
+    "w": 276,
+    "h": 276,
+    "localPath": "stardust/current/assets/media/media_1a7492a19bb2c1ec878892ff7fc89cfb24da1fe2c-ac1e22.jpg",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_17b152b41ad9cc80d9d0f86efafac5c85cde8a848.jpg?width=300&format=webply&optimize=medium",
+    "alt": "CRAFTSMAN - V20 20-volt 1/2-in Keyless Cordless Drill 1 -Batteries Included, and Charger Included",
+    "w": 276,
+    "h": 276,
+    "localPath": "stardust/current/assets/media/media_17b152b41ad9cc80d9d0f86efafac5c85cde8a848-311398.jpg",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1ec1b9d53e0c601691d78cfd333b84d7a3b06e4da.jpg?width=300&format=webply&optimize=medium",
+    "alt": "Armor All - Car Care Kit 7 -Count Liquid Car Exterior Cleaner",
+    "w": 276,
+    "h": 276,
+    "localPath": "stardust/current/assets/media/media_1ec1b9d53e0c601691d78cfd333b84d7a3b06e4da-4baac5.jpg",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1dca0af23ea89d6402219a98f78cf1ec0b3f8b640.jpg?width=300&format=webply&optimize=medium",
+    "alt": "Ooni - Koda 12 Liquid propane Outdoor Pizza Oven",
+    "w": 276,
+    "h": 276,
+    "localPath": "stardust/current/assets/media/media_1dca0af23ea89d6402219a98f78cf1ec0b3f8b640-972dc3.jpg",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1c845341552b7d71cdaaae3df75c6215932bd72b2.jpg?width=300&format=webply&optimize=medium",
+    "alt": "Toy Time - Modern Chess Set - Acrylic Chess Board (Game Set)",
+    "w": 276,
+    "h": 276,
+    "localPath": "stardust/current/assets/media/media_1c845341552b7d71cdaaae3df75c6215932bd72b2-c286ee.jpg",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_10a5c54b102ec5e0da4b4879a9cfbe7b9dcb7bd3c.png?width=300&format=webply&optimize=medium",
+    "alt": "Govee - Indoor 49.2-ft LED Multicolor Strip Light",
+    "w": 276,
+    "h": 276,
+    "localPath": "stardust/current/assets/media/media_10a5c54b102ec5e0da4b4879a9cfbe7b9dcb7bd3c-ec3fc3.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1730b60e940d72e54024bd2e381af88c6b2584699.jpg?width=300&format=webply&optimize=medium",
+    "alt": "Carhartt - Highland Women's Dark Rose Tint Landscape Fleece Work jacket ( S )",
+    "w": 276,
+    "h": 276,
+    "localPath": "stardust/current/assets/media/media_1730b60e940d72e54024bd2e381af88c6b2584699-b5f427.jpg",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1855b5c5f8982ad294cbf045947900eda0734db38.jpg?width=300&format=webply&optimize=medium",
+    "alt": "Garmin - Forerunner 265 Smart Watch with Step Counter, Heart Rate Monitor and GPS Enabled",
+    "w": 276,
+    "h": 276,
+    "localPath": "stardust/current/assets/media/media_1855b5c5f8982ad294cbf045947900eda0734db38-98e327.jpg",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_173a04cb72a97f80a8356b4ae2de131236e54fb9c.jpg?width=300&format=webply&optimize=medium",
+    "alt": "Contixo - F28 Stratus 2K GPS Drone with Smart Flight Modes 12-MP Drone",
+    "w": 276,
+    "h": 276,
+    "localPath": "stardust/current/assets/media/media_173a04cb72a97f80a8356b4ae2de131236e54fb9c-ec84c5.jpg",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_10c05dc0a14448a2cd0ca4da18b02a430379e932c.png?width=600&format=webply&optimize=medium",
+    "alt": "Shop Deals of the Day now.",
+    "w": 600,
+    "h": 130,
+    "localPath": "stardust/current/assets/media/media_10c05dc0a14448a2cd0ca4da18b02a430379e932c-757f9e.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1cd03b13b3ddea0344638ff182575a1c5d60fc7c3.png?width=600&format=webply&optimize=medium",
+    "alt": "Discover new essentials under $10. Find the home basics you need at prices you’ll love. Shop now.",
+    "w": 600,
+    "h": 130,
+    "localPath": "stardust/current/assets/media/media_1cd03b13b3ddea0344638ff182575a1c5d60fc7c3-25758d.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1853f5494f28af034ed752c1969f42e1bbdb38fd6.png?width=600&format=webply&optimize=medium",
+    "alt": "Shop Fall Maintenance now.",
+    "w": 500,
+    "h": 108,
+    "localPath": "stardust/current/assets/media/media_1853f5494f28af034ed752c1969f42e1bbdb38fd6-a1a22c.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_14484ec62af279345166d24bc0910d900c94649dd.png?width=600&format=webply&optimize=medium",
+    "alt": "Shop Holiday Decor now.",
+    "w": 500,
+    "h": 108,
+    "localPath": "stardust/current/assets/media/media_14484ec62af279345166d24bc0910d900c94649dd-b293af.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_132d884ac2b000ea729ac9013a5c0fdcab4cc4e37.png?width=400&format=webply&optimize=medium",
+    "alt": "Shop Animal and Pet Care Products.",
+    "w": 249,
+    "h": 99,
+    "localPath": "stardust/current/assets/media/media_132d884ac2b000ea729ac9013a5c0fdcab4cc4e37-b75959.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1ab6f36d1afb61f77c43abc96fc92b118a1ea6882.png?width=400&format=webply&optimize=medium",
+    "alt": "Shop Appliances.",
+    "w": 249,
+    "h": 99,
+    "localPath": "stardust/current/assets/media/media_1ab6f36d1afb61f77c43abc96fc92b118a1ea6882-599d06.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_12253dd5cb41f6fe0014ffae24f6de1aa80015c95.png?width=400&format=webply&optimize=medium",
+    "alt": "Shop Automotive Products.",
+    "w": 249,
+    "h": 99,
+    "localPath": "stardust/current/assets/media/media_12253dd5cb41f6fe0014ffae24f6de1aa80015c95-3f909d.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_12216092a81baef0d7a2c1a833999f7748778c2f3.png?width=400&format=webply&optimize=medium",
+    "alt": "Shop Bathroom Products.",
+    "w": 249,
+    "h": 99,
+    "localPath": "stardust/current/assets/media/media_12216092a81baef0d7a2c1a833999f7748778c2f3-52b5c4.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1d29c5a842074452c59641ae8c9f152580dbdbaf3.png?width=400&format=webply&optimize=medium",
+    "alt": "Shop Blinds and Window Treatments.",
+    "w": 249,
+    "h": 99,
+    "localPath": "stardust/current/assets/media/media_1d29c5a842074452c59641ae8c9f152580dbdbaf3-03d2db.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1e88ff874e7643e4ace6cc81411adea705279d451.png?width=400&format=webply&optimize=medium",
+    "alt": "Shop Building Supplies.",
+    "w": 249,
+    "h": 99,
+    "localPath": "stardust/current/assets/media/media_1e88ff874e7643e4ace6cc81411adea705279d451-92ec98.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1bcb2081acb8e6a92b79004b7197780b5b0f9dd26.png?width=400&format=webply&optimize=medium",
+    "alt": "Shop Cleaning Supplies.",
+    "w": 367,
+    "h": 147,
+    "localPath": "stardust/current/assets/media/media_1bcb2081acb8e6a92b79004b7197780b5b0f9dd26-aa8256.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1607b356e65fc47beba97b592230d6b14a5090986.png?width=400&format=webply&optimize=medium",
+    "alt": "Shop Doors and Windows.",
+    "w": 367,
+    "h": 147,
+    "localPath": "stardust/current/assets/media/media_1607b356e65fc47beba97b592230d6b14a5090986-b468e1.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_175e5ae55aaa3d31c0dc05e01812416afdfd1be73.png?width=400&format=webply&optimize=medium",
+    "alt": "Shop Electrical Products.",
+    "w": 367,
+    "h": 147,
+    "localPath": "stardust/current/assets/media/media_175e5ae55aaa3d31c0dc05e01812416afdfd1be73-1df4f0.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1d7d597e3946e627a4e5fb47b9cef03bd340ae841.png?width=400&format=webply&optimize=medium",
+    "alt": "Shop Flooring and Rugs.",
+    "w": 367,
+    "h": 147,
+    "localPath": "stardust/current/assets/media/media_1d7d597e3946e627a4e5fb47b9cef03bd340ae841-500fcf.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_17ce5534d5858b58a8b0adce8af23a0823e4308ee.png?width=400&format=webply&optimize=medium",
+    "alt": "Shop Hardware.",
+    "w": 367,
+    "h": 147,
+    "localPath": "stardust/current/assets/media/media_17ce5534d5858b58a8b0adce8af23a0823e4308ee-c075c0.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1fe7da555552e9a6d4d17a290eec2343804379636.png?width=400&format=webply&optimize=medium",
+    "alt": "Shop Heating and Cooling Products.",
+    "w": 367,
+    "h": 147,
+    "localPath": "stardust/current/assets/media/media_1fe7da555552e9a6d4d17a290eec2343804379636-6e7787.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_126d76e72c38722b29ef964fc798908f80e97be7d.png?width=400&format=webply&optimize=medium",
+    "alt": "Shop Home Decor and Furniture.",
+    "w": 367,
+    "h": 147,
+    "localPath": "stardust/current/assets/media/media_126d76e72c38722b29ef964fc798908f80e97be7d-ff889e.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_17a3f3d9cc38579f36aadc7178a9020c4ef40ab55.png?width=400&format=webply&optimize=medium",
+    "alt": "Shop Kitchen Products.",
+    "w": 367,
+    "h": 147,
+    "localPath": "stardust/current/assets/media/media_17a3f3d9cc38579f36aadc7178a9020c4ef40ab55-8b955f.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1c1cf914381251877f5269d07039c10dcca896893.png?width=400&format=webply&optimize=medium",
+    "alt": "Shop Lawn and Garden Products.",
+    "w": 367,
+    "h": 147,
+    "localPath": "stardust/current/assets/media/media_1c1cf914381251877f5269d07039c10dcca896893-f50be8.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1fabaf08d94c8568c5733dae8c298aeb20c5f46c1.png?width=400&format=webply&optimize=medium",
+    "alt": "Shop Lighting and Ceiling Fans.",
+    "w": 367,
+    "h": 147,
+    "localPath": "stardust/current/assets/media/media_1fabaf08d94c8568c5733dae8c298aeb20c5f46c1-dc4081.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_15100f1bd03723dbcc15fc4ba9a54d823d15fb8ed.png?width=400&format=webply&optimize=medium",
+    "alt": "Shop Moulding and Millwork Products.",
+    "w": 367,
+    "h": 147,
+    "localPath": "stardust/current/assets/media/media_15100f1bd03723dbcc15fc4ba9a54d823d15fb8ed-5cb770.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1473519639db037996b57be6e73818412a78b30b3.png?width=400&format=webply&optimize=medium",
+    "alt": "Shop outdoor living and patio now.",
+    "w": 331,
+    "h": 132,
+    "localPath": "stardust/current/assets/media/media_1473519639db037996b57be6e73818412a78b30b3-13816e.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1b094586ac5e13406d5238e44711c78d901bf061f.png?width=400&format=webply&optimize=medium",
+    "alt": "Shop Paint.",
+    "w": 367,
+    "h": 147,
+    "localPath": "stardust/current/assets/media/media_1b094586ac5e13406d5238e44711c78d901bf061f-677dd1.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1d3b4df1cef897e96d8c17923fbd1e942ef372025.png?width=400&format=webply&optimize=medium",
+    "alt": "Shop Plumbing Products.",
+    "w": 367,
+    "h": 147,
+    "localPath": "stardust/current/assets/media/media_1d3b4df1cef897e96d8c17923fbd1e942ef372025-92facf.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1c2e1fdc24b3a5a41f735b251bc9d818ad2232730.png?width=400&format=webply&optimize=medium",
+    "alt": "Shop Smart Home, Security and Wi-Fi Products.",
+    "w": 367,
+    "h": 147,
+    "localPath": "stardust/current/assets/media/media_1c2e1fdc24b3a5a41f735b251bc9d818ad2232730-bd2258.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_106d0e7c41333dcab6ed732123425fd2175d1f8f5.png?width=400&format=webply&optimize=medium",
+    "alt": "Shop Sports and Fitness Products.",
+    "w": 367,
+    "h": 147,
+    "localPath": "stardust/current/assets/media/media_106d0e7c41333dcab6ed732123425fd2175d1f8f5-ca1982.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_11f0abf548a69ccc5af5bd8237877571386a1c3bb.png?width=400&format=webply&optimize=medium",
+    "alt": "Shop Storage and Organization Products.",
+    "w": 367,
+    "h": 147,
+    "localPath": "stardust/current/assets/media/media_11f0abf548a69ccc5af5bd8237877571386a1c3bb-e94f42.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_19a219e92362089c1c2d791801bd7caebf735388a.png?width=400&format=webply&optimize=medium",
+    "alt": "Shop Tools Products.",
+    "w": 367,
+    "h": 147,
+    "localPath": "stardust/current/assets/media/media_19a219e92362089c1c2d791801bd7caebf735388a-bcac45.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1c41e49762b6105f730665c8379094a22dea46586.png?width=750&format=webply&optimize=medium",
+    "alt": "Find inspiration, buying guides, how-to advice and ideas for new D I Y projects. Learn more now.",
+    "w": 500,
+    "h": 515,
+    "localPath": "stardust/current/assets/media/media_1c41e49762b6105f730665c8379094a22dea46586-12a2c7.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_112e919b7c4a81b278ede44dee96495299f934207.png?width=750&format=webply&optimize=medium",
+    "alt": "Discover ideas for beginners and experienced pumpkin carvers. Learn more now.",
+    "w": 750,
+    "h": 773,
+    "localPath": "stardust/current/assets/media/media_112e919b7c4a81b278ede44dee96495299f934207-a7f8dd.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_16b0af98ab68e1355a10f0dc93e0c18f2dc5d6108.png?width=750&format=webply&optimize=medium",
+    "alt": "We can install your blinds & window shades by Thanksgiving. Schedule by 10/14. Get started now.",
+    "w": 500,
+    "h": 515,
+    "localPath": "stardust/current/assets/media/media_16b0af98ab68e1355a10f0dc93e0c18f2dc5d6108-61f8dc.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1ca5c8050a5cea04a8ba0c7695e06cad6ac644d0a.png?width=750&format=webply&optimize=medium",
+    "alt": "Learn about our commitment to revitalize the communities we serve across the country now.",
+    "w": 750,
+    "h": 773,
+    "localPath": "stardust/current/assets/media/media_1ca5c8050a5cea04a8ba0c7695e06cad6ac644d0a-977fcc.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_150e2e4a0a8ef84c5706db48da13cf7d3b2b4b682.jpg?width=300&format=webply&optimize=medium",
+    "alt": "allen + roth Custom Cellular Shade",
+    "w": 276,
+    "h": 276,
+    "localPath": "stardust/current/assets/media/media_150e2e4a0a8ef84c5706db48da13cf7d3b2b4b682-c8ce99.jpg",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_104a8dca2c3b0820e87cdd8d014ea833343ac56dd.jpg?width=300&format=webply&optimize=medium",
+    "alt": "EGO POWER+ 600 Series 56-volt, 21-in Push Battery Lawn Mower with (1) 6 Ah Battery Included",
+    "w": 276,
+    "h": 276,
+    "localPath": "stardust/current/assets/media/media_104a8dca2c3b0820e87cdd8d014ea833343ac56dd-8ace71.jpg",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_124af4bc853b69c723647f9085e298a99b862892a.png?width=300&format=webply&optimize=medium",
+    "alt": "Whirlpool Flexible Cooktop 30-in 4 burners 5.1-cu ft Single oven gas range Natural Gas Range ( Stainless Steel )",
+    "w": 276,
+    "h": 276,
+    "localPath": "stardust/current/assets/media/media_124af4bc853b69c723647f9085e298a99b862892a-5f48e0.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1a51566ab4563330154e3f254800b8a2eedf4d035.jpg?width=300&format=webply&optimize=medium",
+    "alt": "DEWALT 2-Tool 20-Volt Max Power Tool Combo Kit with Soft Case (2-Batteries and charger Included)",
+    "w": 276,
+    "h": 276,
+    "localPath": "stardust/current/assets/media/media_1a51566ab4563330154e3f254800b8a2eedf4d035-19b5cf.jpg",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1c50d0b193d8be96776ba254ab9741820b9388759.jpg?width=300&format=webply&optimize=medium",
+    "alt": "Arm & Hammer Carpet cleaner Deodorizing Powder 42.6-oz",
+    "w": 276,
+    "h": 276,
+    "localPath": "stardust/current/assets/media/media_1c50d0b193d8be96776ba254ab9741820b9388759-03fe57.jpg",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_129fd0abd4815dc99f3caa90280d7d2d143132679.jpg?width=300&format=webply&optimize=medium",
+    "alt": "CRAFTSMAN V20 20 -Volt, 5 Ah 1 -Pack Lithium Ion (Li-ion)",
+    "w": 276,
+    "h": 276,
+    "localPath": "stardust/current/assets/media/media_129fd0abd4815dc99f3caa90280d7d2d143132679-ec561d.jpg",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_114d5b48b347e6b17e292b5d3dcc9e473660e29c7.jpg?width=300&format=webply&optimize=medium",
+    "alt": "Rudolph the Red-Nosed Reindeer 9.75-ft LED Bumble Animatronic Outdoor Christmas Decoration",
+    "w": 276,
+    "h": 276,
+    "localPath": "stardust/current/assets/media/media_114d5b48b347e6b17e292b5d3dcc9e473660e29c7-1e1fe8.jpg",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1c3e504410142d8b1d86dc87eb74b7263eb6f2415.jpg?width=300&format=webply&optimize=medium",
+    "alt": "Holiday Living 7.5-ft New Kensington Pine Pre-lit Artificial Christmas Tree with Twinkling Color Changing LED Lights",
+    "w": 276,
+    "h": 276,
+    "localPath": "stardust/current/assets/media/media_1c3e504410142d8b1d86dc87eb74b7263eb6f2415-b56f01.jpg",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1c8616bdc052848050cac45bdd5d38ed6f76521c9.jpg?width=300&format=webply&optimize=medium",
+    "alt": "Haunted Living 5-ft Ultra Posable Skeleton Halloween Decoration",
+    "w": 276,
+    "h": 276,
+    "localPath": "stardust/current/assets/media/media_1c8616bdc052848050cac45bdd5d38ed6f76521c9-d4a715.jpg",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1220ffa95b07d120ffac738df662f99964b359dbf.jpg?width=300&format=webply&optimize=medium",
+    "alt": "Rudolph the Red-Nosed Reindeer 6-ft Yukon Cornelius Animatronic Outdoor Christmas Decoration",
+    "w": 276,
+    "h": 276,
+    "localPath": "stardust/current/assets/media/media_1220ffa95b07d120ffac738df662f99964b359dbf-d0e587.jpg",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1eb974100415ce705bdbd4ca38fc89d9fb69372e6.png?width=300&format=webply&optimize=medium",
+    "alt": "How to Get Rid of Mosquitoes",
+    "w": 300,
+    "h": 169,
+    "localPath": "stardust/current/assets/media/media_1eb974100415ce705bdbd4ca38fc89d9fb69372e6-9cd347.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1015547b3de620e40a1e5bb9fa28279db266b9460.jpg?width=300&format=webply&optimize=medium",
+    "alt": "How to Clean an Air Conditioner",
+    "w": 300,
+    "h": 169,
+    "localPath": "stardust/current/assets/media/media_1015547b3de620e40a1e5bb9fa28279db266b9460-4da231.jpg",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_17bbe8e93f7c3ed0ff0e90a696ab4a7abf2ee92c3.jpg?width=300&format=webply&optimize=medium",
+    "alt": "How to Repair Cracked Concrete",
+    "w": 300,
+    "h": 171,
+    "localPath": "stardust/current/assets/media/media_17bbe8e93f7c3ed0ff0e90a696ab4a7abf2ee92c3-55b150.jpg",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_117a17f72b1fd5c19fae80490c5c96c769711d84b.png?width=300&format=webply&optimize=medium",
+    "alt": "Create a Border Using Edging Stones",
+    "w": 300,
+    "h": 169,
+    "localPath": "stardust/current/assets/media/media_117a17f72b1fd5c19fae80490c5c96c769711d84b-f7cbf0.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_12dd30cef969f27a88c72ae77026045d7cd474e07.png?width=300&format=webply&optimize=medium",
+    "alt": "How to Build DIY Tote Shelves",
+    "w": 300,
+    "h": 169,
+    "localPath": "stardust/current/assets/media/media_12dd30cef969f27a88c72ae77026045d7cd474e07-8e584e.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1a10ef0226657a355df7a1eb86c27ee45f2567a67.jpg?width=300&format=webply&optimize=medium",
+    "alt": "How to Install a Toilet",
+    "w": 300,
+    "h": 171,
+    "localPath": "stardust/current/assets/media/media_1a10ef0226657a355df7a1eb86c27ee45f2567a67-3ad11f.jpg",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1705274288e8019db587eeec7b77052bc51095cb6.png?width=300&format=webply&optimize=medium",
+    "alt": "How to Build a Retaining Wall",
+    "w": 300,
+    "h": 169,
+    "localPath": "stardust/current/assets/media/media_1705274288e8019db587eeec7b77052bc51095cb6-7f252d.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_12fef52fa7a23afa9a7ced96f0c42fd43183a5432.png?width=300&format=webply&optimize=medium",
+    "alt": "DIY Raised Garden Bed Instructions and Ideas",
+    "w": 300,
+    "h": 169,
+    "localPath": "stardust/current/assets/media/media_12fef52fa7a23afa9a7ced96f0c42fd43183a5432-f3e5d0.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1e9250d8e04189f6d280b2e810fa2c1b83290d814.png?width=300&format=webply&optimize=medium",
+    "alt": "How to Install a Bathroom Vanity and Sink",
+    "w": 300,
+    "h": 169,
+    "localPath": "stardust/current/assets/media/media_1e9250d8e04189f6d280b2e810fa2c1b83290d814-a5ab9b.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1952f83cb30db7af48d8892466b80cdae4d6d03df.jpg?width=300&format=webply&optimize=medium",
+    "alt": "Elkay - ezH2O Stainless steel 2 -Basin Push button Wall mount Filtered",
+    "w": 276,
+    "h": 276,
+    "localPath": "stardust/current/assets/media/media_1952f83cb30db7af48d8892466b80cdae4d6d03df-3788da.jpg",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1d30da0bd2c3a329840fca11a0899b296770bc231.png?width=300&format=webply&optimize=medium",
+    "alt": "Glacier Fresh - Push-in FPPWFU01 Water Filter Replacement for Frigidaire PurePour FPPWFU01 2-Pack",
+    "w": 276,
+    "h": 276,
+    "localPath": "stardust/current/assets/media/media_1d30da0bd2c3a329840fca11a0899b296770bc231-c489d8.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_188d9e5418618d0536c1e2707b47a970b6eac29ab.png?width=300&format=webply&optimize=medium",
+    "alt": "LuceAlberi - Cordless Stick Vacuum 500W 45Kpa 45 Min Anti Tangle Lightweight Vac for Home Pet Hai...",
+    "w": 276,
+    "h": 276,
+    "localPath": "stardust/current/assets/media/media_188d9e5418618d0536c1e2707b47a970b6eac29ab-585563.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1442ac3c442fadf8dafe8f11486442a3a764d0355.png?width=300&format=webply&optimize=medium",
+    "alt": "LuceAlberi - Cordless Stick Vacuum Cleaner 500W 45KPA 50 Min Anti Tangle Pet Hair Floors",
+    "w": 276,
+    "h": 276,
+    "localPath": "stardust/current/assets/media/media_1442ac3c442fadf8dafe8f11486442a3a764d0355-1405ba.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_11c07a71b528383ed30f9e46a95b7bda012d71b7a.jpg?width=300&format=webply&optimize=medium",
+    "alt": "Midea - 30-in 4 burners 6.1-cu ft Single oven gas range Natural Gas Range ( Black )",
+    "w": 276,
+    "h": 276,
+    "localPath": "stardust/current/assets/media/media_11c07a71b528383ed30f9e46a95b7bda012d71b7a-5b3580.jpg",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1cade3fa4348cd4e75be7f38294aa81fdc6d45b91.jpg?width=300&format=webply&optimize=medium",
+    "alt": "Glacier Fresh - Push-in Refrigerator Water Filter Replacement for WF3CB PureSource 3 6-Pack",
+    "w": 276,
+    "h": 276,
+    "localPath": "stardust/current/assets/media/media_1cade3fa4348cd4e75be7f38294aa81fdc6d45b91-4f27db.jpg",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_12a4ceffbb72de01f84603f42ba2c229de0592487.jpg?width=300&format=webply&optimize=medium",
+    "alt": "COWSAR - 2 -Cup Programmable Commercial Drip coffee maker with Automatic Shut-Off ( Stainless Ste...",
+    "w": 276,
+    "h": 276,
+    "localPath": "stardust/current/assets/media/media_12a4ceffbb72de01f84603f42ba2c229de0592487-806eaa.jpg",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1907fc5bf4771d1678a0d1ca81a678e8b9f641185.png?width=300&format=webply&optimize=medium",
+    "alt": "Glacier Fresh - Push-in FPPWFU01 Water Filter Replacement for Frigidaire PurePour FPPWFU01 1-Pack",
+    "w": 276,
+    "h": 276,
+    "localPath": "stardust/current/assets/media/media_1907fc5bf4771d1678a0d1ca81a678e8b9f641185-710685.png",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_15e8f9084c59fca17954c5b2b004e7881ac88c28a.jpg?width=300&format=webply&optimize=medium",
+    "alt": "Glacier Fresh - Twist-in Refrigerator Water Filter Replacement for LT800P 3-Pack",
+    "w": 276,
+    "h": 276,
+    "localPath": "stardust/current/assets/media/media_15e8f9084c59fca17954c5b2b004e7881ac88c28a-3681d4.jpg",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_15936ef03c6591b4541dc70fee650d5f030f990de.jpg?width=300&format=webply&optimize=medium",
+    "alt": "Dyson - V8 Cyclone Cordless Pet Stick Vacuum Cleaner (Convertible to Handheld)",
+    "w": 276,
+    "h": 276,
+    "localPath": "stardust/current/assets/media/media_15936ef03c6591b4541dc70fee650d5f030f990de-263739.jpg",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1e0262c61d68ec526e0009f3ea7204dba9ce885b7.jpg?width=300&format=webply&optimize=medium",
+    "alt": "Hotpoint - 8.8-cu ft Chest Freezer Convertible to Refrigerator ( White )",
+    "w": 276,
+    "h": 276,
+    "localPath": "stardust/current/assets/media/media_1e0262c61d68ec526e0009f3ea7204dba9ce885b7-8876de.jpg",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_150201cb070aa6343c69cc0b0fa2e1989ee5c0a84.jpg?width=300&format=webply&optimize=medium",
+    "alt": "Whirlpool - Standard-Depth Family-Sized Capacity 29.58-cu ft 3 -Door 36-in Wide French Door Refri...",
+    "w": 276,
+    "h": 276,
+    "localPath": "stardust/current/assets/media/media_150201cb070aa6343c69cc0b0fa2e1989ee5c0a84-d0ac50.jpg",
+    "resolves": true
+   },
+   {
+    "src": "https://main--lowes--jgrosskurth.aem.live/media_1b9c8cc210d9b31dc5745cc5abfd017c626c47bd6.jpg?width=300&format=webply&optimize=medium",
+    "alt": "KitchenAid - 30 inch Self-cleaning Air Fry Microwave Wall Oven Combo ( PrintShield Stainless )",
+    "w": 276,
+    "h": 276,
+    "localPath": "stardust/current/assets/media/media_1b9c8cc210d9b31dc5745cc5abfd017c626c47bd6-a621bf.jpg",
+    "resolves": true
+   }
+  ],
+  "allImgCount": 126,
+  "cssBackgrounds": [],
+  "videos": [],
+  "iframes": [],
+  "modals": [
+   "Find a StoreUse Current LocationZIP Code, City, State or Store #",
+   "MylowLowe's AI assistant can help you find products, compare options and plan your project.Chat with Mylow on Lowes.com",
+   "Sign In or Create AccountLet's see if you have an account.Enter your email or phone number to get started.Email or Phone NumberRemember me on this deviceContinueBy signing in to Lowes.com, you're agreeing to our Terms of Use, Personal Account Terms, Privacy Statement, and Notice of Financial Incentive / Loyalty Programs.Order StatusProjects & InstallationsListsMilitary DiscountFirst Responder Benefits"
+  ]
+ },
+ "forms": [
+  {
+   "selector": "form.nav-search",
+   "fields": [
+    {
+     "type": "search",
+     "placeholder": "What can we help you find?"
+    }
+   ]
+  }
+ ],
+ "widgets": {
+  "weather": {
+   "selector": ".widget-weather",
+   "state": "empty — \"Set your store to see the weather forecast for your area.\""
+  }
+ },
+ "perSectionStyle": [
+  {
+   "index": 0,
+   "block": "carousel-pills",
+   "background": "rgba(0, 0, 0, 0)",
+   "padding": "0px 0px",
+   "marginTop": "24px",
+   "height": 96
+  },
+  {
+   "index": 1,
+   "block": "sponsored-banner (default content)",
+   "background": "rgba(0, 0, 0, 0)",
+   "padding": "0px 0px",
+   "marginTop": "32px",
+   "height": 151
+  },
+  {
+   "index": 2,
+   "block": "carousel-hero",
+   "background": "rgba(0, 0, 0, 0)",
+   "padding": "0px 0px",
+   "marginTop": "32px",
+   "height": 317
+  },
+  {
+   "index": 3,
+   "block": "cards-promo",
+   "background": "rgba(0, 0, 0, 0)",
+   "padding": "0px 0px",
+   "marginTop": "32px",
+   "height": 283
+  },
+  {
+   "index": 4,
+   "block": "columns-promo",
+   "background": "rgba(0, 0, 0, 0)",
+   "padding": "0px 0px",
+   "marginTop": "32px",
+   "height": 262
+  },
+  {
+   "index": 5,
+   "block": "widget-weather",
+   "background": "rgba(0, 0, 0, 0)",
+   "padding": "0px 0px",
+   "marginTop": "32px",
+   "height": 300
+  },
+  {
+   "index": 6,
+   "block": "carousel-thematic",
+   "background": "rgba(0, 0, 0, 0)",
+   "padding": "0px 0px",
+   "marginTop": "32px",
+   "height": 545
+  },
+  {
+   "index": 7,
+   "block": "cards-category",
+   "background": "rgba(0, 0, 0, 0)",
+   "padding": "0px 0px",
+   "marginTop": "32px",
+   "height": 123
+  },
+  {
+   "index": 8,
+   "block": "cards-department",
+   "background": "rgba(0, 0, 0, 0)",
+   "padding": "0px 0px",
+   "marginTop": "32px",
+   "height": 243
+  },
+  {
+   "index": 9,
+   "block": "cards-article",
+   "background": "rgba(0, 0, 0, 0)",
+   "padding": "0px 0px",
+   "marginTop": "32px",
+   "height": 408
+  },
+  {
+   "index": 10,
+   "block": "carousel-deals",
+   "background": "rgba(0, 0, 0, 0)",
+   "padding": "0px 0px",
+   "marginTop": "32px",
+   "height": 655
+  },
+  {
+   "index": 11,
+   "block": "carousel-product",
+   "background": "rgba(0, 0, 0, 0)",
+   "padding": "0px 0px",
+   "marginTop": "32px",
+   "height": 396
+  },
+  {
+   "index": 12,
+   "block": "carousel-product",
+   "background": "rgba(0, 0, 0, 0)",
+   "padding": "0px 0px",
+   "marginTop": "32px",
+   "height": 593
+  }
+ ],
+ "embedDominance": {
+  "dominated": false
+ },
+ "cssCustomProperties": {
+  "--heading-font-family": "fellix, fellix-fallback, arial, sans-serif",
+  "--body-font-family": "fellix, fellix-fallback, arial, sans-serif",
+  "--background-color": "#fff",
+  "--text-color": "#17191f",
+  "--text-secondary-color": "rgb(23 25 31 / 80%)",
+  "--link-color": "#0072ce",
+  "--link-hover-color": "#005ba5",
+  "--brand-navy": "#012169",
+  "--brand-blue": "#004990",
+  "--action-green": "#007a33",
+  "--action-green-hover": "#004b1d",
+  "--action-green-pressed": "#003113",
+  "--action-green-subdued": "#d4f7e3",
+  "--action-red": "#971b2f",
+  "--surface-subdued": "#f4f6fa",
+  "--border-subdued": "#cbd1dd",
+  "--border-strong": "#616670",
+  "--muted-text-color": "rgb(0 0 0 / 54%)",
+  "--rating-color": "#f3b51b",
+  "--radius-sm": "2px",
+  "--radius-md": "4px",
+  "--radius-lg": "8px",
+  "--radius-pill": "20px",
+  "--space-xxs": "4px",
+  "--space-xs": "8px",
+  "--space-sm": "16px",
+  "--space-md": "24px",
+  "--space-lg": "40px",
+  "--space-xl": "56px",
+  "--gutter": "56px",
+  "--section-gap": "32px",
+  "--heading-font-size-xxl": "40px",
+  "--heading-line-height-xxl": "56px",
+  "--heading-font-size-xl": "28px",
+  "--heading-line-height-xl": "40px",
+  "--heading-font-size-l": "24px",
+  "--heading-line-height-l": "32px",
+  "--heading-font-size-m": "20px",
+  "--heading-line-height-m": "32px",
+  "--heading-font-size-s": "16px",
+  "--heading-font-size-xs": "14px",
+  "--body-font-size-m": "16px",
+  "--body-font-size-s": "14px",
+  "--body-font-size-xs": "12px",
+  "--light-color": "#f4f6fa",
+  "--dark-color": "#505050",
+  "--nav-height": "148px"
+ },
+ "screenshot": "stardust/current/assets/screenshots/home.png",
+ "renderedHtml": "stardust/current/pages/home.html",
+ "_signals": {
+  "filteredInterstitials": 0,
+  "distinctHeadings": 20,
+  "mainTextLen": 6794,
+  "realImageCount": 111,
+  "trackingOnlyMedia": false,
+  "spaShellSuspect": false,
+  "screenshotMode": "fullPage"
+ },
+ "stats": {
+  "ctaCount": 100,
+  "linkCount": 189,
+  "imageCount": 111,
+  "sectionCount": 13,
+  "docHeight": 5058,
+  "textInImageSections": [
+   "sponsored-banner (default content)",
+   "carousel-hero",
+   "cards-promo",
+   "columns-promo",
+   "cards-article"
+  ]
+ },
+ "rasterCopy": {
+  "_provenance": {
+   "method": "vision transcription of captured rasters (multimodal read of stardust/current/assets/media/*), 2026-10-08",
+   "note": "verbatim; line breaks collapsed; superscripts noted as ^"
+  },
+  "sponsored-banner": [
+   {
+    "media": "media_12242aa8",
+    "copy": [
+     "DEWALT Days",
+     "Save up to $100",
+     "Select DEWALT® Tools",
+     "Shop Now",
+     "Sponsored"
+    ]
+   }
+  ],
+  "carousel-hero": [
+   {
+    "media": "media_18223392",
+    "copy": [
+     "mylowe’s money",
+     "MyLowe’s Money™ Days are back.",
+     "Get up to $20 in MyLowe’s Money on an eligible purchase of $200 or more.",
+     "Offer ends 10/14/26.",
+     "Learn More",
+     "mylowe’s Rewards",
+     "mylowe’s PRO Rewards"
+    ]
+   },
+   {
+    "media": "media_1ee99115",
+    "copy": [
+     "Final Day",
+     "Up to",
+     "35% off",
+     "Select Major Appliances",
+     "Offer ends 10/7/26.",
+     "Save up to an Additional $600",
+     "Select LG Major Appliance Bundles",
+     "Save up to an Additional $100",
+     "Select Laundry Pairs",
+     "Shop All Deals",
+     "mylowe’s Rewards",
+     "All-In Appliance Offer",
+     "Members Get More",
+     "When you spend $2,500 or more on select LG major appliances.",
+     "FREE Delivery",
+     "FREE Basic Installation and Parts",
+     "FREE Haul Away",
+     "2-Year Lowe’s Protection Plan",
+     "Excludes Florida and MyLowe’s Pro Rewards™ members."
+    ]
+   },
+   {
+    "media": "media_1d666204",
+    "copy": [
+     "Refresh your backsplash before the holiday rush.",
+     "Shop Now"
+    ]
+   },
+   {
+    "media": "media_1329017e",
+    "copy": [
+     "3x Points",
+     "Make the most of fall.",
+     "MyLowe’s Rewards™ members earn 3x points on select purchases.",
+     "Shop Now"
+    ]
+   },
+   {
+    "media": "media_11b55181",
+    "copy": [
+     "3x Points",
+     "Set your fall garden up for success.",
+     "MyLowe’s Rewards™ members earn 3x points on select purchases.",
+     "Shop Now"
+    ],
+    "note": "lazy slide — fetched from captured src during prototype prep"
+   },
+   {
+    "media": "media_105cb20b",
+    "copy": [
+     "FREE Same-day DELIVERY",
+     "Save up to $120",
+     "Select Power Tools, Equipment and Accessories",
+     "Shop Now"
+    ],
+    "note": "lazy slide — fetched from captured src during prototype prep"
+   }
+  ],
+  "cards-promo": [
+   {
+    "media": "media_13d26c37",
+    "copy": [
+     "Up to",
+     "65% off",
+     "Select Alexa, Ring, Blink and Fire TV Products",
+     "Offer ends 10/7/26.",
+     "Shop Now"
+    ]
+   },
+   {
+    "media": "media_1f20f87e",
+    "copy": [
+     "Up to",
+     "40% off",
+     "Select Bathroom Products",
+     "Shop Now"
+    ]
+   },
+   {
+    "media": "media_10a53618",
+    "copy": [
+     "Up to",
+     "30% off",
+     "Select Grills and Accessories",
+     "Shop Now"
+    ]
+   },
+   {
+    "media": "media_1cd061a5",
+    "copy": [
+     "Bring home fall style under $50.",
+     "Shop Now"
+    ]
+   },
+   {
+    "media": "media_18732229",
+    "copy": [
+     "Explore what’s new in tools from trusted brands.",
+     "Shop Now"
+    ]
+   }
+  ],
+  "columns-promo": [
+   {
+    "media": "media_17222198",
+    "copy": [
+     "Lowe’s HomeCare+",
+     "Home maintenance that comes to you.",
+     "Essential tasks handled by a trained Lowe’s associate. Twice a year. Right to your door.",
+     "Learn More",
+     "Electric dryer vent cleaning",
+     "HVAC air filter replacement",
+     "Refrigerator water filter replacement",
+     "Electric water heater flush",
+     "Garage door lubrication",
+     "Smoke and carbon monoxide detector battery replacement",
+     "Light bulb replacement",
+     "Subscribe for just $99 a year.",
+     "Auto-renews. Service restrictions apply. Service items required."
+    ]
+   },
+   {
+    "media": "media_10f22bbf",
+    "copy": [
+     "Thank you, first responders.",
+     "To celebrate First Responders Appreciation Month, here’s $10 MyLowe’s Money™.",
+     "Verify Now",
+     "Offer available 10/1/26 – 10/31/26 to eligible First Responders who verify through ID.me. Please allow up to 10 days after verification for the $10 MyLowe’s Money offer to become available to claim in your MyLowe’s Rewards™ account."
+    ]
+   }
+  ],
+  "carousel-thematic": [
+   {
+    "media": "media_1e1b33a0",
+    "copy": [
+     "Gift Zone",
+     "Find great gifts for everyone on your list.",
+     "Shop All"
+    ]
+   }
+  ],
+  "cards-category": [
+   {
+    "media": "media_10c05dc0",
+    "copy": [
+     "Deals of the Day"
+    ]
+   },
+   {
+    "media": "media_1cd03b13",
+    "copy": [
+     "Lowe’s Essentials"
+    ]
+   },
+   {
+    "media": "media_1853f549",
+    "copy": [
+     "Fall Maintenance"
+    ]
+   },
+   {
+    "media": "media_14484ec6",
+    "copy": [
+     "Holiday Décor"
+    ]
+   }
+  ],
+  "cards-article": [
+   {
+    "media": "media_1c41e497",
+    "copy": [
+     "Start a New DIY Project",
+     "Find inspiration, buying guides and how-to advice to make it happen.",
+     "Learn More"
+    ],
+    "photoRegion": "top 58% of raster"
+   },
+   {
+    "media": "media_112e919b",
+    "copy": [
+     "Carve Out Some Halloween Fun",
+     "Whether you’re a first-time carver or a pro, get inspired with unique ideas and helpful tips.",
+     "Learn More"
+    ],
+    "photoRegion": "top 60%"
+   },
+   {
+    "media": "media_16b0af98",
+    "copy": [
+     "Get Blinds and Shades Installed by Thanksgiving",
+     "Schedule measurement by 10/14/26.",
+     "Buy product and installation by 10/30/26.",
+     "Get Started"
+    ],
+    "photoRegion": "top 54%"
+   },
+   {
+    "media": "media_1ca5c805",
+    "copy": [
+     "Discover Lowe’s Community Impact",
+     "Learn about our commitment to revitalize the communities we serve across the country.",
+     "Learn More"
+    ],
+    "photoRegion": "top 60%"
+   }
+  ]
+ },
+ "iconMap": {
+  "store": "media_1c758a25",
+  "chevron": "media_10d272fa",
+  "search": "media_10df33ea",
+  "visualSearch": "media_1e690f73",
+  "aiAssist": "media_130705d1",
+  "account": "media_1c12822e",
+  "cart": "media_102564b1",
+  "shopAll": "media_15214a98",
+  "services": "media_1a38ebaf",
+  "deals": "media_1771b13f",
+  "ideas": "media_1aa5c68b",
+  "logo": "media_1823e74e"
+ }
+}

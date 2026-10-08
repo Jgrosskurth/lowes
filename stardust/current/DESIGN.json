@@ -1,0 +1,666 @@
+{
+ "_provenance": {
+  "writtenBy": "stardust:extract",
+  "writtenAt": "2026-10-08T15:40:18.368Z",
+  "againstInput": "https://main--lowes--jgrosskurth.aem.live/ --single",
+  "mode": "descriptive",
+  "readArtifacts": [
+   "stardust/current/_brand-extraction.json",
+   "stardust/current/pages/home.json"
+  ]
+ },
+ "name": "Lowe's Home Improvement — current state",
+ "colors": {
+  "background": "#ffffff",
+  "text-color": "#17191f",
+  "link-color": "#0072ce",
+  "action-green": "#007a33",
+  "brand-navy": "#012169",
+  "surface-subdued": "#f4f6fa",
+  "action-red": "#971b2f",
+  "border-strong": "#616670"
+ },
+ "typography": {
+  "headingFamily": {
+   "name": "Fellix",
+   "stack": "fellix, fellix-fallback, arial, sans-serif",
+   "weights": [
+    600
+   ],
+   "sizes": [
+    "28px",
+    "24px",
+    "16px"
+   ],
+   "lineHeights": [
+    "40px",
+    "32px",
+    "24px"
+   ],
+   "letterSpacing": [
+    "normal"
+   ],
+   "sourceSelectors": [
+    "h2 (4)",
+    "h3 (6)",
+    "h4 (10)"
+   ],
+   "perLevel": {
+    "h2": {
+     "fontSize": "28px",
+     "fontWeight": 600,
+     "lineHeight": "40px"
+    },
+    "h3": {
+     "fontSize": "24px",
+     "fontWeight": 600,
+     "lineHeight": "32px",
+     "note": "3 h3 also render at 16px/24px (deal panel titles in navy)"
+    },
+    "h4": {
+     "fontSize": "16px",
+     "fontWeight": 600,
+     "lineHeight": "24px"
+    }
+   }
+  },
+  "bodyFamily": {
+   "name": "Fellix",
+   "stack": "fellix, fellix-fallback, arial, sans-serif",
+   "weights": [
+    400,
+    600
+   ],
+   "sizes": [
+    "16px",
+    "14px",
+    "12px"
+   ],
+   "lineHeights": [
+    "24px",
+    "24px",
+    "16px"
+   ],
+   "letterSpacing": [
+    "normal"
+   ],
+   "sourceSelectors": [
+    "p",
+    "a",
+    "span",
+    "li"
+   ]
+  },
+  "monoFamily": null,
+  "displayInRaster": {
+   "note": "Fellix display-size numerals and headlines (≈80–110px \"35% off\", \"$99 a year\", \"Up to 65% off\", \"Gift Zone\") exist only inside merchandising rasters; no live text exceeds 28px.",
+   "evidence": [
+    "carousel-hero slides 1580x480",
+    "cards-promo 400x420 ×5",
+    "columns-promo 1200x257 + 1138x500",
+    "cards-category 600x130 ×4",
+    "cards-article 500x515 / 750x773 ×4"
+   ]
+  },
+  "scaleRatio": null,
+  "scaleAudit": {
+   "kind": "ad-hoc",
+   "ratios": [
+    1.167,
+    1.5
+   ],
+   "matchedScale": null,
+   "observed": [
+    "28px",
+    "24px",
+    "16px"
+   ],
+   "declaredTokens": [
+    "40",
+    "28",
+    "24",
+    "20",
+    "16",
+    "14"
+   ]
+  },
+  "loadStrategy": "swap",
+  "files": [
+   {
+    "url": "https://www.lowescdn.com/sffonts/Fellix-Regular.woff",
+    "family": "Fellix",
+    "weight": 400,
+    "style": "normal",
+    "localPath": "stardust/current/assets/fonts/Fellix-Regular.woff",
+    "format": "woff",
+    "licensingFlag": "private",
+    "note": "served from www.lowescdn.com with CORS *"
+   },
+   {
+    "url": "https://www.lowescdn.com/sffonts/Fellix-SemiBold.woff",
+    "family": "Fellix",
+    "weight": 600,
+    "style": "normal",
+    "localPath": "stardust/current/assets/fonts/Fellix-SemiBold.woff",
+    "format": "woff",
+    "licensingFlag": "private",
+    "note": "served from www.lowescdn.com with CORS *"
+   }
+  ],
+  "fontFaceStatus": [
+   {
+    "family": "fellix-fallback",
+    "weight": "normal",
+    "style": "normal",
+    "status": "error"
+   },
+   {
+    "family": "fellix",
+    "weight": "400",
+    "style": "normal",
+    "status": "loaded"
+   },
+   {
+    "family": "fellix",
+    "weight": "600",
+    "style": "normal",
+    "status": "loaded"
+   },
+   {
+    "family": "fellix",
+    "weight": "700",
+    "style": "normal",
+    "status": "loaded"
+   }
+  ]
+ },
+ "rounded": {
+  "primary": "8px",
+  "secondary": "6px",
+  "pill": "20px",
+  "circle": "128px (arrow buttons) / 50% (carousel pause)",
+  "primarySources": [
+   "home"
+  ],
+  "occurrences": {
+   "8px": 123,
+   "6px": 31,
+   "20px": 27,
+   "128px": 14,
+   "4px": 13,
+   "8px 8px 0 0": 10,
+   "10px": 3,
+   "12px": 1
+  }
+ },
+ "spacing": {
+  "baseUnit": 8,
+  "scale": [
+   4,
+   8,
+   16,
+   24,
+   40,
+   56
+  ],
+  "sectionPadding": "0px (sections separated by 32px margin-top; --section-gap)",
+  "sectionGap": "32px",
+  "containerMaxWidth": "1328px content (1440 viewport − 2×56px --gutter)",
+  "gridGap": "24px",
+  "tokens": [
+   "--space-xxs 4",
+   "--space-xs 8",
+   "--space-sm 16",
+   "--space-md 24",
+   "--space-lg 40",
+   "--space-xl 56"
+  ]
+ },
+ "extensions": {
+  "componentStyle": {
+   "buttons": {
+    "primary": {
+     "label": "Add to Cart",
+     "background": "#ffffff",
+     "color": "#007a33",
+     "border": "1px solid #007a33",
+     "borderRadius": "6px",
+     "height": "48px",
+     "fontWeight": 600,
+     "fontSize": "16px",
+     "count": 13
+    },
+    "secondary": {
+     "label": "Shop All",
+     "background": "#ffffff",
+     "color": "#0072ce",
+     "border": "1px solid #0072ce",
+     "borderRadius": "8px",
+     "height": "44px",
+     "fontWeight": 600
+    },
+    "link": {
+     "label": "Shop Now / Learn More / Read Article",
+     "color": "#0072ce",
+     "textDecoration": "underline",
+     "icon": "leading cart / book glyph on article rail"
+    },
+    "pill": {
+     "background": "#ffffff",
+     "color": "#17191f",
+     "border": "1px solid #616670",
+     "borderRadius": "20px",
+     "height": "40px",
+     "fontSize": "14px",
+     "active": {
+      "background": "#0072ce",
+      "color": "#ffffff"
+     }
+    },
+    "arrow": {
+     "background": "#ffffff",
+     "color": "#0072ce",
+     "borderRadius": "128px",
+     "size": "40px",
+     "shadow": "rgba(0, 0, 0, 0.2) 0px 2px 4px 0px, rgba(0, 0, 0, 0.14) 0px 4px 5px 0px, rgba(0, 0, 0, 0.12) 0px 1px 10px 0px"
+    }
+   },
+   "dualCTAPattern": null,
+   "cards": {
+    "product": {
+     "imageWell": "#fafafa",
+     "imageRadius": "8px",
+     "price": "superscript $ + 24px dollars + superscript cents",
+     "badge": "Save-% green #007a33, top-left 8px 0 radius"
+    },
+    "panel": {
+     "border": "1px solid #cbd1dd",
+     "borderRadius": "4px",
+     "padding": "24px"
+    }
+   },
+   "inputs": {
+    "search": {
+     "border": "1px solid #616670",
+     "borderRadius": "8px",
+     "height": "48px",
+     "placeholder": "What can we help you find?"
+    }
+   }
+  },
+  "motifs": {
+   "borderRadius": {
+    "primary": "8px",
+    "secondary": "6px",
+    "pill": "20px",
+    "circle": "128px (arrow buttons) / 50% (carousel pause)",
+    "primarySources": [
+     "home"
+    ],
+    "occurrences": {
+     "8px": 123,
+     "6px": 31,
+     "20px": 27,
+     "128px": 14,
+     "4px": 13,
+     "8px 8px 0 0": 10,
+     "10px": 3,
+     "12px": 1
+    }
+   },
+   "shadows": [
+    {
+     "value": "rgba(0, 0, 0, 0.2) 0px 2px 4px 0px, rgba(0, 0, 0, 0.14) 0px 4px 5px 0px, rgba(0, 0, 0, 0.12) 0px 1px 10px 0px",
+     "uses": "circular carousel arrow buttons (6)"
+    },
+    {
+     "value": "rgb(0, 114, 206) 0px 1px 0px 0px",
+     "uses": "active tab underline (carousel-thematic)"
+    },
+    {
+     "value": "rgba(0, 0, 0, 0.5) 1px 1px 2px 0px",
+     "uses": "Gift Zone feature tile"
+    }
+   ],
+   "gradients": [],
+   "patterns": [
+    {
+     "name": "utility-bar",
+     "evidence": "32px navy bar: promo link left + Credit Center / Order Status / Weekly Ad / Lowe's PRO right"
+    },
+    {
+     "name": "nav-mega",
+     "evidence": "3-row header (148px): utility, logo + store + search + tools, 13-item department nav"
+    },
+    {
+     "name": "pill-rail",
+     "evidence": "carousel-pills (15 search pills) + carousel-product tabs (12 category pills); 20px radius, 1px #616670 outline, active = #0072ce fill"
+    },
+    {
+     "name": "sponsored-banner",
+     "evidence": "DEWALT Days 2000x227 raster, \"Sponsored\" label baked in"
+    },
+    {
+     "name": "hero-split-carousel",
+     "evidence": "static MyLowe's Money tile (314px) + 4-slide auto-rotating carousel (990px) with pause + 5 dots"
+    },
+    {
+     "name": "promo-card-5up",
+     "evidence": "cards-promo: five 246x259 photo cards, offer copy baked into raster"
+    },
+    {
+     "name": "weather-widget",
+     "evidence": "widget-weather: 390px store-gated forecast panel beside a 10-card article rail"
+    },
+    {
+     "name": "product-carousel-with-feature",
+     "evidence": "carousel-thematic: tabbed (Gift Zone) feature tile 398x445 + product cards with price, was-price, Save %, rating, velocity chip, Add to Cart"
+    },
+    {
+     "name": "category-tiles-4up",
+     "evidence": "cards-category: four colored 308x67 tiles (Deals of the Day, Lowe's Essentials, Fall Maintenance, Holiday Décor)"
+    },
+    {
+     "name": "department-icon-grid",
+     "evidence": "cards-department: 24 outline-icon tiles, 8 columns × 3 rows, 138x55 icon art + label"
+    },
+    {
+     "name": "article-cards-4up",
+     "evidence": "cards-article: four 314x323 cards — headline + body baked into the raster, live \"Learn More / Get Started\" link only"
+    },
+    {
+     "name": "deal-panels-3up",
+     "evidence": "carousel-deals: three bordered panels (quad / single / pair) with Save-% badge corners"
+    },
+    {
+     "name": "project-carousel",
+     "evidence": "carousel-product: 10 how-to cards 305x172, 24px titles"
+    }
+   ],
+   "carouselShare": "7 of 13 main sections scroll horizontally (pills, hero, weather rail, thematic, deals panels are static, project, explore) — content beyond the right edge is hidden behind arrow buttons"
+  },
+  "voice": {
+   "heroHeadline": "Shop tools, appliances, building supplies, carpet, bathroom, lighting and more.",
+   "heroSubcopy": "Shop tools, appliances, building supplies, carpet, bathroom, lighting and more. Pros can take advantage of Pro offers, credit and business resources.",
+   "heroImage": {
+    "url": "https://main--lowes--jgrosskurth.aem.live/media_1ee99115c696cfac6f1473d4262972def9f3b96ec.png?width=2000&format=webply&optimize=medium",
+    "alt": "Up to 35% off Select Major Appliances. Offer ends 10/7/26. Shop all deals now.",
+    "source": "img",
+    "domPath": "main > .carousel-hero-container .carousel-hero (slide 1)",
+    "localPath": "stardust/current/assets/media/media_1ee99115c696cfac6f1473d4262972def9f3b96ec-98b9eb.png",
+    "rect": {
+     "x": 450,
+     "y": 483,
+     "width": 990,
+     "height": 299
+    },
+    "naturalWidth": 1580,
+    "naturalHeight": 480,
+    "filterOverride": "aspect 3.31 > 3.0 ceiling — only first-viewport hero raster"
+   },
+   "heroMedium": null,
+   "heroMediumNote": "carousel-hero auto-rotates (pause button + 5 dots) — slide rotation, not a moving asset; recorded as motion evidence only",
+   "primaryCTALabel": "Shop Now",
+   "ctaSamples": [
+    "Shop Now",
+    "Add to Cart",
+    "Read Article",
+    "Learn More",
+    "Get Details",
+    "View All",
+    "Shop All",
+    "Get Started"
+   ],
+   "navItems": [
+    "Shop All",
+    "Services",
+    "Deals",
+    "Design & Ideas",
+    "$99 Maintenance",
+    "Appliances",
+    "Bathroom",
+    "Lighting",
+    "Flooring",
+    "Building Supplies",
+    "Tools",
+    "Holiday Decorations",
+    "Outdoor",
+    "Fall Inspo"
+   ],
+   "utilityItems": [
+    "Lowe's Credit Center",
+    "Order Status",
+    "Weekly Ad",
+    "Lowe's PRO"
+   ],
+   "footerHeadings": [],
+   "firstParagraph": "Set your store to see the weather forecast for your area.",
+   "liveCopySamples": [
+    "Home Improvement Projects Made Easy",
+    "Plan your day and your next project!",
+    "Explore More for Your Home & Community",
+    "Find Your Next Project",
+    "Popular Categories",
+    "Top Trending Deals",
+    "We Picked These Deals for You"
+   ],
+   "rasterCopySamples": [
+    "Up to 35% off Select Major Appliances. Offer ends 10/7/26.",
+    "Get up to $20 MyLowe’s Money on an eligible purchase.",
+    "Essential tasks handled by a trained Lowe’s associate. Twice a year. Right to your door.",
+    "Thank you, first responders.",
+    "Find great gifts for everyone on your list.",
+    "Start a New DIY Project — Find inspiration, buying guides and how-to advice to make it happen.",
+    "Discover Lowe’s Community Impact"
+   ],
+   "socialProofSignals": [
+    "1K+ bought last week",
+    "In 100+ carts last week",
+    "In 500+ carts last week",
+    "rating counts 3459 / 2401 / 8.6K"
+   ],
+   "tone": {
+    "guess": "professional-warm",
+    "evidence": "second-person helper copy (\"Plan your day and your next project!\", \"Find great gifts for everyone on your list\") alternating with deal-forward numerals (\"Up to 35% off\", \"Save 25%\"); no jargon; sentence case"
+   }
+  },
+  "voiceTable": {
+   "ctaFrequency": [
+    {
+     "label": "Add to Cart",
+     "total": 13,
+     "pageCount": 1,
+     "pages": [
+      "home"
+     ]
+    },
+    {
+     "label": "Shop Now",
+     "total": 11,
+     "pageCount": 1,
+     "pages": [
+      "home"
+     ]
+    },
+    {
+     "label": "Read Article",
+     "total": 4,
+     "pageCount": 1,
+     "pages": [
+      "home"
+     ]
+    },
+    {
+     "label": "View All",
+     "total": 3,
+     "pageCount": 1,
+     "pages": [
+      "home"
+     ]
+    },
+    {
+     "label": "Learn More",
+     "total": 3,
+     "pageCount": 1,
+     "pages": [
+      "home"
+     ]
+    },
+    {
+     "label": "Get Details",
+     "total": 3,
+     "pageCount": 1,
+     "pages": [
+      "home"
+     ]
+    },
+    {
+     "label": "Get Started",
+     "total": 1,
+     "pageCount": 1,
+     "pages": [
+      "home"
+     ]
+    },
+    {
+     "label": "Shop All",
+     "total": 2,
+     "pageCount": 1,
+     "pages": [
+      "home"
+     ]
+    }
+   ],
+   "headingFrequency": [],
+   "toneMetrics": {
+    "headingsTotal": 21,
+    "headingsUppercasePercent": 0,
+    "distinctHeadings": 21,
+    "distinctCtaLabels": 72
+   }
+  },
+  "systemComponents": [],
+  "landmarkComponents": [
+   {
+    "name": "site-header",
+    "kind": "header",
+    "occurrences": 1,
+    "headingSequence": [],
+    "ctaLabels": [
+     "MyLowe’s Money Days are back! Get up to $20 in MyLowe’s Money. Learn More >",
+     "Lowe's Credit Center",
+     "Order Status",
+     "Weekly Ad",
+     "Lowe's PRO",
+     "Find a Store Near Me",
+     "AI Assist",
+     "Sign In",
+     "Cart",
+     "Shop All",
+     "Services",
+     "Deals",
+     "Design & Ideas",
+     "$99 MaintenanceNew",
+     "Appliances",
+     "Bathroom",
+     "Lighting",
+     "Flooring",
+     "Building Supplies",
+     "Tools",
+     "Holiday Decorations",
+     "Outdoor",
+     "Fall Inspo"
+    ],
+    "exampleSlug": "home",
+    "exampleSelector": "header .nav-wrapper",
+    "height": "148px desktop"
+   },
+   {
+    "name": "site-footer",
+    "kind": "footer",
+    "occurrences": 1,
+    "headingSequence": [],
+    "ctaLabels": [
+     "Privacy",
+     "Terms of Use",
+     "Cookie preferences",
+     "Do not sell my personal information",
+     "AdChoices"
+    ],
+    "exampleSlug": "home",
+    "exampleSelector": "footer",
+    "note": "AEM boilerplate: \"Copyright © 2025 Adobe. All rights reserved.\" + adobe.com legal links"
+   }
+  ],
+  "scaleAudit": {
+   "kind": "ad-hoc",
+   "ratios": [
+    1.167,
+    1.5
+   ],
+   "matchedScale": null,
+   "observed": [
+    "28px",
+    "24px",
+    "16px"
+   ],
+   "declaredTokens": [
+    "40",
+    "28",
+    "24",
+    "20",
+    "16",
+    "14"
+   ]
+  },
+  "cssCustomProperties": {
+   "--heading-font-family": "fellix, fellix-fallback, arial, sans-serif",
+   "--body-font-family": "fellix, fellix-fallback, arial, sans-serif",
+   "--background-color": "#fff",
+   "--text-color": "#17191f",
+   "--text-secondary-color": "rgb(23 25 31 / 80%)",
+   "--link-color": "#0072ce",
+   "--link-hover-color": "#005ba5",
+   "--brand-navy": "#012169",
+   "--brand-blue": "#004990",
+   "--action-green": "#007a33",
+   "--action-green-hover": "#004b1d",
+   "--action-green-pressed": "#003113",
+   "--action-green-subdued": "#d4f7e3",
+   "--action-red": "#971b2f",
+   "--surface-subdued": "#f4f6fa",
+   "--border-subdued": "#cbd1dd",
+   "--border-strong": "#616670",
+   "--muted-text-color": "rgb(0 0 0 / 54%)",
+   "--rating-color": "#f3b51b",
+   "--radius-sm": "2px",
+   "--radius-md": "4px",
+   "--radius-lg": "8px",
+   "--radius-pill": "20px",
+   "--space-xxs": "4px",
+   "--space-xs": "8px",
+   "--space-sm": "16px",
+   "--space-md": "24px",
+   "--space-lg": "40px",
+   "--space-xl": "56px",
+   "--gutter": "56px",
+   "--section-gap": "32px",
+   "--heading-font-size-xxl": "40px",
+   "--heading-line-height-xxl": "56px",
+   "--heading-font-size-xl": "28px",
+   "--heading-line-height-xl": "40px",
+   "--heading-font-size-l": "24px",
+   "--heading-line-height-l": "32px",
+   "--heading-font-size-m": "20px",
+   "--heading-line-height-m": "32px",
+   "--heading-font-size-s": "16px",
+   "--heading-font-size-xs": "14px",
+   "--body-font-size-m": "16px",
+   "--body-font-size-s": "14px",
+   "--body-font-size-xs": "12px",
+   "--light-color": "#f4f6fa",
+   "--dark-color": "#505050",
+   "--nav-height": "148px"
+  }
+ }
+}

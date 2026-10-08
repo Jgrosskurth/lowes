@@ -1,0 +1,17 @@
+{"ts":"2026-10-08T15:25:30Z","skill":"stardust:uplift","phase":"setup","event":"start"}
+{"ts":"2026-10-08T15:27:00Z","skill":"stardust:uplift","phase":"setup","event":"end","detail":"impeccable present; playwright resolvable via stardust/.work/node_modules link; no prior state.json"}
+{"ts":"2026-10-08T15:27:10Z","skill":"stardust:extract","phase":"discovery","event":"start"}
+{"ts":"2026-10-08T15:27:12Z","skill":"stardust:extract","phase":"discovery","event":"end","detail":"--single: 1 page (home)"}
+{"ts":"2026-10-08T15:28:00Z","skill":"stardust:extract","phase":"per-page-extraction","event":"start"}
+{"ts":"2026-10-08T15:34:00Z","skill":"stardust:extract","phase":"per-page-extraction","event":"end","detail":"1/1 captured, live playwright, 0 failures","artifact":"stardust/current/pages/home.json"}
+{"ts":"2026-10-08T15:34:30Z","skill":"stardust:extract","phase":"vision-verification","event":"end","detail":"home ok"}
+{"ts":"2026-10-08T15:38:00Z","skill":"stardust:extract","phase":"brand-surface","event":"end","artifact":"stardust/current/_brand-extraction.json"}
+{"ts":"2026-10-08T15:41:00Z","skill":"stardust:extract","phase":"seed-product-design","event":"end","artifact":"stardust/current/DESIGN.md"}
+{"ts":"2026-10-08T15:43:00Z","skill":"stardust:extract","phase":"brand-review","event":"end","detail":"4 mechanical + 6 agent tensions","artifact":"stardust/current/brand-review.html"}
+{"ts":"2026-10-08T15:43:10Z","skill":"stardust:extract","phase":"state-and-report","event":"end","artifact":"stardust/state.json"}
+{"ts":"2026-10-08T15:44:00Z","skill":"stardust:uplift","phase":"2a-improvements","event":"end","detail":"9 improvements","artifact":"stardust/uplift-improvements.md"}
+{"ts":"2026-10-08T15:52:00Z","skill":"stardust:uplift","phase":"2b-questions","event":"end","detail":"8 candidates; 2 disqualified; B=display-typography, C=motif-swap","artifact":"stardust/uplift-questions.md"}
+{"ts":"2026-10-08T15:53:00Z","skill":"stardust:uplift","phase":"2.5-reference-grounding","event":"end","detail":"webfetch tier: Target, Best Buy, IKEA (homedepot/bunnings 403)"}
+{"ts":"2026-10-08T16:00:00Z","skill":"stardust:uplift","phase":"3-variant-directions","event":"end","detail":"register kinetic-grid","artifact":"stardust/direction.md"}
+{"ts":"2026-10-08T16:01:00Z","skill":"stardust:direct","phase":"reasoning+divergence","event":"start"}
+{"ts":"2026-10-08T16:14:00Z","skill":"stardust:direct","phase":"author-target","event":"end","detail":"PRODUCT.md, DESIGN.md/json, DESIGN-A/B/C.md/json; home extracted->directed","artifact":"DESIGN-C.json"}

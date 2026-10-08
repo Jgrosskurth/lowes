@@ -1,0 +1,64 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:direct",
+    "writtenAt": "2026-10-08T15:52:05.932Z",
+    "stardustVersion": "0.14.0"
+  },
+  "site": {
+    "originUrl": "https://main--lowes--jgrosskurth.aem.live",
+    "deployUrl": null,
+    "extractedAt": "2026-10-08T15:38:38.975Z",
+    "pageCap": 1,
+    "totalDiscovered": 1,
+    "crawled": 1
+  },
+  "direction": {
+    "resolvedAt": "2026-10-08T15:52:05.932Z",
+    "phrase": "uplift presales redesign — three variants per stardust/direction.md",
+    "directionFile": "stardust/direction.md",
+    "iaFidelity": "reimagined",
+    "variantMode": "role-differentiated",
+    "variants": [
+      {
+        "id": "A",
+        "design": "DESIGN-A.json",
+        "role": "faithful + improvements"
+      },
+      {
+        "id": "B",
+        "design": "DESIGN-B.json",
+        "role": "Fellix display register amplified"
+      },
+      {
+        "id": "C",
+        "design": "DESIGN-C.json",
+        "role": "kinetic-grid motion",
+        "motionRegister": "kinetic-grid"
+      }
+    ]
+  },
+  "pages": [
+    {
+      "slug": "home",
+      "url": "https://main--lowes--jgrosskurth.aem.live/",
+      "title": "Lowe’s Home Improvement",
+      "type": null,
+      "status": "directed",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-08T15:38:38.975Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-10-08T15:52:05.932Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/home.json",
+      "prototypePath": null,
+      "migratedPath": null
+    }
+  ]
+}
