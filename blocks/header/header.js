@@ -65,8 +65,15 @@ function iconImg(img, className) {
 function findTreeList(doc, href, except) {
   const links = [...doc.querySelectorAll('li > a[href]')]
     .filter((a) => a.href === href && !except.contains(a));
-  const owner = links.map((a) => a.parentElement).find((li) => li.querySelector(':scope > ul'));
-  return owner ? owner.querySelector(':scope > ul') : null;
+  // the same URL can appear deeper in other trees; prefer the shallowest list owner
+  const depth = (node) => {
+    let d = 0;
+    for (let n = node; n; n = n.parentElement) if (n.tagName === 'UL') d += 1;
+    return d;
+  };
+  const owners = links.map((a) => a.parentElement).filter((li) => li.querySelector(':scope > ul'));
+  owners.sort((a, b) => depth(a) - depth(b));
+  return owners.length ? owners[0].querySelector(':scope > ul') : null;
 }
 
 function isPromo(node) {
@@ -454,11 +461,17 @@ export default async function decorate(block) {
     const gutter = parseFloat(getComputedStyle(sectionsInner).paddingRight) || 0;
     const right = layer.width - gutter;
     const width = panel.offsetWidth + (panel.querySelector('.has-children') ? SUB_COLUMN_WIDTH : 0);
+    // under the trigger when the expanded panel fits; else centred under it; else anchored to the
+    // right edge so drill columns grow leftwards and stay in view
     let left = t.left - layer.left;
-    // near the right edge, centre the (expanded) panel under its trigger and keep it in view
+    panel.style.right = '';
     if (left + width > right) {
-      const centred = (t.left + t.width / 2) - layer.left - width / 2;
-      left = Math.max(Math.min(Math.max(centred, gutter), right - width), gutter);
+      left = (t.left + t.width / 2) - layer.left - width / 2;
+      if (left < gutter || left + width > right) {
+        panel.style.left = 'auto';
+        panel.style.right = `${Math.round(layer.width - right)}px`;
+        return;
+      }
     }
     panel.style.left = `${Math.round(left)}px`;
   };
